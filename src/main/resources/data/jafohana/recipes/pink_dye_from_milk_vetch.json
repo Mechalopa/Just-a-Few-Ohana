@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "jafohana:milk_vetch"
+    }
+  ],
+  "result": {
+    "item": "minecraft:pink_dye"
+  }
+}
