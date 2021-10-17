@@ -3,4 +3,4 @@ More new flowers.
 ## Download
 - [GitHub](https://github.com/Mechalopa/Just-a-Few-Ohana/releases)
 ## Japanese Forum and Descriptions
-- [Minecraft Japan Forum Topics](https://forum.civa.jp/viewtopic.php?f=3&t=750)
+- [Minecraft Japan Forum Thread](https://forum.civa.jp/viewtopic.php?f=3&t=750)
