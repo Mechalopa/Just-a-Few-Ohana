@@ -1,9 +1,9 @@
-package jafohana;
+package net.mechalopa.jafohana;
 
 import java.util.Random;
 
-import jafohana.registry.ModBlocks;
-import jafohana.world.gen.ModFeatures;
+import net.mechalopa.jafohana.registry.ModBlocks;
+import net.mechalopa.jafohana.world.gen.ModFeatures;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.GrassBlock;
