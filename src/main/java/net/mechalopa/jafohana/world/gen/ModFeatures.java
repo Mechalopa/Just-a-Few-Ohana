@@ -9,4 +9,5 @@ public class ModFeatures
 	public static ConfiguredFeature<?, ?> FLOWER_SPOOKY_FOREST;
 	public static ConfiguredFeature<?, ?> FLOWER_MOUNTAIN;
 	public static ConfiguredFeature<?, ?> FLOWER_SWAMP;
+	public static ConfiguredFeature<?, ?> FLOWER_SAVANNA;
 }

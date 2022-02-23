@@ -31,7 +31,11 @@ public class ModEvents
 
 			if (biomeKey != null)
 			{
-				if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.PLAINS))
+				if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.SAVANNA))
+				{
+					event.getGeneration().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, ModFeatures.FLOWER_SAVANNA);
+				}
+				else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.PLAINS))
 				{
 					if (!BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.HOT))
 						event.getGeneration().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, ModFeatures.FLOWER_PLAIN);
@@ -101,7 +105,13 @@ public class ModEvents
 									Block block = null;
 									int chance = 1;
 
-									if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.PLAINS))
+									if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.SAVANNA))
+									{
+										final int k = r.nextInt(3);
+										block = k == 0 ? ModBlocks.YELLOW_AFRICAN_DAISY.get() : (k == 1 ? ModBlocks.PINK_AFRICAN_DAISY.get() : ModBlocks.WHITE_AFRICAN_DAISY.get());
+										chance = 2;
+									}
+									else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.PLAINS))
 									{
 										if (!BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.HOT))
 										{

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "jafohana:yellow_african_daisy"
+    }
+  ],
+  "result": {
+    "item": "minecraft:yellow_dye"
+  }
+}

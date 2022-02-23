@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "jafohana:block/yellow_african_daisy"
+  }
+}

@@ -20,9 +20,15 @@ public class ModClientEventBusSubscriber
 		RenderTypeLookup.setRenderLayer(ModBlocks.DAYFLOWER.get(), RenderType.cutout());
 		RenderTypeLookup.setRenderLayer(ModBlocks.EVENING_PRIMROSE.get(), RenderType.cutout());
 		RenderTypeLookup.setRenderLayer(ModBlocks.MILK_VETCH.get(), RenderType.cutout());
+		RenderTypeLookup.setRenderLayer(ModBlocks.YELLOW_AFRICAN_DAISY.get(), RenderType.cutout());
+		RenderTypeLookup.setRenderLayer(ModBlocks.PINK_AFRICAN_DAISY.get(), RenderType.cutout());
+		RenderTypeLookup.setRenderLayer(ModBlocks.WHITE_AFRICAN_DAISY.get(), RenderType.cutout());
 		RenderTypeLookup.setRenderLayer(ModBlocks.POTTED_DAYFLOWER.get(), RenderType.cutout());
 		RenderTypeLookup.setRenderLayer(ModBlocks.POTTED_EVENING_PRIMROSE.get(), RenderType.cutout());
 		RenderTypeLookup.setRenderLayer(ModBlocks.POTTED_MILK_VETCH.get(), RenderType.cutout());
+		RenderTypeLookup.setRenderLayer(ModBlocks.POTTED_YELLOW_AFRICAN_DAISY.get(), RenderType.cutout());
+		RenderTypeLookup.setRenderLayer(ModBlocks.POTTED_PINK_AFRICAN_DAISY.get(), RenderType.cutout());
+		RenderTypeLookup.setRenderLayer(ModBlocks.POTTED_WHITE_AFRICAN_DAISY.get(), RenderType.cutout());
 //		MinecraftForge.EVENT_BUS.register(new ModClientEvents());
 	}
 }
