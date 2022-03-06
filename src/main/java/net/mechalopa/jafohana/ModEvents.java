@@ -3,7 +3,7 @@ package net.mechalopa.jafohana;
 import java.util.Random;
 
 import net.mechalopa.jafohana.registry.ModBlocks;
-import net.mechalopa.jafohana.world.gen.ModFeatures;
+import net.mechalopa.jafohana.world.gen.ModConfiguredFeatures;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.GrassBlock;
@@ -33,31 +33,31 @@ public class ModEvents
 			{
 				if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.SAVANNA))
 				{
-					event.getGeneration().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, ModFeatures.FLOWER_SAVANNA);
+					event.getGeneration().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, ModConfiguredFeatures.FLOWER_AFRICAN_DAISY);
 				}
 				else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.PLAINS))
 				{
 					if (!BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.HOT))
-						event.getGeneration().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, ModFeatures.FLOWER_PLAIN);
+						event.getGeneration().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, ModConfiguredFeatures.FLOWER_PLAIN);
 				}
 				else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.FOREST))
 				{
 					if (!BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.HOT))
 					{
 						if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.SPOOKY))
-							event.getGeneration().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, ModFeatures.FLOWER_SPOOKY_FOREST);
+							event.getGeneration().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, ModConfiguredFeatures.FLOWER_SPOOKY_FOREST);
 						else
-							event.getGeneration().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, ModFeatures.FLOWER_FOREST);
+							event.getGeneration().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, ModConfiguredFeatures.FLOWER_FOREST);
 					}
 				}
 				else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.MOUNTAIN))
 				{
 					if (!BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.HOT))
-						event.getGeneration().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, ModFeatures.FLOWER_MOUNTAIN);
+						event.getGeneration().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, ModConfiguredFeatures.FLOWER_MOUNTAIN);
 				}
 				else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.SWAMP))
 				{
-					event.getGeneration().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, ModFeatures.FLOWER_SWAMP);
+					event.getGeneration().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, ModConfiguredFeatures.FLOWER_SWAMP);
 				}
 			}
 		}
