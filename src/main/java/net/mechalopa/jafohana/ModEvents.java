@@ -33,7 +33,7 @@ public class ModEvents
 			{
 				if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.SAVANNA))
 				{
-					event.getGeneration().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, ModConfiguredFeatures.FLOWER_AFRICAN_DAISY);
+					event.getGeneration().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, ModConfiguredFeatures.AFRICAN_DAISY);
 				}
 				else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.PLAINS))
 				{
@@ -58,6 +58,14 @@ public class ModEvents
 				else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.SWAMP))
 				{
 					event.getGeneration().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, ModConfiguredFeatures.FLOWER_SWAMP);
+				}
+
+				if (!BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.HOT) && !BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.COLD))
+				{
+					if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.RIVER))
+						event.getGeneration().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, ModConfiguredFeatures.RED_SPIDER_LILY_RIVER);
+					else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.FOREST) && BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.SPOOKY))
+						event.getGeneration().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, ModConfiguredFeatures.RED_SPIDER_LILY_SPOOKY_FOREST);
 				}
 			}
 		}
@@ -109,7 +117,6 @@ public class ModEvents
 									{
 										final int k = r.nextInt(3);
 										block = k == 0 ? ModBlocks.YELLOW_AFRICAN_DAISY.get() : (k == 1 ? ModBlocks.PINK_AFRICAN_DAISY.get() : ModBlocks.WHITE_AFRICAN_DAISY.get());
-										chance = 2;
 									}
 									else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.PLAINS))
 									{
@@ -130,7 +137,8 @@ public class ModEvents
 											}
 											else
 											{
-												block = r.nextInt(3) > 0 ? ModBlocks.DAYFLOWER.get() : ModBlocks.EVENING_PRIMROSE.get();
+												final int k = r.nextInt(4);
+												block = k == 0 ? ModBlocks.EVENING_PRIMROSE.get() : (k == 1 ? ModBlocks.FORGET_ME_NOT.get() : ModBlocks.DAYFLOWER.get());
 												chance = 2;
 											}
 										}
@@ -139,8 +147,8 @@ public class ModEvents
 									{
 										if (!BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.HOT))
 										{
-											block = ModBlocks.EVENING_PRIMROSE.get();
-											chance = 8;
+											block = r.nextBoolean() ? ModBlocks.EVENING_PRIMROSE.get() : ModBlocks.FORGET_ME_NOT.get();
+											chance = 4;
 										}
 									}
 									else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.SWAMP))

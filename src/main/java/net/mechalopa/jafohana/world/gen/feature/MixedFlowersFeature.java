@@ -30,11 +30,8 @@ public class MixedFlowersFeature extends DefaultFlowersFeature
 
 			if (seedReader.isEmptyBlock(blockpos) && blockpos.getY() < 255 && blockstate.canSurvive(seedReader, blockpos) && this.isValid(seedReader, blockpos, config))
 			{
-				if (seedReader.setBlock(blockpos, blockstate, 2))
-				{
-					blockstate = this.getRandomFlower(rand, pos, config);
-				}
-
+				seedReader.setBlock(blockpos, blockstate, 2);
+				blockstate = this.getRandomFlower(rand, pos, config);
 				++i;
 			}
 		}

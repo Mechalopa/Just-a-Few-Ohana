@@ -9,5 +9,7 @@ public class ModConfiguredFeatures
 	public static ConfiguredFeature<?, ?> FLOWER_SPOOKY_FOREST;
 	public static ConfiguredFeature<?, ?> FLOWER_MOUNTAIN;
 	public static ConfiguredFeature<?, ?> FLOWER_SWAMP;
-	public static ConfiguredFeature<?, ?> FLOWER_AFRICAN_DAISY;
+	public static ConfiguredFeature<?, ?> AFRICAN_DAISY;
+	public static ConfiguredFeature<?, ?> RED_SPIDER_LILY_RIVER;
+	public static ConfiguredFeature<?, ?> RED_SPIDER_LILY_SPOOKY_FOREST;
 }

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "jafohana:red_spider_lily"
+    }
+  ],
+  "result": {
+    "item": "minecraft:red_dye"
+  }
+}
