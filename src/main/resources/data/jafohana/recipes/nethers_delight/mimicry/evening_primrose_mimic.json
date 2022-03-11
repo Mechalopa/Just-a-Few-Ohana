@@ -1,0 +1,26 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "farmersdelight"
+    },
+    {
+      "type": "forge:item_exists",
+      "item": "nethers_delight:mimicarnation"
+    }
+  ],
+  "type": "farmersdelight:cooking",
+  "ingredients": [
+    {
+      "item": "jafohana:evening_primrose"
+    },
+    {
+      "item": "nethers_delight:mimicarnation"
+    }
+  ],
+  "result": {
+    "item": "jafohana:evening_primrose",
+    "count": 2
+  },
+  "cookingtime": 200
+}
