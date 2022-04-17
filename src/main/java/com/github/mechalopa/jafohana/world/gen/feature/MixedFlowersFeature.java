@@ -1,4 +1,4 @@
-package net.mechalopa.jafohana.world.gen.feature;
+package com.github.mechalopa.jafohana.world.gen.feature;
 
 import java.util.Random;
 

@@ -1,9 +1,10 @@
-package net.mechalopa.jafohana.registry;
+package com.github.mechalopa.jafohana.registry;
 
-import net.mechalopa.jafohana.JAFOhana;
-import net.mechalopa.jafohana.block.ModFlowerBlock;
-import net.mechalopa.jafohana.block.ModFlowerPotBlock;
-import net.mechalopa.jafohana.block.RedSpiderLilyBlock;
+import com.github.mechalopa.jafohana.JAFOhana;
+import com.github.mechalopa.jafohana.block.ModFlowerBlock;
+import com.github.mechalopa.jafohana.block.ModFlowerPotBlock;
+import com.github.mechalopa.jafohana.block.RedSpiderLilyBlock;
+
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;

@@ -1,7 +1,8 @@
-package net.mechalopa.jafohana.client;
+package com.github.mechalopa.jafohana.client;
 
-import net.mechalopa.jafohana.JAFOhana;
-import net.mechalopa.jafohana.registry.ModBlocks;
+import com.github.mechalopa.jafohana.JAFOhana;
+import com.github.mechalopa.jafohana.registry.ModBlocks;
+
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraftforge.api.distmarker.Dist;

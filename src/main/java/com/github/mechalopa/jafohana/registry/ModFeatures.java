@@ -1,7 +1,8 @@
-package net.mechalopa.jafohana.registry;
+package com.github.mechalopa.jafohana.registry;
 
-import net.mechalopa.jafohana.JAFOhana;
-import net.mechalopa.jafohana.world.gen.feature.MixedFlowersFeature;
+import com.github.mechalopa.jafohana.JAFOhana;
+import com.github.mechalopa.jafohana.world.gen.feature.MixedFlowersFeature;
+
 import net.minecraft.world.gen.feature.BlockClusterFeatureConfig;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.FlowersFeature;

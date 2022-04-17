@@ -1,4 +1,4 @@
-package net.mechalopa.jafohana;
+package com.github.mechalopa.jafohana;
 
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

@@ -1,9 +1,10 @@
-package net.mechalopa.jafohana;
+package com.github.mechalopa.jafohana;
 
-import net.mechalopa.jafohana.registry.ModBlocks;
-import net.mechalopa.jafohana.registry.ModFeatures;
-import net.mechalopa.jafohana.registry.ModItems;
-import net.mechalopa.jafohana.world.gen.ModConfiguredFeatures;
+import com.github.mechalopa.jafohana.registry.ModBlocks;
+import com.github.mechalopa.jafohana.registry.ModFeatures;
+import com.github.mechalopa.jafohana.registry.ModItems;
+import com.github.mechalopa.jafohana.world.gen.ModConfiguredFeatures;
+
 import net.minecraft.block.ComposterBlock;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;

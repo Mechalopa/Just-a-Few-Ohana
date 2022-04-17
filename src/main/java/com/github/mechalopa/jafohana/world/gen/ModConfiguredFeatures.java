@@ -1,4 +1,4 @@
-package net.mechalopa.jafohana.world.gen;
+package com.github.mechalopa.jafohana.world.gen;
 
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 

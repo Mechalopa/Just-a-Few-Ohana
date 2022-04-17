@@ -1,6 +1,7 @@
-package net.mechalopa.jafohana.registry;
+package com.github.mechalopa.jafohana.registry;
 
-import net.mechalopa.jafohana.JAFOhana;
+import com.github.mechalopa.jafohana.JAFOhana;
+
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;

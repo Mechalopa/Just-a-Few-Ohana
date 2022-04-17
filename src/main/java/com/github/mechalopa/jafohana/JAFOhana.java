@@ -1,11 +1,12 @@
-package net.mechalopa.jafohana;
+package com.github.mechalopa.jafohana;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import net.mechalopa.jafohana.registry.ModBlocks;
-import net.mechalopa.jafohana.registry.ModFeatures;
-import net.mechalopa.jafohana.registry.ModItems;
+import com.github.mechalopa.jafohana.registry.ModBlocks;
+import com.github.mechalopa.jafohana.registry.ModFeatures;
+import com.github.mechalopa.jafohana.registry.ModItems;
+
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;

@@ -1,4 +1,4 @@
-package net.mechalopa.jafohana.block;
+package com.github.mechalopa.jafohana.block;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.BlockState;
