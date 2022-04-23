@@ -1,0 +1,37 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "botanypots"
+    }
+  ],
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "jafohana:yellow_african_daisy"
+  },
+  "categories": [
+    "dirt"
+  ],
+  "growthTicks": 1200,
+  "display": {
+    "block": "jafohana:yellow_african_daisy"
+  },
+  "results": [
+    {
+      "chance": 0.75,
+      "output": {
+        "item": "jafohana:yellow_african_daisy"
+      },
+      "minRolls": 1,
+      "maxRolls": 1
+    },
+    {
+      "chance": 0.05,
+      "output": {
+        "item": "jafohana:yellow_african_daisy"
+      },
+      "minRolls": 1,
+      "maxRolls": 2
+    }
+  ]
+}

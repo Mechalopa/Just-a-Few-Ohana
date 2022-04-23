@@ -1,0 +1,8 @@
+{
+  "ambientocclusion": false,
+  "textures": {
+    "particle": "jafohana:block/red_spider_lily",
+    "cross": "jafohana:block/red_spider_lily",
+    "stem": "jafohana:block/red_spider_lily_stem"
+  }
+}

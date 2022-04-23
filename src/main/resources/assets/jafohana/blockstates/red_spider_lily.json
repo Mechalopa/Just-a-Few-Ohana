@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "jafohana:block/red_spider_lily_0"
+      },
+      {
+        "model": "jafohana:block/red_spider_lily_1"
+      },
+      {
+        "model": "jafohana:block/red_spider_lily_2"
+      }
+    ]
+  }
+}
