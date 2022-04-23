@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "group": "yellow_dye",
   "ingredients": [
     {
       "item": "jafohana:yellow_african_daisy"
