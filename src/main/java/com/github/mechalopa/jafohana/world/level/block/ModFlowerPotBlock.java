@@ -1,4 +1,4 @@
-package com.github.mechalopa.jafohana.block;
+package com.github.mechalopa.jafohana.world.level.block;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.FlowerPotBlock;

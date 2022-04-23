@@ -1,9 +1,9 @@
 package com.github.mechalopa.jafohana.registry;
 
 import com.github.mechalopa.jafohana.JAFOhana;
-import com.github.mechalopa.jafohana.block.ModFlowerBlock;
-import com.github.mechalopa.jafohana.block.ModFlowerPotBlock;
-import com.github.mechalopa.jafohana.block.RedSpiderLilyBlock;
+import com.github.mechalopa.jafohana.world.level.block.ModFlowerBlock;
+import com.github.mechalopa.jafohana.world.level.block.ModFlowerPotBlock;
+import com.github.mechalopa.jafohana.world.level.block.RedSpiderLilyBlock;
 
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.level.block.Block;
