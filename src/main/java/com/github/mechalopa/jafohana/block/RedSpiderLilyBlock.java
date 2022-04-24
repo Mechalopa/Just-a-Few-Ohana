@@ -1,10 +1,11 @@
 package com.github.mechalopa.jafohana.block;
 
+import com.github.mechalopa.jafohana.util.ModTags;
+
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.potion.Effect;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
@@ -23,7 +24,7 @@ public class RedSpiderLilyBlock extends ModFlowerBlock
 	@Override
 	protected boolean mayPlaceOn(BlockState state, IBlockReader world, BlockPos pos)
 	{
-		return super.mayPlaceOn(state, world, pos) || state.is(BlockTags.SOUL_SPEED_BLOCKS);
+		return super.mayPlaceOn(state, world, pos) || ModTags.checkTagContains(ModTags.RED_SPIDER_LILY_PLANTABLE_ON, state.getBlock());
 	}
 
 	@Override
