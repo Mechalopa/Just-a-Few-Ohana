@@ -4,7 +4,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.github.mechalopa.jafohana.registry.ModBlocks;
+import com.github.mechalopa.jafohana.registry.ModConfiguredFeatures;
+import com.github.mechalopa.jafohana.registry.ModFeatures;
 import com.github.mechalopa.jafohana.registry.ModItems;
+import com.github.mechalopa.jafohana.registry.ModPlacedFeatures;
 
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModLoadingContext;
@@ -29,7 +32,9 @@ public class JAFOhana
 		modEventBus.addListener(ModConfigs::loadConfig);
 
 		ModBlocks.register(modEventBus);
-//		ModFeatures.register(modEventBus);
+		ModConfiguredFeatures.register(modEventBus);
+		ModFeatures.register(modEventBus);
 		ModItems.register(modEventBus);
+		ModPlacedFeatures.register(modEventBus);
 	}
 }
