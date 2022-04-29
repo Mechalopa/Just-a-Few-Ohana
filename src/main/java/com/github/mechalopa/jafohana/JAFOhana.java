@@ -5,7 +5,6 @@ import org.apache.logging.log4j.Logger;
 
 import com.github.mechalopa.jafohana.registry.ModBlocks;
 import com.github.mechalopa.jafohana.registry.ModConfiguredFeatures;
-import com.github.mechalopa.jafohana.registry.ModFeatures;
 import com.github.mechalopa.jafohana.registry.ModItems;
 import com.github.mechalopa.jafohana.registry.ModPlacedFeatures;
 
@@ -33,7 +32,6 @@ public class JAFOhana
 
 		ModBlocks.register(modEventBus);
 		ModConfiguredFeatures.register(modEventBus);
-		ModFeatures.register(modEventBus);
 		ModItems.register(modEventBus);
 		ModPlacedFeatures.register(modEventBus);
 	}
