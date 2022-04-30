@@ -1,13 +1,14 @@
 package com.github.mechalopa.jafohana;
 
+import java.util.List;
 import java.util.Random;
 
 import com.github.mechalopa.jafohana.registry.ModBlocks;
 import com.github.mechalopa.jafohana.registry.ModPlacedFeatures;
-import com.github.mechalopa.jafohana.util.ModTags;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.Block;
@@ -33,52 +34,66 @@ public class ModEvents
 
 			if (biomeKey != null)
 			{
-				if (ModTags.checkTagContains(ForgeRegistries.BIOMES, biomeKey, ModTags.IS_FLOWER_FOREST))
+				if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.OVERWORLD))
 				{
-					event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.FLOWER_FLOWER_FOREST.getHolder().orElseThrow());
-				}
-				else if (ModTags.checkTagContains(ForgeRegistries.BIOMES, biomeKey, ModTags.IS_MEADOW))
-				{
-					event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.FLOWER_MEADOW.getHolder().orElseThrow());
-				}
-				else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.SAVANNA))
-				{
-					event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.AFRICAN_DAISY.getHolder().orElseThrow());
-				}
-				else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.PLAINS))
-				{
-					if (!BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.HOT))
-						event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.FLOWER_PLAIN.getHolder().orElseThrow());
-				}
-				else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.FOREST))
-				{
-					if (!BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.HOT))
+					if (checkList(event.getName(), ModConfigs.cachedServer.FLOWER_FOREST_BIOMES))
 					{
-						if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.SPOOKY))
-							event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.FLOWER_SPOOKY_FOREST.getHolder().orElseThrow());
-						else
-							event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.FLOWER_FOREST.getHolder().orElseThrow());
+						event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.FLOWER_FLOWER_FOREST.getHolder().orElseThrow());
 					}
-				}
-				else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.HILLS))
-				{
-					if (!BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.SNOWY))
-						event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.FLOWER_HILL.getHolder().orElseThrow());
-				}
-				else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.SWAMP))
-				{
-					event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.FLOWER_SWAMP.getHolder().orElseThrow());
-				}
+					else if (checkList(event.getName(), ModConfigs.cachedServer.MEADOW_BIOMES))
+					{
+						event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.FLOWER_MEADOW.getHolder().orElseThrow());
+					}
+					else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.SAVANNA))
+					{
+						event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.AFRICAN_DAISY.getHolder().orElseThrow());
+					}
+					else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.PLAINS))
+					{
+						if (!BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.HOT))
+							event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.FLOWER_PLAIN.getHolder().orElseThrow());
+					}
+					else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.FOREST))
+					{
+						if (!BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.HOT))
+						{
+							if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.SPOOKY))
+								event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.FLOWER_SPOOKY_FOREST.getHolder().orElseThrow());
+							else
+								event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.FLOWER_FOREST.getHolder().orElseThrow());
+						}
+					}
+					else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.HILLS))
+					{
+						if (!BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.SNOWY))
+							event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.FLOWER_HILL.getHolder().orElseThrow());
+					}
+					else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.SWAMP))
+					{
+						event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.FLOWER_SWAMP.getHolder().orElseThrow());
+					}
 
-				if (!BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.HOT) && !BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.COLD))
-				{
-					if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.RIVER))
-						event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.RED_SPIDER_LILY_RIVER.getHolder().orElseThrow());
-					else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.FOREST) && BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.SPOOKY))
-						event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.RED_SPIDER_LILY_SPOOKY_FOREST.getHolder().orElseThrow());
+					if (!BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.HOT) && !BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.SNOWY))
+					{
+						if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.PLAINS) || BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.FOREST))
+							event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.RED_SPIDER_LILY.getHolder().orElseThrow());
+						else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.SWAMP))
+							event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.RED_SPIDER_LILY_SWAMP.getHolder().orElseThrow());
+						if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.RIVER))
+							event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.RED_SPIDER_LILY_RIVER.getHolder().orElseThrow());
+						else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.FOREST) && BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.SPOOKY))
+							event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.RED_SPIDER_LILY_SPOOKY_FOREST.getHolder().orElseThrow());
+					}
 				}
 			}
 		}
+	}
+
+	public static boolean checkList(ResourceLocation r, List<? extends String> list)
+	{
+		if (r != null && list != null && !list.isEmpty() && list.contains(r.toString()))
+			return true;
+		return false;
 	}
 
 	@SubscribeEvent
@@ -94,6 +109,11 @@ public class ModEvents
 			Level world = event.getWorld();
 			BlockPos pos = event.getPos().above();
 			Random r = world.getRandom();
+
+			if (!world.isEmptyBlock(pos))
+			{
+				return;
+			}
 
 			for (int i = 0; i < 64; ++i)
 			{
@@ -116,74 +136,78 @@ public class ModEvents
 						{
 							if (r.nextInt(32) == 0 && world.getBiome(pos1) != null)
 							{
-								ResourceKey<Biome> biomeKey = ResourceKey.create(ForgeRegistries.Keys.BIOMES, world.getBiome(pos1).value().getRegistryName());
+								final ResourceLocation resourcelocation = world.getBiome(pos1).value().getRegistryName();
+								ResourceKey<Biome> biomeKey = ResourceKey.create(ForgeRegistries.Keys.BIOMES, resourcelocation);
 
 								if (biomeKey != null)
 								{
-									Block block = null;
-									int chance = 1;
+									if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.OVERWORLD))
+									{
+										Block block = null;
+										int chance = 1;
 
-									if (ModTags.checkTagContains(ForgeRegistries.BIOMES, biomeKey, ModTags.IS_FLOWER_FOREST))
-									{
-										final int k = r.nextInt(3);
-										block = k == 0 ? ModBlocks.DAYFLOWER.get() : (k == 1 ? ModBlocks.EVENING_PRIMROSE.get() : ModBlocks.FORGET_ME_NOT.get());
-									}
-									else if (ModTags.checkTagContains(ForgeRegistries.BIOMES, biomeKey, ModTags.IS_MEADOW))
-									{
-										final int k = r.nextInt(3);
-										block = k == 0 ? ModBlocks.EVENING_PRIMROSE.get() : (k == 1 ? ModBlocks.MILK_VETCH.get() : ModBlocks.FORGET_ME_NOT.get());
-									}
-									else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.SAVANNA))
-									{
-										final int k = r.nextInt(3);
-										block = k == 0 ? ModBlocks.YELLOW_AFRICAN_DAISY.get() : (k == 1 ? ModBlocks.PINK_AFRICAN_DAISY.get() : ModBlocks.WHITE_AFRICAN_DAISY.get());
-									}
-									else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.PLAINS))
-									{
-										if (!BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.HOT))
+										if (checkList(resourcelocation, ModConfigs.cachedServer.FLOWER_FOREST_BIOMES))
 										{
 											final int k = r.nextInt(3);
-											block = k == 0 ? ModBlocks.DAYFLOWER.get() : (k == 1 ? ModBlocks.EVENING_PRIMROSE.get() : ModBlocks.MILK_VETCH.get());
+											block = k == 0 ? ModBlocks.DAYFLOWER.get() : (k == 1 ? ModBlocks.EVENING_PRIMROSE.get() : ModBlocks.FORGET_ME_NOT.get());
 										}
-									}
-									else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.FOREST))
-									{
-										if (!BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.HOT))
+										else if (checkList(resourcelocation, ModConfigs.cachedServer.MEADOW_BIOMES))
 										{
-											if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.SPOOKY))
-											{
-												block = ModBlocks.DAYFLOWER.get();
-												chance = 3;
-											}
-											else
+											final int k = r.nextInt(3);
+											block = k == 0 ? ModBlocks.EVENING_PRIMROSE.get() : (k == 1 ? ModBlocks.MILK_VETCH.get() : ModBlocks.FORGET_ME_NOT.get());
+										}
+										else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.SAVANNA))
+										{
+											final int k = r.nextInt(3);
+											block = k == 0 ? ModBlocks.YELLOW_AFRICAN_DAISY.get() : (k == 1 ? ModBlocks.PINK_AFRICAN_DAISY.get() : ModBlocks.WHITE_AFRICAN_DAISY.get());
+										}
+										else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.PLAINS))
+										{
+											if (!BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.HOT))
 											{
 												final int k = r.nextInt(3);
-												block = k == 0 ? ModBlocks.DAYFLOWER.get() : (k == 1 ? ModBlocks.EVENING_PRIMROSE.get() : ModBlocks.FORGET_ME_NOT.get());
+												block = k == 0 ? ModBlocks.DAYFLOWER.get() : (k == 1 ? ModBlocks.EVENING_PRIMROSE.get() : ModBlocks.MILK_VETCH.get());
+											}
+										}
+										else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.FOREST))
+										{
+											if (!BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.HOT))
+											{
+												if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.SPOOKY))
+												{
+													block = ModBlocks.DAYFLOWER.get();
+													chance = 3;
+												}
+												else
+												{
+													final int k = r.nextInt(3);
+													block = k == 0 ? ModBlocks.DAYFLOWER.get() : (k == 1 ? ModBlocks.EVENING_PRIMROSE.get() : ModBlocks.FORGET_ME_NOT.get());
+													chance = 2;
+												}
+											}
+										}
+										else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.HILLS))
+										{
+											if (!BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.SNOWY))
+											{
+												block = r.nextBoolean() ? ModBlocks.EVENING_PRIMROSE.get() : ModBlocks.FORGET_ME_NOT.get();
 												chance = 2;
 											}
 										}
-									}
-									else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.HILLS))
-									{
-										if (!BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.SNOWY))
+										else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.SWAMP))
 										{
-											block = r.nextBoolean() ? ModBlocks.EVENING_PRIMROSE.get() : ModBlocks.FORGET_ME_NOT.get();
+											block = ModBlocks.MILK_VETCH.get();
 											chance = 2;
 										}
-									}
-									else if (BiomeDictionary.hasType(biomeKey, BiomeDictionary.Type.SWAMP))
-									{
-										block = ModBlocks.MILK_VETCH.get();
-										chance = 2;
-									}
 
-									if (block != null && r.nextFloat() < 1.0F / (float)chance)
-									{
-										BlockState blockstate1 = block.defaultBlockState();
-
-										if (blockstate1.canSurvive(world, pos1))
+										if (block != null && r.nextFloat() < 1.0F / (float)chance)
 										{
-											world.setBlock(pos1, blockstate1, 3);
+											BlockState blockstate1 = block.defaultBlockState();
+
+											if (blockstate1.canSurvive(world, pos1))
+											{
+												world.setBlock(pos1, blockstate1, 3);
+											}
 										}
 									}
 								}
