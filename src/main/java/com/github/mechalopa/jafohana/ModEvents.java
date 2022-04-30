@@ -4,12 +4,12 @@ import java.util.Random;
 
 import com.github.mechalopa.jafohana.registry.ModBlocks;
 import com.github.mechalopa.jafohana.registry.ModPlacedFeatures;
+import com.github.mechalopa.jafohana.util.ModTags;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.biome.Biome;
-import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.GrassBlock;
 import net.minecraft.world.level.block.state.BlockState;
@@ -33,11 +33,11 @@ public class ModEvents
 
 			if (biomeKey != null)
 			{
-				if (biomeKey == Biomes.FLOWER_FOREST)
+				if (ModTags.checkTagContains(ForgeRegistries.BIOMES, biomeKey, ModTags.IS_FLOWER_FOREST))
 				{
 					event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.FLOWER_FLOWER_FOREST.getHolder().orElseThrow());
 				}
-				else if (biomeKey == Biomes.MEADOW)
+				else if (ModTags.checkTagContains(ForgeRegistries.BIOMES, biomeKey, ModTags.IS_MEADOW))
 				{
 					event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.FLOWER_MEADOW.getHolder().orElseThrow());
 				}
@@ -123,12 +123,12 @@ public class ModEvents
 									Block block = null;
 									int chance = 1;
 
-									if (biomeKey == Biomes.FLOWER_FOREST)
+									if (ModTags.checkTagContains(ForgeRegistries.BIOMES, biomeKey, ModTags.IS_FLOWER_FOREST))
 									{
 										final int k = r.nextInt(3);
 										block = k == 0 ? ModBlocks.DAYFLOWER.get() : (k == 1 ? ModBlocks.EVENING_PRIMROSE.get() : ModBlocks.FORGET_ME_NOT.get());
 									}
-									else if (biomeKey == Biomes.MEADOW)
+									else if (ModTags.checkTagContains(ForgeRegistries.BIOMES, biomeKey, ModTags.IS_MEADOW))
 									{
 										final int k = r.nextInt(3);
 										block = k == 0 ? ModBlocks.EVENING_PRIMROSE.get() : (k == 1 ? ModBlocks.MILK_VETCH.get() : ModBlocks.FORGET_ME_NOT.get());
