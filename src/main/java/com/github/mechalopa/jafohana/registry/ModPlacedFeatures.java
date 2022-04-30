@@ -33,7 +33,7 @@ public class ModPlacedFeatures
 	public static final RegistryObject<PlacedFeature> RED_SPIDER_LILY = createPlacedFeatureRegistryObject("red_spider_lily", ModConfiguredFeatures.RED_SPIDER_LILY.getHolder().orElseThrow(), 8);
 	public static final RegistryObject<PlacedFeature> RED_SPIDER_LILY_SWAMP = createPlacedFeatureRegistryObject("red_spider_lily_swamp", ModConfiguredFeatures.RED_SPIDER_LILY.getHolder().orElseThrow(), 16);
 	public static final RegistryObject<PlacedFeature> RED_SPIDER_LILY_RIVER = createPlacedFeatureRegistryObject("red_spider_lily_river", ModConfiguredFeatures.RED_SPIDER_LILY_RIVER.getHolder().orElseThrow(), 24);
-	public static final RegistryObject<PlacedFeature> RED_SPIDER_LILY_SPOOKY_FOREST = createPlacedFeatureRegistryObject("red_spider_lily_spooky_forest", ModConfiguredFeatures.RED_SPIDER_LILY_SPOOKY_FOREST.getHolder().orElseThrow(), 32);
+	public static final RegistryObject<PlacedFeature> RED_SPIDER_LILY_SPOOKY_FOREST = createPlacedFeatureRegistryObject("red_spider_lily_spooky_forest", ModConfiguredFeatures.RED_SPIDER_LILY_SPOOKY_FOREST.getHolder().orElseThrow(), 48);
 
 	@SubscribeEvent
 	public static void register(IEventBus eventBus)

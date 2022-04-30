@@ -10,6 +10,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderSet;
 import net.minecraft.core.Registry;
+import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.util.InclusiveRange;
 import net.minecraft.util.random.SimpleWeightedRandomList;
@@ -71,7 +72,7 @@ public class ModConfiguredFeatures
 
 	private static <FC extends FeatureConfiguration, F extends Feature<FC>> Holder<PlacedFeature> createPlacedFeatureHolder(int tries, int xzSpread, int ySpread, BlockState blockstate)
 	{
-		return PlacementUtils.onlyWhenEmpty(Feature.FLOWER, createRandomPatchConfiguration(tries, xzSpread, ySpread, blockstate));
+		return PlacementUtils.inlinePlaced(Feature.RANDOM_PATCH, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, createSimpleBlockConfiguration(blockstate)));
 	}
 
 	private static BlockPredicate createRedSpiderLilyBlockPredicate()
