@@ -17,22 +17,12 @@
   "display": {
     "block": "jafohana:red_spider_lily"
   },
-  "results": [
+  "drops": [
     {
-      "chance": 0.75,
+      "chance": 1.00,
       "output": {
         "item": "jafohana:red_spider_lily"
-      },
-      "minRolls": 1,
-      "maxRolls": 1
-    },
-    {
-      "chance": 0.05,
-      "output": {
-        "item": "jafohana:red_spider_lily"
-      },
-      "minRolls": 1,
-      "maxRolls": 2
+      }
     }
   ]
 }

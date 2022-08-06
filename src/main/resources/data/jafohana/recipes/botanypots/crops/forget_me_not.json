@@ -16,22 +16,12 @@
   "display": {
     "block": "jafohana:forget_me_not"
   },
-  "results": [
+  "drops": [
     {
-      "chance": 0.75,
+      "chance": 1.00,
       "output": {
         "item": "jafohana:forget_me_not"
-      },
-      "minRolls": 1,
-      "maxRolls": 1
-    },
-    {
-      "chance": 0.05,
-      "output": {
-        "item": "jafohana:forget_me_not"
-      },
-      "minRolls": 1,
-      "maxRolls": 2
+      }
     }
   ]
 }
