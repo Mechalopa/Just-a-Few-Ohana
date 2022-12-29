@@ -1,5 +1,6 @@
 {
   "ambientocclusion": false,
+  "render_type": "cutout",
   "textures": {
     "particle": "jafohana:block/red_spider_lily",
     "cross": "jafohana:block/red_spider_lily",
