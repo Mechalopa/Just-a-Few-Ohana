@@ -1,12 +1,12 @@
 modLoader="javafml"
-loaderVersion="[40,)"
+loaderVersion="[43,)"
 license="LGPL-3.0"
 issueTrackerURL="https://github.com/Mechalopa/Just-a-Few-Ohana/issues"
 [[mods]]
 modId="jafohana"
 version="${file.jarVersion}"
 displayName="Just a Few Ohana"
-updateJSONURL="https://github.com/Mechalopa/Just-a-Few-Ohana/raw/1.18.2/update.json"
+updateJSONURL="https://github.com/Mechalopa/Just-a-Few-Ohana/raw/1.19.2/update.json"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/just-a-few-ohana"
 #logoFile="logo.png"
 credits="Mechalopa"
@@ -16,12 +16,12 @@ itemIcon="jafohana:dayflower"
 [[dependencies.jafohana]]
     modId="forge"
     mandatory=true
-    versionRange="[40.1.0,)"
+    versionRange="[43.2.0,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.jafohana]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.18.2]"
+    versionRange="[1.19.2]"
     ordering="NONE"
     side="BOTH"
