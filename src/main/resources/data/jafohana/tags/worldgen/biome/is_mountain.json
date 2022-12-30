@@ -1,0 +1,27 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:is_mountain",
+    "#minecraft:is_hill",
+    {
+      "id": "#forge:is_mountain",
+      "required": false
+    },
+    {
+      "id": "terralith:basalt_cliffs",
+      "required": false
+    },
+    {
+      "id": "terralith:granite_cliffs",
+      "required": false
+    },
+    {
+      "id": "terralith:yosemite_cliffs",
+      "required": false
+    },
+    {
+      "id": "terralith:white_cliffs",
+      "required": false
+    }
+  ]
+}

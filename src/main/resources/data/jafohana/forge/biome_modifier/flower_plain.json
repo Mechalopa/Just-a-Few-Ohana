@@ -1,0 +1,23 @@
+{
+  "type": "jafohana:add_features",
+  "biomes": [
+    [
+      {
+        "name": "#jafohana:is_overworld"
+      },
+      {
+        "name": "minecraft:meadow",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_savanna",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_plains"
+      }
+    ]
+  ],
+  "features": "jafohana:flower_plain",
+  "step": "vegetal_decoration"
+}

@@ -1,0 +1,50 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:is_overworld",
+    {
+      "id": "#forge:is_overworld",
+      "required": false
+    },
+    {
+      "id": "#terralith:all_terralith_biomes",
+      "required": false
+    },
+    {
+      "id": "terralith:cave/underground_jungle",
+      "required": false
+    },
+    {
+      "id": "graveyard_biomes:ancient_dead_coral_reef",
+      "required": false
+    },
+    {
+      "id": "graveyard_biomes:haunted_forest",
+      "required": false
+    },
+    {
+      "id": "graveyard_biomes:haunted_lakes",
+      "required": false
+    },
+    {
+      "id": "graveyard_biomes:eroded_haunted_forest",
+      "required": false
+    },
+    {
+      "id": "graveyard_biomes:deep_dark_forest",
+      "required": false
+    },
+    {
+      "id": "goodending:marshy_swamp",
+      "required": false
+    },
+    {
+      "id": "goodending:oak_hammock_forest",
+      "required": false
+    },
+    {
+      "id": "hexerei:willow_swamp",
+      "required": false
+    }
+  ]
+}

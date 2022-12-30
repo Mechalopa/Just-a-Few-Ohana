@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#jafohana:is_coniferous",
+    "#jafohana:is_forest"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "type": "jafohana:add_features",
+  "biomes": [
+    [
+      {
+        "name": "#jafohana:is_overworld"
+      },
+      {
+        "name": "#jafohana:is_savanna",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_plains",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_coniferous_or_forest",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_mountain",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_swamp"
+      }
+    ]
+  ],
+  "features": "jafohana:flower_swamp",
+  "step": "vegetal_decoration"
+}

@@ -1,0 +1,23 @@
+{
+  "type": "jafohana:add_features",
+  "biomes": [
+    [
+      {
+        "name": "#jafohana:is_overworld"
+      },
+      {
+        "name": "#jafohana:is_hot",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_snowy",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_river"
+      }
+    ]
+  ],
+  "features": "jafohana:red_spider_lily_river",
+  "step": "vegetal_decoration"
+}

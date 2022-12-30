@@ -1,0 +1,30 @@
+{
+  "type": "jafohana:add_features",
+  "biomes": [
+    [
+      {
+        "name": "#jafohana:is_overworld"
+      },
+      {
+        "name": "#jafohana:is_hot",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_snowy",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_river",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_coniferous_or_forest"
+      },
+      {
+        "name": "#jafohana:is_spooky"
+      }
+    ]
+  ],
+  "features": "jafohana:red_spider_lily_spooky_forest",
+  "step": "vegetal_decoration"
+}

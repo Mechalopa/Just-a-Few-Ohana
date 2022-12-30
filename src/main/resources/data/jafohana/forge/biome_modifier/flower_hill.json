@@ -1,0 +1,35 @@
+{
+  "type": "jafohana:add_features",
+  "biomes": [
+    [
+      {
+        "name": "#jafohana:is_overworld"
+      },
+      {
+        "name": "minecraft:meadow",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_savanna",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_plains",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_coniferous_or_forest",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_snowy",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_mountain"
+      }
+    ]
+  ],
+  "features": "jafohana:flower_hill",
+  "step": "vegetal_decoration"
+}

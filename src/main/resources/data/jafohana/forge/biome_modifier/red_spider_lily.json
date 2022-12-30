@@ -1,0 +1,39 @@
+{
+  "type": "jafohana:add_features",
+  "biomes": [
+    [
+      {
+        "name": "#jafohana:is_overworld"
+      },
+      {
+        "name": "#jafohana:is_hot",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_snowy",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_plains"
+      }
+    ],
+    [
+      {
+        "name": "#jafohana:is_overworld"
+      },
+      {
+        "name": "#jafohana:is_hot",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_snowy",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_coniferous_or_forest"
+      }
+    ]
+  ],
+  "features": "jafohana:red_spider_lily",
+  "step": "vegetal_decoration"
+}

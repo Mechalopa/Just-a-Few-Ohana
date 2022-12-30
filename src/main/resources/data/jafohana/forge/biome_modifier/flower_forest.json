@@ -1,0 +1,27 @@
+{
+  "type": "jafohana:add_features",
+  "biomes": [
+    [
+      {
+        "name": "#jafohana:is_overworld"
+      },
+      {
+        "name": "minecraft:flower_forest",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_hot",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_coniferous_or_forest"
+      },
+      {
+        "name": "#jafohana:is_spooky",
+        "negate": true
+      }
+    ]
+  ],
+  "features": "jafohana:flower_forest",
+  "step": "vegetal_decoration"
+}
