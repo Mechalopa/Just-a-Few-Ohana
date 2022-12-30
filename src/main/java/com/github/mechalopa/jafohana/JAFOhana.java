@@ -9,6 +9,7 @@ import com.github.mechalopa.jafohana.registry.ModConfiguredFeatures;
 import com.github.mechalopa.jafohana.registry.ModItems;
 import com.github.mechalopa.jafohana.registry.ModPlacedFeatures;
 
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
@@ -33,9 +34,10 @@ public class JAFOhana
 
 		ModBlocks.register(modEventBus);
 		ModConfiguredFeatures.register(modEventBus);
-//		ModFeatures.register(modEventBus);
 		ModItems.register(modEventBus);
 		ModPlacedFeatures.register(modEventBus);
 		ModBiomeModifiers.register(modEventBus);
+
+		MinecraftForge.EVENT_BUS.register(new ModEvents());
 	}
 }
