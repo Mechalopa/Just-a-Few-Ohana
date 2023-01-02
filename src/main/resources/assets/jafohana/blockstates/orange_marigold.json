@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "jafohana:block/orange_marigold_bottom"
+    },
+    "half=upper": {
+      "model": "jafohana:block/orange_marigold_top"
+    }
+  }
+}

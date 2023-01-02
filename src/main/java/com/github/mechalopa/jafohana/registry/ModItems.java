@@ -4,6 +4,7 @@ import com.github.mechalopa.jafohana.JAFOhana;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -23,6 +24,8 @@ public class ModItems
 	public static final RegistryObject<Item> PINK_AFRICAN_DAISY = REGISTRY.register("pink_african_daisy", () -> new BlockItem(ModBlocks.PINK_AFRICAN_DAISY.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
 	public static final RegistryObject<Item> WHITE_AFRICAN_DAISY = REGISTRY.register("white_african_daisy", () -> new BlockItem(ModBlocks.WHITE_AFRICAN_DAISY.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
 	public static final RegistryObject<Item> RED_SPIDER_LILY = REGISTRY.register("red_spider_lily", () -> new BlockItem(ModBlocks.RED_SPIDER_LILY.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
+	public static final RegistryObject<Item> ORANGE_MARIGOLD = REGISTRY.register("orange_marigold", () -> new DoubleHighBlockItem(ModBlocks.ORANGE_MARIGOLD.get(), (new Item.Properties()).tab(CreativeModeTab.TAB_DECORATIONS)));
+	public static final RegistryObject<Item> YELLOW_MARIGOLD = REGISTRY.register("yellow_marigold", () -> new DoubleHighBlockItem(ModBlocks.YELLOW_MARIGOLD.get(), (new Item.Properties()).tab(CreativeModeTab.TAB_DECORATIONS)));
 
 	@SubscribeEvent
 	public static void register(IEventBus eventBus)

@@ -1,0 +1,26 @@
+{
+  "type": "jafohana:add_features",
+  "biomes": [
+    [
+      {
+        "name": "#jafohana:is_overworld"
+      },
+      {
+        "name": [
+          "minecraft:birch_forest",
+          "minecraft:old_growth_birch_forest"
+        ],
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_cold",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_forest"
+      }
+    ]
+  ],
+  "features": "jafohana:marigold",
+  "step": "vegetal_decoration"
+}

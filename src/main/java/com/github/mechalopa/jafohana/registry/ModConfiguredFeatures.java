@@ -47,6 +47,7 @@ public class ModConfiguredFeatures
 	public static final RegistryObject<ConfiguredFeature<?, ?>> RED_SPIDER_LILY = REGISTRY.register("red_spider_lily", () -> new ConfiguredFeature<>(Feature.FLOWER, new RandomPatchConfiguration(64, 7, 2, PlacementUtils.inlinePlaced(Feature.SIMPLE_BLOCK, createSimpleBlockConfiguration(ModBlocks.RED_SPIDER_LILY.get().defaultBlockState()), BlockPredicateFilter.forPredicate(BlockPredicate.allOf(BlockPredicate.ONLY_IN_AIR_PREDICATE, createRedSpiderLilyBlockPredicate()))))));
 	public static final RegistryObject<ConfiguredFeature<?, ?>> RED_SPIDER_LILY_RIVER = REGISTRY.register("red_spider_lily_river", () -> new ConfiguredFeature<>(Feature.FLOWER, createRandomPatchConfiguration(64, 9, 3, ModBlocks.RED_SPIDER_LILY.get().defaultBlockState())));
 	public static final RegistryObject<ConfiguredFeature<?, ?>> RED_SPIDER_LILY_SPOOKY_FOREST = REGISTRY.register("red_spider_lily_spooky_forest", () -> new ConfiguredFeature<>(Feature.FLOWER, createRandomPatchConfiguration(64, 6, 2, ModBlocks.RED_SPIDER_LILY.get().defaultBlockState())));
+	public static final RegistryObject<ConfiguredFeature<?, ?>> MARIGOLD = REGISTRY.register("marigold", () -> new ConfiguredFeature<>(Feature.SIMPLE_RANDOM_SELECTOR, new SimpleRandomFeatureConfiguration(HolderSet.direct(createPlacedFeatureHolder(ModBlocks.ORANGE_MARIGOLD.get().defaultBlockState()), createPlacedFeatureHolder(ModBlocks.YELLOW_MARIGOLD.get().defaultBlockState())))));
 
 	@SubscribeEvent
 	public static void register(IEventBus eventBus)
@@ -65,11 +66,6 @@ public class ModConfiguredFeatures
 	}
 
 	private static <FC extends FeatureConfiguration, F extends Feature<FC>> Holder<PlacedFeature> createPlacedFeatureHolder(BlockState blockstate)
-	{
-		return createPlacedFeatureHolder(64, 6, 2, blockstate);
-	}
-
-	private static <FC extends FeatureConfiguration, F extends Feature<FC>> Holder<PlacedFeature> createPlacedFeatureHolder(int tries, int xzSpread, int ySpread, BlockState blockstate)
 	{
 		return PlacementUtils.inlinePlaced(Feature.RANDOM_PATCH, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, createSimpleBlockConfiguration(blockstate)));
 	}
