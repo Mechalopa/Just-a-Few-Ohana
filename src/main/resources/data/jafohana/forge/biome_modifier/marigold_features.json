@@ -19,6 +19,17 @@
       {
         "name": "#jafohana:is_forest"
       }
+    ],
+    [
+      {
+        "name": "#jafohana:is_overworld"
+      },
+      {
+        "name": "#jafohana:is_mountain"
+      },
+      {
+        "name": "#jafohana:is_savanna"
+      }
     ]
   ],
   "features": "jafohana:marigold",
