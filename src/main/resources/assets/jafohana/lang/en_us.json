@@ -6,6 +6,7 @@
   "block.jafohana.yellow_african_daisy": "Yellow African Daisy",
   "block.jafohana.pink_african_daisy": "Pink African Daisy",
   "block.jafohana.white_african_daisy": "White African Daisy",
+  "block.jafohana.black_tulip": "Black Tulip",
   "block.jafohana.blood_red_iris": "Blood-Red Iris",
   "block.jafohana.red_spider_lily": "Red Spider Lily",
   "block.jafohana.orange_marigold": "Orange Marigold",
@@ -17,5 +18,7 @@
   "block.jafohana.potted_yellow_african_daisy": "Potted Yellow African Daisy",
   "block.jafohana.potted_pink_african_daisy": "Potted Pink African Daisy",
   "block.jafohana.potted_white_african_daisy": "Potted White African Daisy",
+  "block.jafohana.potted_black_tulip": "Potted Black Tulip",
+  "block.jafohana.potted_blood_red_iris": "Potted Blood-Red Iris",
   "block.jafohana.potted_red_spider_lily": "Potted Red Spider Lily"
 }

@@ -6,6 +6,7 @@
   "block.jafohana.yellow_african_daisy": "黄色のアフリカンデイジー",
   "block.jafohana.pink_african_daisy": "桃色のアフリカンデイジー",
   "block.jafohana.white_african_daisy": "白色のアフリカンデイジー",
+  "block.jafohana.black_tulip": "黒色のチューリップ",
   "block.jafohana.blood_red_iris": "菖蒲",
   "block.jafohana.red_spider_lily": "彼岸花",
   "block.jafohana.orange_marigold": "橙色のマリーゴールド",
@@ -17,5 +18,7 @@
   "block.jafohana.potted_yellow_african_daisy": "植えられた黄色のアフリカンデイジー",
   "block.jafohana.potted_pink_african_daisy": "植えられた桃色のアフリカンデイジー",
   "block.jafohana.potted_white_african_daisy": "植えられた白色のアフリカンデイジー",
+  "block.jafohana.potted_black_tulip": "植えられた黒色のチューリップ",
+  "block.jafohana.potted_blood_red_iris": "植えられた菖蒲",
   "block.jafohana.potted_red_spider_lily": "植えられた彼岸花"
 }
