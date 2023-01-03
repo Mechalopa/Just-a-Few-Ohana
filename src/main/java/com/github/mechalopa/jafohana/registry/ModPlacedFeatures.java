@@ -25,7 +25,7 @@ public class ModPlacedFeatures
 	public static final RegistryObject<PlacedFeature> FLOWER_PLAIN = createPlacedFeatureRegistryObject("flower_plain", ModConfiguredFeatures.FLOWER_PLAIN.getHolder().orElseThrow(), 32);
 	public static final RegistryObject<PlacedFeature> FLOWER_FOREST = createPlacedFeatureRegistryObject("flower_forest", ModConfiguredFeatures.FLOWER_FOREST.getHolder().orElseThrow(), 40);
 	public static final RegistryObject<PlacedFeature> FLOWER_FLOWER_FOREST = createPlacedFeatureRegistryObject("flower_flower_forest", ModConfiguredFeatures.FLOWER_FOREST.getHolder().orElseThrow(), 12);
-	public static final RegistryObject<PlacedFeature> FLOWER_SPOOKY_FOREST = createPlacedFeatureRegistryObject("flower_spooky_forest", ModConfiguredFeatures.FLOWER_SPOOKY_FOREST.getHolder().orElseThrow(), 48);
+	public static final RegistryObject<PlacedFeature> FLOWER_SPOOKY_FOREST = createPlacedFeatureRegistryObject("flower_spooky_forest", ModConfiguredFeatures.FLOWER_SPOOKY_FOREST.getHolder().orElseThrow(), 40);
 	public static final RegistryObject<PlacedFeature> FLOWER_HILL = createPlacedFeatureRegistryObject("flower_hill", ModConfiguredFeatures.FLOWER_HILL.getHolder().orElseThrow(), 48);
 	public static final RegistryObject<PlacedFeature> FLOWER_MEADOW = createPlacedFeatureRegistryObject("flower_meadow", ModConfiguredFeatures.FLOWER_MEADOW.getHolder().orElseThrow(), 3);
 	public static final RegistryObject<PlacedFeature> FLOWER_SWAMP = createPlacedFeatureRegistryObject("flower_swamp", ModConfiguredFeatures.FLOWER_SWAMP.getHolder().orElseThrow(), 64);
