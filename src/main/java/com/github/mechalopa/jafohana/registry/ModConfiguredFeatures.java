@@ -8,7 +8,7 @@ import com.google.common.collect.Lists;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderSet;
-import net.minecraft.core.Registry;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.util.InclusiveRange;
@@ -35,7 +35,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModConfiguredFeatures
 {
-	private static final DeferredRegister<ConfiguredFeature<?, ?>> REGISTRY = DeferredRegister.create(Registry.CONFIGURED_FEATURE_REGISTRY, JAFOhana.MODID);
+	private static final DeferredRegister<ConfiguredFeature<?, ?>> REGISTRY = DeferredRegister.create(Registries.CONFIGURED_FEATURE, JAFOhana.MODID);
 
 	public static final RegistryObject<ConfiguredFeature<?, ?>> FLOWER_PLAIN = REGISTRY.register("flower_plain", () -> new ConfiguredFeature<>(Feature.SIMPLE_RANDOM_SELECTOR, new SimpleRandomFeatureConfiguration(HolderSet.direct(createPlacedFeatureHolder(ModBlocks.DAYFLOWER.get().defaultBlockState()), createPlacedFeatureHolder(ModBlocks.EVENING_PRIMROSE.get().defaultBlockState()), createPlacedFeatureHolder(ModBlocks.MILK_VETCH.get().defaultBlockState()), createPlacedFeatureHolder(ModBlocks.BLOOD_RED_IRIS.get().defaultBlockState())))));
 	public static final RegistryObject<ConfiguredFeature<?, ?>> FLOWER_FOREST = REGISTRY.register("flower_forest", () -> new ConfiguredFeature<>(Feature.SIMPLE_RANDOM_SELECTOR, new SimpleRandomFeatureConfiguration(HolderSet.direct(createPlacedFeatureHolder(ModBlocks.DAYFLOWER.get().defaultBlockState()), createPlacedFeatureHolder(ModBlocks.EVENING_PRIMROSE.get().defaultBlockState()), createPlacedFeatureHolder(ModBlocks.FORGET_ME_NOT.get().defaultBlockState()), createPlacedFeatureHolder(ModBlocks.BLOOD_RED_IRIS.get().defaultBlockState())))));

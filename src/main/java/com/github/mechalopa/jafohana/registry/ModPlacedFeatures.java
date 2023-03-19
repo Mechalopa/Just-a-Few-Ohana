@@ -5,7 +5,7 @@ import java.util.List;
 import com.github.mechalopa.jafohana.JAFOhana;
 
 import net.minecraft.core.Holder;
-import net.minecraft.core.Registry;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.placement.BiomeFilter;
@@ -20,7 +20,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModPlacedFeatures
 {
-	private static final DeferredRegister<PlacedFeature> REGISTRY = DeferredRegister.create(Registry.PLACED_FEATURE_REGISTRY, JAFOhana.MODID);
+	private static final DeferredRegister<PlacedFeature> REGISTRY = DeferredRegister.create(Registries.PLACED_FEATURE, JAFOhana.MODID);
 
 	public static final RegistryObject<PlacedFeature> FLOWER_PLAIN = createPlacedFeatureRegistryObject("flower_plain", ModConfiguredFeatures.FLOWER_PLAIN.getHolder().orElseThrow(), 32);
 	public static final RegistryObject<PlacedFeature> FLOWER_FOREST = createPlacedFeatureRegistryObject("flower_forest", ModConfiguredFeatures.FLOWER_FOREST.getHolder().orElseThrow(), 40);
