@@ -23,6 +23,10 @@
       },
       {
         "name": "#jafohana:is_swamp"
+      },
+      {
+        "name": "minecraft:mangrove_swamp",
+        "negate": true
       }
     ]
   ],
