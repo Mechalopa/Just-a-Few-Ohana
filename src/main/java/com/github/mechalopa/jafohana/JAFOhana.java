@@ -7,6 +7,10 @@ import com.github.mechalopa.jafohana.registry.ModBiomeModifiers;
 import com.github.mechalopa.jafohana.registry.ModBlocks;
 import com.github.mechalopa.jafohana.registry.ModItems;
 
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModLoadingContext;
@@ -21,6 +25,16 @@ public class JAFOhana
 	public static final String MODID = "jafohana";
 
 	public static final Logger LOGGER = LogManager.getLogger();
+
+	public static final CreativeModeTab MODTAB = new CreativeModeTab(JAFOhana.MODID + ".tab")
+	{
+		@OnlyIn(Dist.CLIENT)
+		@Override
+		public ItemStack makeIcon()
+		{
+			return new ItemStack(ModItems.DAYFLOWER.get());
+		}
+	};
 
 	public JAFOhana()
 	{
