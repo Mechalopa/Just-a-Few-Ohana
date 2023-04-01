@@ -24,6 +24,10 @@ public class ModItems
 	public static final RegistryObject<Item> WHITE_AFRICAN_DAISY = REGISTRY.register("white_african_daisy", () -> new BlockItem(ModBlocks.WHITE_AFRICAN_DAISY.get(), new Item.Properties().tab(JAFOhana.MODTAB)));
 	public static final RegistryObject<Item> BLACK_TULIP = REGISTRY.register("black_tulip", () -> new BlockItem(ModBlocks.BLACK_TULIP.get(), new Item.Properties().tab(JAFOhana.MODTAB)));
 	public static final RegistryObject<Item> BLOOD_RED_IRIS = REGISTRY.register("blood_red_iris", () -> new BlockItem(ModBlocks.BLOOD_RED_IRIS.get(), new Item.Properties().tab(JAFOhana.MODTAB)));
+	public static final RegistryObject<Item> BLUEBELL = REGISTRY.register("bluebell", () -> new BlockItem(ModBlocks.BLUEBELL.get(), new Item.Properties().tab(JAFOhana.MODTAB)));
+	public static final RegistryObject<Item> RED_SNAPDRAGON = REGISTRY.register("red_snapdragon", () -> new BlockItem(ModBlocks.RED_SNAPDRAGON.get(), new Item.Properties().tab(JAFOhana.MODTAB)));
+	public static final RegistryObject<Item> YELLOW_SNAPDRAGON = REGISTRY.register("yellow_snapdragon", () -> new BlockItem(ModBlocks.YELLOW_SNAPDRAGON.get(), new Item.Properties().tab(JAFOhana.MODTAB)));
+	public static final RegistryObject<Item> PINK_SNAPDRAGON = REGISTRY.register("pink_snapdragon", () -> new BlockItem(ModBlocks.PINK_SNAPDRAGON.get(), new Item.Properties().tab(JAFOhana.MODTAB)));
 	public static final RegistryObject<Item> RED_SPIDER_LILY = REGISTRY.register("red_spider_lily", () -> new BlockItem(ModBlocks.RED_SPIDER_LILY.get(), new Item.Properties().tab(JAFOhana.MODTAB)));
 	public static final RegistryObject<Item> ORANGE_MARIGOLD = REGISTRY.register("orange_marigold", () -> new DoubleHighBlockItem(ModBlocks.ORANGE_MARIGOLD.get(), (new Item.Properties()).tab(JAFOhana.MODTAB)));
 	public static final RegistryObject<Item> YELLOW_MARIGOLD = REGISTRY.register("yellow_marigold", () -> new DoubleHighBlockItem(ModBlocks.YELLOW_MARIGOLD.get(), (new Item.Properties()).tab(JAFOhana.MODTAB)));

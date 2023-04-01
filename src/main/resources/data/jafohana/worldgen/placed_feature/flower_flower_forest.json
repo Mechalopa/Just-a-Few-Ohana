@@ -1,9 +1,9 @@
 {
-  "feature": "jafohana:flower_forest",
+  "feature": "jafohana:flower_flower_forest",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 12
+      "chance": 8
     },
     {
       "type": "minecraft:in_square"
