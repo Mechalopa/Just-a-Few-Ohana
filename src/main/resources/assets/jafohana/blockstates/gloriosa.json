@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "jafohana:block/gloriosa_bottom"
+    },
+    "half=upper": {
+      "model": "jafohana:block/gloriosa_top"
+    }
+  }
+}
