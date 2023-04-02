@@ -9,12 +9,20 @@ public class ModConfigs
 	private static final ForgeConfigSpec.Builder SERVER_BUILDER = new ForgeConfigSpec.Builder();
 	public static ForgeConfigSpec SERVER_CONFIG;
 
+	public static ForgeConfigSpec.BooleanValue FASCIATED_DANDELION_DROPS_NORMAL_DANDELION_WHEN_USING_BONE_MEAL;
+	public static ForgeConfigSpec.BooleanValue FASCIATED_OXEYE_DAISY_DROPS_NORMAL_OXEYE_DAISY_WHEN_USING_BONE_MEAL;
+	public static ForgeConfigSpec.DoubleValue DANDELION_FASCIATION_CHANCE;
+	public static ForgeConfigSpec.DoubleValue OXEYE_DAISY_FASCIATION_CHANCE;
 	public static ForgeConfigSpec.BooleanValue ADDITIONAL_WANDERER_TRADES;
 
 	static
 	{
 		SERVER_BUILDER.push("general");
 
+		FASCIATED_DANDELION_DROPS_NORMAL_DANDELION_WHEN_USING_BONE_MEAL = SERVER_BUILDER.define("fasciatedDandelionDropsNormalDandelionWhenUsingBoneMeal", true);
+		FASCIATED_OXEYE_DAISY_DROPS_NORMAL_OXEYE_DAISY_WHEN_USING_BONE_MEAL = SERVER_BUILDER.define("fasciatedOxeyeDaisyDropsNormalOxeyeDaisyWhenUsingBoneMeal", true);
+		DANDELION_FASCIATION_CHANCE = SERVER_BUILDER.defineInRange("dandelionFasciationChance", 0.4D, 0.0D, 1.0D);
+		OXEYE_DAISY_FASCIATION_CHANCE = SERVER_BUILDER.defineInRange("oxeyeDaisyFasciationChance", 0.4D, 0.0D, 1.0D);
 		ADDITIONAL_WANDERER_TRADES = SERVER_BUILDER.define("additionalWandererTrades", true);
 
 		SERVER_BUILDER.pop();
@@ -24,10 +32,18 @@ public class ModConfigs
 
 	public static class cachedServer
 	{
+		public static boolean FASCIATED_DANDELION_DROPS_NORMAL_DANDELION_WHEN_USING_BONE_MEAL;
+		public static boolean FASCIATED_OXEYE_DAISY_DROPS_NORMAL_OXEYE_DAISY_WHEN_USING_BONE_MEAL;
+		public static double DANDELION_FASCIATION_CHANCE;
+		public static double OXEYE_DAISY_FASCIATION_CHANCE;
 		public static boolean ADDITIONAL_WANDERER_TRADES;
 
 		public static void refresh()
 		{
+			FASCIATED_DANDELION_DROPS_NORMAL_DANDELION_WHEN_USING_BONE_MEAL = ModConfigs.FASCIATED_DANDELION_DROPS_NORMAL_DANDELION_WHEN_USING_BONE_MEAL.get();
+			FASCIATED_OXEYE_DAISY_DROPS_NORMAL_OXEYE_DAISY_WHEN_USING_BONE_MEAL = ModConfigs.FASCIATED_OXEYE_DAISY_DROPS_NORMAL_OXEYE_DAISY_WHEN_USING_BONE_MEAL.get();
+			DANDELION_FASCIATION_CHANCE = ModConfigs.DANDELION_FASCIATION_CHANCE.get();
+			OXEYE_DAISY_FASCIATION_CHANCE = ModConfigs.OXEYE_DAISY_FASCIATION_CHANCE.get();
 			ADDITIONAL_WANDERER_TRADES = ModConfigs.ADDITIONAL_WANDERER_TRADES.get();
 		}
 	}

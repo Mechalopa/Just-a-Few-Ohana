@@ -31,6 +31,8 @@ public class ModItems
 	public static final RegistryObject<Item> RED_SPIDER_LILY = REGISTRY.register("red_spider_lily", () -> new BlockItem(ModBlocks.RED_SPIDER_LILY.get(), new Item.Properties().tab(JAFOhana.MODTAB)));
 	public static final RegistryObject<Item> ORANGE_MARIGOLD = REGISTRY.register("orange_marigold", () -> new DoubleHighBlockItem(ModBlocks.ORANGE_MARIGOLD.get(), (new Item.Properties()).tab(JAFOhana.MODTAB)));
 	public static final RegistryObject<Item> YELLOW_MARIGOLD = REGISTRY.register("yellow_marigold", () -> new DoubleHighBlockItem(ModBlocks.YELLOW_MARIGOLD.get(), (new Item.Properties()).tab(JAFOhana.MODTAB)));
+	public static final RegistryObject<Item> FASCIATED_DANDELION = REGISTRY.register("fasciated_dandelion", () -> new DoubleHighBlockItem(ModBlocks.FASCIATED_DANDELION.get(), (new Item.Properties()).tab(JAFOhana.MODTAB)));
+	public static final RegistryObject<Item> FASCIATED_OXEYE_DAISY = REGISTRY.register("fasciated_oxeye_daisy", () -> new DoubleHighBlockItem(ModBlocks.FASCIATED_OXEYE_DAISY.get(), (new Item.Properties()).tab(JAFOhana.MODTAB)));
 
 	@SubscribeEvent
 	public static void register(IEventBus eventBus)

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "jafohana:block/fasciated_oxeye_daisy_bottom"
+    },
+    "half=upper": {
+      "model": "jafohana:block/fasciated_oxeye_daisy_top"
+    }
+  }
+}
