@@ -31,13 +31,13 @@
     {
       "chance": 1.00,
       "output": {
-        "item": "jafohana:fasciated_dandelion"
+        "item": "minecraft:dandelion"
       }
     },
     {
       "chance": 0.15,
       "output": {
-        "item": "minecraft:dandelion"
+        "item": "jafohana:fasciated_dandelion"
       }
     }
   ]

@@ -31,13 +31,13 @@
     {
       "chance": 1.00,
       "output": {
-        "item": "jafohana:fasciated_oxeye_daisy"
+        "item": "minecraft:oxeye_daisy"
       }
     },
     {
       "chance": 0.15,
       "output": {
-        "item": "minecraft:oxeye_daisy"
+        "item": "jafohana:fasciated_oxeye_daisy"
       }
     }
   ]
