@@ -13,8 +13,6 @@
     "dirt"
   ],
   "growthTicks": 1200,
-  "display": {
-  },
   "display": [
     {
       "block": "jafohana:yellow_marigold",

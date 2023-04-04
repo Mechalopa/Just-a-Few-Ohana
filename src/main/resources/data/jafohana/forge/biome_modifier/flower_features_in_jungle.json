@@ -1,0 +1,19 @@
+{
+  "type": "jafohana:add_features",
+  "biomes": [
+    [
+      {
+        "name": "#jafohana:is_overworld"
+      },
+      {
+        "name": "minecraft:bamboo_jungle",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_jungle"
+      }
+    ]
+  ],
+  "features": "jafohana:flower_jungle",
+  "step": "vegetal_decoration"
+}

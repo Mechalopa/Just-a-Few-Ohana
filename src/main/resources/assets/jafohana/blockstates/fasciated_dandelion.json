@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "jafohana:block/fasciated_dandelion_bottom"
+    },
+    "half=upper": {
+      "model": "jafohana:block/fasciated_dandelion_top"
+    }
+  }
+}
