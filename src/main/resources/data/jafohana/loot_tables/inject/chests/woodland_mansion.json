@@ -35,8 +35,24 @@
           "name": "jafohana:fasciated_oxeye_daisy"
         },
         {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "jafohana:black_tulip",
+          "weight": 2
+        },
+        {
           "type": "minecraft:empty",
-          "weight": 48
+          "weight": 46
         }
       ],
       "rolls": 1.0
