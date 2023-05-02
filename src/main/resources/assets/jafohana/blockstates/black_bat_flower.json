@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "jafohana:block/black_bat_flower_bottom"
+    },
+    "half=upper": {
+      "model": "jafohana:block/black_bat_flower_top"
+    }
+  }
+}

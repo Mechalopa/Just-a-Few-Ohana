@@ -1,0 +1,35 @@
+{
+  "type": "jafohana:add_features",
+  "biomes": [
+    [
+      {
+        "name": "minecraft:sunflower_plains"
+      }
+    ],
+    [
+      {
+        "name": "#jafohana:is_overworld"
+      },
+      {
+        "name": "#jafohana:is_mountain",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_savanna"
+      }
+    ],
+    [
+      {
+        "name": "#jafohana:is_overworld"
+      },
+      {
+        "name": "#jafohana:is_dry"
+      },
+      {
+        "name": "#jafohana:is_plains"
+      }
+    ]
+  ],
+  "features": "jafohana:bells_of_ireland",
+  "step": "vegetal_decoration"
+}

@@ -13,8 +13,12 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.registries.DeferredRegister;
@@ -38,10 +42,24 @@ public class ModBlocks
 	public static final RegistryObject<Block> RED_SNAPDRAGON = REGISTRY.register("red_snapdragon", () -> new ModFlowerBlock(() -> MobEffects.DAMAGE_BOOST, 4));
 	public static final RegistryObject<Block> YELLOW_SNAPDRAGON = REGISTRY.register("yellow_snapdragon", () -> new ModFlowerBlock(() -> MobEffects.DAMAGE_BOOST, 4));
 	public static final RegistryObject<Block> PINK_SNAPDRAGON = REGISTRY.register("pink_snapdragon", () -> new ModFlowerBlock(() -> MobEffects.DAMAGE_BOOST, 4));
+	public static final RegistryObject<Block> WHITE_EGRET_ORCHID = REGISTRY.register("white_egret_orchid", () -> new ModFlowerBlock(() -> MobEffects.SLOW_FALLING, 5));
+	public static final RegistryObject<Block> ORANGE_SPIDER_LILY = REGISTRY.register("orange_spider_lily", () -> new ModFlowerBlock(() -> MobEffects.POISON, 12));
 	public static final RegistryObject<Block> RED_SPIDER_LILY = REGISTRY.register("red_spider_lily", () -> new RedSpiderLilyBlock(() -> MobEffects.POISON, 12));
+	public static final RegistryObject<Block> BELLS_OF_IRELAND = REGISTRY.register("bells_of_ireland", () -> new ModFlowerBlock(() -> MobEffects.SATURATION, 7)
+	{
+		protected static final VoxelShape SHAPE = Block.box(5.0D, 0.0D, 5.0D, 11.0D, 14.0D, 11.0D);
+
+		@Override
+		public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context)
+		{
+			Vec3 vector3d = state.getOffset(world, pos);
+			return SHAPE.move(vector3d.x, vector3d.y, vector3d.z);
+		}
+	});
 	public static final RegistryObject<Block> ORANGE_MARIGOLD = REGISTRY.register("orange_marigold", () -> new ModTallFlowerBlock());
 	public static final RegistryObject<Block> YELLOW_MARIGOLD = REGISTRY.register("yellow_marigold", () -> new ModTallFlowerBlock());
 	public static final RegistryObject<Block> GLORIOSA = REGISTRY.register("gloriosa", () -> new ModTallFlowerBlock());
+	public static final RegistryObject<Block> BLACK_BAT_FLOWER = REGISTRY.register("black_bat_flower", () -> new ModTallFlowerBlock());
 	public static final RegistryObject<Block> FASCIATED_DANDELION = REGISTRY.register("fasciated_dandelion", () -> new ModTallFlowerBlock()
 	{
 		@Override
@@ -85,7 +103,10 @@ public class ModBlocks
 	public static final RegistryObject<Block> POTTED_RED_SNAPDRAGON = REGISTRY.register("potted_red_snapdragon", () -> new ModFlowerPotBlock(RED_SNAPDRAGON.get()));
 	public static final RegistryObject<Block> POTTED_YELLOW_SNAPDRAGON = REGISTRY.register("potted_yellow_snapdragon", () -> new ModFlowerPotBlock(YELLOW_SNAPDRAGON.get()));
 	public static final RegistryObject<Block> POTTED_PINK_SNAPDRAGON = REGISTRY.register("potted_pink_snapdragon", () -> new ModFlowerPotBlock(PINK_SNAPDRAGON.get()));
+	public static final RegistryObject<Block> POTTED_WHITE_EGRET_ORCHID = REGISTRY.register("potted_white_egret_orchid", () -> new ModFlowerPotBlock(WHITE_EGRET_ORCHID.get()));
+	public static final RegistryObject<Block> POTTED_ORANGE_SPIDER_LILY = REGISTRY.register("potted_orange_spider_lily", () -> new ModFlowerPotBlock(ORANGE_SPIDER_LILY.get()));
 	public static final RegistryObject<Block> POTTED_RED_SPIDER_LILY = REGISTRY.register("potted_red_spider_lily", () -> new ModFlowerPotBlock(RED_SPIDER_LILY.get()));
+	public static final RegistryObject<Block> POTTED_BELLS_OF_IRELAND = REGISTRY.register("potted_bells_of_ireland", () -> new ModFlowerPotBlock(BELLS_OF_IRELAND.get()));
 
 	@SubscribeEvent
 	public static void register(IEventBus eventBus)

@@ -28,10 +28,14 @@ public class ModItems
 	public static final RegistryObject<Item> RED_SNAPDRAGON = REGISTRY.register("red_snapdragon", () -> new BlockItem(ModBlocks.RED_SNAPDRAGON.get(), new Item.Properties().tab(JAFOhana.MODTAB)));
 	public static final RegistryObject<Item> YELLOW_SNAPDRAGON = REGISTRY.register("yellow_snapdragon", () -> new BlockItem(ModBlocks.YELLOW_SNAPDRAGON.get(), new Item.Properties().tab(JAFOhana.MODTAB)));
 	public static final RegistryObject<Item> PINK_SNAPDRAGON = REGISTRY.register("pink_snapdragon", () -> new BlockItem(ModBlocks.PINK_SNAPDRAGON.get(), new Item.Properties().tab(JAFOhana.MODTAB)));
+	public static final RegistryObject<Item> WHITE_EGRET_ORCHID = REGISTRY.register("white_egret_orchid", () -> new BlockItem(ModBlocks.WHITE_EGRET_ORCHID.get(), new Item.Properties().tab(JAFOhana.MODTAB)));
+	public static final RegistryObject<Item> ORANGE_SPIDER_LILY = REGISTRY.register("orange_spider_lily", () -> new BlockItem(ModBlocks.ORANGE_SPIDER_LILY.get(), new Item.Properties().tab(JAFOhana.MODTAB)));
 	public static final RegistryObject<Item> RED_SPIDER_LILY = REGISTRY.register("red_spider_lily", () -> new BlockItem(ModBlocks.RED_SPIDER_LILY.get(), new Item.Properties().tab(JAFOhana.MODTAB)));
+	public static final RegistryObject<Item> BELLS_OF_IRELAND = REGISTRY.register("bells_of_ireland", () -> new BlockItem(ModBlocks.BELLS_OF_IRELAND.get(), new Item.Properties().tab(JAFOhana.MODTAB)));
 	public static final RegistryObject<Item> ORANGE_MARIGOLD = REGISTRY.register("orange_marigold", () -> new DoubleHighBlockItem(ModBlocks.ORANGE_MARIGOLD.get(), (new Item.Properties()).tab(JAFOhana.MODTAB)));
 	public static final RegistryObject<Item> YELLOW_MARIGOLD = REGISTRY.register("yellow_marigold", () -> new DoubleHighBlockItem(ModBlocks.YELLOW_MARIGOLD.get(), (new Item.Properties()).tab(JAFOhana.MODTAB)));
 	public static final RegistryObject<Item> GLORIOSA = REGISTRY.register("gloriosa", () -> new DoubleHighBlockItem(ModBlocks.GLORIOSA.get(), (new Item.Properties()).tab(JAFOhana.MODTAB)));
+	public static final RegistryObject<Item> BLACK_BAT_FLOWER = REGISTRY.register("black_bat_flower", () -> new DoubleHighBlockItem(ModBlocks.BLACK_BAT_FLOWER.get(), (new Item.Properties()).tab(JAFOhana.MODTAB)));
 	public static final RegistryObject<Item> FASCIATED_DANDELION = REGISTRY.register("fasciated_dandelion", () -> new DoubleHighBlockItem(ModBlocks.FASCIATED_DANDELION.get(), (new Item.Properties()).tab(JAFOhana.MODTAB)));
 	public static final RegistryObject<Item> FASCIATED_OXEYE_DAISY = REGISTRY.register("fasciated_oxeye_daisy", () -> new DoubleHighBlockItem(ModBlocks.FASCIATED_OXEYE_DAISY.get(), (new Item.Properties()).tab(JAFOhana.MODTAB)));
 

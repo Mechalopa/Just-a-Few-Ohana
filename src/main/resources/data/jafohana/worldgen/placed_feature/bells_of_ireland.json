@@ -1,9 +1,9 @@
 {
-  "feature": "jafohana:red_spider_lily_spooky_forest",
+  "feature": "jafohana:bells_of_ireland",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 52
+      "chance": 32
     },
     {
       "type": "minecraft:in_square"
