@@ -14,7 +14,11 @@
         "negate": true
       },
       {
-        "name": "#jafohana:is_coniferous_or_forest",
+        "name": "#jafohana:is_forest",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_coniferous",
         "negate": true
       },
       {

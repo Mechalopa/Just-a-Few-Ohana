@@ -1,9 +1,9 @@
 {
-  "feature": "jafohana:red_spider_lily_spooky_forest",
+  "feature": "jafohana:flower_jungle",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 48
+      "chance": 24
     },
     {
       "type": "minecraft:in_square"

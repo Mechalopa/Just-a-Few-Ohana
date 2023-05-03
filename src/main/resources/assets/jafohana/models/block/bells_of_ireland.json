@@ -1,0 +1,51 @@
+{
+  "ambientocclusion": false,
+  "render_type": "cutout",
+  "textures": {
+    "particle": "jafohana:block/bells_of_ireland",
+    "cross": "jafohana:block/bells_of_ireland",
+    "stem": "jafohana:block/bells_of_ireland_stem"
+  },
+  "elements": [
+    {
+      "from": [ 0.8, 0, 8 ],
+      "to": [ 15.2, 4, 8 ],
+      "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 45, "rescale": true },
+      "shade": false,
+      "faces": {
+        "north": { "uv": [ 0, 0, 16, 4 ], "texture": "#stem" },
+        "south": { "uv": [ 0, 0, 16, 4 ], "texture": "#stem" }
+      }
+    },
+    {
+      "from": [ 8, 0, 0.8 ],
+      "to": [ 8, 4, 15.2 ],
+      "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 45, "rescale": true },
+      "shade": false,
+      "faces": {
+        "west": { "uv": [ 0, 0, 16, 4 ], "texture": "#stem" },
+        "east": { "uv": [ 0, 0, 16, 4 ], "texture": "#stem" }
+      }
+    },
+    {
+      "from": [ 0.8, 4, 8 ],
+      "to": [ 15.2, 20, 8 ],
+      "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 45, "rescale": true },
+      "shade": false,
+      "faces": {
+        "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#cross" },
+        "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#cross" }
+      }
+    },
+    {
+      "from": [ 8, 4, 0.8 ],
+      "to": [ 8, 20, 15.2 ],
+      "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 45, "rescale": true },
+      "shade": false,
+      "faces": {
+        "west": { "uv": [ 0, 0, 16, 16 ], "texture": "#cross" },
+        "east": { "uv": [ 0, 0, 16, 16 ], "texture": "#cross" }
+      }
+    }
+  ]
+}

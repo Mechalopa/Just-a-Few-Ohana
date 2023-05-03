@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "minecraft:sparse_jungle",
+  "features": "jafohana:flower_sparse_jungle",
+  "step": "vegetal_decoration"
+}

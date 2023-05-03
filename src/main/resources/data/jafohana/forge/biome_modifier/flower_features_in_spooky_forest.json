@@ -10,7 +10,22 @@
         "negate": true
       },
       {
-        "name": "#jafohana:is_coniferous_or_forest"
+        "name": "#jafohana:is_forest"
+      },
+      {
+        "name": "#jafohana:is_spooky"
+      }
+    ],
+    [
+      {
+        "name": "#jafohana:is_overworld"
+      },
+      {
+        "name": "#jafohana:is_hot",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_coniferous"
       },
       {
         "name": "#jafohana:is_spooky"

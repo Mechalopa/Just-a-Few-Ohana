@@ -14,17 +14,14 @@
         "negate": true
       },
       {
-        "name": "#jafohana:is_river",
+        "name": "#jafohana:is_spooky",
         "negate": true
       },
       {
-        "name": "#jafohana:is_coniferous_or_forest"
-      },
-      {
-        "name": "#jafohana:is_spooky"
+        "name": "#jafohana:is_coniferous"
       }
     ]
   ],
-  "features": "jafohana:red_spider_lily_spooky_forest",
+  "features": "jafohana:flower_coniferous_forest",
   "step": "vegetal_decoration"
 }
