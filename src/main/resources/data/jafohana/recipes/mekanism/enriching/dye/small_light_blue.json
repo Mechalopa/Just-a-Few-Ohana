@@ -1,0 +1,18 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:enriching",
+  "input": {
+    "ingredient": {
+      "item": "jafohana:forget_me_not"
+    }
+  },
+  "output": {
+    "count": 2,
+    "item": "minecraft:light_blue_dye"
+  }
+}
