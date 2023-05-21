@@ -30,6 +30,10 @@
         "negate": true
       },
       {
+        "name": "#jafohana:is_dry",
+        "negate": true
+      },
+      {
         "name": "#jafohana:is_mountain"
       }
     ]

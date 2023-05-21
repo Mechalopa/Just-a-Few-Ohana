@@ -1,0 +1,23 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:enriching",
+  "input": {
+    "ingredient": [
+      {
+        "item": "jafohana:orange_marigold"
+      },
+      {
+        "item": "jafohana:gloriosa"
+      }
+    ]
+  },
+  "output": {
+    "count": 4,
+    "item": "minecraft:orange_dye"
+  }
+}
