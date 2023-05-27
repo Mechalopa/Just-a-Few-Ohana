@@ -5,7 +5,7 @@
       "modid": "mekanism"
     }
   ],
-  "type": "mekanism:enriching",
+  "type": "mekanism:pigment_extracting",
   "input": {
     "ingredient": [
       {
@@ -17,7 +17,7 @@
     ]
   },
   "output": {
-    "count": 4,
-    "item": "minecraft:orange_dye"
+    "amount": 1536,
+    "pigment": "mekanism:orange"
   }
 }

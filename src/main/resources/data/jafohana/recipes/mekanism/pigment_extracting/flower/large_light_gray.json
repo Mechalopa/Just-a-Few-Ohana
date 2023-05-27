@@ -5,14 +5,14 @@
       "modid": "mekanism"
     }
   ],
-  "type": "mekanism:enriching",
+  "type": "mekanism:pigment_extracting",
   "input": {
     "ingredient": {
       "item": "jafohana:fasciated_oxeye_daisy"
     }
   },
   "output": {
-    "count": 4,
-    "item": "minecraft:light_gray_dye"
+    "amount": 1536,
+    "pigment": "mekanism:light_gray"
   }
 }
