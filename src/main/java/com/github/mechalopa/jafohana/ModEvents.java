@@ -25,7 +25,6 @@ import net.minecraftforge.fml.common.Mod;
 @Mod.EventBusSubscriber(modid = JAFOhana.MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class ModEvents
 {
-
 	@SubscribeEvent
 	public static void onBonemeal(BonemealEvent event)
 	{

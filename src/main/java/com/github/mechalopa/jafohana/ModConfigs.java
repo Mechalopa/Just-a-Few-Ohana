@@ -6,7 +6,6 @@ import net.minecraftforge.fml.event.config.ModConfigEvent;
 
 public class ModConfigs
 {
-
 	private static final ForgeConfigSpec.Builder SERVER_BUILDER = new ForgeConfigSpec.Builder();
 	public static ForgeConfigSpec SERVER_CONFIG;
 

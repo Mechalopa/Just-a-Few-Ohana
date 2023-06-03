@@ -54,10 +54,10 @@ public class ModEventBusSubscriber
 	@SubscribeEvent
 	public static void registerCreativeModeTab(final CreativeModeTabEvent.Register event)
 	{
-		event.registerCreativeModeTab(new ResourceLocation(JAFOhana.MODID, "tab"), builder -> builder.title(Component.translatable("item_group." + JAFOhana.MODID + ".tab")).icon(() -> new ItemStack(ModItems.DAYFLOWER.get())).displayItems((flag, populator, hasPermissions) -> {
+		event.registerCreativeModeTab(new ResourceLocation(JAFOhana.MODID, "tab"), builder -> builder.title(Component.translatable("item_group." + JAFOhana.MODID + ".tab")).icon(() -> new ItemStack(ModItems.DAYFLOWER.get())).displayItems((features, output) -> {
 			for (RegistryObject<Item> item : ModItems.getItemRegistry().getEntries())
 			{
-				populator.accept(item.get());
+				output.accept(item.get());
 			}
 		}));
 	}
