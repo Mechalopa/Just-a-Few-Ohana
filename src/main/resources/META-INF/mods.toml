@@ -16,7 +16,7 @@ itemIcon="jafohana:dayflower"
 [[dependencies.jafohana]]
     modId="forge"
     mandatory=true
-    versionRange="[45.0.66,)"
+    versionRange="[45.1.0,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.jafohana]]
