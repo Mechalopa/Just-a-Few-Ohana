@@ -8,7 +8,8 @@
       {
         "name": [
           "minecraft:birch_forest",
-          "minecraft:old_growth_birch_forest"
+          "minecraft:old_growth_birch_forest",
+          "minecraft:flower_forest"
         ],
         "negate": true
       },

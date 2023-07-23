@@ -1,0 +1,30 @@
+{
+  "type": "jafohana:add_features",
+  "biomes": [
+    [
+      {
+        "name": "#jafohana:is_overworld"
+      },
+      {
+        "name": "#jafohana:is_sparse"
+      },
+      {
+        "name": "#jafohana:is_dry"
+      },
+      {
+        "name": "minecraft:windswept_savanna",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_jungle",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_mountain",
+        "negate": true
+      }
+    ]
+  ],
+  "features": "jafohana:bird_of_paradise",
+  "step": "vegetal_decoration"
+}

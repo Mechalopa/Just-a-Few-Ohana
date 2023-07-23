@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "orange_dye",
+  "ingredients": [
+    {
+      "item": "jafohana:bird_of_paradise"
+    }
+  ],
+  "result": {
+    "item": "minecraft:orange_dye",
+    "count": 2
+  }
+}

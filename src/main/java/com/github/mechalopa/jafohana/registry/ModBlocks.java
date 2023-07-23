@@ -44,6 +44,7 @@ public class ModBlocks
 	public static final RegistryObject<Block> PINK_SNAPDRAGON = REGISTRY.register("pink_snapdragon", () -> new ModFlowerBlock(() -> MobEffects.DAMAGE_BOOST, 4));
 	public static final RegistryObject<Block> WHITE_EGRET_ORCHID = REGISTRY.register("white_egret_orchid", () -> new ModFlowerBlock(() -> MobEffects.SLOW_FALLING, 5));
 	public static final RegistryObject<Block> ORANGE_SPIDER_LILY = REGISTRY.register("orange_spider_lily", () -> new ModFlowerBlock(() -> MobEffects.POISON, 12));
+	public static final RegistryObject<Block> DANCING_LADIES_GINGER = REGISTRY.register("dancing_ladies_ginger", () -> new ModFlowerBlock(() -> MobEffects.MOVEMENT_SPEED, 5));
 	public static final RegistryObject<Block> RED_SPIDER_LILY = REGISTRY.register("red_spider_lily", () -> new RedSpiderLilyBlock(() -> MobEffects.POISON, 12));
 	public static final RegistryObject<Block> BELLS_OF_IRELAND = REGISTRY.register("bells_of_ireland", () -> new ModFlowerBlock(() -> MobEffects.SATURATION, 7)
 	{
@@ -60,6 +61,7 @@ public class ModBlocks
 	public static final RegistryObject<Block> YELLOW_MARIGOLD = REGISTRY.register("yellow_marigold", () -> new ModTallFlowerBlock());
 	public static final RegistryObject<Block> GLORIOSA = REGISTRY.register("gloriosa", () -> new ModTallFlowerBlock());
 	public static final RegistryObject<Block> BLACK_BAT_FLOWER = REGISTRY.register("black_bat_flower", () -> new ModTallFlowerBlock());
+	public static final RegistryObject<Block> BIRD_OF_PARADISE = REGISTRY.register("bird_of_paradise", () -> new ModTallFlowerBlock());
 	public static final RegistryObject<Block> FASCIATED_DANDELION = REGISTRY.register("fasciated_dandelion", () -> new ModTallFlowerBlock()
 	{
 		@Override
@@ -105,6 +107,7 @@ public class ModBlocks
 	public static final RegistryObject<Block> POTTED_PINK_SNAPDRAGON = REGISTRY.register("potted_pink_snapdragon", () -> new ModFlowerPotBlock(PINK_SNAPDRAGON.get()));
 	public static final RegistryObject<Block> POTTED_WHITE_EGRET_ORCHID = REGISTRY.register("potted_white_egret_orchid", () -> new ModFlowerPotBlock(WHITE_EGRET_ORCHID.get()));
 	public static final RegistryObject<Block> POTTED_ORANGE_SPIDER_LILY = REGISTRY.register("potted_orange_spider_lily", () -> new ModFlowerPotBlock(ORANGE_SPIDER_LILY.get()));
+	public static final RegistryObject<Block> POTTED_DANCING_LADIES_GINGER = REGISTRY.register("potted_dancing_ladies_ginger", () -> new ModFlowerPotBlock(DANCING_LADIES_GINGER.get()));
 	public static final RegistryObject<Block> POTTED_RED_SPIDER_LILY = REGISTRY.register("potted_red_spider_lily", () -> new ModFlowerPotBlock(RED_SPIDER_LILY.get()));
 	public static final RegistryObject<Block> POTTED_BELLS_OF_IRELAND = REGISTRY.register("potted_bells_of_ireland", () -> new ModFlowerPotBlock(BELLS_OF_IRELAND.get()));
 
