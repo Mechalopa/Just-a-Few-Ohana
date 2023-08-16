@@ -1,13 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "magenta_dye",
+  "group": "pink_dye",
   "ingredients": [
     {
       "item": "jafohana:dancing_ladies_ginger"
     }
   ],
   "result": {
-    "item": "minecraft:magenta_dye"
+    "item": "minecraft:pink_dye"
   }
 }
