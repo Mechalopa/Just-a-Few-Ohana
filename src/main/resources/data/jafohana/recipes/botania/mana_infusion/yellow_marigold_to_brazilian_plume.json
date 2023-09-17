@@ -12,10 +12,10 @@
   },
   "group": "botania:flower_cycle",
   "input": {
-    "item": "jafohana:dancing_ladies_ginger"
+    "item": "jafohana:yellow_marigold"
   },
   "mana": 400,
   "output": {
-    "item": "jafohana:orange_spider_lily"
+    "item": "jafohana:brazilian_plume"
   }
 }

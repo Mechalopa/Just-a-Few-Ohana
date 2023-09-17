@@ -1,0 +1,27 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "botanypots"
+    }
+  ],
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "jafohana:spathiphyllum"
+  },
+  "categories": [
+    "dirt"
+  ],
+  "growthTicks": 1200,
+  "display": {
+    "block": "jafohana:spathiphyllum"
+  },
+  "drops": [
+    {
+      "chance": 1.00,
+      "output": {
+        "item": "jafohana:spathiphyllum"
+      }
+    }
+  ]
+}

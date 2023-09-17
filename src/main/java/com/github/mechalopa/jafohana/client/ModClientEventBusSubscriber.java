@@ -13,5 +13,5 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 public class ModClientEventBusSubscriber
 {
 	@SubscribeEvent
-	public static void setupClient(final FMLClientSetupEvent event){	}
+	public static void setupClient(final FMLClientSetupEvent event){}
 }

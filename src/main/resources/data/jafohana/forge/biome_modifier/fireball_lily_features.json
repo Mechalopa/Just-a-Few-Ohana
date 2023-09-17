@@ -1,0 +1,34 @@
+{
+  "type": "jafohana:add_features",
+  "biomes": [
+    [
+      {
+        "name": "#jafohana:is_overworld"
+      },
+      {
+        "name": "#jafohana:is_savanna"
+      }
+    ],
+    [
+      {
+        "name": "#jafohana:is_overworld"
+      },
+      {
+        "name": "#jafohana:is_sparse"
+      },
+      {
+        "name": "#jafohana:is_dry"
+      },
+      {
+        "name": "#jafohana:is_jungle",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_mountain",
+        "negate": true
+      }
+    ]
+  ],
+  "features": "jafohana:fireball_lily",
+  "step": "vegetal_decoration"
+}
