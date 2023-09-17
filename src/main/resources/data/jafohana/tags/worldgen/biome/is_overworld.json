@@ -7,6 +7,10 @@
       "required": false
     },
     {
+      "id": "#c:is_overworld",
+      "required": false
+    },
+    {
       "id": "graveyard_biomes:ancient_dead_coral_reef",
       "required": false
     },
@@ -76,6 +80,10 @@
     },
     {
       "id": "meadow:meadow_clearing",
+      "required": false
+    },
+    {
+      "id": "eco:floating_river",
       "required": false
     }
   ]
