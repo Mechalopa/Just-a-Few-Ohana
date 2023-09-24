@@ -15,14 +15,14 @@
       {
         "item": {
           "count": 4,
-          "item": "minecraft:white_dye"
+          "item": "minecraft:light_gray_dye"
         }
       },
       {
         "chance": 0.5,
         "item": {
           "count": 2,
-          "item": "minecraft:white_dye"
+          "item": "minecraft:light_gray_dye"
         }
       }
     ]

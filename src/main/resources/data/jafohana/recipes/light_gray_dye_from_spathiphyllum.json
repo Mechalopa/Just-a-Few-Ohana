@@ -1,13 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "white_dye",
+  "group": "light_gray_dye",
   "ingredients": [
     {
       "item": "jafohana:spathiphyllum"
     }
   ],
   "result": {
-    "item": "minecraft:white_dye"
+    "item": "minecraft:light_gray_dye"
   }
 }
