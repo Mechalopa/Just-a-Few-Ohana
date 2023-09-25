@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "jafohana:block/brazilian_plume_bottom"
+    },
+    "half=upper": {
+      "model": "jafohana:block/brazilian_plume_top"
+    }
+  }
+}

@@ -12,10 +12,10 @@
   },
   "group": "botania:flower_cycle",
   "input": {
-    "item": "jafohana:gloriosa"
+    "item": "jafohana:fireball_lily"
   },
   "mana": 400,
   "output": {
-    "item": "jafohana:black_bat_flower"
+    "item": "jafohana:orange_spider_lily"
   }
 }

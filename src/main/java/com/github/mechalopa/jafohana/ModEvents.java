@@ -99,6 +99,9 @@ public class ModEvents
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.PINK_SNAPDRAGON.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.WHITE_EGRET_ORCHID.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.ORANGE_SPIDER_LILY.get()), 12, 1, 0.05F));
+			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.DANCING_LADIES_GINGER.get()), 12, 1, 0.05F));
+			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.FIREBALL_LILY.get()), 12, 1, 0.05F));
+			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.SPATHIPHYLLUM.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(3, new ItemStack(ModItems.RED_SPIDER_LILY.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(3, new ItemStack(ModItems.BELLS_OF_IRELAND.get()), 12, 1, 0.05F));
 		}

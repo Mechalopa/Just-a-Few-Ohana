@@ -1,0 +1,23 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    }
+  ],
+  "type": "thermal:centrifuge",
+  "energy": 3200,
+  "ingredient": {
+    "item": "jafohana:brazilian_plume"
+  },
+  "result": [
+    {
+      "count": 6,
+      "item": "minecraft:pink_dye"
+    }
+  ]
+}

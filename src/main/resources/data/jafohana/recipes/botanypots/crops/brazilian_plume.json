@@ -1,0 +1,38 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "botanypots"
+    }
+  ],
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "jafohana:brazilian_plume"
+  },
+  "categories": [
+    "dirt"
+  ],
+  "growthTicks": 1200,
+  "display": [
+    {
+      "block": "jafohana:brazilian_plume",
+      "properties": {
+        "half": "lower"
+      }
+    },
+    {
+      "block": "jafohana:brazilian_plume",
+      "properties": {
+        "half": "upper"
+      }
+    }
+  ],
+  "drops": [
+    {
+      "chance": 1.00,
+      "output": {
+        "item": "jafohana:brazilian_plume"
+      }
+    }
+  ]
+}

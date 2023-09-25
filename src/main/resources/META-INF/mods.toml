@@ -12,7 +12,6 @@ displayURL="https://www.curseforge.com/minecraft/mc-mods/just-a-few-ohana"
 credits="Mechalopa"
 authors="Mechalopa"
 description='''More new flowers.'''
-itemIcon="jafohana:dayflower"
 [[dependencies.jafohana]]
     modId="forge"
     mandatory=true
@@ -25,3 +24,5 @@ itemIcon="jafohana:dayflower"
     versionRange="[1.19.2]"
     ordering="NONE"
     side="BOTH"
+[modproperties.jafohana]
+    catalogueItemIcon="jafohana:dayflower"

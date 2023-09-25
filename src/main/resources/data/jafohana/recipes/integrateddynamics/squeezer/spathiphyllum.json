@@ -1,0 +1,22 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "integrateddynamics"
+    }
+  ],
+  "type": "integrateddynamics:squeezer",
+  "item": {
+    "item": "jafohana:spathiphyllum"
+  },
+  "result": {
+    "items": [
+      {
+        "item": {
+          "count": 4,
+          "item": "minecraft:light_gray_dye"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:enriching",
+  "input": {
+    "ingredient": {
+      "item": "jafohana:spathiphyllum"
+    }
+  },
+  "output": {
+    "count": 2,
+    "item": "minecraft:light_gray_dye"
+  }
+}

@@ -69,6 +69,18 @@
     {
       "id": "jellyfishing:jellyfish_fields",
       "required": false
+    },
+    {
+      "id": "meadow:meadow_forest",
+      "required": false
+    },
+    {
+      "id": "meadow:meadow_clearing",
+      "required": false
+    },
+    {
+      "id": "eco:floating_river",
+      "required": false
     }
   ]
 }

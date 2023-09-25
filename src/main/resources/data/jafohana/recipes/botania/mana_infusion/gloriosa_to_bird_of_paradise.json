@@ -12,10 +12,10 @@
   },
   "group": "botania:flower_cycle",
   "input": {
-    "item": "jafohana:black_tulip"
+    "item": "jafohana:gloriosa"
   },
   "mana": 400,
   "output": {
-    "item": "jafohana:orange_spider_lily"
+    "item": "jafohana:bird_of_paradise"
   }
 }
