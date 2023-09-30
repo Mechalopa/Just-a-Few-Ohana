@@ -10,13 +10,14 @@ import net.minecraft.world.level.block.FlowerBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 
 public class ModFlowerBlock extends FlowerBlock
 {
 	public ModFlowerBlock(Supplier<MobEffect> effectSupplier, int effectDuration)
 	{
-		this(effectSupplier, effectDuration, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ));
+		this(effectSupplier, effectDuration, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 
 	public ModFlowerBlock(Supplier<MobEffect> effectSupplier, int effectDuration, BlockBehaviour.Properties properties)

@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.github.mechalopa.jafohana.registry.ModBiomeModifiers;
 import com.github.mechalopa.jafohana.registry.ModBlocks;
+import com.github.mechalopa.jafohana.registry.ModCreativeModeTabs;
 import com.github.mechalopa.jafohana.registry.ModItems;
 
 import net.minecraftforge.common.MinecraftForge;
@@ -31,6 +32,7 @@ public class JAFOhana
 		modEventBus.addListener(ModConfigs::loadConfig);
 
 		ModBlocks.register(modEventBus);
+		ModCreativeModeTabs.register(modEventBus);
 		ModItems.register(modEventBus);
 		ModBiomeModifiers.register(modEventBus);
 

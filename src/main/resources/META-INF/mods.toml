@@ -1,12 +1,12 @@
 modLoader="javafml"
-loaderVersion="[45,)"
+loaderVersion="[47,)"
 license="LGPL-3.0"
 issueTrackerURL="https://github.com/Mechalopa/Just-a-Few-Ohana/issues"
 [[mods]]
 modId="jafohana"
 version="${file.jarVersion}"
 displayName="Just a Few Ohana"
-updateJSONURL="https://github.com/Mechalopa/Just-a-Few-Ohana/raw/1.19.4/update.json"
+updateJSONURL="https://github.com/Mechalopa/Just-a-Few-Ohana/raw/1.20.1/update.json"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/just-a-few-ohana"
 #logoFile="logo.png"
 credits="Mechalopa"
@@ -15,13 +15,13 @@ description='''More new flowers.'''
 [[dependencies.jafohana]]
     modId="forge"
     mandatory=true
-    versionRange="[45.1.0,)"
+    versionRange="[47.1.0,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.jafohana]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19.4]"
+    versionRange="[1.20.1]"
     ordering="NONE"
     side="BOTH"
 [modproperties.jafohana]

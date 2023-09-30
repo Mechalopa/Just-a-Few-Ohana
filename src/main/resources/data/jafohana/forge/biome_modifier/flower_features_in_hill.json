@@ -6,7 +6,10 @@
         "name": "#jafohana:is_overworld"
       },
       {
-        "name": "minecraft:meadow",
+        "name": [
+          "minecraft:meadow",
+          "minecraft:cherry_grove"
+        ],
         "negate": true
       },
       {

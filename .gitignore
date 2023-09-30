@@ -24,11 +24,11 @@ run
 # Files from Forge MDK
 forge*changelog.txt
 /settings.gradle
-/aaaaa.bat
 /changelog.txt
 /CREDITS.txt
 /release.bat
 /LICENSE.txt
 /README.txt
-/xyz.bat
 /.checkstyle
+/gen_eclipse_runs.bat
+/refresh.bat
