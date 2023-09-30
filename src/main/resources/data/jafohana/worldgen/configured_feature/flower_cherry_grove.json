@@ -77,27 +77,10 @@
                 "type": "minecraft:simple_block",
                 "config": {
                   "to_place": {
-                    "type": "minecraft:weighted_state_provider",
-                    "entries": [
-                      {
-                        "data": {
-                          "Name": "jafohana:red_snapdragon"
-                        },
-                        "weight": 1
-                      },
-                      {
-                        "data": {
-                          "Name": "jafohana:yellow_snapdragon"
-                        },
-                        "weight": 1
-                      },
-                      {
-                        "data": {
-                          "Name": "jafohana:pink_snapdragon"
-                        },
-                        "weight": 1
-                      }
-                    ]
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                      "Name": "jafohana:pink_snapdragon"
+                    }
                   }
                 }
               },
