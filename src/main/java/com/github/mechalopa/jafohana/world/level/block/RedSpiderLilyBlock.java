@@ -1,7 +1,5 @@
 package com.github.mechalopa.jafohana.world.level.block;
 
-import java.util.function.Supplier;
-
 import com.github.mechalopa.jafohana.util.ModTags;
 
 import net.minecraft.core.BlockPos;
@@ -17,9 +15,9 @@ public class RedSpiderLilyBlock extends ModFlowerBlock
 {
 	protected static final VoxelShape SHAPE = Block.box(5.0D, 0.0D, 5.0D, 11.0D, 14.0D, 11.0D);
 
-	public RedSpiderLilyBlock(Supplier<MobEffect> effectSupplier, int effectDuration)
+	public RedSpiderLilyBlock(MobEffect effect, int effectDuration)
 	{
-		super(effectSupplier, effectDuration);
+		super(effect, effectDuration);
 	}
 
 	@Override

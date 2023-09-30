@@ -1,7 +1,5 @@
 package com.github.mechalopa.jafohana.world.level.block;
 
-import java.util.function.Supplier;
-
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.effect.MobEffect;
@@ -15,14 +13,14 @@ import net.minecraft.world.level.material.PushReaction;
 
 public class ModFlowerBlock extends FlowerBlock
 {
-	public ModFlowerBlock(Supplier<MobEffect> effectSupplier, int effectDuration)
+	public ModFlowerBlock(MobEffect effect, int effectDuration)
 	{
-		this(effectSupplier, effectDuration, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
+		this(effect, effectDuration, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 
-	public ModFlowerBlock(Supplier<MobEffect> effectSupplier, int effectDuration, BlockBehaviour.Properties properties)
+	public ModFlowerBlock(MobEffect effect, int effectDuration, BlockBehaviour.Properties properties)
 	{
-		super(effectSupplier, effectDuration, properties);
+		super(effect, effectDuration, properties);
 	}
 
 	@Override
