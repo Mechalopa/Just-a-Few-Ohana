@@ -1,0 +1,25 @@
+{
+  "forge:condition": {
+    "type": "forge:mod_loaded",
+    "modid": "botanypots"
+  },
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "jafohana:bells_of_ireland"
+  },
+  "categories": [
+    "dirt"
+  ],
+  "growthTicks": 1200,
+  "display": {
+    "block": "jafohana:bells_of_ireland"
+  },
+  "drops": [
+    {
+      "chance": 1.00,
+      "output": {
+        "item": "jafohana:bells_of_ireland"
+      }
+    }
+  ]
+}
