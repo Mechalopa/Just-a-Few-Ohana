@@ -17,6 +17,7 @@ public class ModLootTableLoadingEvent
 {
 	private static final List<String> CHEST_TABLES = ImmutableList.of(
 			"ancient_city",
+			"jungle_temple",
 			"stronghold_corridor",
 			"stronghold_crossing",
 			"woodland_mansion",
