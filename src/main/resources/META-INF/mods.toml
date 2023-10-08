@@ -21,7 +21,7 @@ description='''More new flowers.'''
 [[dependencies.jafohana]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.20.2]"
+    versionRange="[1.20.2,)"
     ordering="NONE"
     side="BOTH"
 [modproperties.jafohana]
