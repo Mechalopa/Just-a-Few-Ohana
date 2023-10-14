@@ -7,9 +7,14 @@
   ],
   "type": "mekanism:pigment_extracting",
   "input": {
-    "ingredient": {
-      "item": "jafohana:blood_red_iris"
-    }
+    "ingredient": [
+      {
+        "item": "jafohana:blood_red_iris"
+      },
+      {
+        "item": "jafohana:purple_pansy"
+      }
+    ]
   },
   "output": {
     "amount": 768,

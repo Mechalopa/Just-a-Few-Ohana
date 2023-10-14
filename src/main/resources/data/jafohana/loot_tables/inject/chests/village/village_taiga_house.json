@@ -47,7 +47,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:blood_red_iris"
+          "name": "jafohana:bluebell"
         },
         {
           "type": "minecraft:item",
@@ -62,7 +62,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:bluebell"
+          "name": "jafohana:winter_heath"
         },
         {
           "type": "minecraft:empty",

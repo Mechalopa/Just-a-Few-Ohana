@@ -12,7 +12,7 @@
   },
   "group": "botania:flower_cycle",
   "input": {
-    "item": "jafohana:forget_me_not"
+    "item": "jafohana:winter_heath"
   },
   "mana": 400,
   "output": {

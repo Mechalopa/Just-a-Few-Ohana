@@ -1,14 +1,14 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "blue_dye",
+  "group": "purple_dye",
   "ingredients": [
     {
       "item": "jafohana:worsleya"
     }
   ],
   "result": {
-    "item": "minecraft:blue_dye",
+    "item": "minecraft:purple_dye",
     "count": 2
   }
 }

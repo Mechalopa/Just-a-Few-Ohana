@@ -7,9 +7,14 @@
   ],
   "type": "mekanism:pigment_extracting",
   "input": {
-    "ingredient": {
-      "item": "jafohana:spathiphyllum"
-    }
+    "ingredient": [
+      {
+        "item": "jafohana:spathiphyllum"
+      },
+      {
+        "item": "jafohana:white_pansy"
+      }
+    ]
   },
   "output": {
     "amount": 768,
