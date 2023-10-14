@@ -33,7 +33,9 @@ public class ModItems
 	public static final RegistryObject<Item> DANCING_LADIES_GINGER = REGISTRY.register("dancing_ladies_ginger", () -> new BlockItem(ModBlocks.DANCING_LADIES_GINGER.get(), new Item.Properties()));
 	public static final RegistryObject<Item> FIREBALL_LILY = REGISTRY.register("fireball_lily", () -> new BlockItem(ModBlocks.FIREBALL_LILY.get(), new Item.Properties()));
 	public static final RegistryObject<Item> SPATHIPHYLLUM = REGISTRY.register("spathiphyllum", () -> new BlockItem(ModBlocks.SPATHIPHYLLUM.get(), new Item.Properties()));
-	public static final RegistryObject<Item> HELLEBORE = REGISTRY.register("hellebore", () -> new BlockItem(ModBlocks.HELLEBORE.get(), new Item.Properties()));
+	public static final RegistryObject<Item> PURPLE_PANSY = REGISTRY.register("purple_pansy", () -> new BlockItem(ModBlocks.PURPLE_PANSY.get(), new Item.Properties()));
+	public static final RegistryObject<Item> WHITE_PANSY = REGISTRY.register("white_pansy", () -> new BlockItem(ModBlocks.WHITE_PANSY.get(), new Item.Properties()));
+	public static final RegistryObject<Item> YELLOW_PANSY = REGISTRY.register("yellow_pansy", () -> new BlockItem(ModBlocks.YELLOW_PANSY.get(), new Item.Properties()));
 	public static final RegistryObject<Item> SNOWDROP = REGISTRY.register("snowdrop", () -> new BlockItem(ModBlocks.SNOWDROP.get(), new Item.Properties()));
 	public static final RegistryObject<Item> WINTER_HEATH = REGISTRY.register("winter_heath", () -> new BlockItem(ModBlocks.WINTER_HEATH.get(), new Item.Properties()));
 	public static final RegistryObject<Item> RED_SPIDER_LILY = REGISTRY.register("red_spider_lily", () -> new BlockItem(ModBlocks.RED_SPIDER_LILY.get(), new Item.Properties()));

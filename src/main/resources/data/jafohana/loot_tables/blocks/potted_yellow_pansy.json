@@ -26,11 +26,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "jafohana:hellebore"
+          "name": "jafohana:yellow_pansy"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "jafohana:blocks/potted_hellebore"
+  "random_sequence": "jafohana:blocks/potted_yellow_pansy"
 }

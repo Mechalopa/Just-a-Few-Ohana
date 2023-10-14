@@ -2,6 +2,6 @@
   "parent": "minecraft:block/cross",
   "render_type": "cutout",
   "textures": {
-    "cross": "jafohana:block/hellebore"
+    "cross": "jafohana:block/yellow_pansy"
   }
 }

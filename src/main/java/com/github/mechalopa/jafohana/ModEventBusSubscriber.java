@@ -38,7 +38,9 @@ public class ModEventBusSubscriber
 		ComposterBlock.COMPOSTABLES.put(ModItems.DANCING_LADIES_GINGER.get(), 0.65F);
 		ComposterBlock.COMPOSTABLES.put(ModItems.FIREBALL_LILY.get(), 0.65F);
 		ComposterBlock.COMPOSTABLES.put(ModItems.SPATHIPHYLLUM.get(), 0.65F);
-		ComposterBlock.COMPOSTABLES.put(ModItems.HELLEBORE.get(), 0.65F);
+		ComposterBlock.COMPOSTABLES.put(ModItems.PURPLE_PANSY.get(), 0.65F);
+		ComposterBlock.COMPOSTABLES.put(ModItems.WHITE_PANSY.get(), 0.65F);
+		ComposterBlock.COMPOSTABLES.put(ModItems.YELLOW_PANSY.get(), 0.65F);
 		ComposterBlock.COMPOSTABLES.put(ModItems.SNOWDROP.get(), 0.65F);
 		ComposterBlock.COMPOSTABLES.put(ModItems.WINTER_HEATH.get(), 0.65F);
 		ComposterBlock.COMPOSTABLES.put(ModItems.RED_SPIDER_LILY.get(), 0.65F);

@@ -13,39 +13,6 @@
                   "to_place": {
                     "type": "minecraft:simple_state_provider",
                     "state": {
-                      "Name": "jafohana:dayflower"
-                    }
-                  }
-                }
-              },
-              "placement": [
-                {
-                  "type": "minecraft:block_predicate_filter",
-                  "predicate": {
-                    "type": "minecraft:matching_blocks",
-                    "blocks": "minecraft:air"
-                  }
-                }
-              ]
-            },
-            "tries": 64,
-            "xz_spread": 7,
-            "y_spread": 3
-          }
-        },
-        "placement": []
-      },
-      {
-        "feature": {
-          "type": "minecraft:random_patch",
-          "config": {
-            "feature": {
-              "feature": {
-                "type": "minecraft:simple_block",
-                "config": {
-                  "to_place": {
-                    "type": "minecraft:simple_state_provider",
-                    "state": {
                       "Name": "jafohana:evening_primrose"
                     }
                   }
@@ -61,7 +28,7 @@
                 }
               ]
             },
-            "tries": 64,
+            "tries": 96,
             "xz_spread": 7,
             "y_spread": 3
           }
@@ -94,7 +61,7 @@
                 }
               ]
             },
-            "tries": 64,
+            "tries": 96,
             "xz_spread": 7,
             "y_spread": 3
           }
@@ -112,7 +79,7 @@
                   "to_place": {
                     "type": "minecraft:simple_state_provider",
                     "state": {
-                      "Name": "jafohana:bluebell"
+                      "Name": "jafohana:dayflower"
                     }
                   }
                 }
@@ -127,7 +94,7 @@
                 }
               ]
             },
-            "tries": 64,
+            "tries": 96,
             "xz_spread": 7,
             "y_spread": 3
           }
@@ -177,7 +144,7 @@
                 }
               ]
             },
-            "tries": 64,
+            "tries": 96,
             "xz_spread": 7,
             "y_spread": 3
           }
@@ -210,7 +177,7 @@
                 }
               ]
             },
-            "tries": 64,
+            "tries": 96,
             "xz_spread": 7,
             "y_spread": 3
           }
