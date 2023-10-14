@@ -45,7 +45,7 @@ public class ModBlocks
 	public static final RegistryObject<Block> WHITE_EGRET_ORCHID = REGISTRY.register("white_egret_orchid", () -> new ModFlowerBlock(() -> MobEffects.SLOW_FALLING, 5));
 	public static final RegistryObject<Block> ORANGE_SPIDER_LILY = REGISTRY.register("orange_spider_lily", () -> new ModFlowerBlock(() -> MobEffects.POISON, 12));
 	public static final RegistryObject<Block> DANCING_LADIES_GINGER = REGISTRY.register("dancing_ladies_ginger", () -> new ModFlowerBlock(() -> MobEffects.MOVEMENT_SPEED, 5));
-	public static final RegistryObject<Block> FIREBALL_LILY = REGISTRY.register("fireball_lily", () -> new ModFlowerBlock(() -> MobEffects.POISON, 12));
+	public static final RegistryObject<Block> FIREBALL_LILY = REGISTRY.register("fireball_lily", () -> new ModFlowerBlock(() -> MobEffects.FIRE_RESISTANCE, 4));
 	public static final RegistryObject<Block> SPATHIPHYLLUM = REGISTRY.register("spathiphyllum", () -> new ModFlowerBlock(() -> MobEffects.MOVEMENT_SPEED, 5));
 	public static final RegistryObject<Block> PURPLE_PANSY = REGISTRY.register("purple_pansy", () -> new ModFlowerBlock(() -> MobEffects.CONFUSION, 9));
 	public static final RegistryObject<Block> WHITE_PANSY = REGISTRY.register("white_pansy", () -> new ModFlowerBlock(() -> MobEffects.CONFUSION, 9));
