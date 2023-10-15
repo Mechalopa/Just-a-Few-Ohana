@@ -62,11 +62,28 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:snowdrop"
+          "name": "jafohana:snowdrop",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "jafohana:winter_heath",
+          "weight": 3
         },
         {
           "type": "minecraft:empty",
-          "weight": 4
+          "weight": 9
         }
       ],
       "rolls": {
