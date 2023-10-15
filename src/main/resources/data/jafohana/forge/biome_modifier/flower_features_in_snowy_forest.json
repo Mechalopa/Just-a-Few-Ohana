@@ -1,0 +1,37 @@
+{
+  "type": "jafohana:add_features",
+  "biomes": [
+    [
+      {
+        "name": "#jafohana:is_overworld"
+      },
+      {
+        "name": "#jafohana:is_snowy"
+      },
+      {
+        "name": "#jafohana:is_spooky",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_forest"
+      }
+    ],
+    [
+      {
+        "name": "#jafohana:is_overworld"
+      },
+      {
+        "name": "#jafohana:is_snowy"
+      },
+      {
+        "name": "#jafohana:is_spooky",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_coniferous"
+      }
+    ]
+  ],
+  "features": "jafohana:flower_snowy_forest",
+  "step": "vegetal_decoration"
+}

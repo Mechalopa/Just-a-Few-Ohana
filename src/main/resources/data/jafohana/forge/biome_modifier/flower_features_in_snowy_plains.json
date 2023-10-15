@@ -1,0 +1,30 @@
+{
+  "type": "jafohana:add_features",
+  "biomes": [
+    [
+      {
+        "name": "#jafohana:is_overworld"
+      },
+      {
+        "name": "#jafohana:is_coniferous",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_forest",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_mountain",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_snowy"
+      },
+      {
+        "name": "#jafohana:is_plains"
+      }
+    ]
+  ],
+  "features": "jafohana:flower_snowy_plain",
+  "step": "vegetal_decoration"
+}

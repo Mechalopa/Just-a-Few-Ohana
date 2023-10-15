@@ -10,10 +10,10 @@
   },
   "group": "botania:flower_cycle",
   "input": {
-    "item": "jafohana:black_bat_flower"
+    "item": "jafohana:yellow_pansy"
   },
   "mana": 400,
   "output": {
-    "item": "jafohana:dayflower"
+    "item": "jafohana:snowdrop"
   }
 }

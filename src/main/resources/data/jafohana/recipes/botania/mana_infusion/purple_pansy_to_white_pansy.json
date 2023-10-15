@@ -10,10 +10,10 @@
   },
   "group": "botania:flower_cycle",
   "input": {
-    "item": "jafohana:forget_me_not"
+    "item": "jafohana:purple_pansy"
   },
   "mana": 400,
   "output": {
-    "item": "jafohana:black_tulip"
+    "item": "jafohana:white_pansy"
   }
 }

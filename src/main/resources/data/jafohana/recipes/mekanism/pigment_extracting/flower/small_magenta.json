@@ -5,9 +5,14 @@
   },
   "type": "mekanism:pigment_extracting",
   "input": {
-    "ingredient": {
-      "item": "jafohana:dancing_ladies_ginger"
-    }
+    "ingredient": [
+      {
+        "item": "jafohana:dancing_ladies_ginger"
+      },
+      {
+        "item": "jafohana:winter_heath"
+      }
+    ]
   },
   "output": {
     "amount": 768,
