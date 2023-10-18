@@ -5,5 +5,5 @@ More new flowers.
 ## Japanese Forum and Descriptions
 - [Minecraft Japan Forum Thread](https://forum.civa.jp/viewtopic.php?f=3&t=750)
 ## Credits
-- uk_ua.json by unroman
+- uk_ua.json by Un roman
 - zh_cn.json by Kzeroko
