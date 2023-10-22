@@ -1,24 +1,16 @@
 package com.github.mechalopa.jafohana.registry;
 
 import com.github.mechalopa.jafohana.JAFOhana;
-import com.github.mechalopa.jafohana.ModConfigs;
+import com.github.mechalopa.jafohana.world.level.block.FasciatedDandelionBlock;
+import com.github.mechalopa.jafohana.world.level.block.FasciatedOxeyeDaisyBlock;
+import com.github.mechalopa.jafohana.world.level.block.MediumFlowerBlock;
 import com.github.mechalopa.jafohana.world.level.block.ModFlowerBlock;
 import com.github.mechalopa.jafohana.world.level.block.ModFlowerPotBlock;
 import com.github.mechalopa.jafohana.world.level.block.ModTallFlowerBlock;
 import com.github.mechalopa.jafohana.world.level.block.RedSpiderLilyBlock;
 
-import net.minecraft.core.BlockPos;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.util.RandomSource;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.registries.DeferredRegister;
@@ -53,17 +45,7 @@ public class ModBlocks
 	public static final RegistryObject<Block> SNOWDROP = REGISTRY.register("snowdrop", () -> new ModFlowerBlock(() -> MobEffects.POISON, 12));
 	public static final RegistryObject<Block> WINTER_HEATH = REGISTRY.register("winter_heath", () -> new ModFlowerBlock(() -> MobEffects.WEAKNESS, 9));
 	public static final RegistryObject<Block> RED_SPIDER_LILY = REGISTRY.register("red_spider_lily", () -> new RedSpiderLilyBlock(() -> MobEffects.POISON, 12));
-	public static final RegistryObject<Block> BELLS_OF_IRELAND = REGISTRY.register("bells_of_ireland", () -> new ModFlowerBlock(() -> MobEffects.SATURATION, 7)
-	{
-		protected static final VoxelShape SHAPE = Block.box(5.0D, 0.0D, 5.0D, 11.0D, 14.0D, 11.0D);
-
-		@Override
-		public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context)
-		{
-			Vec3 vector3d = state.getOffset(world, pos);
-			return SHAPE.move(vector3d.x, vector3d.y, vector3d.z);
-		}
-	});
+	public static final RegistryObject<Block> BELLS_OF_IRELAND = REGISTRY.register("bells_of_ireland", () -> new MediumFlowerBlock(() -> MobEffects.SATURATION, 7));
 	public static final RegistryObject<Block> ORANGE_MARIGOLD = REGISTRY.register("orange_marigold", () -> new ModTallFlowerBlock());
 	public static final RegistryObject<Block> YELLOW_MARIGOLD = REGISTRY.register("yellow_marigold", () -> new ModTallFlowerBlock());
 	public static final RegistryObject<Block> GLORIOSA = REGISTRY.register("gloriosa", () -> new ModTallFlowerBlock());
@@ -71,36 +53,8 @@ public class ModBlocks
 	public static final RegistryObject<Block> BIRD_OF_PARADISE = REGISTRY.register("bird_of_paradise", () -> new ModTallFlowerBlock());
 	public static final RegistryObject<Block> BRAZILIAN_PLUME = REGISTRY.register("brazilian_plume", () -> new ModTallFlowerBlock());
 	public static final RegistryObject<Block> WORSLEYA = REGISTRY.register("worsleya", () -> new ModTallFlowerBlock());
-	public static final RegistryObject<Block> FASCIATED_DANDELION = REGISTRY.register("fasciated_dandelion", () -> new ModTallFlowerBlock()
-	{
-		@Override
-		public void performBonemeal(ServerLevel serverLevel, RandomSource rand, BlockPos pos, BlockState blockState)
-		{
-			if (ModConfigs.cachedServer.FASCIATED_DANDELION_DROPS_NORMAL_DANDELION_WHEN_USING_BONE_MEAL)
-			{
-				popResource(serverLevel, pos, new ItemStack(Items.DANDELION, 1));
-			}
-			else
-			{
-				super.performBonemeal(serverLevel, rand, pos, blockState);
-			}
-		}
-	});
-	public static final RegistryObject<Block> FASCIATED_OXEYE_DAISY = REGISTRY.register("fasciated_oxeye_daisy", () -> new ModTallFlowerBlock()
-	{
-		@Override
-		public void performBonemeal(ServerLevel serverLevel, RandomSource rand, BlockPos pos, BlockState blockState)
-		{
-			if (ModConfigs.cachedServer.FASCIATED_OXEYE_DAISY_DROPS_NORMAL_OXEYE_DAISY_WHEN_USING_BONE_MEAL)
-			{
-				popResource(serverLevel, pos, new ItemStack(Items.OXEYE_DAISY, 1));
-			}
-			else
-			{
-				super.performBonemeal(serverLevel, rand, pos, blockState);
-			}
-		}
-	});
+	public static final RegistryObject<Block> FASCIATED_DANDELION = REGISTRY.register("fasciated_dandelion", () -> new FasciatedDandelionBlock());
+	public static final RegistryObject<Block> FASCIATED_OXEYE_DAISY = REGISTRY.register("fasciated_oxeye_daisy", () -> new FasciatedOxeyeDaisyBlock());
 	public static final RegistryObject<Block> POTTED_DAYFLOWER = REGISTRY.register("potted_dayflower", () -> new ModFlowerPotBlock(DAYFLOWER.get()));
 	public static final RegistryObject<Block> POTTED_EVENING_PRIMROSE = REGISTRY.register("potted_evening_primrose", () -> new ModFlowerPotBlock(EVENING_PRIMROSE.get()));
 	public static final RegistryObject<Block> POTTED_MILK_VETCH = REGISTRY.register("potted_milk_vetch", () -> new ModFlowerPotBlock(MILK_VETCH.get()));
