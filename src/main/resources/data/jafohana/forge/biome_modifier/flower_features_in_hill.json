@@ -38,6 +38,10 @@
         "negate": true
       },
       {
+        "name": "#jafohana:is_wasteland",
+        "negate": true
+      },
+      {
         "name": "#jafohana:is_mountain"
       }
     ]
