@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "jade_vine=single": {
+      "model": "jafohana:block/jade_vine_0"
+    },
+    "jade_vine=short_stem": {
+      "model": "jafohana:block/jade_vine_1"
+    },
+    "jade_vine=short_head": {
+      "model": "jafohana:block/jade_vine_2"
+    },
+    "jade_vine=long_stem": {
+      "model": "jafohana:block/jade_vine_3"
+    },
+    "jade_vine=long_body": {
+      "model": "jafohana:block/jade_vine_4"
+    },
+    "jade_vine=long_head": {
+      "model": "jafohana:block/jade_vine_5"
+    }
+  }
+}

@@ -17,7 +17,8 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:dancing_ladies_ginger"
+          "name": "jafohana:dancing_ladies_ginger",
+          "weight": 2
         },
         {
           "type": "minecraft:item",
@@ -32,7 +33,8 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:fireball_lily"
+          "name": "jafohana:fireball_lily",
+          "weight": 2
         },
         {
           "type": "minecraft:item",
@@ -47,11 +49,27 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:spathiphyllum"
+          "name": "jafohana:spathiphyllum",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 5.0,
+                "min": 2.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "jafohana:jade_vine"
         },
         {
           "type": "minecraft:empty",
-          "weight": 5
+          "weight": 9
         }
       ],
       "rolls": {
