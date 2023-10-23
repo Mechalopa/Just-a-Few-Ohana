@@ -4,7 +4,10 @@ import java.util.Optional;
 
 import javax.annotation.Nullable;
 
+import com.github.mechalopa.jafohana.ModConfigs;
 import com.github.mechalopa.jafohana.util.ModTags;
+import com.github.mechalopa.jafohana.world.level.block.state.properties.JadeVinePart;
+import com.github.mechalopa.jafohana.world.level.block.state.properties.ModBlockStateProperties;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -44,7 +47,7 @@ public class JadeVineBlock extends Block implements BonemealableBlock
 		{
 			return Blocks.AIR.defaultBlockState();
 		}
-		else if (direction == Direction.DOWN)
+		else if (direction.getAxis() == Direction.Axis.Y)
 		{
 			if (levelAccerssor.getBlockState(pos.above()).is(this))
 			{
@@ -132,7 +135,7 @@ public class JadeVineBlock extends Block implements BonemealableBlock
 	@Override
 	public boolean isBonemealSuccess(Level level, RandomSource random, BlockPos pos, BlockState state)
 	{
-		return (double)level.getRandom().nextFloat() < 0.45D;
+		return (double)level.getRandom().nextFloat() < ModConfigs.cachedServer.JADE_VINE_GROW_CHANCE;
 	}
 
 	@Override

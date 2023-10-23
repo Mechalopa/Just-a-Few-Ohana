@@ -1,0 +1,22 @@
+{
+  "type": "jafohana:add_features",
+  "biomes": [
+    [
+      {
+        "name": "#jafohana:is_overworld"
+      },
+      {
+        "name": [
+          "minecraft:sparse_jungle",
+          "minecraft:bamboo_jungle"
+        ],
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_jungle"
+      }
+    ]
+  ],
+  "features": "jafohana:jade_vines",
+  "step": "vegetal_decoration"
+}

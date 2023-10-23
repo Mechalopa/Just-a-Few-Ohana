@@ -1,4 +1,4 @@
-package com.github.mechalopa.jafohana.world.level.block;
+package com.github.mechalopa.jafohana.world.level.block.state.properties;
 
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 
