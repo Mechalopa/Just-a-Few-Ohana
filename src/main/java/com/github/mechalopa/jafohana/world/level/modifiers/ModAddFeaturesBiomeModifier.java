@@ -27,13 +27,10 @@ public record ModAddFeaturesBiomeModifier(List<List<ModAddFeaturesBiomeModifier.
 	@Override
 	public void modify(Holder<Biome> biome, Phase phase, Builder builder)
 	{
-		if (phase == Phase.ADD)
+		if (phase == Phase.ADD && matches(biome, this.biomePropLists))
 		{
-			if (matches(biome, this.biomePropLists))
-			{
-				BiomeGenerationSettingsBuilder generationSettings = builder.getGenerationSettings();
-				this.features.forEach(holder -> generationSettings.addFeature(this.step, holder));
-			}
+			BiomeGenerationSettingsBuilder generationSettings = builder.getGenerationSettings();
+			this.features.forEach(holder -> generationSettings.addFeature(this.step, holder));
 		}
 	}
 
