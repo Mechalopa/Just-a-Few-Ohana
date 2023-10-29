@@ -22,6 +22,12 @@
       "output": {
         "item": "jafohana:creepansy"
       }
+    },
+    {
+      "chance": 0.025,
+      "output": {
+        "item": "minecraft:gunpowder"
+      }
     }
   ]
 }
