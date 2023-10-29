@@ -90,7 +90,7 @@ public class JadeVineBlock extends Block implements BonemealableBlock
 	public boolean canSurvive(BlockState state, LevelReader levelReader, BlockPos pos)
 	{
 		BlockState state1 = levelReader.getBlockState(pos.above());
-		return state1.is(this) || state1.is(ModTags.JADE_VINE_PLANTABLE_ON);
+		return state1.is(this) || state1.is(ModTags.BlockTags.JADE_VINE_PLANTABLE_ON);
 	}
 
 	@Nullable

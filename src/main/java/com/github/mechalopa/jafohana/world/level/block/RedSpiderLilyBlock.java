@@ -19,6 +19,6 @@ public class RedSpiderLilyBlock extends MediumFlowerBlock
 	@Override
 	protected boolean mayPlaceOn(BlockState state, BlockGetter world, BlockPos pos)
 	{
-		return state.is(ModTags.RED_SPIDER_LILY_PLANTABLE_ON);
+		return state.is(ModTags.BlockTags.RED_SPIDER_LILY_PLANTABLE_ON);
 	}
 }
