@@ -37,21 +37,21 @@ public class ModEvents
 		if (!event.isCanceled() && !event.getLevel().isClientSide() && event.getLevel() instanceof ServerLevel && event.getBlock() != null)
 		{
 			ServerLevel serverLevel = (ServerLevel)event.getLevel();
-			BlockPos blockpos = event.getPos();
+			BlockPos pos = event.getPos();
 			RandomSource r = serverLevel.getRandom();
 
-			if (event.getBlock().is(ModTags.BlockTags.CONVERTABLE_TO_FASCIATED_DANDELION) && fasciate(serverLevel, blockpos, ModBlocks.FASCIATED_DANDELION.get().defaultBlockState(), r, ModConfigs.cachedServer.DANDELION_FASCIATION_CHANCE))
+			if (event.getBlock().is(ModTags.BlockTags.CONVERTABLE_TO_FASCIATED_DANDELION) && fasciate(serverLevel, pos, ModBlocks.FASCIATED_DANDELION.get().defaultBlockState(), r, ModConfigs.cachedServer.DANDELION_FASCIATION_CHANCE))
 			{
 				event.setResult(Result.ALLOW);
 			}
-			else if (event.getBlock().is(ModTags.BlockTags.CONVERTABLE_TO_FASCIATED_OXEYE_DAISY) && fasciate(serverLevel, blockpos, ModBlocks.FASCIATED_OXEYE_DAISY.get().defaultBlockState(), r, ModConfigs.cachedServer.OXEYE_DAISY_FASCIATION_CHANCE))
+			else if (event.getBlock().is(ModTags.BlockTags.CONVERTABLE_TO_FASCIATED_OXEYE_DAISY) && fasciate(serverLevel, pos, ModBlocks.FASCIATED_OXEYE_DAISY.get().defaultBlockState(), r, ModConfigs.cachedServer.OXEYE_DAISY_FASCIATION_CHANCE))
 			{
 				event.setResult(Result.ALLOW);
 			}
 		}
 	}
 
-	private static boolean fasciate(ServerLevel serverLevel, BlockPos blockpos, BlockState fasciatedFlowerState, RandomSource rand, double chance)
+	private static boolean fasciate(ServerLevel serverLevel, BlockPos blockpos, BlockState fasciatedFlowerState, RandomSource random, double chance)
 	{
 		if (fasciatedFlowerState.canSurvive(serverLevel, blockpos) && serverLevel.isEmptyBlock(blockpos.above()))
 		{
@@ -59,11 +59,11 @@ public class ModEvents
 			{
 				if (direction.getAxis().isHorizontal())
 				{
-					BlockState blockstate = serverLevel.getBlockState(blockpos.relative(direction));
+					BlockState state = serverLevel.getBlockState(blockpos.relative(direction));
 
-					if (blockstate != null && blockstate.is(ModTags.BlockTags.AFFECTS_FASCIATIONS))
+					if (state != null && state.is(ModTags.BlockTags.AFFECTS_FASCIATIONS))
 					{
-						if (rand.nextDouble() < chance)
+						if (random.nextDouble() < chance)
 						{
 							BlockPos blockpos1 = blockpos.above();
 							serverLevel.setBlockAndUpdate(blockpos, DoublePlantBlock.copyWaterloggedFrom(serverLevel, blockpos, fasciatedFlowerState.setValue(DoublePlantBlock.HALF, DoubleBlockHalf.LOWER)));
@@ -90,7 +90,7 @@ public class ModEvents
 			{
 				BlockState state = level.getBlockState(pos);
 
-				if (state.is(ModTags.BlockTags.CONVERTABLE_TO_CREEPANSY) && level.getRandom().nextDouble() < ModConfigs.cachedServer.CREEPANSY_CONVERT_CHANCE)
+				if (state.is(ModTags.BlockTags.CONVERTABLE_TO_CREEPANSY) && (double)level.getRandom().nextFloat() < ModConfigs.cachedServer.CREEPANSY_CONVERT_CHANCE)
 				{
 					ItemEntity itementity = new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ModItems.CREEPANSY.get()));
 

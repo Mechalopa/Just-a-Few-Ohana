@@ -26,7 +26,7 @@ public class ModConfigs
 		FASCIATED_OXEYE_DAISY_DROPS_NORMAL_OXEYE_DAISY_WHEN_USING_BONE_MEAL = SERVER_BUILDER.define("fasciatedOxeyeDaisyDropsNormalOxeyeDaisyWhenUsingBoneMeal", true);
 		DANDELION_FASCIATION_CHANCE = SERVER_BUILDER.defineInRange("dandelionFasciationChance", 0.4D, 0.0D, 1.0D);
 		OXEYE_DAISY_FASCIATION_CHANCE = SERVER_BUILDER.defineInRange("oxeyeDaisyFasciationChance", 0.4D, 0.0D, 1.0D);
-		CREEPANSY_CONVERT_CHANCE = SERVER_BUILDER.defineInRange("CreepansyConvertChance", 0.5D, 0.0D, 1.0D);
+		CREEPANSY_CONVERT_CHANCE = SERVER_BUILDER.defineInRange("creepansyConvertChance", 1.0D, 0.0D, 1.0D);
 		JADE_VINE_GROW_CHANCE = SERVER_BUILDER.defineInRange("jadeVineGrowChance", 0.45D, 0.0D, 1.0D);
 		ADDITIONAL_CHEST_LOOTS = SERVER_BUILDER.define("additionalChestLoots", true);
 		ADDITIONAL_WANDERER_TRADES = SERVER_BUILDER.define("additionalWandererTrades", true);
