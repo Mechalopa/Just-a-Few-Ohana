@@ -93,8 +93,8 @@ public class JadeVinesFeature extends Feature<JadeVinesConfiguration>
 
 	public record JadeVinesConfiguration(IntProvider height) implements FeatureConfiguration
 	{
-		public static final Codec<JadeVinesConfiguration> CODEC = RecordCodecBuilder.create((p_191222_) -> {
-			return p_191222_.group(IntProvider.NON_NEGATIVE_CODEC.fieldOf("height").forGetter(JadeVinesConfiguration::height)).apply(p_191222_, JadeVinesConfiguration::new);
+		public static final Codec<JadeVinesConfiguration> CODEC = RecordCodecBuilder.create(p -> {
+			return p.group(IntProvider.NON_NEGATIVE_CODEC.fieldOf("height").forGetter(JadeVinesConfiguration::height)).apply(p, JadeVinesConfiguration::new);
 		});
 	}
 }

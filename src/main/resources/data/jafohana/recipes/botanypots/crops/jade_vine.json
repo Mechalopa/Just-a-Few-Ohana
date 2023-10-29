@@ -1,0 +1,33 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "botanypots"
+    }
+  ],
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "jafohana:jade_vine"
+  },
+  "categories": [
+    "wood"
+  ],
+  "growthTicks": 1200,
+  "display": [
+    {
+      "block": "jafohana:jade_vine",
+      "rotation": "X_180",
+      "properties": {
+        "jade_vine": "single"
+      }
+    }
+  ],
+  "drops": [
+    {
+      "chance": 1.00,
+      "output": {
+        "item": "jafohana:jade_vine"
+      }
+    }
+  ]
+}

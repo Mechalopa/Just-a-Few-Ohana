@@ -1,22 +1,22 @@
 {
   "variants": {
     "jade_vine=single": {
-      "model": "jafohana:block/jade_vine_0"
+      "model": "jafohana:block/jade_vine_single"
     },
     "jade_vine=short_stem": {
-      "model": "jafohana:block/jade_vine_1"
+      "model": "jafohana:block/jade_vine_short_stem"
     },
     "jade_vine=short_head": {
-      "model": "jafohana:block/jade_vine_2"
+      "model": "jafohana:block/jade_vine_short_head"
     },
     "jade_vine=long_stem": {
-      "model": "jafohana:block/jade_vine_3"
+      "model": "jafohana:block/jade_vine_long_stem"
     },
     "jade_vine=long_body": {
-      "model": "jafohana:block/jade_vine_4"
+      "model": "jafohana:block/jade_vine_long_body"
     },
     "jade_vine=long_head": {
-      "model": "jafohana:block/jade_vine_5"
+      "model": "jafohana:block/jade_vine_long_head"
     }
   }
 }

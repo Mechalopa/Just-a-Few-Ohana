@@ -2,6 +2,6 @@
   "parent": "minecraft:block/cross",
   "render_type": "cutout",
   "textures": {
-    "cross": "jafohana:block/jade_vine_3"
+    "cross": "jafohana:block/jade_vine_long_body"
   }
 }

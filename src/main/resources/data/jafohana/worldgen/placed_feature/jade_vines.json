@@ -3,7 +3,7 @@
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 3
+      "chance": 13
     },
     {
       "type": "minecraft:in_square"
@@ -15,11 +15,32 @@
     {
       "type": "minecraft:environment_scan",
       "allowed_search_condition": {
-        "type": "minecraft:matching_blocks",
-        "blocks": "minecraft:air"
+        "type": "minecraft:any_of",
+        "predicates": [
+          {
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:air"
+          },
+          {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_block_tag",
+                "tag": "minecraft:leaves"
+              },
+              {
+                "type": "minecraft:not",
+                "predicate": {
+                  "type": "minecraft:matching_blocks",
+                  "blocks": "minecraft:jungle_leaves"
+                }
+              }
+            ]
+          }
+        ]
       },
       "direction_of_search": "up",
-      "max_steps": 12,
+      "max_steps": 16,
       "target_condition": {
         "type": "minecraft:matching_blocks",
         "blocks": "minecraft:jungle_leaves"
