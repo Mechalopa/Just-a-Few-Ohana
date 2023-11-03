@@ -18,7 +18,7 @@
             }
           ],
           "name": "jafohana:dayflower",
-          "weight": 3
+          "weight": 2
         },
         {
           "type": "minecraft:item",
@@ -34,7 +34,23 @@
             }
           ],
           "name": "jafohana:milk_vetch",
-          "weight": 3
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "jafohana:crimson_clover",
+          "weight": 2
         },
         {
           "type": "minecraft:item",
