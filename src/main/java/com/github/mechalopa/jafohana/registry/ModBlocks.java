@@ -46,6 +46,7 @@ public class ModBlocks
 	public static final RegistryObject<Block> CREEPANSY = REGISTRY.register("creepansy", () -> new ModFlowerBlock(() -> MobEffects.DAMAGE_BOOST, 4));
 	public static final RegistryObject<Block> SNOWDROP = REGISTRY.register("snowdrop", () -> new ModFlowerBlock(() -> MobEffects.POISON, 12));
 	public static final RegistryObject<Block> WINTER_HEATH = REGISTRY.register("winter_heath", () -> new ModFlowerBlock(() -> MobEffects.WEAKNESS, 9));
+	public static final RegistryObject<Block> BLUE_DAISY = REGISTRY.register("blue_daisy", () -> new ModFlowerBlock(() -> MobEffects.MOVEMENT_SPEED, 5));
 	public static final RegistryObject<Block> CRIMSON_CLOVER = REGISTRY.register("crimson_clover", () -> new ModFlowerBlock(() -> MobEffects.FIRE_RESISTANCE, 4));
 	public static final RegistryObject<Block> WHEEL_LILY = REGISTRY.register("wheel_lily", () -> new ModFlowerBlock(() -> MobEffects.SATURATION, 7));
 	public static final RegistryObject<Block> RED_SPIDER_LILY = REGISTRY.register("red_spider_lily", () -> new RedSpiderLilyBlock(() -> MobEffects.POISON, 12));
@@ -84,6 +85,7 @@ public class ModBlocks
 	public static final RegistryObject<Block> POTTED_CREEPANSY = REGISTRY.register("potted_creepansy", () -> new ModFlowerPotBlock(CREEPANSY.get()));
 	public static final RegistryObject<Block> POTTED_SNOWDROP = REGISTRY.register("potted_snowdrop", () -> new ModFlowerPotBlock(SNOWDROP.get()));
 	public static final RegistryObject<Block> POTTED_WINTER_HEATH = REGISTRY.register("potted_winter_heath", () -> new ModFlowerPotBlock(WINTER_HEATH.get()));
+	public static final RegistryObject<Block> POTTED_BLUE_DAISY = REGISTRY.register("potted_blue_daisy", () -> new ModFlowerPotBlock(BLUE_DAISY.get()));
 	public static final RegistryObject<Block> POTTED_CRIMSON_CLOVER = REGISTRY.register("potted_crimson_clover", () -> new ModFlowerPotBlock(CRIMSON_CLOVER.get()));
 	public static final RegistryObject<Block> POTTED_WHEEL_LILY = REGISTRY.register("potted_wheel_lily", () -> new ModFlowerPotBlock(WHEEL_LILY.get()));
 	public static final RegistryObject<Block> POTTED_RED_SPIDER_LILY = REGISTRY.register("potted_red_spider_lily", () -> new ModFlowerPotBlock(RED_SPIDER_LILY.get()));

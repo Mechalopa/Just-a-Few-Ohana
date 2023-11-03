@@ -1,9 +1,9 @@
 {
-  "feature": "jafohana:african_daisy",
+  "feature": "jafohana:flower_savanna",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 32
+      "chance": 24
     },
     {
       "type": "minecraft:in_square"
