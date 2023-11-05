@@ -25,21 +25,26 @@ public class ModFlowerBlock extends FlowerBlock
 		super(effectSupplier, effectDuration, properties);
 	}
 
-	@Override
-	public boolean isFlammable(BlockState state, BlockGetter getter, BlockPos pos, Direction direction)
+	public boolean isReallyFlammable(BlockState state, BlockGetter getter, BlockPos pos, Direction direction)
 	{
 		return true;
 	}
 
 	@Override
+	public boolean isFlammable(BlockState state, BlockGetter getter, BlockPos pos, Direction direction)
+	{
+		return this.isReallyFlammable(state, getter, pos, direction) || super.isFlammable(state, getter, pos, direction);
+	}
+
+	@Override
 	public int getFlammability(BlockState state, BlockGetter getter, BlockPos pos, Direction direction)
 	{
-		return 100;
+		return this.isReallyFlammable(state, getter, pos, direction) ? 100 : super.getFlammability(state, getter, pos, direction);
 	}
 
 	@Override
 	public int getFireSpreadSpeed(BlockState state, BlockGetter getter, BlockPos pos, Direction direction)
 	{
-		return 60;
+		return this.isReallyFlammable(state, getter, pos, direction) ? 60 : super.getFireSpreadSpeed(state, getter, pos, direction);
 	}
 }

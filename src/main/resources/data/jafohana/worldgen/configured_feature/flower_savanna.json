@@ -11,39 +11,10 @@
                 "type": "minecraft:simple_block",
                 "config": {
                   "to_place": {
-                    "type": "minecraft:weighted_state_provider",
-                    "entries": [
-                      {
-                        "data": {
-                          "Name": "jafohana:blue_daisy"
-                        },
-                        "weight": 40
-                      },
-                      {
-                        "data": {
-                          "Name": "jafohana:yellow_african_daisy"
-                        },
-                        "weight": 3
-                      },
-                      {
-                        "data": {
-                          "Name": "jafohana:pink_african_daisy"
-                        },
-                        "weight": 3
-                      },
-                      {
-                        "data": {
-                          "Name": "jafohana:white_african_daisy"
-                        },
-                        "weight": 3
-                      },
-                      {
-                        "data": {
-                          "Name": "jafohana:fireball_lily"
-                        },
-                        "weight": 1
-                      }
-                    ]
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                      "Name": "jafohana:blue_daisy"
+                    }
                   }
                 }
               },

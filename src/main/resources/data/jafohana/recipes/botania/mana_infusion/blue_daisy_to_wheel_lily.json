@@ -12,10 +12,10 @@
   },
   "group": "botania:flower_cycle",
   "input": {
-    "item": "jafohana:white_african_daisy"
+    "item": "jafohana:blue_daisy"
   },
   "mana": 400,
   "output": {
-    "item": "jafohana:red_snapdragon"
+    "item": "jafohana:wheel_lily"
   }
 }

@@ -1,0 +1,46 @@
+{
+  "type": "jafohana:add_features",
+  "biomes": [
+    [
+      {
+        "name": "#jafohana:is_overworld"
+      },
+      {
+        "name": [
+          "minecraft:windswept_forest",
+          "minecraft:cherry_grove"
+        ],
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_savanna",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_forest",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_coniferous",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_snowy",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_dry",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_wasteland",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_mountain"
+      }
+    ]
+  ],
+  "features": "jafohana:wheel_lily",
+  "step": "vegetal_decoration"
+}

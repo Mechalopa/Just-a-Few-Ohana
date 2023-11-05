@@ -1,6 +1,7 @@
 package com.github.mechalopa.jafohana.registry;
 
 import com.github.mechalopa.jafohana.JAFOhana;
+import com.github.mechalopa.jafohana.world.level.block.CrimsonCloverBlock;
 import com.github.mechalopa.jafohana.world.level.block.FasciatedDandelionBlock;
 import com.github.mechalopa.jafohana.world.level.block.FasciatedOxeyeDaisyBlock;
 import com.github.mechalopa.jafohana.world.level.block.JadeVineBlock;
@@ -47,7 +48,7 @@ public class ModBlocks
 	public static final RegistryObject<Block> SNOWDROP = REGISTRY.register("snowdrop", () -> new ModFlowerBlock(() -> MobEffects.POISON, 12));
 	public static final RegistryObject<Block> WINTER_HEATH = REGISTRY.register("winter_heath", () -> new ModFlowerBlock(() -> MobEffects.WEAKNESS, 9));
 	public static final RegistryObject<Block> BLUE_DAISY = REGISTRY.register("blue_daisy", () -> new ModFlowerBlock(() -> MobEffects.MOVEMENT_SPEED, 5));
-	public static final RegistryObject<Block> CRIMSON_CLOVER = REGISTRY.register("crimson_clover", () -> new ModFlowerBlock(() -> MobEffects.FIRE_RESISTANCE, 4));
+	public static final RegistryObject<Block> CRIMSON_CLOVER = REGISTRY.register("crimson_clover", () -> new CrimsonCloverBlock(() -> MobEffects.FIRE_RESISTANCE, 4));
 	public static final RegistryObject<Block> WHEEL_LILY = REGISTRY.register("wheel_lily", () -> new ModFlowerBlock(() -> MobEffects.SATURATION, 7));
 	public static final RegistryObject<Block> RED_SPIDER_LILY = REGISTRY.register("red_spider_lily", () -> new RedSpiderLilyBlock(() -> MobEffects.POISON, 12));
 	public static final RegistryObject<Block> BELLS_OF_IRELAND = REGISTRY.register("bells_of_ireland", () -> new MediumFlowerBlock(() -> MobEffects.SATURATION, 7));

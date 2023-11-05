@@ -2,6 +2,6 @@
   "parent": "minecraft:block/flower_pot_cross",
   "render_type": "cutout",
   "textures": {
-    "plant": "jafohana:block/crimson_clover"
+    "plant": "jafohana:block/potted_crimson_clover"
   }
 }
