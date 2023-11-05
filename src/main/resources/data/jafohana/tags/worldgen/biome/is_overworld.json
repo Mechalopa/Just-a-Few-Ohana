@@ -65,6 +65,30 @@
     {
       "id": "meadow:meadow_clearing",
       "required": false
+    },
+    {
+      "id": "eco:floating_river",
+      "required": false
+    },
+    {
+      "id": "mysticsbiomes:autumnal_grove",
+      "required": false
+    },
+    {
+      "id": "mysticsbiomes:bamboo_blossom_forest",
+      "required": false
+    },
+    {
+      "id": "mysticsbiomes:lavender_meadow",
+      "required": false
+    },
+    {
+      "id": "mysticsbiomes:strawberry_fields",
+      "required": false
+    },
+    {
+      "id": "snifferplus:timeless_grotto",
+      "required": false
     }
   ]
 }

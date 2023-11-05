@@ -10,10 +10,10 @@
   },
   "group": "botania:flower_cycle",
   "input": {
-    "item": "jafohana:milk_vetch"
+    "item": "jafohana:white_african_daisy"
   },
   "mana": 400,
   "output": {
-    "item": "jafohana:forget_me_not"
+    "item": "jafohana:blue_daisy"
   }
 }

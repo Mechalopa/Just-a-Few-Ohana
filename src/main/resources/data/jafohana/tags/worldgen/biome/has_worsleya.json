@@ -2,6 +2,14 @@
   "replace": false,
   "values": [
     "minecraft:windswept_hills",
-    "minecraft:windswept_gravelly_hills"
+    "minecraft:windswept_gravelly_hills",
+    {
+      "id": "pioneer:windswept_cliffs",
+      "required": false
+    },
+    {
+      "id": "terralith:granite_cliffs",
+      "required": false
+    }
   ]
 }

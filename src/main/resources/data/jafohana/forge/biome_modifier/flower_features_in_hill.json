@@ -9,7 +9,8 @@
         "name": [
           "minecraft:windswept_forest",
           "minecraft:meadow",
-          "minecraft:cherry_grove"
+          "minecraft:cherry_grove",
+          "minecraft:stony_peaks"
         ],
         "negate": true
       },
@@ -35,6 +36,10 @@
       },
       {
         "name": "#jafohana:is_dry",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_wasteland",
         "negate": true
       },
       {

@@ -1,0 +1,53 @@
+{
+  "feature": "jafohana:jade_vines",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 13
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "MOTION_BLOCKING_NO_LEAVES"
+    },
+    {
+      "type": "minecraft:environment_scan",
+      "allowed_search_condition": {
+        "type": "minecraft:any_of",
+        "predicates": [
+          {
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:air"
+          },
+          {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_block_tag",
+                "tag": "minecraft:leaves"
+              },
+              {
+                "type": "minecraft:not",
+                "predicate": {
+                  "type": "minecraft:matching_blocks",
+                  "blocks": "minecraft:jungle_leaves"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "direction_of_search": "up",
+      "max_steps": 16,
+      "target_condition": {
+        "type": "minecraft:matching_blocks",
+        "blocks": "minecraft:jungle_leaves"
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

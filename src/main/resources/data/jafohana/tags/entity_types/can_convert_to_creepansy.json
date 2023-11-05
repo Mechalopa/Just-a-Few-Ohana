@@ -1,0 +1,146 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:creeper",
+    {
+      "id": "#forge:creepers",
+      "required": false
+    },
+    {
+      "id": "#c:creepers",
+      "required": false
+    },
+    {
+      "id": "cactusmod:cactus_creeper",
+      "required": false
+    },
+    {
+      "id": "graveyard:skeleton_creeper",
+      "required": false
+    },
+    {
+      "id": "camocreepers:camo_creeper",
+      "required": false
+    },
+    {
+      "id": "apocalypse:breecher",
+      "required": false
+    },
+    {
+      "id": "dungeons_mobs:icy_creeper",
+      "required": false
+    },
+    {
+      "id": "#creeperoverhaul:creepers",
+      "required": false
+    },
+    {
+      "id": "creeperoverhaul:ocean_creeper",
+      "required": false
+    },
+    {
+      "id": "specialmobs:creeper",
+      "required": false
+    },
+    {
+      "id": "specialmobs:darkcreeper",
+      "required": false
+    },
+    {
+      "id": "specialmobs:deathcreeper",
+      "required": false
+    },
+    {
+      "id": "specialmobs:dirtcreeper",
+      "required": false
+    },
+    {
+      "id": "specialmobs:doomcreeper",
+      "required": false
+    },
+    {
+      "id": "specialmobs:drowningcreeper",
+      "required": false
+    },
+    {
+      "id": "specialmobs:endercreeper",
+      "required": false
+    },
+    {
+      "id": "specialmobs:firecreeper",
+      "required": false
+    },
+    {
+      "id": "specialmobs:gravelcreeper",
+      "required": false
+    },
+    {
+      "id": "specialmobs:jumpingcreeper",
+      "required": false
+    },
+    {
+      "id": "specialmobs:lightningcreeper",
+      "required": false
+    },
+    {
+      "id": "specialmobs:minicreeper",
+      "required": false
+    },
+    {
+      "id": "specialmobs:sandcreeper",
+      "required": false
+    },
+    {
+      "id": "specialmobs:skeletoncreeper",
+      "required": false
+    },
+    {
+      "id": "specialmobs:snowcreeper",
+      "required": false
+    },
+    {
+      "id": "specialmobs:splittingcreeper",
+      "required": false
+    },
+    {
+      "id": "more_babies:creeper",
+      "required": false
+    },
+    {
+      "id": "tofucraft:tofucreeper",
+      "required": false
+    },
+    {
+      "id": "enderzoology:concussion_creeper",
+      "required": false
+    },
+    {
+      "id": "good_nights_sleep:baby_creeper",
+      "required": false
+    },
+    {
+      "id": "alexscaves:nucleeper",
+      "required": false
+    },
+    {
+      "id": "grimoireofgaia:creep",
+      "required": false
+    },
+    {
+      "id": "savage_and_ravage:creepie",
+      "required": false
+    },
+    {
+      "id": "mutantmonsters:creeper_minion",
+      "required": false
+    },
+    {
+      "id": "mutantmonsters:mutant_creeper",
+      "required": false
+    },
+    {
+      "id": "aqua_creepers:aqua_creeper",
+      "required": false
+    }
+  ]
+}

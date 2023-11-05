@@ -1,0 +1,15 @@
+{
+  "type": "jafohana:add_features",
+  "biomes": [
+    [
+      {
+        "name": "#jafohana:is_overworld"
+      },
+      {
+        "name": "#jafohana:is_jungle"
+      }
+    ]
+  ],
+  "features": "jafohana:jade_vines",
+  "step": "top_layer_modification"
+}

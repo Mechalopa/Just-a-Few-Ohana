@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "jafohana:creepansy"
+    },
+    {
+      "item": "jafohana:creepansy"
+    },
+    {
+      "item": "jafohana:creepansy"
+    },
+    {
+      "item": "jafohana:creepansy"
+    },
+    {
+      "item": "jafohana:creepansy"
+    },
+    {
+      "item": "jafohana:creepansy"
+    },
+    {
+      "item": "jafohana:creepansy"
+    },
+    {
+      "item": "jafohana:creepansy"
+    }
+  ],
+  "result": {
+    "item": "minecraft:gunpowder"
+  }
+}

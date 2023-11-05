@@ -9,14 +9,20 @@ import com.github.mechalopa.jafohana.util.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.npc.VillagerTrades.ItemListing;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DoublePlantBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraftforge.common.BasicItemListing;
+import net.minecraftforge.event.ForgeEventFactory;
 import net.minecraftforge.event.entity.player.BonemealEvent;
+import net.minecraftforge.event.level.ExplosionEvent;
 import net.minecraftforge.event.village.WandererTradesEvent;
 import net.minecraftforge.eventbus.api.Event.Result;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -28,29 +34,24 @@ public class ModEvents
 	@SubscribeEvent
 	public static void onBonemeal(BonemealEvent event)
 	{
-		if (event.isCanceled())
-		{
-			return;
-		}
-
-		if (!event.getLevel().isClientSide() && event.getLevel() instanceof ServerLevel && event.getBlock() != null)
+		if (!event.isCanceled() && !event.getLevel().isClientSide() && event.getLevel() instanceof ServerLevel && event.getBlock() != null)
 		{
 			ServerLevel serverLevel = (ServerLevel)event.getLevel();
-			BlockPos blockpos = event.getPos();
+			BlockPos pos = event.getPos();
 			RandomSource r = serverLevel.getRandom();
 
-			if (event.getBlock().is(ModTags.CONVERTABLE_TO_FASCIATED_DANDELION) && fasciate(serverLevel, blockpos, ModBlocks.FASCIATED_DANDELION.get().defaultBlockState(), r, ModConfigs.cachedServer.DANDELION_FASCIATION_CHANCE))
+			if (event.getBlock().is(ModTags.BlockTags.CONVERTABLE_TO_FASCIATED_DANDELION) && fasciate(serverLevel, pos, ModBlocks.FASCIATED_DANDELION.get().defaultBlockState(), r, ModConfigs.cachedServer.DANDELION_FASCIATION_CHANCE))
 			{
 				event.setResult(Result.ALLOW);
 			}
-			else if (event.getBlock().is(ModTags.CONVERTABLE_TO_FASCIATED_OXEYE_DAISY) && fasciate(serverLevel, blockpos, ModBlocks.FASCIATED_OXEYE_DAISY.get().defaultBlockState(), r, ModConfigs.cachedServer.OXEYE_DAISY_FASCIATION_CHANCE))
+			else if (event.getBlock().is(ModTags.BlockTags.CONVERTABLE_TO_FASCIATED_OXEYE_DAISY) && fasciate(serverLevel, pos, ModBlocks.FASCIATED_OXEYE_DAISY.get().defaultBlockState(), r, ModConfigs.cachedServer.OXEYE_DAISY_FASCIATION_CHANCE))
 			{
 				event.setResult(Result.ALLOW);
 			}
 		}
 	}
 
-	private static boolean fasciate(ServerLevel serverLevel, BlockPos blockpos, BlockState fasciatedFlowerState, RandomSource rand, double chance)
+	private static boolean fasciate(ServerLevel serverLevel, BlockPos blockpos, BlockState fasciatedFlowerState, RandomSource random, double chance)
 	{
 		if (fasciatedFlowerState.canSurvive(serverLevel, blockpos) && serverLevel.isEmptyBlock(blockpos.above()))
 		{
@@ -58,11 +59,11 @@ public class ModEvents
 			{
 				if (direction.getAxis().isHorizontal())
 				{
-					BlockState blockstate = serverLevel.getBlockState(blockpos.relative(direction));
+					BlockState state = serverLevel.getBlockState(blockpos.relative(direction));
 
-					if (blockstate != null && blockstate.is(ModTags.AFFECTS_FASCIATIONS))
+					if (state != null && state.is(ModTags.BlockTags.AFFECTS_FASCIATIONS))
 					{
-						if (rand.nextDouble() < chance)
+						if (random.nextDouble() < chance)
 						{
 							BlockPos blockpos1 = blockpos.above();
 							serverLevel.setBlockAndUpdate(blockpos, DoublePlantBlock.copyWaterloggedFrom(serverLevel, blockpos, fasciatedFlowerState.setValue(DoublePlantBlock.HALF, DoubleBlockHalf.LOWER)));
@@ -76,6 +77,37 @@ public class ModEvents
 		}
 
 		return false;
+	}
+
+	@SubscribeEvent
+	public static void onBlockExplode(ExplosionEvent.Detonate event)
+	{
+		if (!event.getLevel().isClientSide() && event.getExplosion().getExploder() != null && event.getExplosion().getExploder().getType().is(ModTags.EntityTypeTags.CAN_CONVERT_TO_CREEPANSY) && !event.getAffectedBlocks().isEmpty() && ForgeEventFactory.getMobGriefingEvent(event.getLevel(), event.getExplosion().getExploder()))
+		{
+			Level level = event.getLevel();
+
+			for (BlockPos pos : event.getAffectedBlocks())
+			{
+				BlockState state = level.getBlockState(pos);
+
+				if (state.is(ModTags.BlockTags.CONVERTABLE_TO_CREEPANSY) && (double)level.getRandom().nextFloat() < ModConfigs.cachedServer.CREEPANSY_CONVERT_CHANCE)
+				{
+					ItemEntity itementity = new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ModItems.CREEPANSY.get()));
+
+					if (level.addFreshEntity(itementity))
+					{
+						if (state.is(BlockTags.FLOWER_POTS))
+						{
+							level.setBlockAndUpdate(pos, Blocks.FLOWER_POT.defaultBlockState());
+						}
+						else
+						{
+							level.removeBlock(pos, false);
+						}
+					}
+				}
+			}
+		}
 	}
 
 	@SubscribeEvent
@@ -106,9 +138,13 @@ public class ModEvents
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.WHITE_PANSY.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.YELLOW_PANSY.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.SNOWDROP.get()), 12, 1, 0.05F));
+			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.BLUE_DAISY.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.WINTER_HEATH.get()), 12, 1, 0.05F));
+			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.CRIMSON_CLOVER.get()), 12, 1, 0.05F));
+			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.WHEEL_LILY.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(3, new ItemStack(ModItems.RED_SPIDER_LILY.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(3, new ItemStack(ModItems.BELLS_OF_IRELAND.get()), 12, 1, 0.05F));
+			genericTrades.add(new BasicItemListing(3, new ItemStack(ModItems.JADE_VINE.get(), 2), 5, 1, 0.05F));
 		}
 	}
 }

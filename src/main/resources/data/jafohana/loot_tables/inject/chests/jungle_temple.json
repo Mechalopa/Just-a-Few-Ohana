@@ -50,8 +50,23 @@
           "name": "jafohana:spathiphyllum"
         },
         {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 5.0,
+                "min": 2.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "jafohana:jade_vine"
+        },
+        {
           "type": "minecraft:empty",
-          "weight": 5
+          "weight": 4
         }
       ],
       "rolls": {
