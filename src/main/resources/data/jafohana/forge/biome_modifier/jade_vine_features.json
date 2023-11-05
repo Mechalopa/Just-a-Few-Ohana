@@ -6,10 +6,6 @@
         "name": "#jafohana:is_overworld"
       },
       {
-        "name": "minecraft:sparse_jungle",
-        "negate": true
-      },
-      {
         "name": "#jafohana:is_jungle"
       }
     ]
