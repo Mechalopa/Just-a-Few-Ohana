@@ -12,7 +12,7 @@
   "type": "enderio:sag_milling",
   "energy": 2400,
   "input": {
-    "item": "jafohana:fasciated_dandelion"
+    "item": "jafohana:worsleya"
   },
   "outputs": [
     {
