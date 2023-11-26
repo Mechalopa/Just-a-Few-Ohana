@@ -22,6 +22,10 @@
         "negate": true
       },
       {
+        "name": "#jafohana:is_jungle",
+        "negate": true
+      },
+      {
         "name": "#jafohana:is_mountain",
         "negate": true
       },
