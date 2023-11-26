@@ -31,6 +31,10 @@
         "negate": true
       },
       {
+        "name": "#jafohana:is_jungle",
+        "negate": true
+      },
+      {
         "name": "#jafohana:is_snowy",
         "negate": true
       },
