@@ -95,15 +95,11 @@
       "required": false
     },
     {
+      "id": "spookybats:christmas_forest",
+      "required": false
+    },
+    {
       "id": "spookybats:spooky_oak_forest",
-      "required": false
-    },
-    {
-      "id": "spider_caves:spider_cave",
-      "required": false
-    },
-    {
-      "id": "underground_jungle:underground_jungle",
       "required": false
     }
   ]
