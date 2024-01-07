@@ -26,10 +26,6 @@
         "negate": true
       },
       {
-        "name": "#jafohana:is_mountain",
-        "negate": true
-      },
-      {
         "name": "#jafohana:is_swamp"
       },
       {

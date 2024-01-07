@@ -6,11 +6,11 @@
         "name": "#jafohana:is_overworld"
       },
       {
-        "name": [
-          "minecraft:birch_forest",
-          "minecraft:old_growth_birch_forest",
-          "minecraft:flower_forest"
-        ],
+        "name": "#jafohana:is_birch_forest",
+        "negate": true
+      },
+      {
+        "name": "minecraft:flower_forest",
         "negate": true
       },
       {

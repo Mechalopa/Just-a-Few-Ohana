@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "jafohana:block/magenta_spotted_bellflower"
+  }
+}

@@ -145,7 +145,7 @@
                   "to_place": {
                     "type": "minecraft:simple_state_provider",
                     "state": {
-                      "Name": "jafohana:bluebell"
+                      "Name": "jafohana:orange_spider_lily"
                     }
                   }
                 }
@@ -178,7 +178,7 @@
                   "to_place": {
                     "type": "minecraft:simple_state_provider",
                     "state": {
-                      "Name": "jafohana:orange_spider_lily"
+                      "Name": "jafohana:magenta_spotted_bellflower"
                     }
                   }
                 }

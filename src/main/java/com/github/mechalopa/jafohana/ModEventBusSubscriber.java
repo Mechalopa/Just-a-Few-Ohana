@@ -47,6 +47,8 @@ public class ModEventBusSubscriber
 		ComposterBlock.COMPOSTABLES.put(ModItems.BLUE_DAISY.get(), 0.65F);
 		ComposterBlock.COMPOSTABLES.put(ModItems.CRIMSON_CLOVER.get(), 0.65F);
 		ComposterBlock.COMPOSTABLES.put(ModItems.WHEEL_LILY.get(), 0.65F);
+		ComposterBlock.COMPOSTABLES.put(ModItems.MAGENTA_SPOTTED_BELLFLOWER.get(), 0.65F);
+		ComposterBlock.COMPOSTABLES.put(ModItems.WHITE_SPOTTED_BELLFLOWER.get(), 0.65F);
 		ComposterBlock.COMPOSTABLES.put(ModItems.RED_SPIDER_LILY.get(), 0.65F);
 		ComposterBlock.COMPOSTABLES.put(ModItems.BELLS_OF_IRELAND.get(), 0.65F);
 		ComposterBlock.COMPOSTABLES.put(ModItems.ORANGE_MARIGOLD.get(), 0.65F);

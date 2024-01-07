@@ -6,6 +6,10 @@
         "name": "#jafohana:is_overworld"
       },
       {
+        "name": "#jafohana:is_birch_forest",
+        "negate": true
+      },
+      {
         "name": "minecraft:flower_forest",
         "negate": true
       },

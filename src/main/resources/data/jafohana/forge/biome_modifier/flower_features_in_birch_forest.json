@@ -1,0 +1,35 @@
+{
+  "type": "jafohana:add_features",
+  "biomes": [
+    [
+      {
+        "name": "#jafohana:is_overworld"
+      },
+      {
+        "name": "#jafohana:is_birch_forest"
+      },
+      {
+        "name": "#jafohana:is_hot",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_snowy",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_coniferous",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_spooky",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_wasteland",
+        "negate": true
+      }
+    ]
+  ],
+  "features": "jafohana:flower_birch_forest",
+  "step": "vegetal_decoration"
+}
