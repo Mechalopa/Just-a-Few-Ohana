@@ -21,7 +21,7 @@
         "name": "#jafohana:is_plains"
       },
       {
-        "name": "#hmag:biomesoplenty/tundra",
+        "name": "#jafohana:biomesoplenty/tundra",
         "negate": true
       }
     ]
