@@ -193,10 +193,21 @@
                 "type": "minecraft:simple_block",
                 "config": {
                   "to_place": {
-                    "type": "minecraft:simple_state_provider",
-                    "state": {
-                      "Name": "jafohana:white_spotted_bellflower"
-                    }
+                    "type": "minecraft:weighted_state_provider",
+                    "entries": [
+                      {
+                        "data": {
+                          "Name": "jafohana:magenta_spotted_bellflower"
+                        },
+                        "weight": 1
+                      },
+                      {
+                        "data": {
+                          "Name": "jafohana:white_spotted_bellflower"
+                        },
+                        "weight": 7
+                      }
+                    ]
                   }
                 }
               },

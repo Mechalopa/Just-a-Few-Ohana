@@ -21,6 +21,7 @@ public class ModLootTableLoadingEvent
 			"buried_treasure",
 			"igloo_chest",
 			"jungle_temple",
+			"pillager_outpost",
 			"stronghold_corridor",
 			"stronghold_crossing",
 			"woodland_mansion",
