@@ -32,6 +32,21 @@
               "function": "minecraft:set_count"
             }
           ],
+          "name": "jafohana:green_tulip"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
           "name": "jafohana:orange_spider_lily"
         },
         {
@@ -81,7 +96,7 @@
         },
         {
           "type": "minecraft:empty",
-          "weight": 5
+          "weight": 6
         }
       ],
       "rolls": {

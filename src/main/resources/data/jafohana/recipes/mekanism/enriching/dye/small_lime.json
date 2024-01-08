@@ -7,9 +7,14 @@
   ],
   "type": "mekanism:enriching",
   "input": {
-    "ingredient": {
-      "item": "jafohana:bells_of_ireland"
-    }
+    "ingredient": [
+      {
+        "item": "jafohana:green_tulip"
+      },
+      {
+        "item": "jafohana:bells_of_ireland"
+      }
+    ]
   },
   "output": {
     "count": 2,

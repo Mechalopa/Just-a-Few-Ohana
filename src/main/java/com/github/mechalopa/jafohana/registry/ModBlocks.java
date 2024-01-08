@@ -31,6 +31,7 @@ public class ModBlocks
 	public static final RegistryObject<Block> PINK_AFRICAN_DAISY = REGISTRY.register("pink_african_daisy", () -> new ModFlowerBlock(() -> MobEffects.DAMAGE_RESISTANCE, 4));
 	public static final RegistryObject<Block> WHITE_AFRICAN_DAISY = REGISTRY.register("white_african_daisy", () -> new ModFlowerBlock(() -> MobEffects.DAMAGE_RESISTANCE, 4));
 	public static final RegistryObject<Block> BLACK_TULIP = REGISTRY.register("black_tulip", () -> new ModFlowerBlock(() -> MobEffects.WEAKNESS, 9));
+	public static final RegistryObject<Block> GREEN_TULIP = REGISTRY.register("green_tulip", () -> new ModFlowerBlock(() -> MobEffects.WEAKNESS, 9));
 	public static final RegistryObject<Block> BLOOD_RED_IRIS = REGISTRY.register("blood_red_iris", () -> new ModFlowerBlock(() -> MobEffects.POISON, 12));
 	public static final RegistryObject<Block> BLUEBELL = REGISTRY.register("bluebell", () -> new ModFlowerBlock(() -> MobEffects.REGENERATION, 8));
 	public static final RegistryObject<Block> RED_SNAPDRAGON = REGISTRY.register("red_snapdragon", () -> new ModFlowerBlock(() -> MobEffects.DAMAGE_BOOST, 4));
@@ -72,6 +73,7 @@ public class ModBlocks
 	public static final RegistryObject<Block> POTTED_PINK_AFRICAN_DAISY = REGISTRY.register("potted_pink_african_daisy", () -> new ModFlowerPotBlock(PINK_AFRICAN_DAISY.get()));
 	public static final RegistryObject<Block> POTTED_WHITE_AFRICAN_DAISY = REGISTRY.register("potted_white_african_daisy", () -> new ModFlowerPotBlock(WHITE_AFRICAN_DAISY.get()));
 	public static final RegistryObject<Block> POTTED_BLACK_TULIP = REGISTRY.register("potted_black_tulip", () -> new ModFlowerPotBlock(BLACK_TULIP.get()));
+	public static final RegistryObject<Block> POTTED_GREEN_TULIP = REGISTRY.register("potted_green_tulip", () -> new ModFlowerPotBlock(GREEN_TULIP.get()));
 	public static final RegistryObject<Block> POTTED_BLOOD_RED_IRIS = REGISTRY.register("potted_blood_red_iris", () -> new ModFlowerPotBlock(BLOOD_RED_IRIS.get()));
 	public static final RegistryObject<Block> POTTED_BLUEBELL = REGISTRY.register("potted_bluebell", () -> new ModFlowerPotBlock(BLUEBELL.get()));
 	public static final RegistryObject<Block> POTTED_RED_SNAPDRAGON = REGISTRY.register("potted_red_snapdragon", () -> new ModFlowerPotBlock(RED_SNAPDRAGON.get()));

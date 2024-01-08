@@ -11,10 +11,21 @@
                 "type": "minecraft:simple_block",
                 "config": {
                   "to_place": {
-                    "type": "minecraft:simple_state_provider",
-                    "state": {
-                      "Name": "jafohana:black_tulip"
-                    }
+                    "type": "minecraft:weighted_state_provider",
+                    "entries": [
+                      {
+                        "data": {
+                          "Name": "jafohana:black_tulip"
+                        },
+                        "weight": 7
+                      },
+                      {
+                        "data": {
+                          "Name": "jafohana:green_tulip"
+                        },
+                        "weight": 1
+                      }
+                    ]
                   }
                 }
               },
@@ -44,10 +55,21 @@
                 "type": "minecraft:simple_block",
                 "config": {
                   "to_place": {
-                    "type": "minecraft:simple_state_provider",
-                    "state": {
-                      "Name": "jafohana:blood_red_iris"
-                    }
+                    "type": "minecraft:weighted_state_provider",
+                    "entries": [
+                      {
+                        "data": {
+                          "Name": "jafohana:black_tulip"
+                        },
+                        "weight": 1
+                      },
+                      {
+                        "data": {
+                          "Name": "jafohana:green_tulip"
+                        },
+                        "weight": 7
+                      }
+                    ]
                   }
                 }
               },
@@ -61,7 +83,7 @@
                 }
               ]
             },
-            "tries": 96,
+            "tries": 128,
             "xz_spread": 7,
             "y_spread": 3
           }
