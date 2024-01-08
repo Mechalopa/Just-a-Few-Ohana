@@ -43,6 +43,10 @@
         "negate": true
       },
       {
+        "name": "#jafohana:is_swamp",
+        "negate": true
+      },
+      {
         "name": "#jafohana:is_wasteland",
         "negate": true
       },

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "jafohana:creepansy",
     "#jafohana:convertable_to_fasciated_dandelion",
     "#jafohana:convertable_to_fasciated_oxeye_daisy"
   ]

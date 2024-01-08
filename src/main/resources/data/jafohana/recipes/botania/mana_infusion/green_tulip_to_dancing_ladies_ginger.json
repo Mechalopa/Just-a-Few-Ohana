@@ -10,7 +10,7 @@
   },
   "group": "botania:flower_cycle",
   "input": {
-    "item": "jafohana:black_tulip"
+    "item": "jafohana:green_tulip"
   },
   "mana": 400,
   "output": {

@@ -23,6 +23,7 @@ public class ModItems
 	public static final RegistryObject<Item> PINK_AFRICAN_DAISY = REGISTRY.register("pink_african_daisy", () -> new BlockItem(ModBlocks.PINK_AFRICAN_DAISY.get(), new Item.Properties()));
 	public static final RegistryObject<Item> WHITE_AFRICAN_DAISY = REGISTRY.register("white_african_daisy", () -> new BlockItem(ModBlocks.WHITE_AFRICAN_DAISY.get(), new Item.Properties()));
 	public static final RegistryObject<Item> BLACK_TULIP = REGISTRY.register("black_tulip", () -> new BlockItem(ModBlocks.BLACK_TULIP.get(), new Item.Properties()));
+	public static final RegistryObject<Item> GREEN_TULIP = REGISTRY.register("green_tulip", () -> new BlockItem(ModBlocks.GREEN_TULIP.get(), new Item.Properties()));
 	public static final RegistryObject<Item> BLOOD_RED_IRIS = REGISTRY.register("blood_red_iris", () -> new BlockItem(ModBlocks.BLOOD_RED_IRIS.get(), new Item.Properties()));
 	public static final RegistryObject<Item> BLUEBELL = REGISTRY.register("bluebell", () -> new BlockItem(ModBlocks.BLUEBELL.get(), new Item.Properties()));
 	public static final RegistryObject<Item> RED_SNAPDRAGON = REGISTRY.register("red_snapdragon", () -> new BlockItem(ModBlocks.RED_SNAPDRAGON.get(), new Item.Properties()));
@@ -42,6 +43,8 @@ public class ModItems
 	public static final RegistryObject<Item> BLUE_DAISY = REGISTRY.register("blue_daisy", () -> new BlockItem(ModBlocks.BLUE_DAISY.get(), new Item.Properties()));
 	public static final RegistryObject<Item> CRIMSON_CLOVER = REGISTRY.register("crimson_clover", () -> new BlockItem(ModBlocks.CRIMSON_CLOVER.get(), new Item.Properties()));
 	public static final RegistryObject<Item> WHEEL_LILY = REGISTRY.register("wheel_lily", () -> new BlockItem(ModBlocks.WHEEL_LILY.get(), new Item.Properties()));
+	public static final RegistryObject<Item> MAGENTA_SPOTTED_BELLFLOWER = REGISTRY.register("magenta_spotted_bellflower", () -> new BlockItem(ModBlocks.MAGENTA_SPOTTED_BELLFLOWER.get(), new Item.Properties()));
+	public static final RegistryObject<Item> WHITE_SPOTTED_BELLFLOWER = REGISTRY.register("white_spotted_bellflower", () -> new BlockItem(ModBlocks.WHITE_SPOTTED_BELLFLOWER.get(), new Item.Properties()));
 	public static final RegistryObject<Item> RED_SPIDER_LILY = REGISTRY.register("red_spider_lily", () -> new BlockItem(ModBlocks.RED_SPIDER_LILY.get(), new Item.Properties()));
 	public static final RegistryObject<Item> BELLS_OF_IRELAND = REGISTRY.register("bells_of_ireland", () -> new BlockItem(ModBlocks.BELLS_OF_IRELAND.get(), new Item.Properties()));
 	public static final RegistryObject<Item> ORANGE_MARIGOLD = REGISTRY.register("orange_marigold", () -> new DoubleHighBlockItem(ModBlocks.ORANGE_MARIGOLD.get(), new Item.Properties()));

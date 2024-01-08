@@ -47,8 +47,22 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:black_tulip",
-          "weight": 2
+          "name": "jafohana:black_tulip"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 5.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "jafohana:green_tulip"
         },
         {
           "type": "minecraft:empty",

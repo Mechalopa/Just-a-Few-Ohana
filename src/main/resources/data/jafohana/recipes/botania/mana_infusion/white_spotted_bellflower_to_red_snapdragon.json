@@ -10,7 +10,7 @@
   },
   "group": "botania:flower_cycle",
   "input": {
-    "item": "jafohana:wheel_lily"
+    "item": "jafohana:white_spotted_bellflower"
   },
   "mana": 400,
   "output": {

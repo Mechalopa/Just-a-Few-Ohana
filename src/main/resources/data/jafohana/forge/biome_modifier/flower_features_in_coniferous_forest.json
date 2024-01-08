@@ -21,7 +21,7 @@
         "name": "#jafohana:is_coniferous"
       },
       {
-        "name": "#hmag:biomesoplenty/tundra",
+        "name": "#jafohana:biomesoplenty/tundra",
         "negate": true
       }
     ]
