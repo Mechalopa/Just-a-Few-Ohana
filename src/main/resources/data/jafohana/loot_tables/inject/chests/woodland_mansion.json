@@ -48,11 +48,11 @@
             }
           ],
           "name": "jafohana:black_tulip",
-          "weight": 2
+          "weight": 4
         },
         {
           "type": "minecraft:empty",
-          "weight": 46
+          "weight": 44
         }
       ],
       "rolls": 1.0
