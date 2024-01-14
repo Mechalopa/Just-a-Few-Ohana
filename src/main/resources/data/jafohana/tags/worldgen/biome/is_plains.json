@@ -10,14 +10,6 @@
       "required": false
     },
     {
-      "id": "#c:is_plains",
-      "required": false
-    },
-    {
-      "id": "#c:is_plain",
-      "required": false
-    },
-    {
       "id": "terralith:blooming_plateau",
       "required": false
     },
@@ -27,6 +19,30 @@
     },
     {
       "id": "terralith:valley_clearing",
+      "required": false
+    },
+    {
+      "id": "meadow:meadow_clearing",
+      "required": false
+    },
+    {
+      "id": "spawn:ant_gardens",
+      "required": false
+    },
+    {
+      "id": "biox:autumnal_dark_plains",
+      "required": false
+    },
+    {
+      "id": "biox:birch_plains",
+      "required": false
+    },
+    {
+      "id": "biox:dark_plains",
+      "required": false
+    },
+    {
+      "id": "biox:flower_plains",
       "required": false
     }
   ]

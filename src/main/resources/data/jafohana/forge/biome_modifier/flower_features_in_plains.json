@@ -19,6 +19,10 @@
       },
       {
         "name": "#jafohana:is_plains"
+      },
+      {
+        "name": "#jafohana:biomesoplenty/tundra",
+        "negate": true
       }
     ]
   ],

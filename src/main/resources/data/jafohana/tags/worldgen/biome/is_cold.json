@@ -6,7 +6,7 @@
       "required": false
     },
     {
-      "id": "#c:is_cold",
+      "id": "biox:glacial_caves",
       "required": false
     }
   ]

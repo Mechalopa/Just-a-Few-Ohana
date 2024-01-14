@@ -2,7 +2,7 @@
   "replace": false,
   "values": [
     {
-      "id": "#forge:is_dry",
+      "id": "biomesoplenty:tundra",
       "required": false
     }
   ]

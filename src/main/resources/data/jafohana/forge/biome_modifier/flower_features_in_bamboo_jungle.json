@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "minecraft:bamboo_jungle",
+  "features": "jafohana:flower_bamboo_jungle",
+  "step": "vegetal_decoration"
+}

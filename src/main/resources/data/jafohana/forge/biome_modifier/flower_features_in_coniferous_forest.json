@@ -19,6 +19,10 @@
       },
       {
         "name": "#jafohana:is_coniferous"
+      },
+      {
+        "name": "#jafohana:biomesoplenty/tundra",
+        "negate": true
       }
     ]
   ],

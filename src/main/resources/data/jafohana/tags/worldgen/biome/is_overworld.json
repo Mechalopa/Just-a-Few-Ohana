@@ -85,6 +85,22 @@
     {
       "id": "mysticsbiomes:strawberry_fields",
       "required": false
+    },
+    {
+      "id": "snifferplus:timeless_grotto",
+      "required": false
+    },
+    {
+      "id": "spawn:ant_gardens",
+      "required": false
+    },
+    {
+      "id": "spookybats:christmas_forest",
+      "required": false
+    },
+    {
+      "id": "spookybats:spooky_oak_forest",
+      "required": false
     }
   ]
 }
