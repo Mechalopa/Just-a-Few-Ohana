@@ -155,6 +155,14 @@
       "required": false
     },
     {
+      "id": "caverns_and_chasms:deeper",
+      "required": false
+    },
+    {
+      "id": "caverns_and_chasms:peeper",
+      "required": false
+    },
+    {
       "id": "grimoireofgaia:creep",
       "required": false
     },
