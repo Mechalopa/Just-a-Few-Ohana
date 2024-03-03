@@ -17,7 +17,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:dancing_ladies_ginger"
+          "name": "jafohana:black_tulip"
         },
         {
           "type": "minecraft:item",
@@ -32,7 +32,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:fireball_lily"
+          "name": "jafohana:green_tulip"
         },
         {
           "type": "minecraft:item",
@@ -47,7 +47,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:spathiphyllum"
+          "name": "jafohana:orange_spider_lily"
         },
         {
           "type": "minecraft:item",
@@ -56,17 +56,47 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 5.0,
-                "min": 2.0
+                "max": 3.0,
+                "min": 1.0
               },
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:jade_vine"
+          "name": "jafohana:wheel_lily"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "jafohana:magenta_spotted_bellflower"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "jafohana:white_spotted_bellflower"
         },
         {
           "type": "minecraft:empty",
-          "weight": 4
+          "weight": 6
         }
       ],
       "rolls": {
@@ -75,5 +105,6 @@
         "min": 0.0
       }
     }
-  ]
+  ],
+  "random_sequence": "jafohana:addtions/chests/pillager_outpost"
 }

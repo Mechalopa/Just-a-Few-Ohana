@@ -17,7 +17,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:black_tulip"
+          "name": "jafohana:dancing_ladies_ginger"
         },
         {
           "type": "minecraft:item",
@@ -32,7 +32,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:green_tulip"
+          "name": "jafohana:fireball_lily"
         },
         {
           "type": "minecraft:item",
@@ -47,7 +47,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:orange_spider_lily"
+          "name": "jafohana:spathiphyllum"
         },
         {
           "type": "minecraft:item",
@@ -56,47 +56,17 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 3.0,
-                "min": 1.0
+                "max": 5.0,
+                "min": 2.0
               },
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:wheel_lily"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 3.0,
-                "min": 1.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "jafohana:magenta_spotted_bellflower"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 3.0,
-                "min": 1.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "jafohana:white_spotted_bellflower"
+          "name": "jafohana:jade_vine"
         },
         {
           "type": "minecraft:empty",
-          "weight": 6
+          "weight": 4
         }
       ],
       "rolls": {
@@ -105,5 +75,6 @@
         "min": 0.0
       }
     }
-  ]
+  ],
+  "random_sequence": "jafohana:addtions/chests/jungle_temple"
 }

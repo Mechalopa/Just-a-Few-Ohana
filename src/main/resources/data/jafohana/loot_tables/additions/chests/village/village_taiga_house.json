@@ -11,13 +11,13 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 5.0,
+                "max": 3.0,
                 "min": 1.0
               },
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:worsleya"
+          "name": "jafohana:evening_primrose"
         },
         {
           "type": "minecraft:item",
@@ -26,13 +26,13 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 5.0,
-                "min": 2.0
+                "max": 3.0,
+                "min": 1.0
               },
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:jade_vine"
+          "name": "jafohana:forget_me_not"
         },
         {
           "type": "minecraft:item",
@@ -41,13 +41,13 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 5.0,
+                "max": 3.0,
                 "min": 1.0
               },
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:black_tulip"
+          "name": "jafohana:bluebell"
         },
         {
           "type": "minecraft:item",
@@ -56,17 +56,17 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 5.0,
+                "max": 3.0,
                 "min": 1.0
               },
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:green_tulip"
+          "name": "jafohana:winter_heath"
         },
         {
           "type": "minecraft:empty",
-          "weight": 12
+          "weight": 4
         }
       ],
       "rolls": {
@@ -75,5 +75,6 @@
         "min": 0.0
       }
     }
-  ]
+  ],
+  "random_sequence": "jafohana:addtions/chests/village/village_taiga_house"
 }

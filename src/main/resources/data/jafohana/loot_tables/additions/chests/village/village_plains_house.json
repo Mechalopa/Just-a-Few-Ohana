@@ -108,5 +108,6 @@
         "min": 0.0
       }
     }
-  ]
+  ],
+  "random_sequence": "jafohana:addtions/chests/village/village_plains_house"
 }

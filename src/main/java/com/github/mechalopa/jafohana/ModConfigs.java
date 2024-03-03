@@ -15,7 +15,6 @@ public class ModConfigs
 	public static ForgeConfigSpec.DoubleValue OXEYE_DAISY_FASCIATION_CHANCE;
 	public static ForgeConfigSpec.DoubleValue CREEPANSY_CONVERT_CHANCE;
 	public static ForgeConfigSpec.DoubleValue JADE_VINE_GROW_CHANCE;
-	public static ForgeConfigSpec.BooleanValue ADDITIONAL_CHEST_LOOTS;
 	public static ForgeConfigSpec.BooleanValue ADDITIONAL_WANDERER_TRADES;
 
 	static
@@ -28,7 +27,6 @@ public class ModConfigs
 		OXEYE_DAISY_FASCIATION_CHANCE = SERVER_BUILDER.defineInRange("oxeyeDaisyFasciationChance", 0.4D, 0.0D, 1.0D);
 		CREEPANSY_CONVERT_CHANCE = SERVER_BUILDER.defineInRange("creepansyConvertChance", 1.0D, 0.0D, 1.0D);
 		JADE_VINE_GROW_CHANCE = SERVER_BUILDER.defineInRange("jadeVineGrowChance", 0.45D, 0.0D, 1.0D);
-		ADDITIONAL_CHEST_LOOTS = SERVER_BUILDER.define("additionalChestLoots", true);
 		ADDITIONAL_WANDERER_TRADES = SERVER_BUILDER.define("additionalWandererTrades", true);
 
 		SERVER_BUILDER.pop();
@@ -44,7 +42,6 @@ public class ModConfigs
 		public static double OXEYE_DAISY_FASCIATION_CHANCE;
 		public static double CREEPANSY_CONVERT_CHANCE;
 		public static double JADE_VINE_GROW_CHANCE;
-		public static boolean ADDITIONAL_CHEST_LOOTS;
 		public static boolean ADDITIONAL_WANDERER_TRADES;
 
 		public static void refresh()
@@ -55,7 +52,6 @@ public class ModConfigs
 			OXEYE_DAISY_FASCIATION_CHANCE = ModConfigs.OXEYE_DAISY_FASCIATION_CHANCE.get();
 			CREEPANSY_CONVERT_CHANCE = ModConfigs.CREEPANSY_CONVERT_CHANCE.get();
 			JADE_VINE_GROW_CHANCE = ModConfigs.JADE_VINE_GROW_CHANCE.get();
-			ADDITIONAL_CHEST_LOOTS = ModConfigs.ADDITIONAL_CHEST_LOOTS.get();
 			ADDITIONAL_WANDERER_TRADES = ModConfigs.ADDITIONAL_WANDERER_TRADES.get();
 		}
 	}

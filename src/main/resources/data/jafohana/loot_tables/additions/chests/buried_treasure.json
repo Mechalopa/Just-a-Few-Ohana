@@ -11,14 +11,13 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 3.0,
+                "max": 5.0,
                 "min": 1.0
               },
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:yellow_african_daisy",
-          "weight": 2
+          "name": "jafohana:worsleya"
         },
         {
           "type": "minecraft:item",
@@ -27,14 +26,13 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 3.0,
-                "min": 1.0
+                "max": 5.0,
+                "min": 2.0
               },
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:pink_african_daisy",
-          "weight": 2
+          "name": "jafohana:jade_vine"
         },
         {
           "type": "minecraft:item",
@@ -43,14 +41,13 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 3.0,
+                "max": 5.0,
                 "min": 1.0
               },
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:white_african_daisy",
-          "weight": 2
+          "name": "jafohana:black_tulip"
         },
         {
           "type": "minecraft:item",
@@ -59,26 +56,17 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 3.0,
+                "max": 5.0,
                 "min": 1.0
               },
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:blue_daisy",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "jafohana:orange_marigold"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "jafohana:yellow_marigold"
+          "name": "jafohana:green_tulip"
         },
         {
           "type": "minecraft:empty",
-          "weight": 6
+          "weight": 12
         }
       ],
       "rolls": {
@@ -87,5 +75,6 @@
         "min": 0.0
       }
     }
-  ]
+  ],
+  "random_sequence": "jafohana:addtions/chests/buried_treasure"
 }

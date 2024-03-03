@@ -1,0 +1,10 @@
+{
+  "type": "jafohana:add_table",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/stronghold_crossing"
+    }
+  ],
+  "table": "jafohana:additions/chests/stronghold_crossing"
+}
