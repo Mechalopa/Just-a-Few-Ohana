@@ -8,6 +8,7 @@ import com.github.mechalopa.jafohana.registry.ModBiomeModifiers;
 import com.github.mechalopa.jafohana.registry.ModBlocks;
 import com.github.mechalopa.jafohana.registry.ModCreativeModeTabs;
 import com.github.mechalopa.jafohana.registry.ModItems;
+import com.github.mechalopa.jafohana.registry.ModLootModifiers;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -36,6 +37,7 @@ public class JAFOhana
 		ModBiomeFeatures.register(modEventBus);
 		ModCreativeModeTabs.register(modEventBus);
 		ModItems.register(modEventBus);
+		ModLootModifiers.register(modEventBus);
 		ModBiomeModifiers.register(modEventBus);
 
 		MinecraftForge.EVENT_BUS.register(new ModEvents());

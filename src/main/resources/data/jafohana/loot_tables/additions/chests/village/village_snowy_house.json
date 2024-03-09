@@ -17,7 +17,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:evening_primrose"
+          "name": "jafohana:purple_pansy"
         },
         {
           "type": "minecraft:item",
@@ -32,7 +32,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:forget_me_not"
+          "name": "jafohana:white_pansy"
         },
         {
           "type": "minecraft:item",
@@ -47,7 +47,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:bluebell"
+          "name": "jafohana:yellow_pansy"
         },
         {
           "type": "minecraft:item",
@@ -62,11 +62,28 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:winter_heath"
+          "name": "jafohana:snowdrop",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "jafohana:winter_heath",
+          "weight": 3
         },
         {
           "type": "minecraft:empty",
-          "weight": 4
+          "weight": 9
         }
       ],
       "rolls": {
@@ -75,5 +92,6 @@
         "min": 0.0
       }
     }
-  ]
+  ],
+  "random_sequence": "jafohana:additions/chests/village/village_snowy_house"
 }

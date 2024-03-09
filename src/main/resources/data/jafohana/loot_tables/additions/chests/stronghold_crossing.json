@@ -35,43 +35,12 @@
           "name": "jafohana:fasciated_oxeye_daisy"
         },
         {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 3.0,
-                "min": 1.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "jafohana:black_tulip",
-          "weight": 4
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 3.0,
-                "min": 1.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "jafohana:green_tulip",
-          "weight": 4
-        },
-        {
           "type": "minecraft:empty",
-          "weight": 40
+          "weight": 48
         }
       ],
       "rolls": 1.0
     }
-  ]
+  ],
+  "random_sequence": "jafohana:additions/chests/stronghold_crossing"
 }

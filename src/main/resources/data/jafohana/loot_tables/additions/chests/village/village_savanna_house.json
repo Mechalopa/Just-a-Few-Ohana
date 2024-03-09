@@ -17,7 +17,8 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:purple_pansy"
+          "name": "jafohana:yellow_african_daisy",
+          "weight": 2
         },
         {
           "type": "minecraft:item",
@@ -32,7 +33,8 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:white_pansy"
+          "name": "jafohana:pink_african_daisy",
+          "weight": 2
         },
         {
           "type": "minecraft:item",
@@ -47,7 +49,8 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:yellow_pansy"
+          "name": "jafohana:white_african_daisy",
+          "weight": 2
         },
         {
           "type": "minecraft:item",
@@ -62,28 +65,20 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:snowdrop",
-          "weight": 3
+          "name": "jafohana:blue_daisy",
+          "weight": 2
         },
         {
           "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 3.0,
-                "min": 1.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "jafohana:winter_heath",
-          "weight": 3
+          "name": "jafohana:orange_marigold"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jafohana:yellow_marigold"
         },
         {
           "type": "minecraft:empty",
-          "weight": 9
+          "weight": 6
         }
       ],
       "rolls": {
@@ -92,5 +87,6 @@
         "min": 0.0
       }
     }
-  ]
+  ],
+  "random_sequence": "jafohana:additions/chests/village/village_savanna_house"
 }

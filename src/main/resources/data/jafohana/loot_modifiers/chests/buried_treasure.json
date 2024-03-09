@@ -1,0 +1,10 @@
+{
+  "type": "jafohana:add_table",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/buried_treasure"
+    }
+  ],
+  "table": "jafohana:additions/chests/buried_treasure"
+}

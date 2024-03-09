@@ -20,8 +20,23 @@
           "name": "jafohana:snowdrop"
         },
         {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "jafohana:winter_heath"
+        },
+        {
           "type": "minecraft:empty",
-          "weight": 7
+          "weight": 6
         }
       ],
       "rolls": {
@@ -30,5 +45,6 @@
         "min": 0.0
       }
     }
-  ]
+  ],
+  "random_sequence": "jafohana:additions/chests/igloo_chest"
 }
