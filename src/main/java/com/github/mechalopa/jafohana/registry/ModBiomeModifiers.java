@@ -15,7 +15,7 @@ public class ModBiomeModifiers
 {
 	private static final DeferredRegister<Codec<? extends BiomeModifier>> REGISTRY = DeferredRegister.create(ForgeRegistries.Keys.BIOME_MODIFIER_SERIALIZERS, JAFOhana.MODID);
 
-	public static final RegistryObject<Codec<ModAddFeaturesBiomeModifier>> ADD_SPAWNS = REGISTRY.register("add_features", ModAddFeaturesBiomeModifier.CODEC);
+	public static final RegistryObject<Codec<ModAddFeaturesBiomeModifier>> ADD_FEATURES = REGISTRY.register("add_features", ModAddFeaturesBiomeModifier.CODEC);
 
 	@SubscribeEvent
 	public static void register(IEventBus eventBus)

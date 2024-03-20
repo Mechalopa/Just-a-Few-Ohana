@@ -19,7 +19,7 @@ public class ModCreativeModeTabs
 	public static final RegistryObject<CreativeModeTab> TAB = REGISTRY.register("tab", () -> CreativeModeTab.builder().title(Component.translatable("item_group." + JAFOhana.MODID + ".tab")).icon(() -> new ItemStack(ModItems.DAYFLOWER.get())).displayItems((features, output) -> {
 		for (RegistryObject<Item> item : ModItems.getItemRegistry().getEntries())
 		{
-				output.accept(item.get());
+			output.accept(item.get());
 		}
 	}).build());
 
