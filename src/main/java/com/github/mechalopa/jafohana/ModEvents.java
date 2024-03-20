@@ -82,7 +82,7 @@ public class ModEvents
 	@SubscribeEvent
 	public static void onBlockExplode(ExplosionEvent.Detonate event)
 	{
-		if (!event.getLevel().isClientSide() && event.getExplosion().getIndirectSourceEntity() != null && event.getExplosion().getIndirectSourceEntity().getType().is(ModTags.EntityTypeTags.CAN_CONVERT_TO_CREEPANSY) && !event.getAffectedBlocks().isEmpty() && EventHooks.getMobGriefingEvent(event.getLevel(), event.getExplosion().getIndirectSourceEntity()))
+		if (!event.getLevel().isClientSide() && event.getExplosion().getDirectSourceEntity() != null && event.getExplosion().getDirectSourceEntity().getType().is(ModTags.EntityTypeTags.CAN_CONVERT_TO_CREEPANSY) && !event.getAffectedBlocks().isEmpty() && EventHooks.getMobGriefingEvent(event.getLevel(), event.getExplosion().getDirectSourceEntity()))
 		{
 			Level level = event.getLevel();
 
