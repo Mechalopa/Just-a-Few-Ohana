@@ -1,0 +1,32 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:pigment_extracting",
+  "input": {
+    "ingredient": [
+      {
+        "item": "jafohana:evening_primrose"
+      },
+      {
+        "item": "jafohana:white_african_daisy"
+      },
+      {
+        "item": "jafohana:white_egret_orchid"
+      },
+      {
+        "item": "jafohana:snowdrop"
+      },
+      {
+        "item": "jafohana:white_spotted_bellflower"
+      }
+    ]
+  },
+  "output": {
+    "amount": 768,
+    "pigment": "mekanism:white"
+  }
+}

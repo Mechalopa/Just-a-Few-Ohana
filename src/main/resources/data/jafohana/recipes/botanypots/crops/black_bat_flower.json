@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "botanypots"
+    }
+  ],
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "jafohana:black_bat_flower"
+  },
+  "categories": [
+    "dirt"
+  ],
+  "growthTicks": 1200,
+  "display": [
+    {
+      "block": "jafohana:black_bat_flower",
+      "properties": {
+        "half": "lower"
+      }
+    },
+    {
+      "block": "jafohana:black_bat_flower",
+      "properties": {
+        "half": "upper"
+      }
+    }
+  ],
+  "drops": [
+    {
+      "chance": 1.00,
+      "output": {
+        "item": "jafohana:black_bat_flower"
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "botanypots"
+    }
+  ],
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "jafohana:snowdrop"
+  },
+  "categories": [
+    "dirt"
+  ],
+  "growthTicks": 1200,
+  "display": {
+    "block": "jafohana:snowdrop"
+  },
+  "drops": [
+    {
+      "chance": 1.00,
+      "output": {
+        "item": "jafohana:snowdrop"
+      }
+    }
+  ]
+}

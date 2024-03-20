@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:enriching",
+  "input": {
+    "ingredient": [
+      {
+        "item": "jafohana:spathiphyllum"
+      },
+      {
+        "item": "jafohana:white_pansy"
+      }
+    ]
+  },
+  "output": {
+    "count": 2,
+    "item": "minecraft:light_gray_dye"
+  }
+}

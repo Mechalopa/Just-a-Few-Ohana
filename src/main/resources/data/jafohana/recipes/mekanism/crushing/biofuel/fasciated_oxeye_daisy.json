@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mekanism"
+        },
+        {
+          "type": "neoforge:item_exists",
+          "item": "mekanism:bio_fuel"
+        }
+      ]
+    }
+  ],
+  "type": "mekanism:crushing",
+  "input": {
+    "ingredient": {
+      "item": "jafohana:fasciated_oxeye_daisy"
+    }
+  },
+  "output": {
+    "count": 5,
+    "item": "mekanism:bio_fuel"
+  }
+}

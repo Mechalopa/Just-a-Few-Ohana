@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:pigment_extracting",
+  "input": {
+    "ingredient": [
+      {
+        "item": "jafohana:dayflower"
+      },
+      {
+        "item": "jafohana:bluebell"
+      }
+    ]
+  },
+  "output": {
+    "amount": 768,
+    "pigment": "mekanism:blue"
+  }
+}
