@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "jafohana:jade_vine"
+    }
+  ],
+  "processingTime": 50,
+  "results": [
+    {
+      "count": 2,
+      "item": "minecraft:cyan_dye"
+    },
+    {
+      "chance": 0.05,
+      "item": "minecraft:cyan_dye"
+    },
+    {
+      "chance": 0.05,
+      "item": "minecraft:light_blue_dye"
+    }
+  ]
+}

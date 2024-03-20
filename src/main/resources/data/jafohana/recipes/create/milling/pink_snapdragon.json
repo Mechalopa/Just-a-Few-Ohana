@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "jafohana:pink_snapdragon"
+    }
+  ],
+  "processingTime": 50,
+  "results": [
+    {
+      "count": 2,
+      "item": "minecraft:pink_dye"
+    },
+    {
+      "chance": 0.05,
+      "item": "minecraft:lime_dye"
+    }
+  ]
+}
