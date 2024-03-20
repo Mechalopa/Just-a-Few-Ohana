@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "thermal"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "thermal_expansion"
+        }
+      ]
+    }
+  ],
+  "type": "thermal:insolator",
+  "ingredient": {
+    "item": "jafohana:winter_heath"
+  },
+  "result": [
+    {
+      "chance": 2.0,
+      "item": "jafohana:winter_heath"
+    }
+  ]
+}

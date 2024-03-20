@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "thermal"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "thermal_expansion"
+        }
+      ]
+    }
+  ],
+  "type": "thermal:insolator",
+  "ingredient": {
+    "item": "jafohana:blood_red_iris"
+  },
+  "result": [
+    {
+      "chance": 2.0,
+      "item": "jafohana:blood_red_iris"
+    }
+  ]
+}
