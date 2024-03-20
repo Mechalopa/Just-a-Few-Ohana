@@ -1,0 +1,40 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "enderio"
+        },
+        {
+          "type": "neoforge:item_exists",
+          "item": "enderio:plant_matter_green"
+        }
+      ]
+    }
+  ],
+  "type": "enderio:sag_milling",
+  "energy": 2400,
+  "input": {
+    "item": "jafohana:purple_pansy"
+  },
+  "outputs": [
+    {
+      "chance": 0.8,
+      "item": "minecraft:purple_dye"
+    },
+    {
+      "chance": 0.6,
+      "item": "minecraft:purple_dye"
+    },
+    {
+      "chance": 0.3,
+      "item": "minecraft:purple_dye"
+    },
+    {
+      "chance": 0.1,
+      "item": "enderio:plant_matter_green"
+    }
+  ]
+}
