@@ -19,14 +19,14 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DoublePlantBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
-import net.minecraftforge.common.BasicItemListing;
-import net.minecraftforge.event.ForgeEventFactory;
-import net.minecraftforge.event.entity.player.BonemealEvent;
-import net.minecraftforge.event.level.ExplosionEvent;
-import net.minecraftforge.event.village.WandererTradesEvent;
-import net.minecraftforge.eventbus.api.Event.Result;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
+import net.neoforged.bus.api.Event.Result;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.neoforge.common.BasicItemListing;
+import net.neoforged.neoforge.event.EventHooks;
+import net.neoforged.neoforge.event.entity.player.BonemealEvent;
+import net.neoforged.neoforge.event.level.ExplosionEvent;
+import net.neoforged.neoforge.event.village.WandererTradesEvent;
 
 @Mod.EventBusSubscriber(modid = JAFOhana.MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class ModEvents
@@ -82,7 +82,7 @@ public class ModEvents
 	@SubscribeEvent
 	public static void onBlockExplode(ExplosionEvent.Detonate event)
 	{
-		if (!event.getLevel().isClientSide() && event.getExplosion().getExploder() != null && event.getExplosion().getExploder().getType().is(ModTags.EntityTypeTags.CAN_CONVERT_TO_CREEPANSY) && !event.getAffectedBlocks().isEmpty() && ForgeEventFactory.getMobGriefingEvent(event.getLevel(), event.getExplosion().getExploder()))
+		if (!event.getLevel().isClientSide() && event.getExplosion().getIndirectSourceEntity() != null && event.getExplosion().getIndirectSourceEntity().getType().is(ModTags.EntityTypeTags.CAN_CONVERT_TO_CREEPANSY) && !event.getAffectedBlocks().isEmpty() && EventHooks.getMobGriefingEvent(event.getLevel(), event.getExplosion().getIndirectSourceEntity()))
 		{
 			Level level = event.getLevel();
 
@@ -111,7 +111,7 @@ public class ModEvents
 	}
 
 	@SubscribeEvent
-	public void onWandererTrades(WandererTradesEvent event)
+	public static void onWandererTrades(WandererTradesEvent event)
 	{
 		if (ModConfigs.cachedServer.ADDITIONAL_WANDERER_TRADES)
 		{

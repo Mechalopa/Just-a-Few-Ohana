@@ -1,7 +1,6 @@
 package com.github.mechalopa.jafohana;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.slf4j.Logger;
 
 import com.github.mechalopa.jafohana.registry.ModBiomeFeatures;
 import com.github.mechalopa.jafohana.registry.ModBiomeModifiers;
@@ -9,28 +8,23 @@ import com.github.mechalopa.jafohana.registry.ModBlocks;
 import com.github.mechalopa.jafohana.registry.ModCreativeModeTabs;
 import com.github.mechalopa.jafohana.registry.ModItems;
 import com.github.mechalopa.jafohana.registry.ModLootModifiers;
+import com.mojang.logging.LogUtils;
 
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.ModLoadingContext;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModLoadingContext;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.config.ModConfig;
 
 @Mod(JAFOhana.MODID)
-@Mod.EventBusSubscriber(modid = JAFOhana.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class JAFOhana
 {
 	public static final String MODID = "jafohana";
 
-	public static final Logger LOGGER = LogManager.getLogger();
+	public static final Logger LOGGER = LogUtils.getLogger();
 
-	public JAFOhana()
+	public JAFOhana(IEventBus modEventBus)
 	{
 		ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ModConfigs.SERVER_CONFIG);
-
-		IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
 		modEventBus.addListener(ModConfigs::loadConfig);
 
 		ModBlocks.register(modEventBus);
@@ -39,7 +33,5 @@ public class JAFOhana
 		ModItems.register(modEventBus);
 		ModLootModifiers.register(modEventBus);
 		ModBiomeModifiers.register(modEventBus);
-
-		MinecraftForge.EVENT_BUS.register(new ModEvents());
 	}
 }

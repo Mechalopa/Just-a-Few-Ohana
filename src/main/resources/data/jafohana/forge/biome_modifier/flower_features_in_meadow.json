@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "minecraft:meadow",
-  "features": "jafohana:flower_meadow",
-  "step": "vegetal_decoration"
-}

@@ -1,5 +1,7 @@
 package com.github.mechalopa.jafohana.world.level.block;
 
+import java.util.function.Supplier;
+
 import com.github.mechalopa.jafohana.util.ModTags;
 
 import net.minecraft.core.BlockPos;
@@ -9,7 +11,7 @@ import net.minecraft.world.level.block.state.BlockState;
 
 public class RedSpiderLilyBlock extends MediumFlowerBlock
 {
-	public RedSpiderLilyBlock(MobEffect effect, int effectDuration)
+	public RedSpiderLilyBlock(Supplier<MobEffect> effect, int effectDuration)
 	{
 		super(effect, effectDuration);
 	}

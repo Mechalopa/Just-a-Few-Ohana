@@ -20,15 +20,10 @@ build
 # other
 eclipse
 run
+runs
+run-data
 
-# Files from Forge MDK
-forge*changelog.txt
-/settings.gradle
-/changelog.txt
-/CREDITS.txt
-/release.bat
-/LICENSE.txt
-/README.txt
+repo
 /.checkstyle
-/gen_eclipse_runs.bat
 /refresh.bat
+/release.bat

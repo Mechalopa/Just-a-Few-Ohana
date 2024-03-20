@@ -1,0 +1,13 @@
+{
+  "values": {
+    "#jafohana:small_flowers": {
+      "chance": 0.65
+    },
+    "#jafohana:tall_flowers": {
+      "chance": 0.65
+    },
+    "jafohana:jade_vine": {
+      "chance": 0.65
+    }
+  }
+}

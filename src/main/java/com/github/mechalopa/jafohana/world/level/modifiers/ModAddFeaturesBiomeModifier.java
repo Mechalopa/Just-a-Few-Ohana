@@ -1,9 +1,8 @@
 package com.github.mechalopa.jafohana.world.level.modifiers;
 
 import java.util.List;
-import java.util.function.Supplier;
 
-import com.google.common.base.Suppliers;
+import com.github.mechalopa.jafohana.registry.ModBiomeModifiers;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 
@@ -12,20 +11,20 @@ import net.minecraft.core.HolderSet;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.levelgen.GenerationStep.Decoration;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
-import net.minecraftforge.common.world.BiomeGenerationSettingsBuilder;
-import net.minecraftforge.common.world.BiomeModifier;
-import net.minecraftforge.common.world.ModifiableBiomeInfo.BiomeInfo.Builder;
+import net.neoforged.neoforge.common.world.BiomeGenerationSettingsBuilder;
+import net.neoforged.neoforge.common.world.BiomeModifier;
+import net.neoforged.neoforge.common.world.ModifiableBiomeInfo;
 
 public record ModAddFeaturesBiomeModifier(List<List<ModAddFeaturesBiomeModifier.BiomeProp>> biomePropLists, HolderSet<PlacedFeature> features, Decoration step) implements BiomeModifier
 {
-	public static final Supplier<Codec<ModAddFeaturesBiomeModifier>> CODEC = Suppliers.memoize(() -> RecordCodecBuilder.create(builder -> builder.group(
+	public static final Codec<ModAddFeaturesBiomeModifier> CODEC = RecordCodecBuilder.create(builder -> builder.group(
 			BiomeProp.CODEC.listOf().listOf().fieldOf("biomes").forGetter(ModAddFeaturesBiomeModifier::biomePropLists),
 			PlacedFeature.LIST_CODEC.fieldOf("features").forGetter(ModAddFeaturesBiomeModifier::features),
 			Decoration.CODEC.fieldOf("step").forGetter(ModAddFeaturesBiomeModifier::step))
-			.apply(builder, ModAddFeaturesBiomeModifier::new)));
+			.apply(builder, ModAddFeaturesBiomeModifier::new));
 
 	@Override
-	public void modify(Holder<Biome> biome, Phase phase, Builder builder)
+	public void modify(Holder<Biome> biome, Phase phase, ModifiableBiomeInfo.BiomeInfo.Builder builder)
 	{
 		if (phase == Phase.ADD && matches(biome, this.biomePropLists))
 		{
@@ -64,7 +63,7 @@ public record ModAddFeaturesBiomeModifier(List<List<ModAddFeaturesBiomeModifier.
 	@Override
 	public Codec<? extends BiomeModifier> codec()
 	{
-		return CODEC.get();
+		return ModBiomeModifiers.ADD_FEATURES.get();
 	}
 
 	public static record BiomeProp(HolderSet<Biome> biomes, boolean negate)

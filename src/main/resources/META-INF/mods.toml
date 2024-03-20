@@ -1,28 +1,28 @@
 modLoader="javafml"
-loaderVersion="[48,)"
-license="LGPL-3.0"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
 issueTrackerURL="https://github.com/Mechalopa/Just-a-Few-Ohana/issues"
 [[mods]]
-modId="jafohana"
-version="${file.jarVersion}"
-displayName="Just a Few Ohana"
-updateJSONURL="https://github.com/Mechalopa/Just-a-Few-Ohana/raw/1.20.2/update.json"
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+updateJSONURL="https://github.com/Mechalopa/Just-a-Few-Ohana/raw/neoforge-1.20.4/update.json"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/just-a-few-ohana"
 #logoFile="logo.png"
-credits="Mechalopa"
-authors="Mechalopa"
-description='''More new flowers.'''
-[[dependencies.jafohana]]
-    modId="forge"
-    mandatory=true
-    versionRange="[48.1.0,)"
+credits="${mod_authors}"
+authors="${mod_authors}"
+description='''${mod_description}'''
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="${neo_version_range}"
     ordering="NONE"
     side="BOTH"
-[[dependencies.jafohana]]
+[[dependencies.${mod_id}]]
     modId="minecraft"
-    mandatory=true
-    versionRange="[1.20.2]"
+    type="required"
+    versionRange="${minecraft_version_range}"
     ordering="NONE"
     side="BOTH"
-[modproperties.jafohana]
+[modproperties.${mod_id}]
     catalogueItemIcon="jafohana:dayflower"

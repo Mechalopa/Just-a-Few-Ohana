@@ -1,21 +1,21 @@
 package com.github.mechalopa.jafohana;
 
-import net.minecraftforge.common.ForgeConfigSpec;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.event.config.ModConfigEvent;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.event.config.ModConfigEvent;
+import net.neoforged.neoforge.common.ModConfigSpec;
 
 public class ModConfigs
 {
-	private static final ForgeConfigSpec.Builder SERVER_BUILDER = new ForgeConfigSpec.Builder();
-	public static ForgeConfigSpec SERVER_CONFIG;
+	private static final ModConfigSpec.Builder SERVER_BUILDER = new ModConfigSpec.Builder();
+	public static ModConfigSpec SERVER_CONFIG;
 
-	public static ForgeConfigSpec.BooleanValue FASCIATED_DANDELION_DROPS_NORMAL_DANDELION_WHEN_USING_BONE_MEAL;
-	public static ForgeConfigSpec.BooleanValue FASCIATED_OXEYE_DAISY_DROPS_NORMAL_OXEYE_DAISY_WHEN_USING_BONE_MEAL;
-	public static ForgeConfigSpec.DoubleValue DANDELION_FASCIATION_CHANCE;
-	public static ForgeConfigSpec.DoubleValue OXEYE_DAISY_FASCIATION_CHANCE;
-	public static ForgeConfigSpec.DoubleValue CREEPANSY_CONVERT_CHANCE;
-	public static ForgeConfigSpec.DoubleValue JADE_VINE_GROW_CHANCE;
-	public static ForgeConfigSpec.BooleanValue ADDITIONAL_WANDERER_TRADES;
+	public static ModConfigSpec.BooleanValue FASCIATED_DANDELION_DROPS_NORMAL_DANDELION_WHEN_USING_BONE_MEAL;
+	public static ModConfigSpec.BooleanValue FASCIATED_OXEYE_DAISY_DROPS_NORMAL_OXEYE_DAISY_WHEN_USING_BONE_MEAL;
+	public static ModConfigSpec.DoubleValue DANDELION_FASCIATION_CHANCE;
+	public static ModConfigSpec.DoubleValue OXEYE_DAISY_FASCIATION_CHANCE;
+	public static ModConfigSpec.DoubleValue CREEPANSY_CONVERT_CHANCE;
+	public static ModConfigSpec.DoubleValue JADE_VINE_GROW_CHANCE;
+	public static ModConfigSpec.BooleanValue ADDITIONAL_WANDERER_TRADES;
 
 	static
 	{

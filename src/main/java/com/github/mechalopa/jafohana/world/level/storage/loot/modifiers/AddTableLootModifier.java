@@ -1,10 +1,8 @@
 package com.github.mechalopa.jafohana.world.level.storage.loot.modifiers;
 
-import java.util.function.Supplier;
-
 import javax.annotation.Nonnull;
 
-import com.google.common.base.Suppliers;
+import com.github.mechalopa.jafohana.registry.ModLootModifiers;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 
@@ -14,18 +12,23 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
-import net.minecraftforge.common.loot.IGlobalLootModifier;
-import net.minecraftforge.common.loot.LootModifier;
+import net.neoforged.neoforge.common.loot.IGlobalLootModifier;
+import net.neoforged.neoforge.common.loot.LootModifier;
 
 public class AddTableLootModifier extends LootModifier
 {
-	public static final Supplier<Codec<AddTableLootModifier>> CODEC = Suppliers.memoize(() -> RecordCodecBuilder.create(inst -> codecStart(inst).and(ResourceLocation.CODEC.fieldOf("table").forGetter(m -> m.lootTable)).apply(inst, AddTableLootModifier::new)));
+    public static final Codec<AddTableLootModifier> CODEC = RecordCodecBuilder.create(inst -> inst.group(IGlobalLootModifier.LOOT_CONDITIONS_CODEC.fieldOf("conditions").forGetter(glm -> glm.conditions), ResourceLocation.CODEC.fieldOf("table").forGetter(AddTableLootModifier::table)).apply(inst, AddTableLootModifier::new));
 	private final ResourceLocation lootTable;
 
 	public AddTableLootModifier(LootItemCondition[] conditions, ResourceLocation lootTable)
 	{
 		super(conditions);
 		this.lootTable = lootTable;
+	}
+
+	public ResourceLocation table()
+	{
+		return this.lootTable;
 	}
 
 	@SuppressWarnings("deprecation")
@@ -41,6 +44,6 @@ public class AddTableLootModifier extends LootModifier
 	@Override
 	public Codec<? extends IGlobalLootModifier> codec()
 	{
-		return CODEC.get();
+		return ModLootModifiers.ADD_TABLE.get();
 	}
 }

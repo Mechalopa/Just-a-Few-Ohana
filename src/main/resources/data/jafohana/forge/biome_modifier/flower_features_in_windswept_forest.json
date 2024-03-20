@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "minecraft:windswept_forest",
-  "features": "jafohana:flower_windswept_forest",
-  "step": "vegetal_decoration"
-}

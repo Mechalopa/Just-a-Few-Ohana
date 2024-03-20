@@ -1,5 +1,7 @@
 package com.github.mechalopa.jafohana.world.level.block;
 
+import java.util.function.Supplier;
+
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.effect.MobEffect;
@@ -13,14 +15,9 @@ import net.minecraft.world.level.material.PushReaction;
 
 public class ModFlowerBlock extends FlowerBlock
 {
-	public ModFlowerBlock(MobEffect effect, int effectDuration)
+	public ModFlowerBlock(Supplier<MobEffect> effect, int effectDuration)
 	{
-		this(effect, effectDuration, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
-	}
-
-	public ModFlowerBlock(MobEffect effect, int effectDuration, BlockBehaviour.Properties properties)
-	{
-		super(effect, effectDuration, properties);
+		super(effect, effectDuration, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 
 	public boolean isReallyFlammable(BlockState state, BlockGetter getter, BlockPos pos, Direction direction)

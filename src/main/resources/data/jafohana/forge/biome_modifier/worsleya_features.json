@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "#jafohana:has_worsleya",
-  "features": "jafohana:worsleya",
-  "step": "vegetal_decoration"
-}
