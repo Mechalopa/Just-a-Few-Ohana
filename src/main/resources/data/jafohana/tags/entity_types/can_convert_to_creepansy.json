@@ -35,6 +35,10 @@
       "required": false
     },
     {
+      "id": "creeperoverhaul:birch_creeper",
+      "required": false
+    },
+    {
       "id": "creeperoverhaul:ocean_creeper",
       "required": false
     },
