@@ -1,51 +1,29 @@
 {
-  "type": "jafohana:add_features",
-  "biomes": [
-    [
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:and",
+    "values": [
+      "#jafohana:is_overworld",
+      "#jafohana:is_plains",
       {
-        "name": "#jafohana:is_overworld"
-      },
-      {
-        "name": "minecraft:sunflower_plains",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_birch_forest",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_forest",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_coniferous",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_hot",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_snowy",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_hill_or_mountain",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_dead_or_wasteland",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_plains"
-      },
-      {
-        "name": "#jafohana:biomesoplenty/tundra",
-        "negate": true
+        "type": "neoforge:not",
+        "value": {
+          "type": "neoforge:or",
+          "values": [
+            "minecraft:sunflower_plains",
+            "#jafohana:is_birch_forest",
+            "#jafohana:is_forest",
+            "#jafohana:is_coniferous",
+            "#jafohana:is_hot",
+            "#jafohana:is_snowy",
+            "#jafohana:is_hill_or_mountain",
+            "#jafohana:is_dead_or_wasteland",
+            "#jafohana:biomesoplenty/tundra"
+          ]
+        }
       }
     ]
-  ],
+  },
   "features": "jafohana:tall_flower_plain",
   "step": "vegetal_decoration"
 }

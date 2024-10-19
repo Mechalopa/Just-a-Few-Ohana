@@ -3,7 +3,6 @@ package com.github.mechalopa.jafohana;
 import org.slf4j.Logger;
 
 import com.github.mechalopa.jafohana.registry.ModBiomeFeatures;
-import com.github.mechalopa.jafohana.registry.ModBiomeModifiers;
 import com.github.mechalopa.jafohana.registry.ModBlocks;
 import com.github.mechalopa.jafohana.registry.ModCreativeModeTabs;
 import com.github.mechalopa.jafohana.registry.ModItems;
@@ -33,6 +32,5 @@ public class JAFOhana
 		ModBiomeFeatures.register(modEventBus);
 		ModCreativeModeTabs.register(modEventBus);
 		ModItems.register(modEventBus);
-		ModBiomeModifiers.register(modEventBus);
 	}
 }

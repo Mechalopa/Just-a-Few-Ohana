@@ -1,26 +1,23 @@
 {
-  "type": "jafohana:add_features",
-  "biomes": [
-    [
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:and",
+    "values": [
+      "#jafohana:is_overworld",
+      "#jafohana:is_sparse_vegetation",
+      "#jafohana:is_jungle",
       {
-        "name": "#jafohana:is_overworld"
-      },
-      {
-        "name": "#jafohana:is_sparse_vegetation"
-      },
-      {
-        "name": "#jafohana:is_bamboo_jungle",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_dead_or_wasteland",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_jungle"
+        "type": "neoforge:not",
+        "value": {
+          "type": "neoforge:or",
+          "values": [
+            "#jafohana:is_bamboo_jungle",
+            "#jafohana:is_dead_or_wasteland"
+          ]
+        }
       }
     ]
-  ],
+  },
   "features": "jafohana:flower_sparse_jungle",
   "step": "vegetal_decoration"
 }

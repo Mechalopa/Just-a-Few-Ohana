@@ -1,39 +1,26 @@
 {
-  "type": "jafohana:add_features",
-  "biomes": [
-    [
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:and",
+    "values": [
+      "#jafohana:is_overworld",
+      "#jafohana:is_swamp",
       {
-        "name": "#jafohana:is_overworld"
-      },
-      {
-        "name": "#jafohana:is_hot",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_snowy",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_plains",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_forest",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_coniferous",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_swamp"
-      },
-      {
-        "name": "minecraft:mangrove_swamp",
-        "negate": true
+        "type": "neoforge:not",
+        "value": {
+          "type": "neoforge:or",
+          "values": [
+            "minecraft:mangrove_swamp",
+            "#jafohana:is_hot",
+            "#jafohana:is_snowy",
+            "#jafohana:is_plains",
+            "#jafohana:is_forest",
+            "#jafohana:is_coniferous"
+          ]
+        }
       }
     ]
-  ],
+  },
   "features": "jafohana:red_spider_lily_swamp",
   "step": "vegetal_decoration"
 }

@@ -1,31 +1,24 @@
 {
-  "type": "jafohana:add_features",
-  "biomes": [
-    [
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:and",
+    "values": [
+      "#jafohana:is_overworld",
+      "#jafohana:is_forest",
       {
-        "name": "#jafohana:is_overworld"
-      },
-      {
-        "name": "#jafohana:is_birch_forest",
-        "negate": true
-      },
-      {
-        "name": "minecraft:flower_forest",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_cold",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_dead_or_wasteland",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_forest"
+        "type": "neoforge:not",
+        "value": {
+          "type": "neoforge:or",
+          "values": [
+            "minecraft:flower_forest",
+            "#jafohana:is_cold",
+            "#jafohana:is_birch_forest",
+            "#jafohana:is_dead_or_wasteland"
+          ]
+        }
       }
     ]
-  ],
+  },
   "features": "jafohana:tall_flower_forest",
   "step": "vegetal_decoration"
 }

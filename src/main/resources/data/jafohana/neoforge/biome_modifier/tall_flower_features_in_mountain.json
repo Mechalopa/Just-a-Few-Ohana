@@ -1,47 +1,28 @@
 {
-  "type": "jafohana:add_features",
-  "biomes": [
-    [
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:and",
+    "values": [
+      "#jafohana:is_overworld",
+      "#jafohana:is_hill_or_mountain",
       {
-        "name": "#jafohana:is_overworld"
-      },
-      {
-        "name": "minecraft:cherry_grove",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_savanna",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_forest",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_jungle",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_snowy",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_hot",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_swamp",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_dead_or_wasteland",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_hill_or_mountain"
+        "type": "neoforge:not",
+        "value": {
+          "type": "neoforge:or",
+          "values": [
+            "minecraft:cherry_grove",
+            "#jafohana:is_savanna",
+            "#jafohana:is_forest",
+            "#jafohana:is_jungle",
+            "#jafohana:is_snowy",
+            "#jafohana:is_hot",
+            "#jafohana:is_swamp",
+            "#jafohana:is_dead_or_wasteland"
+          ]
+        }
       }
     ]
-  ],
+  },
   "features": "jafohana:tall_flower_mountain",
   "step": "vegetal_decoration"
 }

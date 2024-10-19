@@ -1,61 +1,31 @@
 {
-  "type": "jafohana:add_features",
-  "biomes": [
-    [
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:and",
+    "values": [
+      "#jafohana:is_overworld",
+      "#jafohana:is_birch_forest",
       {
-        "name": "#jafohana:is_overworld"
+        "type": "neoforge:or",
+        "values": [
+          "#jafohana:is_old_growth",
+          "#jafohana:is_dense_vegetation"
+        ]
       },
       {
-        "name": "#jafohana:is_birch_forest"
-      },
-      {
-        "name": "#jafohana:is_old_growth"
-      },
-      {
-        "name": "#jafohana:is_hot",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_snowy",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_spooky",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_dead_or_wasteland",
-        "negate": true
-      }
-    ],
-    [
-      {
-        "name": "#jafohana:is_overworld"
-      },
-      {
-        "name": "#jafohana:is_birch_forest"
-      },
-      {
-        "name": "#jafohana:is_dense_vegetation"
-      },
-      {
-        "name": "#jafohana:is_hot",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_snowy",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_spooky",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_dead_or_wasteland",
-        "negate": true
+        "type": "neoforge:not",
+        "value": {
+          "type": "neoforge:or",
+          "values": [
+            "#jafohana:is_hot",
+            "#jafohana:is_snowy",
+            "#jafohana:is_spooky",
+            "#jafohana:is_dead_or_wasteland"
+          ]
+        }
       }
     ]
-  ],
+  },
   "features": "jafohana:flower_old_growth_birch_forest",
   "step": "vegetal_decoration"
 }

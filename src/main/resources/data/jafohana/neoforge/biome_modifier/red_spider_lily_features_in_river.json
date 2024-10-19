@@ -1,23 +1,22 @@
 {
-  "type": "jafohana:add_features",
-  "biomes": [
-    [
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:and",
+    "values": [
+      "#jafohana:is_overworld",
+      "#jafohana:is_river",
       {
-        "name": "#jafohana:is_overworld"
-      },
-      {
-        "name": "#jafohana:is_hot",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_cold",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_river"
+        "type": "neoforge:not",
+        "value": {
+          "type": "neoforge:or",
+          "values": [
+            "#jafohana:is_hot",
+            "#jafohana:is_cold"
+          ]
+        }
       }
     ]
-  ],
+  },
   "features": "jafohana:red_spider_lily_river",
   "step": "vegetal_decoration"
 }

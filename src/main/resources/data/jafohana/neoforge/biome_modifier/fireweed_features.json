@@ -1,74 +1,52 @@
 {
-  "type": "jafohana:add_features",
-  "biomes": [
-    [
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:and",
+    "values": [
+      "#jafohana:is_overworld",
       {
-        "name": "#jafohana:is_overworld"
+        "type": "neoforge:or",
+        "values": [
+          {
+            "type": "neoforge:and",
+            "values": [
+              "#jafohana:is_forest",
+              "#jafohana:is_sparse_vegetation"
+            ]
+          },
+          {
+            "type": "neoforge:and",
+            "values": [
+              "#jafohana:is_coniferous",
+              {
+                "type": "neoforge:not",
+                "value": {
+                  "type": "neoforge:or",
+                  "values": [
+                    "#jafohana:is_dense_vegetation",
+                    "#jafohana:biomesoplenty/tundra"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
       },
       {
-        "name": "#jafohana:is_birch_forest",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_hot",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_snowy",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_hill_or_mountain",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_dead_or_wasteland",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_forest"
-      },
-      {
-        "name": "#jafohana:is_sparse_vegetation"
-      }
-    ],
-    [
-      {
-        "name": "#jafohana:is_overworld"
-      },
-      {
-        "name": "#jafohana:is_birch_forest",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_hot",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_snowy",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_dense_vegetation",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_hill_or_mountain",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_dead_or_wasteland",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_coniferous"
-      },
-      {
-        "name": "#jafohana:biomesoplenty/tundra",
-        "negate": true
+        "type": "neoforge:not",
+        "value": {
+          "type": "neoforge:or",
+          "values": [
+            "#jafohana:is_birch_forest",
+            "#jafohana:is_hot",
+            "#jafohana:is_snowy",
+            "#jafohana:is_hill_or_mountain",
+            "#jafohana:is_dead_or_wasteland"
+          ]
+        }
       }
     ]
-  ],
+  },
   "features": "jafohana:fireweed",
   "step": "vegetal_decoration"
 }

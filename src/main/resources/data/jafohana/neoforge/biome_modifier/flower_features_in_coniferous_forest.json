@@ -1,39 +1,26 @@
 {
-  "type": "jafohana:add_features",
-  "biomes": [
-    [
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:and",
+    "values": [
+      "#jafohana:is_overworld",
+      "#jafohana:is_coniferous",
       {
-        "name": "#jafohana:is_overworld"
-      },
-      {
-        "name": "#jafohana:is_hot",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_snowy",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_spooky",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_birch_forest",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_dead_or_wasteland",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_coniferous"
-      },
-      {
-        "name": "#jafohana:biomesoplenty/tundra",
-        "negate": true
+        "type": "neoforge:not",
+        "value": {
+          "type": "neoforge:or",
+          "values": [
+            "#jafohana:is_hot",
+            "#jafohana:is_snowy",
+            "#jafohana:is_spooky",
+            "#jafohana:is_birch_forest",
+            "#jafohana:is_dead_or_wasteland",
+            "#jafohana:biomesoplenty/tundra"
+          ]
+        }
       }
     ]
-  ],
+  },
   "features": "jafohana:flower_coniferous_forest",
   "step": "vegetal_decoration"
 }

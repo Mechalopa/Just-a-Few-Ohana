@@ -1,19 +1,16 @@
 {
-  "type": "jafohana:add_features",
-  "biomes": [
-    [
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:and",
+    "values": [
+      "#jafohana:is_overworld",
+      "#jafohana:is_jungle",
       {
-        "name": "#jafohana:is_overworld"
-      },
-      {
-        "name": "#jafohana:is_dead_or_wasteland",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_jungle"
+        "type": "neoforge:not",
+        "value": "#jafohana:is_dead_or_wasteland"
       }
     ]
-  ],
+  },
   "features": "jafohana:jade_vines",
   "step": "top_layer_modification"
 }

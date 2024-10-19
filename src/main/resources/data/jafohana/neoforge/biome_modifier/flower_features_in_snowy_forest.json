@@ -1,41 +1,29 @@
 {
-  "type": "jafohana:add_features",
-  "biomes": [
-    [
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:and",
+    "values": [
+      "#jafohana:is_overworld",
+      "#jafohana:is_snowy",
       {
-        "name": "#jafohana:is_overworld"
+        "type": "neoforge:or",
+        "values": [
+          "#jafohana:is_forest",
+          "#jafohana:is_coniferous"
+        ]
       },
       {
-        "name": "#jafohana:is_snowy"
-      },
-      {
-        "name": "#jafohana:is_spooky",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_forest"
-      }
-    ],
-    [
-      {
-        "name": "#jafohana:is_overworld"
-      },
-      {
-        "name": "minecraft:grove",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_snowy"
-      },
-      {
-        "name": "#jafohana:is_spooky",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_coniferous"
+        "type": "neoforge:not",
+        "value": {
+          "type": "neoforge:or",
+          "values": [
+            "minecraft:grove",
+            "#jafohana:is_spooky"
+          ]
+        }
       }
     ]
-  ],
+  },
   "features": "jafohana:flower_snowy_forest",
   "step": "vegetal_decoration"
 }

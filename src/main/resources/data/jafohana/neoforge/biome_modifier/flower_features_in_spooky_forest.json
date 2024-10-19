@@ -1,45 +1,29 @@
 {
-  "type": "jafohana:add_features",
-  "biomes": [
-    [
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:and",
+    "values": [
+      "#jafohana:is_overworld",
+      "#jafohana:is_spooky",
       {
-        "name": "#jafohana:is_overworld"
+        "type": "neoforge:or",
+        "values": [
+          "#jafohana:is_forest",
+          "#jafohana:is_coniferous"
+        ]
       },
       {
-        "name": "#jafohana:is_hot",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_forest"
-      },
-      {
-        "name": "#jafohana:is_spooky"
-      },
-      {
-        "name": "#jafohana:biomesoplenty/ominous_woods",
-        "negate": true
-      }
-    ],
-    [
-      {
-        "name": "#jafohana:is_overworld"
-      },
-      {
-        "name": "#jafohana:is_hot",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_coniferous"
-      },
-      {
-        "name": "#jafohana:is_spooky"
-      },
-      {
-        "name": "#jafohana:biomesoplenty/ominous_woods",
-        "negate": true
+        "type": "neoforge:not",
+        "value": {
+          "type": "neoforge:or",
+          "values": [
+            "#jafohana:is_hot",
+            "#jafohana:biomesoplenty/ominous_woods"
+          ]
+        }
       }
     ]
-  ],
+  },
   "features": "jafohana:flower_spooky_forest",
   "step": "vegetal_decoration"
 }

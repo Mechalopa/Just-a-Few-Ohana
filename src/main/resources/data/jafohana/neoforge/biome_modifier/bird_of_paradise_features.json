@@ -1,34 +1,25 @@
 {
-  "type": "jafohana:add_features",
-  "biomes": [
-    [
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:and",
+    "values": [
+      "#jafohana:is_overworld",
+      "#jafohana:is_sparse_vegetation",
+      "#jafohana:is_dry",
       {
-        "name": "#jafohana:is_overworld"
-      },
-      {
-        "name": "#jafohana:is_sparse_vegetation"
-      },
-      {
-        "name": "#jafohana:is_dry"
-      },
-      {
-        "name": "#jafohana:is_badlands",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_savanna",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_jungle",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_hill_or_mountain",
-        "negate": true
+        "type": "neoforge:not",
+        "value": {
+          "type": "neoforge:or",
+          "values": [
+            "#jafohana:is_badlands",
+            "#jafohana:is_savanna",
+            "#jafohana:is_jungle",
+            "#jafohana:is_hill_or_mountain"
+          ]
+        }
       }
     ]
-  ],
+  },
   "features": "jafohana:bird_of_paradise",
   "step": "vegetal_decoration"
 }

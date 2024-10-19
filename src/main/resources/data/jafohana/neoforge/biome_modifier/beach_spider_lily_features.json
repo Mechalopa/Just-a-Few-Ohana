@@ -1,34 +1,25 @@
 {
-  "type": "jafohana:add_features",
-  "biomes": [
-    [
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:and",
+    "values": [
+      "#jafohana:is_overworld",
+      "#jafohana:is_jungle",
+      "#jafohana:is_sparse_vegetation",
       {
-        "name": "#jafohana:is_overworld"
-      },
-      {
-        "name": "#jafohana:is_snowy",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_hill_or_mountain",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_dead_or_wasteland",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_aquatic",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_jungle"
-      },
-      {
-        "name": "#jafohana:is_sparse_vegetation"
+        "type": "neoforge:not",
+        "value": {
+          "type": "neoforge:or",
+          "values": [
+            "#jafohana:is_snowy",
+            "#jafohana:is_hill_or_mountain",
+            "#jafohana:is_dead_or_wasteland",
+            "#jafohana:is_aquatic"
+          ]
+        }
       }
     ]
-  ],
+  },
   "features": "jafohana:beach_spider_lily_waterside",
   "step": "vegetal_decoration"
 }

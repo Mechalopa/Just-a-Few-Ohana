@@ -1,31 +1,24 @@
 {
-  "type": "jafohana:add_features",
-  "biomes": [
-    [
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:and",
+    "values": [
+      "#jafohana:is_overworld",
+      "#jafohana:is_savanna",
       {
-        "name": "#jafohana:is_overworld"
-      },
-      {
-        "name": "#jafohana:is_forest",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_coniferous",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_jungle",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_swamp",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_savanna"
+        "type": "neoforge:not",
+        "value": {
+          "type": "neoforge:or",
+          "values": [
+            "#jafohana:is_forest",
+            "#jafohana:is_coniferous",
+            "#jafohana:is_jungle",
+            "#jafohana:is_swamp"
+          ]
+        }
       }
     ]
-  ],
+  },
   "features": "jafohana:flower_savanna",
   "step": "vegetal_decoration"
 }

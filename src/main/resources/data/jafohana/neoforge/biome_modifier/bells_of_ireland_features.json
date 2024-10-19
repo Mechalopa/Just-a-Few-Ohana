@@ -1,43 +1,49 @@
 {
-  "type": "jafohana:add_features",
-  "biomes": [
-    [
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:or",
+    "values": [
+      "minecraft:sunflower_plains",
       {
-        "name": "minecraft:sunflower_plains"
-      }
-    ],
-    [
-      {
-        "name": "#jafohana:is_overworld"
-      },
-      {
-        "name": "#jafohana:is_hill_or_mountain",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_windswept",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_savanna"
-      }
-    ],
-    [
-      {
-        "name": "#jafohana:is_overworld"
-      },
-      {
-        "name": "#jafohana:is_dead_or_wasteland",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_dry"
-      },
-      {
-        "name": "#jafohana:is_plains"
+        "type": "neoforge:and",
+        "values": [
+          "#jafohana:is_overworld",
+          {
+            "type": "neoforge:or",
+            "values": [
+              {
+                "type": "neoforge:and",
+                "values": [
+                  "#jafohana:is_savanna",
+                  {
+                    "type": "neoforge:not",
+                    "value": {
+                      "type": "neoforge:or",
+                      "values": [
+                        "#jafohana:is_hill_or_mountain",
+                        "#jafohana:is_windswept"
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "neoforge:and",
+                "values": [
+                  "#jafohana:is_dry",
+                  "#jafohana:is_plains",
+                  {
+                    "type": "neoforge:not",
+                    "value": "#jafohana:is_dead_or_wasteland"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
-  ],
+  },
   "features": "jafohana:bells_of_ireland",
   "step": "vegetal_decoration"
 }

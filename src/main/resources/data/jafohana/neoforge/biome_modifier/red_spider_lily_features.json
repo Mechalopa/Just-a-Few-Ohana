@@ -1,27 +1,23 @@
 {
-  "type": "jafohana:add_features",
-  "biomes": [
-    [
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:and",
+    "values": [
+      "#jafohana:is_overworld",
+      "#jafohana:is_plains",
       {
-        "name": "#jafohana:is_overworld"
-      },
-      {
-        "name": "#jafohana:is_hot",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_snowy",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_hill_or_mountain",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_plains"
+        "type": "neoforge:not",
+        "value": {
+          "type": "neoforge:or",
+          "values": [
+            "#jafohana:is_hot",
+            "#jafohana:is_snowy",
+            "#jafohana:is_hill_or_mountain"
+          ]
+        }
       }
     ]
-  ],
+  },
   "features": "jafohana:red_spider_lily_waterside",
   "step": "vegetal_decoration"
 }

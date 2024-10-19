@@ -1,59 +1,32 @@
 {
-  "type": "jafohana:add_features",
-  "biomes": [
-    [
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:and",
+    "values": [
+      "#jafohana:is_overworld",
+      "#jafohana:is_hill_or_mountain",
       {
-        "name": "#jafohana:is_overworld"
-      },
-      {
-        "name": [
-          "minecraft:cherry_grove",
-          "minecraft:stony_peaks",
-          "minecraft:windswept_forest"
-        ],
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_savanna",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_forest",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_coniferous",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_jungle",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_snowy",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_dry",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_swamp",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_dead_or_wasteland",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_spooky",
-        "negate": true
-      },
-      {
-        "name": "#jafohana:is_hill_or_mountain"
+        "type": "neoforge:not",
+        "value": {
+          "type": "neoforge:or",
+          "values": [
+            "minecraft:cherry_grove",
+            "minecraft:stony_peaks",
+            "minecraft:windswept_forest",
+            "#jafohana:is_savanna",
+            "#jafohana:is_forest",
+            "#jafohana:is_coniferous",
+            "#jafohana:is_jungle",
+            "#jafohana:is_snowy",
+            "#jafohana:is_dry",
+            "#jafohana:is_swamp",
+            "#jafohana:is_dead_or_wasteland",
+            "#jafohana:is_spooky"
+          ]
+        }
       }
     ]
-  ],
+  },
   "features": "jafohana:flower_mountain",
   "step": "vegetal_decoration"
 }
