@@ -1,6 +1,6 @@
 package com.github.mechalopa.jafohana.world.level.levelgen.feature;
 
-import com.github.mechalopa.jafohana.world.level.levelgen.configurations.LayeredFeatureConfiguration;
+import com.github.mechalopa.jafohana.world.level.levelgen.configurations.LayeringFeatureConfiguration;
 import com.mojang.serialization.Codec;
 
 import net.minecraft.core.BlockPos;
@@ -11,18 +11,18 @@ import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 
-public class LayeredFeature extends Feature<LayeredFeatureConfiguration>
+public class LayeringFeature extends Feature<LayeringFeatureConfiguration>
 {
-	public LayeredFeature(Codec<LayeredFeatureConfiguration> config)
+	public LayeringFeature(Codec<LayeringFeatureConfiguration> config)
 	{
 		super(config);
 	}
 
 	@Override
-	public boolean place(FeaturePlaceContext<LayeredFeatureConfiguration> context)
+	public boolean place(FeaturePlaceContext<LayeringFeatureConfiguration> context)
 	{
 		RandomSource randomsource = context.random();
-		LayeredFeatureConfiguration config = context.config();
+		LayeringFeatureConfiguration config = context.config();
 		WorldGenLevel worldgenlevel = context.level();
 		BlockPos blockpos = context.origin();
 		ChunkGenerator chunkgenerator = context.chunkGenerator();

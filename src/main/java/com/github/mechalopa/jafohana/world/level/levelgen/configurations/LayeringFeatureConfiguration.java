@@ -10,12 +10,12 @@ import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 
-public class LayeredFeatureConfiguration implements FeatureConfiguration
+public class LayeringFeatureConfiguration implements FeatureConfiguration
 {
-	public static final Codec<LayeredFeatureConfiguration> CODEC = ExtraCodecs.nonEmptyHolderSet(PlacedFeature.LIST_CODEC).fieldOf("features").xmap(LayeredFeatureConfiguration::new, p -> p.features).codec();
+	public static final Codec<LayeringFeatureConfiguration> CODEC = ExtraCodecs.nonEmptyHolderSet(PlacedFeature.LIST_CODEC).fieldOf("features").xmap(LayeringFeatureConfiguration::new, p -> p.features).codec();
 	public final HolderSet<PlacedFeature> features;
 
-	public LayeredFeatureConfiguration(HolderSet<PlacedFeature> features)
+	public LayeringFeatureConfiguration(HolderSet<PlacedFeature> features)
 	{
 		this.features = features;
 	}

@@ -1,5 +1,5 @@
 {
-  "type": "jafohana:layered",
+  "type": "jafohana:layering",
   "config": {
     "features": [
       {
