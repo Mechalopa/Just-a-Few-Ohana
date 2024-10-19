@@ -1,44 +1,200 @@
 {
-  "type": "minecraft:random_patch",
+  "type": "jafohana:layered",
   "config": {
-    "feature": {
-      "feature": {
-        "type": "minecraft:simple_block",
-        "config": {
-          "to_place": {
-            "type": "minecraft:weighted_state_provider",
-            "entries": [
-              {
-                "data": {
-                  "Name": "jafohana:worsleya",
-                  "Properties": {
-                    "half": "lower"
+    "features": [
+      {
+        "feature": {
+          "type": "minecraft:random_patch",
+          "config": {
+            "feature": {
+              "feature": {
+                "type": "minecraft:simple_block",
+                "config": {
+                  "to_place": {
+                    "type": "minecraft:weighted_state_provider",
+                    "entries": [
+                      {
+                        "data": {
+                          "Name": "minecraft:coarse_dirt"
+                        },
+                        "weight": 2
+                      },
+                      {
+                        "data": {
+                          "Name": "minecraft:grass_block"
+                        },
+                        "weight": 1
+                      }
+                    ]
                   }
-                },
-                "weight": 1
+                }
               },
-              {
-                "data": {
-                  "Name": "minecraft:short_grass"
-                },
-                "weight": 3
-              }
-            ]
+              "placement": [
+                {
+                  "type": "minecraft:block_predicate_filter",
+                  "predicate": {
+                    "type": "minecraft:all_of",
+                    "predicates": [
+                      {
+                        "type": "minecraft:replaceable",
+                        "offset": [
+                          0,
+                          1,
+                          0
+                        ]
+                      },
+                      {
+                        "type": "minecraft:matching_block_tag",
+                        "tag": "jafohana:worsleya_patch_replaceables"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "tries": 256,
+            "xz_spread": 5,
+            "y_spread": 3
           }
-        }
+        },
+        "placement": []
       },
-      "placement": [
-        {
-          "type": "minecraft:block_predicate_filter",
-          "predicate": {
-            "type": "minecraft:matching_blocks",
-            "blocks": "minecraft:air"
+      {
+        "feature": {
+          "type": "minecraft:random_patch",
+          "config": {
+            "feature": {
+              "feature": {
+                "type": "minecraft:simple_block",
+                "config": {
+                  "to_place": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                      "Name": "jafohana:worsleya",
+                      "Properties": {
+                        "half": "lower"
+                      }
+                    }
+                  }
+                }
+              },
+              "placement": [
+                {
+                  "type": "minecraft:block_predicate_filter",
+                  "predicate": {
+                    "type": "minecraft:matching_blocks",
+                    "blocks": "minecraft:air"
+                  }
+                }
+              ]
+            },
+            "tries": 32,
+            "xz_spread": 5,
+            "y_spread": 3
           }
-        }
-      ]
-    },
-    "tries": 128,
-    "xz_spread": 5,
-    "y_spread": 3
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "minecraft:random_patch",
+          "config": {
+            "feature": {
+              "feature": {
+                "type": "minecraft:simple_block",
+                "config": {
+                  "to_place": {
+                    "type": "minecraft:weighted_state_provider",
+                    "entries": [
+                      {
+                        "data": {
+                          "Name": "minecraft:short_grass"
+                        },
+                        "weight": 5
+                      },
+                      {
+                        "data": {
+                          "Name": "minecraft:tall_grass",
+                          "Properties": {
+                            "half": "lower"
+                          }
+                        },
+                        "weight": 2
+                      },
+                      {
+                        "data": {
+                          "Name": "minecraft:dead_bush"
+                        },
+                        "weight": 1
+                      }
+                    ]
+                  }
+                }
+              },
+              "placement": [
+                {
+                  "type": "minecraft:block_predicate_filter",
+                  "predicate": {
+                    "type": "minecraft:matching_blocks",
+                    "blocks": "minecraft:air"
+                  }
+                }
+              ]
+            },
+            "tries": 128,
+            "xz_spread": 7,
+            "y_spread": 3
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "minecraft:random_patch",
+          "config": {
+            "feature": {
+              "feature": {
+                "type": "minecraft:simple_block",
+                "config": {
+                  "to_place": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                      "Name": "minecraft:moss_carpet"
+                    }
+                  }
+                }
+              },
+              "placement": [
+                {
+                  "type": "minecraft:block_predicate_filter",
+                  "predicate": {
+                    "type": "minecraft:all_of",
+                    "predicates": [
+                      {
+                        "type": "minecraft:matching_blocks",
+                        "blocks": "minecraft:air"
+                      },
+                      {
+                        "type": "minecraft:matching_block_tag",
+                        "offset": [
+                          0,
+                          -1,
+                          0
+                        ],
+                        "tag": "jafohana:worsleya_patch_replaceables"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "tries": 64,
+            "xz_spread": 7,
+            "y_spread": 3
+          }
+        },
+        "placement": []
+      }
+    ]
   }
 }
