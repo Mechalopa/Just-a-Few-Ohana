@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "actuallyadditions"
+    }
+  ],
+  "type": "actuallyadditions:crushing",
+  "ingredient": {
+    "type": "neoforge:compound",
+    "children": [
+      {
+        "item": "jafohana:orange_marigold"
+      },
+      {
+        "item": "jafohana:gloriosa"
+      },
+      {
+        "item": "jafohana:bird_of_paradise"
+      }
+    ]
+  },
+  "result": [
+    {
+      "result": {
+        "count": 4,
+        "id": "minecraft:orange_dye"
+      }
+    },
+    {
+      "chance": 0.0,
+      "result": {}
+    }
+  ]
+}
