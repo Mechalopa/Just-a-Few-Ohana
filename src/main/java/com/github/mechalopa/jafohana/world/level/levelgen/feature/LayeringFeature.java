@@ -1,6 +1,6 @@
 package com.github.mechalopa.jafohana.world.level.levelgen.feature;
 
-import com.github.mechalopa.jafohana.world.level.levelgen.configurations.LayeringFeatureConfiguration;
+import com.github.mechalopa.jafohana.world.level.levelgen.feature.configurations.LayeringFeatureConfiguration;
 import com.mojang.serialization.Codec;
 
 import net.minecraft.core.BlockPos;

@@ -3,9 +3,9 @@ package com.github.mechalopa.jafohana.registry;
 import java.util.function.Supplier;
 
 import com.github.mechalopa.jafohana.JAFOhana;
-import com.github.mechalopa.jafohana.world.level.levelgen.configurations.LayeringFeatureConfiguration;
 import com.github.mechalopa.jafohana.world.level.levelgen.feature.JadeVinesFeature;
 import com.github.mechalopa.jafohana.world.level.levelgen.feature.LayeringFeature;
+import com.github.mechalopa.jafohana.world.level.levelgen.feature.configurations.LayeringFeatureConfiguration;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.levelgen.feature.Feature;

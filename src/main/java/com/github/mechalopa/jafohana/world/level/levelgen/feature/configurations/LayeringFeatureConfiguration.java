@@ -1,4 +1,4 @@
-package com.github.mechalopa.jafohana.world.level.levelgen.configurations;
+package com.github.mechalopa.jafohana.world.level.levelgen.feature.configurations;
 
 import java.util.stream.Stream;
 
