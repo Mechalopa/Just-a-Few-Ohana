@@ -9,8 +9,7 @@
         "name": "#jafohana:is_birch_forest"
       },
       {
-        "name": "#jafohana:is_old_growth",
-        "negate": true
+        "name": "#jafohana:is_old_growth"
       },
       {
         "name": "#jafohana:is_hot",
@@ -21,7 +20,30 @@
         "negate": true
       },
       {
-        "name": "#jafohana:is_dense_vegetation",
+        "name": "#jafohana:is_spooky",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_dead_or_wasteland",
+        "negate": true
+      }
+    ],
+    [
+      {
+        "name": "#jafohana:is_overworld"
+      },
+      {
+        "name": "#jafohana:is_birch_forest"
+      },
+      {
+        "name": "#jafohana:is_dense_vegetation"
+      },
+      {
+        "name": "#jafohana:is_hot",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_snowy",
         "negate": true
       },
       {
@@ -34,6 +56,6 @@
       }
     ]
   ],
-  "features": "jafohana:flower_birch_forest",
+  "features": "jafohana:flower_old_growth_birch_forest",
   "step": "vegetal_decoration"
 }

@@ -6,7 +6,11 @@
         "name": "#jafohana:is_overworld"
       },
       {
-        "name": "minecraft:cherry_grove",
+        "name": [
+          "minecraft:cherry_grove",
+          "minecraft:stony_peaks",
+          "minecraft:windswept_forest"
+        ],
         "negate": true
       },
       {
@@ -18,6 +22,10 @@
         "negate": true
       },
       {
+        "name": "#jafohana:is_coniferous",
+        "negate": true
+      },
+      {
         "name": "#jafohana:is_jungle",
         "negate": true
       },
@@ -26,7 +34,7 @@
         "negate": true
       },
       {
-        "name": "#jafohana:is_hot",
+        "name": "#jafohana:is_dry",
         "negate": true
       },
       {
@@ -38,10 +46,14 @@
         "negate": true
       },
       {
+        "name": "#jafohana:is_spooky",
+        "negate": true
+      },
+      {
         "name": "#jafohana:is_hill_or_mountain"
       }
     ]
   ],
-  "features": "jafohana:tall_flower_hill",
+  "features": "jafohana:flower_mountain",
   "step": "vegetal_decoration"
 }

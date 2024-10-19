@@ -1,9 +1,9 @@
 {
-  "feature": "jafohana:marigold",
+  "feature": "jafohana:flower_mountain",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 56
+      "chance": 32
     },
     {
       "type": "minecraft:in_square"

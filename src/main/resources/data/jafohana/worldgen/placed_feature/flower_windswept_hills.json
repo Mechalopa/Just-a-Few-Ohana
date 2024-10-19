@@ -1,9 +1,9 @@
 {
-  "feature": "jafohana:tall_flower_hill",
+  "feature": "jafohana:flower_windswept_hills",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 40
+      "chance": 48
     },
     {
       "type": "minecraft:in_square"

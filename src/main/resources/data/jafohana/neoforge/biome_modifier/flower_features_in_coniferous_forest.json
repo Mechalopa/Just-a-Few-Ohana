@@ -18,6 +18,10 @@
         "negate": true
       },
       {
+        "name": "#jafohana:is_birch_forest",
+        "negate": true
+      },
+      {
         "name": "#jafohana:is_dead_or_wasteland",
         "negate": true
       },

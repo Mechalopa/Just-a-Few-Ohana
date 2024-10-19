@@ -1,9 +1,9 @@
 {
-  "feature": "jafohana:harebell_and_wheel_lily",
+  "feature": "jafohana:tall_flower_mountain",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 32
+      "chance": 40
     },
     {
       "type": "minecraft:in_square"

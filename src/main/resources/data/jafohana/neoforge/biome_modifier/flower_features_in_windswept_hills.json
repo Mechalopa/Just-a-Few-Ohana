@@ -8,6 +8,7 @@
       {
         "name": [
           "minecraft:cherry_grove",
+          "minecraft:meadow",
           "minecraft:stony_peaks",
           "minecraft:windswept_forest"
         ],
@@ -15,6 +16,10 @@
       },
       {
         "name": "#jafohana:is_savanna",
+        "negate": true
+      },
+      {
+        "name": "#jafohana:is_plains",
         "negate": true
       },
       {
@@ -46,14 +51,10 @@
         "negate": true
       },
       {
-        "name": "#jafohana:is_spooky",
-        "negate": true
-      },
-      {
         "name": "#jafohana:is_hill_or_mountain"
       }
     ]
   ],
-  "features": "jafohana:harebell_and_wheel_lily",
+  "features": "jafohana:flower_windswept_hills",
   "step": "vegetal_decoration"
 }
