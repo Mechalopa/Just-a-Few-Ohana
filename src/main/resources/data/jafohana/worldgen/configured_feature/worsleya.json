@@ -45,15 +45,15 @@
                       },
                       {
                         "type": "minecraft:matching_block_tag",
-                        "tag": "jafohana:worsleya_patch_replaceables"
+                        "tag": "jafohana:worsleya_replaceable_world_gen"
                       }
                     ]
                   }
                 }
               ]
             },
-            "tries": 256,
-            "xz_spread": 5,
+            "tries": 196,
+            "xz_spread": 6,
             "y_spread": 3
           }
         },
@@ -142,7 +142,7 @@
               ]
             },
             "tries": 128,
-            "xz_spread": 7,
+            "xz_spread": 6,
             "y_spread": 3
           }
         },
@@ -181,7 +181,7 @@
                           -1,
                           0
                         ],
-                        "tag": "jafohana:worsleya_patch_replaceables"
+                        "tag": "jafohana:worsleya_replaceable_world_gen"
                       }
                     ]
                   }
@@ -189,7 +189,7 @@
               ]
             },
             "tries": 64,
-            "xz_spread": 7,
+            "xz_spread": 6,
             "y_spread": 3
           }
         },

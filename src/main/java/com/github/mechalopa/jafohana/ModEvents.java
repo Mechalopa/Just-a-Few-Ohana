@@ -5,6 +5,7 @@ import java.util.List;
 import com.github.mechalopa.jafohana.registry.ModBlocks;
 import com.github.mechalopa.jafohana.registry.ModItems;
 import com.github.mechalopa.jafohana.util.ModTags;
+import com.github.mechalopa.jafohana.util.ModUtils;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -13,7 +14,6 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.npc.VillagerTrades.ItemListing;
-import net.minecraft.world.item.BoneMealItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
@@ -43,20 +43,12 @@ public class ModEvents
 			if (event.getState().is(ModTags.BlockTags.CONVERTABLE_TO_FASCIATED_DANDELION) && fasciate(serverLevel, pos, ModBlocks.FASCIATED_DANDELION.get().defaultBlockState(), r, ModConfigs.cachedServer.DANDELION_FASCIATION_CHANCE))
 			{
 				event.setSuccessful(true);
-
-				if (event.getStack() != null && !event.getStack().isEmpty() && event.getStack().getItem() != null && event.getStack().getItem() instanceof BoneMealItem)
-				{
-					event.getStack().shrink(1);
-				}
+				ModUtils.shrink(event.getStack(), serverLevel, event.getPlayer());
 			}
 			else if (event.getState().is(ModTags.BlockTags.CONVERTABLE_TO_FASCIATED_OXEYE_DAISY) && fasciate(serverLevel, pos, ModBlocks.FASCIATED_OXEYE_DAISY.get().defaultBlockState(), r, ModConfigs.cachedServer.OXEYE_DAISY_FASCIATION_CHANCE))
 			{
 				event.setSuccessful(true);
-
-				if (event.getStack() != null && !event.getStack().isEmpty() && event.getStack().getItem() != null && event.getStack().getItem() instanceof BoneMealItem)
-				{
-					event.getStack().shrink(1);
-				}
+				ModUtils.shrink(event.getStack(), serverLevel, event.getPlayer());
 			}
 		}
 	}
