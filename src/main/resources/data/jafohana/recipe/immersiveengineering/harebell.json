@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:cloche",
+  "input": {
+    "item": "jafohana:harebell"
+  },
+  "render": {
+    "type": "immersiveengineering:generic",
+    "block": "jafohana:harebell"
+  },
+  "results": [
+    {
+      "item": "jafohana:harebell"
+    }
+  ],
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 480
+}

@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:cloche",
+  "input": {
+    "item": "jafohana:green_tulip"
+  },
+  "render": {
+    "type": "immersiveengineering:generic",
+    "block": "jafohana:green_tulip"
+  },
+  "results": [
+    {
+      "item": "jafohana:green_tulip"
+    }
+  ],
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 480
+}

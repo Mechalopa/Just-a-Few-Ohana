@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:cloche",
+  "input": {
+    "item": "jafohana:dayflower"
+  },
+  "render": {
+    "type": "immersiveengineering:generic",
+    "block": "jafohana:dayflower"
+  },
+  "results": [
+    {
+      "item": "jafohana:dayflower"
+    }
+  ],
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 480
+}

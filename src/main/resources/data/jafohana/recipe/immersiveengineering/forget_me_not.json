@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:cloche",
+  "input": {
+    "item": "jafohana:forget_me_not"
+  },
+  "render": {
+    "type": "immersiveengineering:generic",
+    "block": "jafohana:forget_me_not"
+  },
+  "results": [
+    {
+      "item": "jafohana:forget_me_not"
+    }
+  ],
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 480
+}

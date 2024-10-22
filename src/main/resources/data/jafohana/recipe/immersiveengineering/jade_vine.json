@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:cloche",
+  "input": {
+    "item": "jafohana:jade_vine"
+  },
+  "render": {
+    "type": "immersiveengineering:stacking",
+    "block": "jafohana:jade_vine"
+  },
+  "results": [
+    {
+      "item": "jafohana:jade_vine"
+    }
+  ],
+  "soil": {
+    "tag": "minecraft:logs"
+  },
+  "time": 560
+}

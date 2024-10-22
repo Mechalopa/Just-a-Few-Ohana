@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:cloche",
+  "input": {
+    "item": "jafohana:tatarian_aster"
+  },
+  "render": {
+    "type": "immersiveengineering:doubleflower",
+    "block": "jafohana:tatarian_aster"
+  },
+  "results": [
+    {
+      "item": "jafohana:tatarian_aster"
+    }
+  ],
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 480
+}
