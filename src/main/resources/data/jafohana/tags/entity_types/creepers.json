@@ -1,0 +1,250 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:creepers",
+    {
+      "id": "#c:creepers",
+      "required": false
+    },
+    {
+      "id": "cactusmod:cactus_creeper",
+      "required": false
+    },
+    {
+      "id": "graveyard:skeleton_creeper",
+      "required": false
+    },
+    {
+      "id": "camocreepers:camo_creeper",
+      "required": false
+    },
+    {
+      "id": "apocalypse:breecher",
+      "required": false
+    },
+    {
+      "id": "dungeons_mobs:icy_creeper",
+      "required": false
+    },
+    {
+      "id": "#creeperoverhaul:creepers",
+      "required": false
+    },
+    {
+      "id": "creeperoverhaul:birch_creeper",
+      "required": false
+    },
+    {
+      "id": "creeperoverhaul:ocean_creeper",
+      "required": false
+    },
+    {
+      "id": "specialmobs:creeper",
+      "required": false
+    },
+    {
+      "id": "specialmobs:darkcreeper",
+      "required": false
+    },
+    {
+      "id": "specialmobs:deathcreeper",
+      "required": false
+    },
+    {
+      "id": "specialmobs:dirtcreeper",
+      "required": false
+    },
+    {
+      "id": "specialmobs:doomcreeper",
+      "required": false
+    },
+    {
+      "id": "specialmobs:drowningcreeper",
+      "required": false
+    },
+    {
+      "id": "specialmobs:endercreeper",
+      "required": false
+    },
+    {
+      "id": "specialmobs:firecreeper",
+      "required": false
+    },
+    {
+      "id": "specialmobs:gravelcreeper",
+      "required": false
+    },
+    {
+      "id": "specialmobs:jumpingcreeper",
+      "required": false
+    },
+    {
+      "id": "specialmobs:lightningcreeper",
+      "required": false
+    },
+    {
+      "id": "specialmobs:minicreeper",
+      "required": false
+    },
+    {
+      "id": "specialmobs:sandcreeper",
+      "required": false
+    },
+    {
+      "id": "specialmobs:scopecreeper",
+      "required": false
+    },
+    {
+      "id": "specialmobs:skeletoncreeper",
+      "required": false
+    },
+    {
+      "id": "specialmobs:snowcreeper",
+      "required": false
+    },
+    {
+      "id": "specialmobs:splittingcreeper",
+      "required": false
+    },
+    {
+      "id": "more_babies:creeper",
+      "required": false
+    },
+    {
+      "id": "tofucraft:tofucreeper",
+      "required": false
+    },
+    {
+      "id": "enderzoology:concussion_creeper",
+      "required": false
+    },
+    {
+      "id": "good_nights_sleep:baby_creeper",
+      "required": false
+    },
+    {
+      "id": "creepycreepers:ghostly_creeper",
+      "required": false
+    },
+    {
+      "id": "creepycreepers:snowy_creeper",
+      "required": false
+    },
+    {
+      "id": "creepycreepers:halloween_creeper",
+      "required": false
+    },
+    {
+      "id": "creepycreepers:tuff_creeper",
+      "required": false
+    },
+    {
+      "id": "creepycreepers:corrupted_creeper",
+      "required": false
+    },
+    {
+      "id": "majruszsdifficulty:creeperling",
+      "required": false
+    },
+    {
+      "id": "immersiveweapons:storm_creeper",
+      "required": false
+    },
+    {
+      "id": "lcrdrfs:laser_creeper",
+      "required": false
+    },
+    {
+      "id": "caverns_and_chasms:deeper",
+      "required": false
+    },
+    {
+      "id": "caverns_and_chasms:peeper",
+      "required": false
+    },
+    {
+      "id": "arsmagicalegacy:mana_creeper",
+      "required": false
+    },
+    {
+      "id": "#takumicraft:takumi",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:celebration_creeper",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:cookie_creeper",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:dark_creeper",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:earth_creeper",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:electric_creeper",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:fake_illusion_creeper",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:fire_creeper",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:ice_creeper",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:illusion_creeper",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:ghost_creeper",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:light_creeper",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:magma_creeper",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:psychic_creeper",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:reverse_creeper",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:spider_creeper",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:water_creeper",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:friendly_creeper",
+      "required": false
+    },
+    {
+      "id": "charred_horizons:spore_creeper",
+      "required": false
+    },
+    {
+      "id": "echoes:echo_creeper",
+      "required": false
+    }
+  ]
+}
