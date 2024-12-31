@@ -23,9 +23,9 @@ public class CrimsonCloverBlock extends ModFlowerBlock
 {
 	public static final BooleanProperty ON_NYLIUM = ModBlockStateProperties.ON_NYLIUM;
 
-	public CrimsonCloverBlock(Holder<MobEffect> effect, int effectDuration)
+	public CrimsonCloverBlock(Holder<MobEffect> effect, float seconds)
 	{
-		super(effect, effectDuration);
+		super(effect, seconds);
 		this.registerDefaultState(this.stateDefinition.any().setValue(ON_NYLIUM, false));
 	}
 

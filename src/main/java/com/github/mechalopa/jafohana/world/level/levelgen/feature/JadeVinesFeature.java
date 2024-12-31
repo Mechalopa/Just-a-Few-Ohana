@@ -26,9 +26,9 @@ public class JadeVinesFeature extends Feature<JadeVinesConfiguration>
 	@Override
 	public boolean place(FeaturePlaceContext<JadeVinesConfiguration> context)
 	{
-		JadeVinesConfiguration jadevinesconfiguration = context.config();
+		JadeVinesConfiguration config = context.config();
 		BlockState state = ModBlocks.JADE_VINE.get().defaultBlockState();
-		int i = jadevinesconfiguration.height().sample(context.random());
+		int i = config.height().sample(context.random());
 
 		if (i == 0)
 		{

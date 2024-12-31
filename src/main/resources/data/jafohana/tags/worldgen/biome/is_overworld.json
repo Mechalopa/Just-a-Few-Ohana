@@ -107,7 +107,15 @@
       "required": false
     },
     {
-      "id": "galosphere:pink_salt_caves",
+      "id": "hexalia:enchanted_bayou",
+      "required": false
+    },
+    {
+      "id": "sleepy_hollows:sleepy_hollows",
+      "required": false
+    },
+    {
+      "id": "blasted_barrens:blasted_barrens",
       "required": false
     }
   ]
