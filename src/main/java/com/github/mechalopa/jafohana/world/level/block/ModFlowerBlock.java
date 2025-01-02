@@ -14,9 +14,9 @@ import net.minecraft.world.level.material.PushReaction;
 
 public class ModFlowerBlock extends FlowerBlock
 {
-	public ModFlowerBlock(Holder<MobEffect> effect, int effectDuration)
+	public ModFlowerBlock(Holder<MobEffect> effect, float seconds)
 	{
-		super(effect, effectDuration, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
+		super(effect, seconds, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 
 	public boolean isReallyFlammable(BlockState state, BlockGetter getter, BlockPos pos, Direction direction)

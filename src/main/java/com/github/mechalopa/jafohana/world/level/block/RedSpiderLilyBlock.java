@@ -10,9 +10,9 @@ import net.minecraft.world.level.block.state.BlockState;
 
 public class RedSpiderLilyBlock extends MediumFlowerBlock
 {
-	public RedSpiderLilyBlock(Holder<MobEffect> effect, int effectDuration)
+	public RedSpiderLilyBlock(Holder<MobEffect> effect, float seconds)
 	{
-		super(effect, effectDuration);
+		super(effect, seconds);
 	}
 
 	@Override
