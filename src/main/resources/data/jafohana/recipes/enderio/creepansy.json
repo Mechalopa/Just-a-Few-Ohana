@@ -17,19 +17,31 @@
   "outputs": [
     {
       "chance": 0.8,
-      "item": "minecraft:green_dye"
+      "item": {
+        "item": "minecraft:green_dye"
+      },
+      "optional": false
     },
     {
       "chance": 0.6,
-      "item": "minecraft:green_dye"
+      "item": {
+        "item": "minecraft:green_dye"
+      },
+      "optional": false
     },
     {
       "chance": 0.05,
-      "item": "minecraft:gunpowder"
+      "item": {
+        "item": "minecraft:gunpowder"
+      },
+      "optional": false
     },
     {
-      "chance": 0.1,
-      "item": "enderio:plant_matter_green"
+      "chance": 0.2,
+      "item": {
+        "item": "enderio:plant_matter_green"
+      },
+      "optional": false
     }
   ]
 }
