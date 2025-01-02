@@ -15,7 +15,9 @@
             "#jafohana:is_snowy",
             "#jafohana:is_dense_vegetation",
             "#jafohana:is_spooky",
-            "#jafohana:is_dead_or_wasteland"
+            "#jafohana:is_dead_or_wasteland",
+            "#c:is_floral",
+            "#c:is_lush"
           ]
         }
       }

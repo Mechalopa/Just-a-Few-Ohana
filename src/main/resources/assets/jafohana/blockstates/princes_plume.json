@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "jafohana:block/princes_plume_bottom"
+    },
+    "half=upper": {
+      "model": "jafohana:block/princes_plume_top"
+    }
+  }
+}

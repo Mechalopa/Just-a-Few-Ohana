@@ -1,0 +1,35 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:and",
+    "values": [
+      "#jafohana:is_overworld",
+      "#jafohana:is_swamp",
+      {
+        "type": "neoforge:or",
+        "values": [
+          "#jafohana:is_dense_vegetation",
+          "#c:is_floral",
+          "#c:is_lush"
+        ]
+      },
+      {
+        "type": "neoforge:not",
+        "value": {
+          "type": "neoforge:or",
+          "values": [
+            "minecraft:mangrove_swamp",
+            "#jafohana:is_savanna",
+            "#jafohana:is_plains",
+            "#jafohana:is_forest",
+            "#jafohana:is_coniferous",
+            "#jafohana:is_jungle",
+            "#jafohana:is_dead_or_wasteland"
+          ]
+        }
+      }
+    ]
+  },
+  "features": "jafohana:flower_dense_swamp",
+  "step": "vegetal_decoration"
+}

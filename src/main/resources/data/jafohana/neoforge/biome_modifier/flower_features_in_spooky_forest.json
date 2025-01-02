@@ -5,20 +5,16 @@
     "values": [
       "#jafohana:is_overworld",
       "#jafohana:is_spooky",
-      {
-        "type": "neoforge:or",
-        "values": [
-          "#jafohana:is_forest",
-          "#jafohana:is_coniferous"
-        ]
-      },
+      "#jafohana:is_forest",
       {
         "type": "neoforge:not",
         "value": {
           "type": "neoforge:or",
           "values": [
             "#jafohana:is_hot",
-            "#jafohana:biomesoplenty/ominous_woods"
+            "#jafohana:is_coniferous",
+            "#jafohana:biomesoplenty/ominous_woods",
+            "#jafohana:is_dead_or_wasteland"
           ]
         }
       }

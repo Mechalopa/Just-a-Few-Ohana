@@ -11,7 +11,13 @@
             "type": "neoforge:and",
             "values": [
               "#jafohana:is_forest",
-              "#jafohana:is_sparse_vegetation"
+              {
+                "type": "neoforge:or",
+                "values": [
+                  "#jafohana:is_sparse_vegetation",
+                  "#c:is_lush"
+                ]
+              }
             ]
           },
           {

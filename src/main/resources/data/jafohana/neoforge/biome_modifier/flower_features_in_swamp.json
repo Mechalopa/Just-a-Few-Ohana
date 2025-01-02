@@ -10,13 +10,15 @@
         "value": {
           "type": "neoforge:or",
           "values": [
-            "minecraft:mangrove_swamp",
             "#jafohana:is_savanna",
             "#jafohana:is_plains",
             "#jafohana:is_forest",
             "#jafohana:is_coniferous",
             "#jafohana:is_jungle",
-            "#jafohana:is_dead_or_wasteland"
+            "#jafohana:is_dense_vegetation",
+            "#jafohana:is_dead_or_wasteland",
+            "#c:is_floral",
+            "#c:is_lush"
           ]
         }
       }

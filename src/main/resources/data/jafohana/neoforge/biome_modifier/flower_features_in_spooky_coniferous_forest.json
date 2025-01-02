@@ -1,0 +1,24 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:and",
+    "values": [
+      "#jafohana:is_overworld",
+      "#jafohana:is_spooky",
+      "#jafohana:is_coniferous",
+      {
+        "type": "neoforge:not",
+        "value": {
+          "type": "neoforge:or",
+          "values": [
+            "#jafohana:is_hot",
+            "#jafohana:biomesoplenty/ominous_woods",
+            "#jafohana:is_dead_or_wasteland"
+          ]
+        }
+      }
+    ]
+  },
+  "features": "jafohana:flower_spooky_coniferous_forest",
+  "step": "vegetal_decoration"
+}

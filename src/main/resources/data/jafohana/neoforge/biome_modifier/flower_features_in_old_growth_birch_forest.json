@@ -9,7 +9,9 @@
         "type": "neoforge:or",
         "values": [
           "#jafohana:is_old_growth",
-          "#jafohana:is_dense_vegetation"
+          "#jafohana:is_dense_vegetation",
+          "#c:is_floral",
+          "#c:is_lush"
         ]
       },
       {

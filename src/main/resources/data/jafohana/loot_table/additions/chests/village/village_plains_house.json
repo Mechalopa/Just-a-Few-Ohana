@@ -17,8 +17,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:dayflower",
-          "weight": 2
+          "name": "jafohana:dayflower"
         },
         {
           "type": "minecraft:item",
@@ -33,8 +32,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:milk_vetch",
-          "weight": 2
+          "name": "jafohana:milk_vetch"
         },
         {
           "type": "minecraft:item",
@@ -49,8 +47,52 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:crimson_clover",
-          "weight": 2
+          "name": "jafohana:crimson_clover"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "jafohana:fox_and_cubs"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "jafohana:pink_hawks_beard"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "jafohana:ladies_tresses"
         },
         {
           "type": "minecraft:item",

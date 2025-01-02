@@ -1,0 +1,34 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:and",
+    "values": [
+      "#jafohana:is_overworld",
+      "#jafohana:is_badlands",
+      {
+        "type": "neoforge:or",
+        "values": [
+          "#jafohana:is_forest",
+          "#jafohana:is_sparse_vegetation",
+          "#jafohana:is_dense_vegetation",
+          "#c:is_floral",
+          "#c:is_lush"
+        ]
+      },
+      {
+        "type": "neoforge:not",
+        "value": {
+          "type": "neoforge:or",
+          "values": [
+            "#jafohana:is_jungle",
+            "#jafohana:is_savanna",
+            "#jafohana:is_swamp",
+            "#jafohana:is_snowy"
+          ]
+        }
+      }
+    ]
+  },
+  "features": "jafohana:flower_wooded_badland",
+  "step": "vegetal_decoration"
+}
