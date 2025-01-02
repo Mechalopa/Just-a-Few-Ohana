@@ -7,8 +7,16 @@
   ],
   "type": "mekanism:enriching",
   "input": {
-    "count": 1,
-    "item": "jafohana:jade_vine"
+    "type": "neoforge:compound",
+    "children": [
+      {
+        "item": "jafohana:jade_vine"
+      },
+      {
+        "item": "jafohana:meconopsis"
+      }
+    ],
+    "count": 1
   },
   "output": {
     "count": 2,

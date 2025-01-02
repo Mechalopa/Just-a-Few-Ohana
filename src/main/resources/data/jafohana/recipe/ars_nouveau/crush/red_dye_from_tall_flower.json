@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ars_nouveau"
+    }
+  ],
+  "type": "ars_nouveau:crush",
+  "input": {
+    "item": "jafohana:cardinal_flower"
+  },
+  "output": [
+    {
+      "chance": 1.0,
+      "maxRange": 1,
+      "stack": {
+        "count": 4,
+        "id": "minecraft:red_dye"
+      }
+    }
+  ]
+}

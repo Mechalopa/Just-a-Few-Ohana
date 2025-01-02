@@ -9,7 +9,15 @@
   "fluidOut": {},
   "grinds": 4,
   "ingredient": {
-    "item": "jafohana:dayflower"
+    "type": "neoforge:compound",
+    "children": [
+      {
+        "item": "jafohana:dayflower"
+      },
+      {
+        "item": "jafohana:blue_penstemon"
+      }
+    ]
   },
   "result": {
     "count": 2,

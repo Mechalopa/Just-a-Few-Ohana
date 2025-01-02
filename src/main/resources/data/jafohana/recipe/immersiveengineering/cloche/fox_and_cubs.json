@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:cloche",
+  "input": {
+    "item": "jafohana:fox_and_cubs"
+  },
+  "render": {
+    "type": "immersiveengineering:generic",
+    "block": "jafohana:fox_and_cubs"
+  },
+  "results": [
+    {
+      "item": "jafohana:fox_and_cubs"
+    }
+  ],
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 480
+}

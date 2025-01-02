@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:cloche",
+  "input": {
+    "item": "jafohana:firecracker_penstemon"
+  },
+  "render": {
+    "type": "immersiveengineering:generic",
+    "block": "jafohana:firecracker_penstemon"
+  },
+  "results": [
+    {
+      "item": "jafohana:firecracker_penstemon"
+    }
+  ],
+  "soil": {
+    "tag": "c:sands"
+  },
+  "time": 480
+}

@@ -7,7 +7,15 @@
   ],
   "type": "ars_nouveau:crush",
   "input": {
-    "item": "jafohana:dayflower"
+    "type": "neoforge:compound",
+    "children": [
+      {
+        "item": "jafohana:dayflower"
+      },
+      {
+        "item": "jafohana:blue_penstemon"
+      }
+    ]
   },
   "output": [
     {

@@ -7,7 +7,15 @@
   ],
   "type": "refurbished_furniture:cutting_board_slicing",
   "ingredient": {
-    "item": "jafohana:jade_vine"
+    "type": "neoforge:compound",
+    "children": [
+      {
+        "item": "jafohana:jade_vine"
+      },
+      {
+        "item": "jafohana:meconopsis"
+      }
+    ]
   },
   "result": {
     "count": 2,

@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:cloche",
+  "input": {
+    "item": "jafohana:sego_lily"
+  },
+  "render": {
+    "type": "immersiveengineering:generic",
+    "block": "jafohana:sego_lily"
+  },
+  "results": [
+    {
+      "item": "jafohana:sego_lily"
+    }
+  ],
+  "soil": {
+    "tag": "c:sands"
+  },
+  "time": 480
+}

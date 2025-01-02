@@ -1,0 +1,20 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "integrateddynamics"
+    }
+  ],
+  "type": "integrateddynamics:squeezer",
+  "input_item": {
+    "item": "jafohana:princes_plume"
+  },
+  "output_items": [
+    {
+      "item": {
+        "count": 8,
+        "id": "minecraft:yellow_dye"
+      }
+    }
+  ]
+}

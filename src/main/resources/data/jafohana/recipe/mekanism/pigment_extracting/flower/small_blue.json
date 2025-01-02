@@ -7,8 +7,16 @@
   ],
   "type": "mekanism:pigment_extracting",
   "input": {
-    "count": 1,
-    "item": "jafohana:dayflower"
+    "type": "neoforge:compound",
+    "children": [
+      {
+        "item": "jafohana:dayflower"
+      },
+      {
+        "item": "jafohana:blue_penstemon"
+      }
+    ],
+    "count": 1
   },
   "output": {
     "amount": 768,

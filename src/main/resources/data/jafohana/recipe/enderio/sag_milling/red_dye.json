@@ -1,0 +1,69 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "enderio"
+        },
+        {
+          "type": "neoforge:item_exists",
+          "item": "enderio:plant_matter_green"
+        }
+      ]
+    }
+  ],
+  "type": "enderio:sag_milling",
+  "energy": 2400,
+  "input": {
+    "type": "neoforge:compound",
+    "children": [
+      {
+        "item": "jafohana:red_snapdragon"
+      },
+      {
+        "item": "jafohana:fireball_lily"
+      },
+      {
+        "item": "jafohana:crimson_clover"
+      },
+      {
+        "item": "jafohana:red_spider_lily"
+      },
+      {
+        "item": "jafohana:firecracker_penstemon"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "chance": 0.8,
+      "item": {
+        "count": 1,
+        "id": "minecraft:red_dye"
+      }
+    },
+    {
+      "chance": 0.6,
+      "item": {
+        "count": 1,
+        "id": "minecraft:red_dye"
+      }
+    },
+    {
+      "chance": 0.3,
+      "item": {
+        "count": 1,
+        "id": "minecraft:red_dye"
+      }
+    },
+    {
+      "chance": 0.1,
+      "item": {
+        "count": 1,
+        "id": "enderio:plant_matter_green"
+      }
+    }
+  ]
+}

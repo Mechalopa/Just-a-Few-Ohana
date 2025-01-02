@@ -7,7 +7,15 @@
   ],
   "type": "ars_nouveau:crush",
   "input": {
-    "item": "jafohana:jade_vine"
+    "type": "neoforge:compound",
+    "children": [
+      {
+        "item": "jafohana:jade_vine"
+      },
+      {
+        "item": "jafohana:meconopsis"
+      }
+    ]
   },
   "output": [
     {
