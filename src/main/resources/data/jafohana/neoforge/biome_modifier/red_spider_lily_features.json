@@ -4,7 +4,26 @@
     "type": "neoforge:and",
     "values": [
       "#jafohana:is_overworld",
-      "#jafohana:is_plains",
+      {
+        "type": "neoforge:or",
+        "values": [
+          "#jafohana:is_plains",
+          {
+            "type": "neoforge:and",
+            "values": [
+              "#jafohana:is_spooky",
+              {
+                "type": "neoforge:or",
+                "values": [
+                  "#jafohana:is_coniferous",
+                  "#jafohana:is_forest",
+                  "#jafohana:is_swamp"
+                ]
+              }
+            ]
+          }
+        ]
+      },
       {
         "type": "neoforge:not",
         "value": {

@@ -1,7 +1,6 @@
 {
-  "parent": "jafohana:block/medium_flower_height_18",
+  "parent": "jafohana:block/cross_height_18",
   "textures": {
-    "particle": "jafohana:block/wheel_lily",
     "cross": "jafohana:block/wheel_lily",
     "stem": "jafohana:block/wheel_lily_stem"
   }

@@ -155,11 +155,11 @@ public class ModEvents
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.SEGO_LILY.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.HAREBELL.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.MECONOPSIS.get()), 12, 1, 0.05F));
-			genericTrades.add(new BasicItemListing(3, new ItemStack(ModItems.WHEEL_LILY.get()), 12, 1, 0.05F));
-			genericTrades.add(new BasicItemListing(3, new ItemStack(ModItems.JACK_IN_THE_PULPIT.get()), 12, 1, 0.05F));
-			genericTrades.add(new BasicItemListing(3, new ItemStack(ModItems.RED_SPIDER_LILY.get()), 12, 1, 0.05F));
-			genericTrades.add(new BasicItemListing(3, new ItemStack(ModItems.BELLS_OF_IRELAND.get()), 12, 1, 0.05F));
-			genericTrades.add(new BasicItemListing(3, new ItemStack(ModItems.BEACH_SPIDER_LILY.get()), 12, 1, 0.05F));
+			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.WHEEL_LILY.get()), 12, 1, 0.05F));
+			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.JACK_IN_THE_PULPIT.get()), 12, 1, 0.05F));
+			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.RED_SPIDER_LILY.get()), 12, 1, 0.05F));
+			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.BELLS_OF_IRELAND.get()), 12, 1, 0.05F));
+			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.BEACH_SPIDER_LILY.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(3, new ItemStack(ModItems.JADE_VINE.get(), 2), 5, 1, 0.05F));
 		}
 	}

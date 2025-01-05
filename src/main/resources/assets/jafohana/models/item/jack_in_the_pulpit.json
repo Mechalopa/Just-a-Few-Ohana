@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "jafohana:block/jack_in_the_pulpit"
+    "layer0": "jafohana:block/potted_jack_in_the_pulpit"
   }
 }

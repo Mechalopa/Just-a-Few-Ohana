@@ -1,7 +1,8 @@
 {
-  "parent": "minecraft:block/cross",
+  "parent": "jafohana:block/cross_width_18",
   "render_type": "cutout",
   "textures": {
-    "cross": "jafohana:block/princes_plume_top"
+    "cross": "jafohana:block/princes_plume_top",
+    "side": "jafohana:block/princes_plume_top_side"
   }
 }

@@ -1,7 +1,6 @@
 {
-  "parent": "jafohana:block/medium_flower_height_20",
+  "parent": "jafohana:block/cross_height_20",
   "textures": {
-    "particle": "jafohana:block/beach_spider_lily",
     "cross": "jafohana:block/beach_spider_lily",
     "stem": "jafohana:block/beach_spider_lily_stem"
   }
