@@ -142,13 +142,13 @@ public class ModEvents
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.SNOWDROP.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.BLUE_DAISY.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.WINTER_HEATH.get()), 12, 1, 0.05F));
-			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.CRIMSON_CLOVER.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.FOX_AND_CUBS.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.PINK_HAWKS_BEARD.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.LADIES_TRESSES.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.MAGENTA_KIDNEYWORT.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.PURPLE_KIDNEYWORT.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.WHITE_KIDNEYWORT.get()), 12, 1, 0.05F));
+			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.STURTS_DESERT_PEA.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.APRICOT_MALLOW.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.BLUE_PENSTEMON.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.FIRECRACKER_PENSTEMON.get()), 12, 1, 0.05F));

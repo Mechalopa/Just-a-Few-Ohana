@@ -2,6 +2,6 @@
   "parent": "minecraft:block/cross",
   "render_type": "cutout",
   "textures": {
-    "cross": "jafohana:block/crimson_clover_planted_on_nylium"
+    "cross": "jafohana:block/sturts_desert_pea"
   }
 }

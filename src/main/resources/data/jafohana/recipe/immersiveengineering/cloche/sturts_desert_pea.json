@@ -7,19 +7,19 @@
   ],
   "type": "immersiveengineering:cloche",
   "input": {
-    "item": "jafohana:crimson_clover"
+    "item": "jafohana:sturts_desert_pea"
   },
   "render": {
     "type": "immersiveengineering:generic",
-    "block": "jafohana:crimson_clover"
+    "block": "jafohana:sturts_desert_pea"
   },
   "results": [
     {
-      "item": "jafohana:crimson_clover"
+      "item": "jafohana:sturts_desert_pea"
     }
   ],
   "soil": {
-    "item": "minecraft:dirt"
+    "tag": "c:sands"
   },
   "time": 480
 }

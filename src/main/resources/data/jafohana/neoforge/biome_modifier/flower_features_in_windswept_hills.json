@@ -4,7 +4,13 @@
     "type": "neoforge:and",
     "values": [
       "#jafohana:is_overworld",
-      "#jafohana:is_hill_or_mountain",
+      {
+        "type": "neoforge:or",
+        "values": [
+          "#jafohana:is_hill_or_mountain",
+          "#c:is_plateau"
+        ]
+      },
       {
         "type": "neoforge:not",
         "value": {

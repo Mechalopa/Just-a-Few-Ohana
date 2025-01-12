@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "jafohana:crimson_clover"
+          "name": "jafohana:sturts_desert_pea"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "jafohana:blocks/crimson_clover"
+  "random_sequence": "jafohana:blocks/sturts_desert_pea"
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "jafohana:block/crimson_clover"
+    "layer0": "jafohana:block/sturts_desert_pea"
   }
 }
