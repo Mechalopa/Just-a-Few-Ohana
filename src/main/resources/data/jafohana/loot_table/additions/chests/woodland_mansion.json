@@ -79,7 +79,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:magenta_wishbone_flower",
+          "name": "jafohana:magenta_kidneywort",
           "weight": 3
         },
         {
@@ -95,7 +95,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:purple_wishbone_flower",
+          "name": "jafohana:purple_kidneywort",
           "weight": 3
         },
         {
@@ -111,7 +111,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:white_wishbone_flower",
+          "name": "jafohana:white_kidneywort",
           "weight": 3
         },
         {

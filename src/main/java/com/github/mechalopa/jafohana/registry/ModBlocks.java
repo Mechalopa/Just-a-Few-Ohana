@@ -56,9 +56,9 @@ public class ModBlocks
 	public static final Supplier<Block> FOX_AND_CUBS = REGISTRY.register("fox_and_cubs", () -> new ModFlowerBlock(MobEffects.REGENERATION, 8.0F));
 	public static final Supplier<Block> PINK_HAWKS_BEARD = REGISTRY.register("pink_hawks_beard", () -> new ModFlowerBlock(MobEffects.SATURATION, 0.35F));
 	public static final Supplier<Block> LADIES_TRESSES = REGISTRY.register("ladies_tresses", () -> new ModFlowerBlock(MobEffects.DIG_SPEED, 5.0F));
-	public static final Supplier<Block> MAGENTA_WISHBONE_FLOWER = REGISTRY.register("magenta_wishbone_flower", () -> new ModFlowerBlock(MobEffects.SLOW_FALLING, 5.0F));
-	public static final Supplier<Block> PURPLE_WISHBONE_FLOWER = REGISTRY.register("purple_wishbone_flower", () -> new ModFlowerBlock(MobEffects.SLOW_FALLING, 5.0F));
-	public static final Supplier<Block> WHITE_WISHBONE_FLOWER = REGISTRY.register("white_wishbone_flower", () -> new ModFlowerBlock(MobEffects.SLOW_FALLING, 5.0F));
+	public static final Supplier<Block> MAGENTA_KIDNEYWORT = REGISTRY.register("magenta_kidneywort", () -> new ModFlowerBlock(MobEffects.CONFUSION, 9.0F));
+	public static final Supplier<Block> PURPLE_KIDNEYWORT = REGISTRY.register("purple_kidneywort", () -> new ModFlowerBlock(MobEffects.CONFUSION, 9.0F));
+	public static final Supplier<Block> WHITE_KIDNEYWORT = REGISTRY.register("white_kidneywort", () -> new ModFlowerBlock(MobEffects.CONFUSION, 9.0F));
 	public static final Supplier<Block> APRICOT_MALLOW = REGISTRY.register("apricot_mallow", () -> new BadlandsFlowerBlock(MobEffects.DAMAGE_RESISTANCE, 4.0F));
 	public static final Supplier<Block> BLUE_PENSTEMON = REGISTRY.register("blue_penstemon", () -> new BadlandsFlowerBlock(MobEffects.DIG_SPEED, 5.0F));
 	public static final Supplier<Block> FIRECRACKER_PENSTEMON = REGISTRY.register("firecracker_penstemon", () -> new BadlandsFlowerBlock(MobEffects.DIG_SPEED, 5.0F));
@@ -117,9 +117,9 @@ public class ModBlocks
 	public static final Supplier<Block> POTTED_FOX_AND_CUBS = REGISTRY.register("potted_fox_and_cubs", () -> new ModFlowerPotBlock(FOX_AND_CUBS.get()));
 	public static final Supplier<Block> POTTED_PINK_HAWKS_BEARD = REGISTRY.register("potted_pink_hawks_beard", () -> new ModFlowerPotBlock(PINK_HAWKS_BEARD.get()));
 	public static final Supplier<Block> POTTED_LADIES_TRESSES = REGISTRY.register("potted_ladies_tresses", () -> new ModFlowerPotBlock(LADIES_TRESSES.get()));
-	public static final Supplier<Block> POTTED_MAGENTA_WISHBONE_FLOWER = REGISTRY.register("potted_magenta_wishbone_flower", () -> new ModFlowerPotBlock(MAGENTA_WISHBONE_FLOWER.get()));
-	public static final Supplier<Block> POTTED_PURPLE_WISHBONE_FLOWER = REGISTRY.register("potted_purple_wishbone_flower", () -> new ModFlowerPotBlock(PURPLE_WISHBONE_FLOWER.get()));
-	public static final Supplier<Block> POTTED_WHITE_WISHBONE_FLOWER = REGISTRY.register("potted_white_wishbone_flower", () -> new ModFlowerPotBlock(WHITE_WISHBONE_FLOWER.get()));
+	public static final Supplier<Block> POTTED_MAGENTA_KIDNEYWORT = REGISTRY.register("potted_magenta_kidneywort", () -> new ModFlowerPotBlock(MAGENTA_KIDNEYWORT.get()));
+	public static final Supplier<Block> POTTED_PURPLE_KIDNEYWORT = REGISTRY.register("potted_purple_kidneywort", () -> new ModFlowerPotBlock(PURPLE_KIDNEYWORT.get()));
+	public static final Supplier<Block> POTTED_WHITE_KIDNEYWORT = REGISTRY.register("potted_white_kidneywort", () -> new ModFlowerPotBlock(WHITE_KIDNEYWORT.get()));
 	public static final Supplier<Block> POTTED_APRICOT_MALLOW = REGISTRY.register("potted_apricot_mallow", () -> new ModFlowerPotBlock(APRICOT_MALLOW.get()));
 	public static final Supplier<Block> POTTED_BLUE_PENSTEMON = REGISTRY.register("potted_blue_penstemon", () -> new ModFlowerPotBlock(BLUE_PENSTEMON.get()));
 	public static final Supplier<Block> POTTED_FIRECRACKER_PENSTEMON = REGISTRY.register("potted_firecracker_penstemon", () -> new ModFlowerPotBlock(FIRECRACKER_PENSTEMON.get()));

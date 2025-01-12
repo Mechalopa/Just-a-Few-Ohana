@@ -45,9 +45,9 @@ public class ModItems
 	public static final Supplier<Item> FOX_AND_CUBS = REGISTRY.register("fox_and_cubs", () -> new BlockItem(ModBlocks.FOX_AND_CUBS.get(), new Item.Properties()));
 	public static final Supplier<Item> PINK_HAWKS_BEARD = REGISTRY.register("pink_hawks_beard", () -> new BlockItem(ModBlocks.PINK_HAWKS_BEARD.get(), new Item.Properties()));
 	public static final Supplier<Item> LADIES_TRESSES = REGISTRY.register("ladies_tresses", () -> new BlockItem(ModBlocks.LADIES_TRESSES.get(), new Item.Properties()));
-	public static final Supplier<Item> MAGENTA_WISHBONE_FLOWER = REGISTRY.register("magenta_wishbone_flower", () -> new BlockItem(ModBlocks.MAGENTA_WISHBONE_FLOWER.get(), new Item.Properties()));
-	public static final Supplier<Item> PURPLE_WISHBONE_FLOWER = REGISTRY.register("purple_wishbone_flower", () -> new BlockItem(ModBlocks.PURPLE_WISHBONE_FLOWER.get(), new Item.Properties()));
-	public static final Supplier<Item> WHITE_WISHBONE_FLOWER = REGISTRY.register("white_wishbone_flower", () -> new BlockItem(ModBlocks.WHITE_WISHBONE_FLOWER.get(), new Item.Properties()));
+	public static final Supplier<Item> MAGENTA_KIDNEYWORT = REGISTRY.register("magenta_kidneywort", () -> new BlockItem(ModBlocks.MAGENTA_KIDNEYWORT.get(), new Item.Properties()));
+	public static final Supplier<Item> PURPLE_KIDNEYWORT = REGISTRY.register("purple_kidneywort", () -> new BlockItem(ModBlocks.PURPLE_KIDNEYWORT.get(), new Item.Properties()));
+	public static final Supplier<Item> WHITE_KIDNEYWORT = REGISTRY.register("white_kidneywort", () -> new BlockItem(ModBlocks.WHITE_KIDNEYWORT.get(), new Item.Properties()));
 	public static final Supplier<Item> APRICOT_MALLOW = REGISTRY.register("apricot_mallow", () -> new BlockItem(ModBlocks.APRICOT_MALLOW.get(), new Item.Properties()));
 	public static final Supplier<Item> BLUE_PENSTEMON = REGISTRY.register("blue_penstemon", () -> new BlockItem(ModBlocks.BLUE_PENSTEMON.get(), new Item.Properties()));
 	public static final Supplier<Item> FIRECRACKER_PENSTEMON = REGISTRY.register("firecracker_penstemon", () -> new BlockItem(ModBlocks.FIRECRACKER_PENSTEMON.get(), new Item.Properties()));
