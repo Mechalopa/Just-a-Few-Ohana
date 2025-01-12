@@ -2,7 +2,7 @@ package com.github.mechalopa.jafohana.world.level.block.state.properties;
 
 import net.minecraft.util.StringRepresentable;
 
-public enum JadeVinePart implements StringRepresentable
+public enum VineFlowerPart implements StringRepresentable
 {
 	SINGLE("single"),
 	SHORT_STEM("short_stem"),
@@ -13,7 +13,7 @@ public enum JadeVinePart implements StringRepresentable
 
 	private final String name;
 
-	private JadeVinePart(String name)
+	private VineFlowerPart(String name)
 	{
 		this.name = name;
 	}

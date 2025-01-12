@@ -17,7 +17,7 @@
   "type": "mekanism:crushing",
   "input": {
     "count": 1,
-    "item": "jafohana:jade_vine"
+    "tag": "jafohana:vine_flowers"
   },
   "output": {
     "count": 4,

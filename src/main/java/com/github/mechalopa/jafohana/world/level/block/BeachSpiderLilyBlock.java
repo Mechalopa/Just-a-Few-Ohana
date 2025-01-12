@@ -18,6 +18,6 @@ public class BeachSpiderLilyBlock extends MediumFlowerBlock
 	@Override
 	protected boolean mayPlaceOn(BlockState state, BlockGetter world, BlockPos pos)
 	{
-		return state.is(ModTags.BlockTags.BEACH_SPIDER_LILY_PLANTABLE_ON);
+		return state.is(ModTags.BlockTags.BEACH_FLOWER_PLANTABLE_ON);
 	}
 }
