@@ -1,7 +1,6 @@
 {
-  "parent": "jafohana:block/medium_flower_height_20",
+  "parent": "jafohana:block/cross_height_20",
   "textures": {
-    "particle": "jafohana:block/bells_of_ireland",
     "cross": "jafohana:block/bells_of_ireland",
     "stem": "jafohana:block/bells_of_ireland_stem"
   }
