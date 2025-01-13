@@ -39,21 +39,21 @@ public abstract class VineFlowerBlock extends Block implements BonemealableBlock
 	}
 
 	@Override
-	protected BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, LevelAccessor level, BlockPos pos, BlockPos neighborPos)
+	protected BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, LevelAccessor level, BlockPos currentPos, BlockPos neighborPos)
 	{
-		if (direction == Direction.UP && !this.canSurvive(state, level, pos))
+		if (direction == Direction.UP && !this.canSurvive(state, level, currentPos))
 		{
 			return Blocks.AIR.defaultBlockState();
 		}
 		else if (direction.getAxis() == Direction.Axis.Y)
 		{
-			if (level.getBlockState(pos.above()).is(this))
+			if (level.getBlockState(currentPos.above()).is(this))
 			{
-				if (level.getBlockState(pos.below()).is(this))
+				if (level.getBlockState(currentPos.below()).is(this))
 				{
 					return state.setValue(PART, VineFlowerPart.LONG_BODY);
 				}
-				else if (level.getBlockState(pos.above(2)).is(this))
+				else if (level.getBlockState(currentPos.above(2)).is(this))
 				{
 					return state.setValue(PART, VineFlowerPart.LONG_HEAD);
 				}
@@ -62,9 +62,9 @@ public abstract class VineFlowerBlock extends Block implements BonemealableBlock
 					return state.setValue(PART, VineFlowerPart.SHORT_HEAD);
 				}
 			}
-			else if (level.getBlockState(pos.below()).is(this))
+			else if (level.getBlockState(currentPos.below()).is(this))
 			{
-				if (level.getBlockState(pos.below(2)).is(this))
+				if (level.getBlockState(currentPos.below(2)).is(this))
 				{
 					return state.setValue(PART, VineFlowerPart.LONG_STEM);
 				}
@@ -80,7 +80,7 @@ public abstract class VineFlowerBlock extends Block implements BonemealableBlock
 		}
 		else
 		{
-			return super.updateShape(state, direction, neighborState, level, pos, neighborPos);
+			return super.updateShape(state, direction, neighborState, level, currentPos, neighborPos);
 		}
 	}
 

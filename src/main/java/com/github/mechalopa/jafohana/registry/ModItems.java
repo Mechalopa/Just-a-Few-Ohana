@@ -41,6 +41,7 @@ public class ModItems
 	public static final Supplier<Item> SNOWDROP = REGISTRY.register("snowdrop", () -> new BlockItem(ModBlocks.SNOWDROP.get(), new Item.Properties()));
 	public static final Supplier<Item> WINTER_HEATH = REGISTRY.register("winter_heath", () -> new BlockItem(ModBlocks.WINTER_HEATH.get(), new Item.Properties()));
 	public static final Supplier<Item> BLUE_DAISY = REGISTRY.register("blue_daisy", () -> new BlockItem(ModBlocks.BLUE_DAISY.get(), new Item.Properties()));
+	public static final Supplier<Item> CRIMSON_CLOVER = REGISTRY.register("crimson_clover", () -> new BlockItem(ModBlocks.CRIMSON_CLOVER.get(), new Item.Properties()));
 	public static final Supplier<Item> FOX_AND_CUBS = REGISTRY.register("fox_and_cubs", () -> new BlockItem(ModBlocks.FOX_AND_CUBS.get(), new Item.Properties()));
 	public static final Supplier<Item> PINK_HAWKS_BEARD = REGISTRY.register("pink_hawks_beard", () -> new BlockItem(ModBlocks.PINK_HAWKS_BEARD.get(), new Item.Properties()));
 	public static final Supplier<Item> LADIES_TRESSES = REGISTRY.register("ladies_tresses", () -> new BlockItem(ModBlocks.LADIES_TRESSES.get(), new Item.Properties()));

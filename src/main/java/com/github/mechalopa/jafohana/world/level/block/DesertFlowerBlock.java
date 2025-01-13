@@ -16,7 +16,7 @@ public class DesertFlowerBlock extends ModFlowerBlock
 	}
 
 	@Override
-	protected boolean mayPlaceOn(BlockState state, BlockGetter world, BlockPos pos)
+	protected boolean mayPlaceOn(BlockState state, BlockGetter level, BlockPos pos)
 	{
 		return state.is(ModTags.BlockTags.DESERT_FLOWER_PLANTABLE_ON);
 	}

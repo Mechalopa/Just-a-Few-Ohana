@@ -20,9 +20,9 @@ public class MediumFlowerBlock extends ModFlowerBlock
 	}
 
 	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context)
+	public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context)
 	{
-		Vec3 vector3d = state.getOffset(world, pos);
+		Vec3 vector3d = state.getOffset(level, pos);
 		return SHAPE.move(vector3d.x, vector3d.y, vector3d.z);
 	}
 }

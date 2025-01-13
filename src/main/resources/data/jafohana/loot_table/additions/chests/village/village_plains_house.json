@@ -47,6 +47,21 @@
               "function": "minecraft:set_count"
             }
           ],
+          "name": "jafohana:crimson_clover"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
           "name": "jafohana:fox_and_cubs"
         },
         {
@@ -126,7 +141,7 @@
         },
         {
           "type": "minecraft:empty",
-          "weight": 10
+          "weight": 9
         }
       ],
       "rolls": {

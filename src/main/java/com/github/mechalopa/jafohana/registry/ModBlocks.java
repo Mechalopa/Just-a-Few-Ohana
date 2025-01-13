@@ -6,6 +6,7 @@ import com.github.mechalopa.jafohana.JAFOhana;
 import com.github.mechalopa.jafohana.world.level.block.BadlandsFlowerBlock;
 import com.github.mechalopa.jafohana.world.level.block.BadlandsTallFlowerBlock;
 import com.github.mechalopa.jafohana.world.level.block.BeachSpiderLilyBlock;
+import com.github.mechalopa.jafohana.world.level.block.CrimsonCloverBlock;
 import com.github.mechalopa.jafohana.world.level.block.DesertFlowerBlock;
 import com.github.mechalopa.jafohana.world.level.block.FasciatedDandelionBlock;
 import com.github.mechalopa.jafohana.world.level.block.FasciatedOxeyeDaisyBlock;
@@ -52,6 +53,7 @@ public class ModBlocks
 	public static final Supplier<Block> SNOWDROP = REGISTRY.register("snowdrop", () -> new ModFlowerBlock(MobEffects.POISON, 12.0F));
 	public static final Supplier<Block> WINTER_HEATH = REGISTRY.register("winter_heath", () -> new ModFlowerBlock(MobEffects.WEAKNESS, 9.0F));
 	public static final Supplier<Block> BLUE_DAISY = REGISTRY.register("blue_daisy", () -> new ModFlowerBlock(MobEffects.MOVEMENT_SPEED, 5.0F));
+	public static final Supplier<Block> CRIMSON_CLOVER = REGISTRY.register("crimson_clover", () -> new CrimsonCloverBlock(MobEffects.FIRE_RESISTANCE, 4.0F));
 	public static final Supplier<Block> FOX_AND_CUBS = REGISTRY.register("fox_and_cubs", () -> new ModFlowerBlock(MobEffects.REGENERATION, 8.0F));
 	public static final Supplier<Block> PINK_HAWKS_BEARD = REGISTRY.register("pink_hawks_beard", () -> new ModFlowerBlock(MobEffects.SATURATION, 0.35F));
 	public static final Supplier<Block> LADIES_TRESSES = REGISTRY.register("ladies_tresses", () -> new ModFlowerBlock(MobEffects.DIG_SPEED, 5.0F));
@@ -113,6 +115,7 @@ public class ModBlocks
 	public static final Supplier<Block> POTTED_SNOWDROP = REGISTRY.register("potted_snowdrop", () -> new ModFlowerPotBlock(SNOWDROP.get()));
 	public static final Supplier<Block> POTTED_WINTER_HEATH = REGISTRY.register("potted_winter_heath", () -> new ModFlowerPotBlock(WINTER_HEATH.get()));
 	public static final Supplier<Block> POTTED_BLUE_DAISY = REGISTRY.register("potted_blue_daisy", () -> new ModFlowerPotBlock(BLUE_DAISY.get()));
+	public static final Supplier<Block> POTTED_CRIMSON_CLOVER = REGISTRY.register("potted_crimson_clover", () -> new ModFlowerPotBlock(CRIMSON_CLOVER.get()));
 	public static final Supplier<Block> POTTED_FOX_AND_CUBS = REGISTRY.register("potted_fox_and_cubs", () -> new ModFlowerPotBlock(FOX_AND_CUBS.get()));
 	public static final Supplier<Block> POTTED_PINK_HAWKS_BEARD = REGISTRY.register("potted_pink_hawks_beard", () -> new ModFlowerPotBlock(PINK_HAWKS_BEARD.get()));
 	public static final Supplier<Block> POTTED_LADIES_TRESSES = REGISTRY.register("potted_ladies_tresses", () -> new ModFlowerPotBlock(LADIES_TRESSES.get()));

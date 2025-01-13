@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "on_nylium=false": {
+      "model": "jafohana:block/crimson_clover"
+    },
+    "on_nylium=true": {
+      "model": "jafohana:block/crimson_clover_planted_on_nylium"
+    }
+  }
+}
