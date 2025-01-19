@@ -11,10 +11,6 @@
         "name": "#jafohana:is_overworld"
       },
       {
-        "name": "#jafohana:is_hill_or_mountain",
-        "negate": true
-      },
-      {
         "name": "#c:is_plateau",
         "negate": true
       },
