@@ -3,11 +3,6 @@
   "biomes": [
     [
       {
-        "name": "minecraft:windswept_savanna"
-      }
-    ],
-    [
-      {
         "name": "#jafohana:is_overworld"
       },
       {
