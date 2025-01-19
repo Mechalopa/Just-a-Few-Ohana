@@ -4,14 +4,21 @@
     "type": "neoforge:and",
     "values": [
       "#jafohana:is_overworld",
-      "#jafohana:is_windswept",
       "#jafohana:is_savanna",
+      {
+        "type": "neoforge:or",
+        "values": [
+          "#jafohana:is_windswept",
+          "#c:is_plateau",
+          "#c:is_floral"
+        ]
+      },
       {
         "type": "neoforge:not",
         "value": "#jafohana:is_forest"
       }
     ]
   },
-  "features": "jafohana:tall_flower_windswept_savanna",
+  "features": "jafohana:tall_flower_savanna_plateau",
   "step": "vegetal_decoration"
 }

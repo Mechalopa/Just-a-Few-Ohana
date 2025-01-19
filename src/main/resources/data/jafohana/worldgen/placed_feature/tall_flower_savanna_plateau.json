@@ -1,9 +1,9 @@
 {
-  "feature": "jafohana:tall_flower_windswept_savanna",
+  "feature": "jafohana:tall_flower_savanna_plateau",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 48
+      "chance": 56
     },
     {
       "type": "minecraft:in_square"
