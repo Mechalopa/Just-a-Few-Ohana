@@ -127,7 +127,7 @@ public class JadeVineBlock extends Block implements BonemealableBlock
 		}
 		else
 		{
-			Optional<BlockPos> optional = this.getHeadPos(levelReader, pos, state.getBlock());
+			Optional<BlockPos> optional = this.getHeadPos(levelReader, pos);
 			return optional.isPresent() && this.canGrowInto(levelReader.getBlockState(optional.get().relative(Direction.DOWN)));
 		}
 	}
@@ -149,7 +149,7 @@ public class JadeVineBlock extends Block implements BonemealableBlock
 		}
 		else
 		{
-			Optional<BlockPos> optional = this.getHeadPos(serverLevel, pos, state.getBlock());
+			Optional<BlockPos> optional = this.getHeadPos(serverLevel, pos);
 
 			if (optional.isPresent())
 			{
@@ -164,7 +164,7 @@ public class JadeVineBlock extends Block implements BonemealableBlock
 		return state.isAir();
 	}
 
-	private Optional<BlockPos> getHeadPos(BlockGetter getter, BlockPos pos, Block p_153325_)
+	private Optional<BlockPos> getHeadPos(BlockGetter getter, BlockPos pos)
 	{
 		BlockPos.MutableBlockPos blockpos$mutableblockpos = pos.mutable();
 		BlockState blockstate;
