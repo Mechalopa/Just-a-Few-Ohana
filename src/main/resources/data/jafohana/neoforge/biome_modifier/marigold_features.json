@@ -35,6 +35,17 @@
       {
         "name": "#jafohana:is_savanna"
       }
+    ],
+    [
+      {
+        "name": "#jafohana:is_overworld"
+      },
+      {
+        "name": "#c:is_plateau"
+      },
+      {
+        "name": "#jafohana:is_savanna"
+      }
     ]
   ],
   "features": "jafohana:marigold",
