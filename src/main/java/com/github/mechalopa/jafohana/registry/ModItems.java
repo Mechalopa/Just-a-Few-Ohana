@@ -72,6 +72,7 @@ public class ModItems
 	public static final Supplier<Item> FIREWEED = REGISTRY.register("fireweed", () -> new DoubleHighBlockItem(ModBlocks.FIREWEED.get(), new Item.Properties()));
 	public static final Supplier<Item> ALPINE_RAGWORT = REGISTRY.register("alpine_ragwort", () -> new DoubleHighBlockItem(ModBlocks.ALPINE_RAGWORT.get(), new Item.Properties()));
 	public static final Supplier<Item> TATARIAN_ASTER = REGISTRY.register("tatarian_aster", () -> new DoubleHighBlockItem(ModBlocks.TATARIAN_ASTER.get(), new Item.Properties()));
+	public static final Supplier<Item> BUTTERFLY_WEED = REGISTRY.register("butterfly_weed", () -> new DoubleHighBlockItem(ModBlocks.BUTTERFLY_WEED.get(), new Item.Properties()));
 	public static final Supplier<Item> CARDINAL_FLOWER = REGISTRY.register("cardinal_flower", () -> new DoubleHighBlockItem(ModBlocks.CARDINAL_FLOWER.get(), new Item.Properties()));
 	public static final Supplier<Item> YELLOWFLAG_IRIS = REGISTRY.register("yellowflag_iris", () -> new DoubleHighBlockItem(ModBlocks.YELLOWFLAG_IRIS.get(), new Item.Properties()));
 	public static final Supplier<Item> PRINCES_PLUME = REGISTRY.register("princes_plume", () -> new DoubleHighBlockItem(ModBlocks.PRINCES_PLUME.get(), new Item.Properties()));

@@ -1,9 +1,9 @@
 {
-  "feature": "jafohana:tall_flower_flower_forest",
+  "feature": "jafohana:butterfly_weed",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 14
+      "chance": 100
     },
     {
       "type": "minecraft:in_square"

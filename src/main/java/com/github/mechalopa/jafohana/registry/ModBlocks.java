@@ -84,6 +84,7 @@ public class ModBlocks
 	public static final Supplier<Block> FIREWEED = REGISTRY.register("fireweed", () -> new ModTallFlowerBlock());
 	public static final Supplier<Block> ALPINE_RAGWORT = REGISTRY.register("alpine_ragwort", () -> new ModTallFlowerBlock());
 	public static final Supplier<Block> TATARIAN_ASTER = REGISTRY.register("tatarian_aster", () -> new ModTallFlowerBlock());
+	public static final Supplier<Block> BUTTERFLY_WEED = REGISTRY.register("butterfly_weed", () -> new ModTallFlowerBlock());
 	public static final Supplier<Block> CARDINAL_FLOWER = REGISTRY.register("cardinal_flower", () -> new ModTallFlowerBlock());
 	public static final Supplier<Block> YELLOWFLAG_IRIS = REGISTRY.register("yellowflag_iris", () -> new ModTallFlowerBlock());
 	public static final Supplier<Block> PRINCES_PLUME = REGISTRY.register("princes_plume", () -> new BadlandsTallFlowerBlock());
