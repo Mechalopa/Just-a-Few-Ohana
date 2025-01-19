@@ -17,13 +17,7 @@
                   "#jafohana:is_savanna",
                   {
                     "type": "neoforge:not",
-                    "value": {
-                      "type": "neoforge:or",
-                      "values": [
-                        "#jafohana:is_hill_or_mountain",
-                        "#jafohana:is_windswept"
-                      ]
-                    }
+                    "value": "#c:is_plateau"
                   }
                 ]
               },
