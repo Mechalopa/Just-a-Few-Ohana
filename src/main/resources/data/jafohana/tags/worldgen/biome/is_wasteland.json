@@ -4,10 +4,6 @@
     {
       "id": "#c:is_wasteland",
       "required": false
-    },
-    {
-      "id": "blasted_barrens:blasted_barrens",
-      "required": false
     }
   ]
 }
