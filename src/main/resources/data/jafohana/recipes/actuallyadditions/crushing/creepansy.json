@@ -1,0 +1,28 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "actuallyadditions"
+    }
+  ],
+  "type": "actuallyadditions:crushing",
+  "ingredient": {
+    "item": "jafohana:creepansy"
+  },
+  "result": [
+    {
+      "chance": 1.0,
+      "result": {
+        "Count": 3,
+        "id": "minecraft:green_dye"
+      }
+    },
+    {
+      "chance": 0.05,
+      "result": {
+        "Count": 1,
+        "id": "minecraft:gunpowder"
+      }
+    }
+  ]
+}
