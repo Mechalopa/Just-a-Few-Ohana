@@ -1,7 +1,7 @@
 {
-  "parent": "minecraft:block/cross",
-  "render_type": "cutout",
+  "parent": "jafohana:block/cross_height_18",
   "textures": {
-    "cross": "jafohana:block/firecracker_penstemon"
+    "cross": "jafohana:block/firecracker_penstemon",
+    "stem": "jafohana:block/firecracker_penstemon_stem"
   }
 }

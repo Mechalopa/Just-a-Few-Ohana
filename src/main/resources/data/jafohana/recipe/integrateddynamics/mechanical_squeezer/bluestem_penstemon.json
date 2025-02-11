@@ -5,14 +5,22 @@
       "modid": "integrateddynamics"
     }
   ],
-  "type": "integrateddynamics:squeezer",
+  "type": "integrateddynamics:mechanical_squeezer",
+  "duration": 5,
   "input_item": {
-    "item": "jafohana:blue_penstemon"
+    "item": "jafohana:bluestem_penstemon"
   },
   "output_items": [
     {
       "item": {
         "count": 4,
+        "id": "minecraft:blue_dye"
+      }
+    },
+    {
+      "chance": 0.5,
+      "item": {
+        "count": 2,
         "id": "minecraft:blue_dye"
       }
     }

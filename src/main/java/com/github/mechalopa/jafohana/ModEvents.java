@@ -151,7 +151,7 @@ public class ModEvents
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.WHITE_KIDNEYWORT.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.STURTS_DESERT_PEA.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.APRICOT_MALLOW.get()), 12, 1, 0.05F));
-			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.BLUE_PENSTEMON.get()), 12, 1, 0.05F));
+			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.BLUESTEM_PENSTEMON.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.FIRECRACKER_PENSTEMON.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.SEGO_LILY.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.HAREBELL.get()), 12, 1, 0.05F));

@@ -7,15 +7,15 @@
   ],
   "type": "immersiveengineering:cloche",
   "input": {
-    "item": "jafohana:blue_penstemon"
+    "item": "jafohana:bluestem_penstemon"
   },
   "render": {
     "type": "immersiveengineering:generic",
-    "block": "jafohana:blue_penstemon"
+    "block": "jafohana:bluestem_penstemon"
   },
   "results": [
     {
-      "item": "jafohana:blue_penstemon"
+      "item": "jafohana:bluestem_penstemon"
     }
   ],
   "soil": {

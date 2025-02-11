@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "jafohana:blue_penstemon"
+          "name": "jafohana:bluestem_penstemon"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "jafohana:blocks/blue_penstemon"
+  "random_sequence": "jafohana:blocks/bluestem_penstemon"
 }

@@ -2,6 +2,6 @@
   "parent": "minecraft:block/cross",
   "render_type": "cutout",
   "textures": {
-    "cross": "jafohana:block/blue_penstemon"
+    "cross": "jafohana:block/bluestem_penstemon"
   }
 }

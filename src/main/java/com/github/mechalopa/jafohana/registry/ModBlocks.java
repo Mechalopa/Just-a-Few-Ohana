@@ -4,6 +4,7 @@ import java.util.function.Supplier;
 
 import com.github.mechalopa.jafohana.JAFOhana;
 import com.github.mechalopa.jafohana.world.level.block.BadlandsFlowerBlock;
+import com.github.mechalopa.jafohana.world.level.block.BadlandsMediumFlowerBlock;
 import com.github.mechalopa.jafohana.world.level.block.BadlandsTallFlowerBlock;
 import com.github.mechalopa.jafohana.world.level.block.BeachSpiderLilyBlock;
 import com.github.mechalopa.jafohana.world.level.block.CrimsonCloverBlock;
@@ -62,8 +63,8 @@ public class ModBlocks
 	public static final Supplier<Block> WHITE_KIDNEYWORT = REGISTRY.register("white_kidneywort", () -> new ModFlowerBlock(MobEffects.CONFUSION, 9.0F));
 	public static final Supplier<Block> STURTS_DESERT_PEA = REGISTRY.register("sturts_desert_pea", () -> new DesertFlowerBlock(MobEffects.FIRE_RESISTANCE, 4.0F));
 	public static final Supplier<Block> APRICOT_MALLOW = REGISTRY.register("apricot_mallow", () -> new BadlandsFlowerBlock(MobEffects.DAMAGE_RESISTANCE, 4.0F));
-	public static final Supplier<Block> BLUE_PENSTEMON = REGISTRY.register("blue_penstemon", () -> new BadlandsFlowerBlock(MobEffects.DIG_SPEED, 5.0F));
-	public static final Supplier<Block> FIRECRACKER_PENSTEMON = REGISTRY.register("firecracker_penstemon", () -> new BadlandsFlowerBlock(MobEffects.DIG_SPEED, 5.0F));
+	public static final Supplier<Block> BLUESTEM_PENSTEMON = REGISTRY.register("bluestem_penstemon", () -> new BadlandsFlowerBlock(MobEffects.DIG_SPEED, 5.0F));
+	public static final Supplier<Block> FIRECRACKER_PENSTEMON = REGISTRY.register("firecracker_penstemon", () -> new BadlandsMediumFlowerBlock(MobEffects.DIG_SPEED, 5.0F));
 	public static final Supplier<Block> SEGO_LILY = REGISTRY.register("sego_lily", () -> new BadlandsFlowerBlock(MobEffects.SATURATION, 0.35F));
 	public static final Supplier<Block> HAREBELL = REGISTRY.register("harebell", () -> new ModFlowerBlock(MobEffects.JUMP, 5.0F));
 	public static final Supplier<Block> MECONOPSIS = REGISTRY.register("meconopsis", () -> new ModFlowerBlock(MobEffects.NIGHT_VISION, 5.0F));
@@ -125,7 +126,7 @@ public class ModBlocks
 	public static final Supplier<Block> POTTED_WHITE_KIDNEYWORT = REGISTRY.register("potted_white_kidneywort", () -> new ModFlowerPotBlock(WHITE_KIDNEYWORT.get()));
 	public static final Supplier<Block> POTTED_STURTS_DESERT_PEA = REGISTRY.register("potted_sturts_desert_pea", () -> new ModFlowerPotBlock(STURTS_DESERT_PEA.get()));
 	public static final Supplier<Block> POTTED_APRICOT_MALLOW = REGISTRY.register("potted_apricot_mallow", () -> new ModFlowerPotBlock(APRICOT_MALLOW.get()));
-	public static final Supplier<Block> POTTED_BLUE_PENSTEMON = REGISTRY.register("potted_blue_penstemon", () -> new ModFlowerPotBlock(BLUE_PENSTEMON.get()));
+	public static final Supplier<Block> POTTED_BLUESTEM_PENSTEMON = REGISTRY.register("potted_bluestem_penstemon", () -> new ModFlowerPotBlock(BLUESTEM_PENSTEMON.get()));
 	public static final Supplier<Block> POTTED_FIRECRACKER_PENSTEMON = REGISTRY.register("potted_firecracker_penstemon", () -> new ModFlowerPotBlock(FIRECRACKER_PENSTEMON.get()));
 	public static final Supplier<Block> POTTED_SEGO_LILY = REGISTRY.register("potted_sego_lily", () -> new ModFlowerPotBlock(SEGO_LILY.get()));
 	public static final Supplier<Block> POTTED_HAREBELL = REGISTRY.register("potted_harebell", () -> new ModFlowerPotBlock(HAREBELL.get()));
