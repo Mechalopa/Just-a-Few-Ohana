@@ -1,0 +1,29 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "cyclic"
+    },
+    {
+      "type": "forge:item_exists",
+      "item": "cyclic:crusher"
+    }
+  ],
+  "type": "cyclic:crusher",
+  "bonus": {
+    "count": 1,
+    "item": "minecraft:white_dye"
+  },
+  "energy": {
+    "rfpertick": 10,
+    "ticks": 100
+  },
+  "input": {
+    "item": "jafohana:spathiphyllum"
+  },
+  "percent": 90,
+  "result": {
+    "count": 1,
+    "item": "minecraft:light_gray_dye"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "cyclic"
+    },
+    {
+      "type": "forge:item_exists",
+      "item": "cyclic:crusher"
+    }
+  ],
+  "type": "cyclic:crusher",
+  "bonus": {
+    "count": 1,
+    "item": "minecraft:yellow_dye"
+  },
+  "energy": {
+    "rfpertick": 10,
+    "ticks": 100
+  },
+  "input": {
+    "item": "jafohana:yellow_pansy"
+  },
+  "percent": 50,
+  "result": {
+    "count": 2,
+    "item": "minecraft:yellow_dye"
+  }
+}
