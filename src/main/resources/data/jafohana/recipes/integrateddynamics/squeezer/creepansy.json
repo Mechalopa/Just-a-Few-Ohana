@@ -15,6 +15,13 @@
         "count": 4,
         "item": "minecraft:green_dye"
       }
+    },
+    {
+      "chance": 0.025,
+      "item": {
+        "count": 1,
+        "item": "minecraft:gunpowder"
+      }
     }
   ]
 }

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "blasted_barrens:blasted_barrens",
+      "required": false
+    }
+  ]
+}

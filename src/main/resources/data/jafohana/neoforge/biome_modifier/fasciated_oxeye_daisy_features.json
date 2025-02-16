@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#jafohana:has_fasciated_oxeye_daisy",
+  "features": "jafohana:fasciated_oxeye_daisy",
+  "step": "vegetal_decoration"
+}
