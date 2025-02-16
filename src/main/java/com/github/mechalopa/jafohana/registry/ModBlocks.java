@@ -3,6 +3,7 @@ package com.github.mechalopa.jafohana.registry;
 import java.util.function.Supplier;
 
 import com.github.mechalopa.jafohana.JAFOhana;
+import com.github.mechalopa.jafohana.world.level.block.CreepansyBlock;
 import com.github.mechalopa.jafohana.world.level.block.CrimsonCloverBlock;
 import com.github.mechalopa.jafohana.world.level.block.FasciatedDandelionBlock;
 import com.github.mechalopa.jafohana.world.level.block.FasciatedOxeyeDaisyBlock;
@@ -46,7 +47,7 @@ public class ModBlocks
 	public static final Supplier<Block> PURPLE_PANSY = REGISTRY.register("purple_pansy", () -> new ModFlowerBlock(MobEffects.CONFUSION, 9.0F));
 	public static final Supplier<Block> WHITE_PANSY = REGISTRY.register("white_pansy", () -> new ModFlowerBlock(MobEffects.CONFUSION, 9.0F));
 	public static final Supplier<Block> YELLOW_PANSY = REGISTRY.register("yellow_pansy", () -> new ModFlowerBlock(MobEffects.CONFUSION, 9.0F));
-	public static final Supplier<Block> CREEPANSY = REGISTRY.register("creepansy", () -> new ModFlowerBlock(MobEffects.DAMAGE_BOOST, 4.0F));
+	public static final Supplier<Block> CREEPANSY = REGISTRY.register("creepansy", () -> new CreepansyBlock(MobEffects.DAMAGE_BOOST, 4.0F));
 	public static final Supplier<Block> SNOWDROP = REGISTRY.register("snowdrop", () -> new ModFlowerBlock(MobEffects.POISON, 12.0F));
 	public static final Supplier<Block> WINTER_HEATH = REGISTRY.register("winter_heath", () -> new ModFlowerBlock(MobEffects.WEAKNESS, 9.0F));
 	public static final Supplier<Block> BLUE_DAISY = REGISTRY.register("blue_daisy", () -> new ModFlowerBlock(MobEffects.MOVEMENT_SPEED, 5.0F));
