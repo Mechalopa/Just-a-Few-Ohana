@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#jafohana:integrateddynamics/meneglin",
+  "features": "jafohana:flower_meneglin",
+  "step": "vegetal_decoration"
+}

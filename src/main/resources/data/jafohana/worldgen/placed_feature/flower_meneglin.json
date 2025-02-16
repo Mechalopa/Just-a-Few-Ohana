@@ -1,19 +1,9 @@
 {
-  "feature": "jafohana:fasciated_dandelion",
+  "feature": "jafohana:flower_meneglin",
   "placement": [
     {
-      "type": "minecraft:count",
-      "count": {
-        "type": "minecraft:uniform",
-        "value": {
-          "max_inclusive": 2,
-          "min_inclusive": 1
-        }
-      }
-    },
-    {
       "type": "minecraft:rarity_filter",
-      "chance": 64
+      "chance": 10
     },
     {
       "type": "minecraft:in_square"

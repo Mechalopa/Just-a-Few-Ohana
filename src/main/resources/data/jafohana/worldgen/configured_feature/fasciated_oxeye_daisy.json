@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:simple_block",
+  "config": {
+    "to_place": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "jafohana:fasciated_oxeye_daisy",
+        "Properties": {
+          "half": "lower"
+        }
+      }
+    }
+  }
+}

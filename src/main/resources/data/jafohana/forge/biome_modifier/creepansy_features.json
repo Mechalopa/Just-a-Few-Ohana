@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#jafohana:has_creepansy",
+  "features": "jafohana:creepansy",
+  "step": "vegetal_decoration"
+}

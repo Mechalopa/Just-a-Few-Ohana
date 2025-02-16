@@ -27,6 +27,10 @@
       {
         "name": "#jafohana:biomesoplenty/tundra",
         "negate": true
+      },
+      {
+        "name": "#jafohana:integrateddynamics/meneglin",
+        "negate": true
       }
     ]
   ],
