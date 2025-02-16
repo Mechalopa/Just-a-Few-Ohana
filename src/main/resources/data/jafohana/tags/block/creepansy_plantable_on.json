@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:dirt",
+    "#neoforge:villager_farmlands",
+    {
+      "id": "#c:storage_blocks/gunpowder",
+      "required": false
+    },
+    {
+      "id": "blasted_barrens:ashen_sand",
+      "required": false
+    }
+  ]
+}

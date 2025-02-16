@@ -15,7 +15,8 @@
             "#jafohana:is_spooky",
             "#jafohana:is_birch_forest",
             "#jafohana:is_dead_or_wasteland",
-            "#jafohana:biomesoplenty/tundra"
+            "#jafohana:biomesoplenty/tundra",
+            "#jafohana:integrateddynamics/meneglin"
           ]
         }
       }
