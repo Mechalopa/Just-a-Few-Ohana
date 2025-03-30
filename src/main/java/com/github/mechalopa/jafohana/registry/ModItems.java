@@ -48,7 +48,6 @@ public class ModItems
 	public static final Supplier<Item> MAGENTA_KIDNEYWORT = REGISTRY.register("magenta_kidneywort", () -> new BlockItem(ModBlocks.MAGENTA_KIDNEYWORT.get(), new Item.Properties()));
 	public static final Supplier<Item> PURPLE_KIDNEYWORT = REGISTRY.register("purple_kidneywort", () -> new BlockItem(ModBlocks.PURPLE_KIDNEYWORT.get(), new Item.Properties()));
 	public static final Supplier<Item> WHITE_KIDNEYWORT = REGISTRY.register("white_kidneywort", () -> new BlockItem(ModBlocks.WHITE_KIDNEYWORT.get(), new Item.Properties()));
-	public static final Supplier<Item> STURTS_DESERT_PEA = REGISTRY.register("sturts_desert_pea", () -> new BlockItem(ModBlocks.STURTS_DESERT_PEA.get(), new Item.Properties()));
 	public static final Supplier<Item> APRICOT_MALLOW = REGISTRY.register("apricot_mallow", () -> new BlockItem(ModBlocks.APRICOT_MALLOW.get(), new Item.Properties()));
 	public static final Supplier<Item> BLUESTEM_PENSTEMON = REGISTRY.register("bluestem_penstemon", () -> new BlockItem(ModBlocks.BLUESTEM_PENSTEMON.get(), new Item.Properties()));
 	public static final Supplier<Item> FIRECRACKER_PENSTEMON = REGISTRY.register("firecracker_penstemon", () -> new BlockItem(ModBlocks.FIRECRACKER_PENSTEMON.get(), new Item.Properties()));

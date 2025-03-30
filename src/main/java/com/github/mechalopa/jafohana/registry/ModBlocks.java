@@ -9,7 +9,6 @@ import com.github.mechalopa.jafohana.world.level.block.BadlandsTallFlowerBlock;
 import com.github.mechalopa.jafohana.world.level.block.BeachSpiderLilyBlock;
 import com.github.mechalopa.jafohana.world.level.block.CreepansyBlock;
 import com.github.mechalopa.jafohana.world.level.block.CrimsonCloverBlock;
-import com.github.mechalopa.jafohana.world.level.block.DesertFlowerBlock;
 import com.github.mechalopa.jafohana.world.level.block.FasciatedDandelionBlock;
 import com.github.mechalopa.jafohana.world.level.block.FasciatedOxeyeDaisyBlock;
 import com.github.mechalopa.jafohana.world.level.block.JadeVineBlock;
@@ -62,7 +61,6 @@ public class ModBlocks
 	public static final Supplier<Block> MAGENTA_KIDNEYWORT = REGISTRY.register("magenta_kidneywort", () -> new ModFlowerBlock(MobEffects.CONFUSION, 9.0F));
 	public static final Supplier<Block> PURPLE_KIDNEYWORT = REGISTRY.register("purple_kidneywort", () -> new ModFlowerBlock(MobEffects.CONFUSION, 9.0F));
 	public static final Supplier<Block> WHITE_KIDNEYWORT = REGISTRY.register("white_kidneywort", () -> new ModFlowerBlock(MobEffects.CONFUSION, 9.0F));
-	public static final Supplier<Block> STURTS_DESERT_PEA = REGISTRY.register("sturts_desert_pea", () -> new DesertFlowerBlock(MobEffects.FIRE_RESISTANCE, 4.0F));
 	public static final Supplier<Block> APRICOT_MALLOW = REGISTRY.register("apricot_mallow", () -> new BadlandsFlowerBlock(MobEffects.DAMAGE_RESISTANCE, 4.0F));
 	public static final Supplier<Block> BLUESTEM_PENSTEMON = REGISTRY.register("bluestem_penstemon", () -> new BadlandsFlowerBlock(MobEffects.DIG_SPEED, 5.0F));
 	public static final Supplier<Block> FIRECRACKER_PENSTEMON = REGISTRY.register("firecracker_penstemon", () -> new BadlandsMediumFlowerBlock(MobEffects.DIG_SPEED, 5.0F));
@@ -125,7 +123,6 @@ public class ModBlocks
 	public static final Supplier<Block> POTTED_MAGENTA_KIDNEYWORT = REGISTRY.register("potted_magenta_kidneywort", () -> new ModFlowerPotBlock(MAGENTA_KIDNEYWORT.get()));
 	public static final Supplier<Block> POTTED_PURPLE_KIDNEYWORT = REGISTRY.register("potted_purple_kidneywort", () -> new ModFlowerPotBlock(PURPLE_KIDNEYWORT.get()));
 	public static final Supplier<Block> POTTED_WHITE_KIDNEYWORT = REGISTRY.register("potted_white_kidneywort", () -> new ModFlowerPotBlock(WHITE_KIDNEYWORT.get()));
-	public static final Supplier<Block> POTTED_STURTS_DESERT_PEA = REGISTRY.register("potted_sturts_desert_pea", () -> new ModFlowerPotBlock(STURTS_DESERT_PEA.get()));
 	public static final Supplier<Block> POTTED_APRICOT_MALLOW = REGISTRY.register("potted_apricot_mallow", () -> new ModFlowerPotBlock(APRICOT_MALLOW.get()));
 	public static final Supplier<Block> POTTED_BLUESTEM_PENSTEMON = REGISTRY.register("potted_bluestem_penstemon", () -> new ModFlowerPotBlock(BLUESTEM_PENSTEMON.get()));
 	public static final Supplier<Block> POTTED_FIRECRACKER_PENSTEMON = REGISTRY.register("potted_firecracker_penstemon", () -> new ModFlowerPotBlock(FIRECRACKER_PENSTEMON.get()));

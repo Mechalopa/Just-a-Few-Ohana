@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "#c:sands",
-    "#minecraft:sand",
-    "#minecraft:dirt",
-    "#neoforge:villager_farmlands"
-  ]
-}

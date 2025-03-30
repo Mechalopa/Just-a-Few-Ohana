@@ -1,7 +1,10 @@
 {
   "replace": false,
   "values": [
-    "#jafohana:desert_flower_plantable_on",
-    "#minecraft:terracotta"
+    "#c:sands",
+    "#minecraft:sand",
+    "#minecraft:dirt",
+    "#minecraft:terracotta",
+    "#neoforge:villager_farmlands"
   ]
 }
