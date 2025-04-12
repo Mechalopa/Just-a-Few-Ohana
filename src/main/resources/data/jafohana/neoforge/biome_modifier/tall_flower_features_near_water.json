@@ -1,0 +1,33 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:and",
+    "values": [
+      "#jafohana:is_overworld",
+      {
+        "type": "neoforge:or",
+        "values": [
+          "#jafohana:is_plains",
+          "#jafohana:is_forest"
+        ]
+      },
+      {
+        "type": "neoforge:not",
+        "value": {
+          "type": "neoforge:or",
+          "values": [
+            "#jafohana:is_savanna",
+            "#jafohana:is_jungle",
+            "#jafohana:is_dry",
+            "#jafohana:is_cold",
+            "#jafohana:is_swamp",
+            "#jafohana:is_hill_or_mountain",
+            "#jafohana:is_dead_or_wasteland"
+          ]
+        }
+      }
+    ]
+  },
+  "features": "jafohana:tall_flower_near_water",
+  "step": "vegetal_decoration"
+}
