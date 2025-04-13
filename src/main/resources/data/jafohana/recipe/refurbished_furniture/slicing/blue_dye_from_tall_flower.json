@@ -7,7 +7,7 @@
   ],
   "type": "refurbished_furniture:cutting_board_slicing",
   "ingredient": {
-    "item": "jafohana:ceanothus"
+    "item": "jafohana:blue_ceanothus"
   },
   "result": {
     "count": 3,

@@ -5,7 +5,15 @@
     "values": [
       "#jafohana:is_overworld",
       "#jafohana:is_jungle",
-      "#jafohana:is_sparse_vegetation",
+      {
+        "type": "neoforge:or",
+        "values": [
+          "#jafohana:is_sparse_vegetation",
+          "#jafohana:is_aquatic",
+          "#jafohana:is_floral",
+          "#jafohana:is_lush"
+        ]
+      },
       {
         "type": "neoforge:not",
         "value": {
@@ -13,8 +21,7 @@
           "values": [
             "#jafohana:is_snowy",
             "#jafohana:is_hill_or_mountain",
-            "#jafohana:is_dead_or_wasteland",
-            "#jafohana:is_aquatic"
+            "#jafohana:is_dead_or_wasteland"
           ]
         }
       }

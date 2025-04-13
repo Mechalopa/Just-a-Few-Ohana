@@ -4,7 +4,29 @@
     "type": "neoforge:and",
     "values": [
       "#jafohana:is_overworld",
-      "#jafohana:is_beach",
+      {
+        "type": "neoforge:or",
+        "values": [
+          "#jafohana:is_beach",
+          {
+            "type": "neoforge:and",
+            "values": [
+              "#jafohana:is_aquatic",
+              {
+                "type": "neoforge:or",
+                "values": [
+                  "#jafohana:is_floral",
+                  "#jafohana:is_lush"
+                ]
+              },
+              {
+                "type": "neoforge:not",
+                "value": "#jafohana:is_jungle"
+              }
+            ]
+          }
+        ]
+      },
       {
         "type": "neoforge:not",
         "value": {

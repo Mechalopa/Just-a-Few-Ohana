@@ -8,7 +8,7 @@
   "type": "mekanism:pigment_extracting",
   "input": {
     "count": 1,
-    "item": "jafohana:ceanothus"
+    "item": "jafohana:blue_ceanothus"
   },
   "output": {
     "amount": 1536,

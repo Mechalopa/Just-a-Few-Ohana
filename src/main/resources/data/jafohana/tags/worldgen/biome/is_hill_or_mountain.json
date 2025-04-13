@@ -18,6 +18,10 @@
       "required": false
     },
     {
+      "id": "#c:extreme_hills",
+      "required": false
+    },
+    {
       "id": "#terralith:cliffs",
       "required": false
     },

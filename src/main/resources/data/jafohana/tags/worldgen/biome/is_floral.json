@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#c:is_floral",
+      "required": false
+    },
+    {
+      "id": "#c:floral",
+      "required": false
+    },
+    {
+      "id": "#c:flower_forests",
+      "required": false
+    }
+  ]
+}

@@ -4,6 +4,10 @@
     {
       "id": "#c:is_old_growth",
       "required": false
+    },
+    {
+      "id": "#c:old_growth",
+      "required": false
     }
   ]
 }

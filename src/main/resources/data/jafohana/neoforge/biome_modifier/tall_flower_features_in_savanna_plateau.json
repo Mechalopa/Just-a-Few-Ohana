@@ -8,8 +8,8 @@
       {
         "type": "neoforge:or",
         "values": [
-          "#c:is_plateau",
-          "#c:is_floral"
+          "#jafohana:is_plateau",
+          "#jafohana:is_floral"
         ]
       },
       {

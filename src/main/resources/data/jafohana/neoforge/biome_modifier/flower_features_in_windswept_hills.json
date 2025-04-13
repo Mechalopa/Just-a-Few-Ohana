@@ -8,7 +8,7 @@
         "type": "neoforge:or",
         "values": [
           "#jafohana:is_hill_or_mountain",
-          "#c:is_plateau"
+          "#jafohana:is_plateau"
         ]
       },
       {

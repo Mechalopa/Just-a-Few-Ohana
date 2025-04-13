@@ -14,6 +14,10 @@
       "required": false
     },
     {
+      "id": "#c:tree_coniferous",
+      "required": false
+    },
+    {
       "id": "spookybats:christmas_forest",
       "required": false
     }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "jafohana:block/peppermint_spider_lily"
+  }
+}

@@ -8,6 +8,10 @@
     {
       "id": "#c:dry",
       "required": false
+    },
+    {
+      "id": "#c:climate_dry",
+      "required": false
     }
   ]
 }

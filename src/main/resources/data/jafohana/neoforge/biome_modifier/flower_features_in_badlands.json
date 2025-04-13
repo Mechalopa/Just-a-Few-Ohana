@@ -19,8 +19,8 @@
                     "#jafohana:is_forest",
                     "#jafohana:is_sparse_vegetation",
                     "#jafohana:is_dense_vegetation",
-                    "#c:is_floral",
-                    "#c:is_lush"
+                    "#jafohana:is_floral",
+                    "#jafohana:is_lush"
                   ]
                 }
               }
@@ -34,8 +34,8 @@
                 "type": "neoforge:or",
                 "values": [
                   "#jafohana:is_sparse_vegetation",
-                  "#c:is_floral",
-                  "#c:is_lush"
+                  "#jafohana:is_floral",
+                  "#jafohana:is_lush"
                 ]
               },
               {

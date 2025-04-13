@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "blue_dye",
+  "ingredients": [
+    {
+      "item": "jafohana:blue_ceanothus"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "minecraft:blue_dye"
+  }
+}

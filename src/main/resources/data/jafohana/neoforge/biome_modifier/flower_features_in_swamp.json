@@ -17,8 +17,8 @@
             "#jafohana:is_jungle",
             "#jafohana:is_dense_vegetation",
             "#jafohana:is_dead_or_wasteland",
-            "#c:is_floral",
-            "#c:is_lush"
+            "#jafohana:is_floral",
+            "#jafohana:is_lush"
           ]
         }
       }

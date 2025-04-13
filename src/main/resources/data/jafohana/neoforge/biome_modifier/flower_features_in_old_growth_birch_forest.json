@@ -10,8 +10,8 @@
         "values": [
           "#jafohana:is_old_growth",
           "#jafohana:is_dense_vegetation",
-          "#c:is_floral",
-          "#c:is_lush"
+          "#jafohana:is_floral",
+          "#jafohana:is_lush"
         ]
       },
       {

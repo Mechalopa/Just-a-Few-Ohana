@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:cloche",
+  "input": {
+    "item": "jafohana:purple_ceanothus"
+  },
+  "render": {
+    "type": "immersiveengineering:doubleflower",
+    "block": "jafohana:purple_ceanothus"
+  },
+  "results": [
+    {
+      "item": "jafohana:purple_ceanothus"
+    }
+  ],
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 480
+}
