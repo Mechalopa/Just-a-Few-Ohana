@@ -18,7 +18,7 @@
       "item": "minecraft:green_dye"
     },
     {
-      "chance": 0.05,
+      "chance": 0.15,
       "item": "minecraft:gunpowder"
     }
   ]

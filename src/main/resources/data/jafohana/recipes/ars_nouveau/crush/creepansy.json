@@ -17,7 +17,7 @@
       "maxRange": 1
     },
     {
-      "chance": 0.05,
+      "chance": 0.15,
       "count": 1,
       "item": "minecraft:gunpowder",
       "maxRange": 1

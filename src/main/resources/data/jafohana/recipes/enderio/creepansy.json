@@ -30,7 +30,7 @@
       "optional": false
     },
     {
-      "chance": 0.05,
+      "chance": 0.15,
       "item": {
         "item": "minecraft:gunpowder"
       },
