@@ -21,7 +21,8 @@
             "#jafohana:is_badlands",
             "#jafohana:is_savanna",
             "#jafohana:is_jungle",
-            "#jafohana:is_hill_or_mountain"
+            "#jafohana:is_hill_or_mountain",
+            "#jafohana:is_dead_or_wasteland"
           ]
         }
       }

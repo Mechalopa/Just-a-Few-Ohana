@@ -34,6 +34,10 @@
             ]
           }
         ]
+      },
+      {
+        "type": "neoforge:not",
+        "value": "#jafohana:is_dead_or_wasteland"
       }
     ]
   },

@@ -17,7 +17,7 @@
       }
     },
     {
-      "chance": 0.025,
+      "chance": 0.075,
       "item": {
         "count": 1,
         "id": "minecraft:gunpowder"

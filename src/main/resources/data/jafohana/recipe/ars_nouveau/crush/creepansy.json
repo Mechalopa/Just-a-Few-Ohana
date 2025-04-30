@@ -19,7 +19,7 @@
       }
     },
     {
-      "chance": 0.05,
+      "chance": 0.15,
       "maxRange": 1,
       "stack": {
         "count": 1,
