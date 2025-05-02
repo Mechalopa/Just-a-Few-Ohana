@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "jafohana:fox_and_cubs"
+    }
+  ],
+  "processingTime": 50,
+  "results": [
+    {
+      "count": 2,
+      "id": "minecraft:orange_dye"
+    },
+    {
+      "chance": 0.05,
+      "id": "minecraft:green_dye"
+    }
+  ]
+}
