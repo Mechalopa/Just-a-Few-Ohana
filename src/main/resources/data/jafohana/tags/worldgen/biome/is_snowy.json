@@ -14,11 +14,15 @@
       "required": false
     },
     {
-      "id": "excessive_building:snowy_maple_forest",
+      "id": "terralith:scarlet_mountains",
       "required": false
     },
     {
-      "id": "terralith:scarlet_mountains",
+      "id": "bleak_and_barren:frozen_wasteland",
+      "required": false
+    },
+    {
+      "id": "bleak_and_barren:frozen_forest",
       "required": false
     }
   ]
