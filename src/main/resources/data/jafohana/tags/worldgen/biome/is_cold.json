@@ -10,6 +10,10 @@
       "required": false
     },
     {
+      "id": "#c:climate_cold",
+      "required": false
+    },
+    {
       "id": "biox:glacial_caves",
       "required": false
     },
@@ -18,7 +22,23 @@
       "required": false
     },
     {
-      "id": "excessive_building:snowy_maple_forest",
+      "id": "#natures_spirit:is_cold",
+      "required": false
+    },
+    {
+      "id": "bleak_and_barren:frozen_wasteland",
+      "required": false
+    },
+    {
+      "id": "bleak_and_barren:frozen_forest",
+      "required": false
+    },
+    {
+      "id": "bleak_and_barren:spruce_parkland",
+      "required": false
+    },
+    {
+      "id": "climaterivers:cold_river",
       "required": false
     }
   ]

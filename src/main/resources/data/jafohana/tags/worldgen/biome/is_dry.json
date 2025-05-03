@@ -8,6 +8,18 @@
     {
       "id": "#c:dry",
       "required": false
+    },
+    {
+      "id": "#c:climate_dry",
+      "required": false
+    },
+    {
+      "id": "bleak_and_barren:arid_savanna",
+      "required": false
+    },
+    {
+      "id": "bleak_and_barren:bushland",
+      "required": false
     }
   ]
 }

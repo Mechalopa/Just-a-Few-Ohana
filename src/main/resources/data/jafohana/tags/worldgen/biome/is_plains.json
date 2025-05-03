@@ -56,6 +56,26 @@
     {
       "id": "biox:flower_plains",
       "required": false
+    },
+    {
+      "id": "natures_spirit:alpine_clearings",
+      "required": false
+    },
+    {
+      "id": "natures_spirit:prairie",
+      "required": false
+    },
+    {
+      "id": "natures_spirit:shrubland",
+      "required": false
+    },
+    {
+      "id": "bleak_and_barren:barren_drylands",
+      "required": false
+    },
+    {
+      "id": "bleak_and_barren:abandoned_farmland",
+      "required": false
     }
   ]
 }

@@ -13,6 +13,34 @@
     {
       "id": "#c:vegetation_sparse",
       "required": false
+    },
+    {
+      "id": "bleak_and_barren:arid_savanna",
+      "required": false
+    },
+    {
+      "id": "bleak_and_barren:barren_drylands",
+      "required": false
+    },
+    {
+      "id": "bleak_and_barren:bushland",
+      "required": false
+    },
+    {
+      "id": "bleak_and_barren:desolate_birch_forest",
+      "required": false
+    },
+    {
+      "id": "bleak_and_barren:desolate_dark_forest",
+      "required": false
+    },
+    {
+      "id": "bleak_and_barren:desolate_forest",
+      "required": false
+    },
+    {
+      "id": "bleak_and_barren:droughted_tropics",
+      "required": false
     }
   ]
 }
