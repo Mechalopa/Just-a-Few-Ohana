@@ -34,6 +34,10 @@
     {
       "id": "excessive_building:golden_birch_forest",
       "required": false
+    },
+    {
+      "id": "bleak_and_barren:desolate_birch_forest",
+      "required": false
     }
   ]
 }
