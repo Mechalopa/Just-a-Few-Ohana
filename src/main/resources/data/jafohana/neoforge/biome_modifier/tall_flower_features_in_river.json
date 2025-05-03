@@ -10,8 +10,9 @@
         "value": {
           "type": "neoforge:or",
           "values": [
-            "#jafohana:is_hot",
-            "#jafohana:is_cold",
+            "minecraft:frozen_river",
+            "#jafohana:is_dry",
+            "#jafohana:is_snowy",
             "#jafohana:is_dead_or_wasteland"
           ]
         }

@@ -8,7 +8,17 @@
         "type": "neoforge:or",
         "values": [
           "#jafohana:is_plains",
-          "#jafohana:is_forest"
+          "#jafohana:is_forest",
+          {
+            "type": "neoforge:and",
+            "values": [
+              "#jafohana:is_coniferous",
+              {
+                "type": "neoforge:not",
+                "value": "#jafohana:is_old_growth"
+              }
+            ]
+          }
         ]
       },
       {
@@ -19,10 +29,12 @@
             "#jafohana:is_savanna",
             "#jafohana:is_jungle",
             "#jafohana:is_dry",
-            "#jafohana:is_cold",
+            "#jafohana:is_snowy",
             "#jafohana:is_swamp",
             "#jafohana:is_hill_or_mountain",
-            "#jafohana:is_dead_or_wasteland"
+            "#jafohana:is_dead_or_wasteland",
+            "#jafohana:biomesoplenty/tundra",
+            "#jafohana:integrateddynamics/meneglin"
           ]
         }
       }
