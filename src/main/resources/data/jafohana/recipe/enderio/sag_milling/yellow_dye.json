@@ -35,21 +35,21 @@
       "chance": 0.8,
       "item": {
         "count": 1,
-        "id": "minecraft:_dye"
+        "id": "minecraft:yellow_dye"
       }
     },
     {
       "chance": 0.6,
       "item": {
         "count": 1,
-        "id": "minecraft:_dye"
+        "id": "minecraft:yellow_dye"
       }
     },
     {
       "chance": 0.3,
       "item": {
         "count": 1,
-        "id": "minecraft:_dye"
+        "id": "minecraft:yellow_dye"
       }
     },
     {
