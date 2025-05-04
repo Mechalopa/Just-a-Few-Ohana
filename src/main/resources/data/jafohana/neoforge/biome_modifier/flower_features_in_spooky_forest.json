@@ -14,7 +14,8 @@
             "#jafohana:is_hot",
             "#jafohana:is_coniferous",
             "#jafohana:biomesoplenty/ominous_woods",
-            "#jafohana:is_dead_or_wasteland"
+            "#jafohana:is_dead_or_wasteland",
+            "#jafohana:vanillabackport/pale_garden"
           ]
         }
       }
