@@ -24,6 +24,10 @@
     {
       "id": "bleak_and_barren:frozen_forest",
       "required": false
+    },
+    {
+      "id": "undergroundworlds:underground_tundra",
+      "required": false
     }
   ]
 }

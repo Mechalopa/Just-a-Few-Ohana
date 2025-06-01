@@ -20,6 +20,10 @@
     {
       "id": "bleak_and_barren:bushland",
       "required": false
+    },
+    {
+      "id": "undergroundworlds:underground_desert",
+      "required": false
     }
   ]
 }

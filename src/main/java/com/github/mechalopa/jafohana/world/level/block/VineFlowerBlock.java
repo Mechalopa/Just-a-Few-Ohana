@@ -119,7 +119,11 @@ public abstract class VineFlowerBlock extends Block implements BonemealableBlock
 	@Override
 	public boolean isValidBonemealTarget(LevelReader level, BlockPos pos, BlockState state)
 	{
-		if (state.getValue(PART).isHead())
+		if (this.getGrowChance() <= 0.0D)
+		{
+			return false;
+		}
+		else if (state.getValue(PART).isHead())
 		{
 			return this.canGrowInto(level.getBlockState(pos.relative(Direction.DOWN)));
 		}

@@ -36,6 +36,10 @@
     {
       "id": "climaterivers:cold_river",
       "required": false
+    },
+    {
+      "id": "undergroundworlds:underground_tundra",
+      "required": false
     }
   ]
 }

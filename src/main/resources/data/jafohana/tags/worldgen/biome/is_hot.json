@@ -32,6 +32,14 @@
     {
       "id": "climaterivers:warm_river",
       "required": false
+    },
+    {
+      "id": "undergroundworlds:underground_jungle",
+      "required": false
+    },
+    {
+      "id": "undergroundworlds:underground_desert",
+      "required": false
     }
   ]
 }

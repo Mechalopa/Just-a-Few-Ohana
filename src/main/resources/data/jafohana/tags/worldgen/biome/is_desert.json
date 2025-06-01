@@ -12,6 +12,10 @@
     {
       "id": "mysticsbiomes:lush_oasis",
       "required": false
+    },
+    {
+      "id": "undergroundworlds:underground_desert",
+      "required": false
     }
   ]
 }

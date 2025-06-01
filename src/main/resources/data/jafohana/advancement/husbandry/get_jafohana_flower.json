@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:husbandry/root",
+  "criteria": {
+    "get_jafohana_flower": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#jafohana:flowers"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.jafohana.husbandry.get_jafohana_flower.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "jafohana:dayflower"
+    },
+    "title": {
+      "translate": "advancements.jafohana.husbandry.get_jafohana_flower.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_jafohana_flower"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

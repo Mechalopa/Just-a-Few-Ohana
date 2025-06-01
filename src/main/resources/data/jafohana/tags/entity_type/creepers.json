@@ -245,6 +245,10 @@
     {
       "id": "occultism:wild_horde_creeper",
       "required": false
+    },
+    {
+      "id": "undergroundworlds:icy_creeper",
+      "required": false
     }
   ]
 }
