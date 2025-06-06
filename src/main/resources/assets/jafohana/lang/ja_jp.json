@@ -1,4 +1,10 @@
 {
+  "advancements.jafohana.husbandry.get_jafohana_flower.title": "新たな彩り",
+  "advancements.jafohana.husbandry.get_jafohana_flower.description": "Just a Few Ohanaで追加された花を手に入れる",
+  "advancements.jafohana.husbandry.collect_all_flowers.title": "フラワーコレクター",
+  "advancements.jafohana.husbandry.collect_all_flowers.description": "すべての種類の一般的な花を手に入れる",
+  "advancements.jafohana.husbandry.collect_all_special_flowers.title": "園芸愛好家の深淵",
+  "advancements.jafohana.husbandry.collect_all_special_flowers.description": "特別なものを含めた、すべての種類の花を手に入れる",
   "block.jafohana.dayflower": "ツユクサ",
   "block.jafohana.evening_primrose": "月見草",
   "block.jafohana.milk_vetch": "蓮華草",

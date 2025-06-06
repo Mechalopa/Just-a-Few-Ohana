@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_sego_lily": {
+      "conditions": {
+        "items": [
+          {
+            "items": "jafohana:sego_lily"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "jafohana:light_gray_dye_from_sego_lily"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_sego_lily"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "jafohana:light_gray_dye_from_sego_lily"
+    ]
+  }
+}

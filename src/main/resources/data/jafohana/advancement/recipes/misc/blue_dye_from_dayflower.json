@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dayflower": {
+      "conditions": {
+        "items": [
+          {
+            "items": "jafohana:dayflower"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "jafohana:blue_dye_from_dayflower"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_dayflower"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "jafohana:blue_dye_from_dayflower"
+    ]
+  }
+}

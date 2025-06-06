@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_evening_primrose": {
+      "conditions": {
+        "items": [
+          {
+            "items": "jafohana:evening_primrose"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "jafohana:white_dye_from_evening_primrose"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_evening_primrose"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "jafohana:white_dye_from_evening_primrose"
+    ]
+  }
+}

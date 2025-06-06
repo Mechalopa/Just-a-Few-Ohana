@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_worsleya": {
+      "conditions": {
+        "items": [
+          {
+            "items": "jafohana:worsleya"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "jafohana:purple_dye_from_worsleya"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_worsleya"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "jafohana:purple_dye_from_worsleya"
+    ]
+  }
+}

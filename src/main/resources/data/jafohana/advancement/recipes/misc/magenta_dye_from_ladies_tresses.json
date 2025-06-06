@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_ladies_tresses": {
+      "conditions": {
+        "items": [
+          {
+            "items": "jafohana:ladies_tresses"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "jafohana:magenta_dye_from_ladies_tresses"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_ladies_tresses"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "jafohana:magenta_dye_from_ladies_tresses"
+    ]
+  }
+}

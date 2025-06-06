@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_princes_plume": {
+      "conditions": {
+        "items": [
+          {
+            "items": "jafohana:princes_plume"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "jafohana:yellow_dye_from_princes_plume"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_princes_plume"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "jafohana:yellow_dye_from_princes_plume"
+    ]
+  }
+}

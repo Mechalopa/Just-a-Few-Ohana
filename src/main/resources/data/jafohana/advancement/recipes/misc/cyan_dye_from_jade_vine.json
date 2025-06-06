@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_jade_vine": {
+      "conditions": {
+        "items": [
+          {
+            "items": "jafohana:jade_vine"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "jafohana:cyan_dye_from_jade_vine"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_jade_vine"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "jafohana:cyan_dye_from_jade_vine"
+    ]
+  }
+}

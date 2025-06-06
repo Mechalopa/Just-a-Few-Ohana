@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pink_hawks_beard": {
+      "conditions": {
+        "items": [
+          {
+            "items": "jafohana:pink_hawks_beard"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "jafohana:pink_dye_from_pink_hawks_beard"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_pink_hawks_beard"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "jafohana:pink_dye_from_pink_hawks_beard"
+    ]
+  }
+}

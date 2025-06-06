@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_creepansy": {
+      "conditions": {
+        "items": [
+          {
+            "items": "jafohana:creepansy"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "jafohana:green_dye_from_creepansy"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_creepansy"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "jafohana:green_dye_from_creepansy"
+    ]
+  }
+}

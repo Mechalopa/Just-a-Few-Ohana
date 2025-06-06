@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_red_snapdragon": {
+      "conditions": {
+        "items": [
+          {
+            "items": "jafohana:red_snapdragon"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "jafohana:red_dye_from_red_snapdragon"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_red_snapdragon"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "jafohana:red_dye_from_red_snapdragon"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_brazilian_plume": {
+      "conditions": {
+        "items": [
+          {
+            "items": "jafohana:brazilian_plume"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "jafohana:pink_dye_from_brazilian_plume"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_brazilian_plume"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "jafohana:pink_dye_from_brazilian_plume"
+    ]
+  }
+}

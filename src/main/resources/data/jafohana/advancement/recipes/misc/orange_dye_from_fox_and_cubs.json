@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_fox_and_cubs": {
+      "conditions": {
+        "items": [
+          {
+            "items": "jafohana:fox_and_cubs"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "jafohana:orange_dye_from_fox_and_cubs"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_fox_and_cubs"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "jafohana:orange_dye_from_fox_and_cubs"
+    ]
+  }
+}

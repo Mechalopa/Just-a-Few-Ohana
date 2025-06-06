@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_fasciated_oxeye_daisy": {
+      "conditions": {
+        "items": [
+          {
+            "items": "jafohana:fasciated_oxeye_daisy"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "jafohana:light_gray_dye_from_fasciated_oxeye_daisy"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_fasciated_oxeye_daisy"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "jafohana:light_gray_dye_from_fasciated_oxeye_daisy"
+    ]
+  }
+}

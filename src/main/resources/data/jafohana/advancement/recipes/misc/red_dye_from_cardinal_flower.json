@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cardinal_flower": {
+      "conditions": {
+        "items": [
+          {
+            "items": "jafohana:cardinal_flower"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "jafohana:red_dye_from_cardinal_flower"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cardinal_flower"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "jafohana:red_dye_from_cardinal_flower"
+    ]
+  }
+}

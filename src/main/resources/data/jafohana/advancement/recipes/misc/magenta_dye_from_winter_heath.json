@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_winter_heath": {
+      "conditions": {
+        "items": [
+          {
+            "items": "jafohana:winter_heath"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "jafohana:magenta_dye_from_winter_heath"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_winter_heath"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "jafohana:magenta_dye_from_winter_heath"
+    ]
+  }
+}

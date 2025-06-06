@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_peppermint_spider_lily": {
+      "conditions": {
+        "items": [
+          {
+            "items": "jafohana:peppermint_spider_lily"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "jafohana:pink_dye_from_peppermint_spider_lily"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_peppermint_spider_lily"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "jafohana:pink_dye_from_peppermint_spider_lily"
+    ]
+  }
+}

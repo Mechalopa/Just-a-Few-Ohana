@@ -1,4 +1,10 @@
 {
+  "advancements.jafohana.husbandry.get_jafohana_flower.title": "Fresh Color(s)",
+  "advancements.jafohana.husbandry.get_jafohana_flower.description": "Get an additional flower from Just a Few Ohana",
+  "advancements.jafohana.husbandry.collect_all_flowers.title": "The Flower Collector",
+  "advancements.jafohana.husbandry.collect_all_flowers.description": "Get all kinds of non-special flowers",
+  "advancements.jafohana.husbandry.collect_all_special_flowers.title": "Abyss of Gardening Enthusiasts",
+  "advancements.jafohana.husbandry.collect_all_special_flowers.description": "Get all kinds of flowers, including special ones",
   "block.jafohana.dayflower": "Dayflower",
   "block.jafohana.evening_primrose": "Evening Primrose",
   "block.jafohana.milk_vetch": "Chinese Milk Vetches",

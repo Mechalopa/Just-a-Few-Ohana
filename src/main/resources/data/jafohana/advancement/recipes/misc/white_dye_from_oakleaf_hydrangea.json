@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_oakleaf_hydrangea": {
+      "conditions": {
+        "items": [
+          {
+            "items": "jafohana:oakleaf_hydrangea"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "jafohana:white_dye_from_oakleaf_hydrangea"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_oakleaf_hydrangea"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "jafohana:white_dye_from_oakleaf_hydrangea"
+    ]
+  }
+}

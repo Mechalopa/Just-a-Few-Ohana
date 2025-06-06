@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_gloriosa": {
+      "conditions": {
+        "items": [
+          {
+            "items": "jafohana:gloriosa"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "jafohana:orange_dye_from_gloriosa"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_gloriosa"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "jafohana:orange_dye_from_gloriosa"
+    ]
+  }
+}
