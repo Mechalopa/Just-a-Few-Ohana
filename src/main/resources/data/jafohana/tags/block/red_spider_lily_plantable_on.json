@@ -3,6 +3,6 @@
   "values": [
     "#minecraft:dirt",
     "#minecraft:soul_speed_blocks",
-    "#neoforge:villager_farmlands"
+    "minecraft:farmland"
   ]
 }

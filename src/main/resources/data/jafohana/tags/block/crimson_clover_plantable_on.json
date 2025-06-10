@@ -2,7 +2,7 @@
   "replace": false,
   "values": [
     "#minecraft:dirt",
-    "#neoforge:villager_farmlands",
+    "minecraft:farmland",
     "minecraft:crimson_nylium"
   ]
 }

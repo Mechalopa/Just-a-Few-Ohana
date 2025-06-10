@@ -4,6 +4,6 @@
     "#c:sands",
     "#minecraft:sand",
     "#minecraft:dirt",
-    "#neoforge:villager_farmlands"
+    "minecraft:farmland"
   ]
 }
