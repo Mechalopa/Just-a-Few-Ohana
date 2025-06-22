@@ -40,11 +40,11 @@ public class ModEvents
 			BlockPos pos = event.getPos();
 			RandomSource r = serverLevel.getRandom();
 
-			if (event.getBlock().is(ModTags.BlockTags.CONVERTABLE_TO_FASCIATED_DANDELION) && fasciate(serverLevel, pos, ModBlocks.FASCIATED_DANDELION.get().defaultBlockState(), r, ModConfigs.cachedServer.DANDELION_FASCIATION_CHANCE))
+			if (ModConfigs.cachedServer.DANDELION_FASCIATION_CHANCE > 0.0D && event.getBlock().is(ModTags.BlockTags.CONVERTABLE_TO_FASCIATED_DANDELION) && fasciate(serverLevel, pos, ModBlocks.FASCIATED_DANDELION.get().defaultBlockState(), r, ModConfigs.cachedServer.DANDELION_FASCIATION_CHANCE))
 			{
 				event.setResult(Result.ALLOW);
 			}
-			else if (event.getBlock().is(ModTags.BlockTags.CONVERTABLE_TO_FASCIATED_OXEYE_DAISY) && fasciate(serverLevel, pos, ModBlocks.FASCIATED_OXEYE_DAISY.get().defaultBlockState(), r, ModConfigs.cachedServer.OXEYE_DAISY_FASCIATION_CHANCE))
+			else if (ModConfigs.cachedServer.OXEYE_DAISY_FASCIATION_CHANCE > 0.0D && event.getBlock().is(ModTags.BlockTags.CONVERTABLE_TO_FASCIATED_OXEYE_DAISY) && fasciate(serverLevel, pos, ModBlocks.FASCIATED_OXEYE_DAISY.get().defaultBlockState(), r, ModConfigs.cachedServer.OXEYE_DAISY_FASCIATION_CHANCE))
 			{
 				event.setResult(Result.ALLOW);
 			}

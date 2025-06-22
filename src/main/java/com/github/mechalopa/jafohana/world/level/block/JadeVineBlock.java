@@ -121,7 +121,11 @@ public class JadeVineBlock extends Block implements BonemealableBlock
 	@Override
 	public boolean isValidBonemealTarget(LevelReader levelReader, BlockPos pos, BlockState state, boolean flag)
 	{
-		if (state.getValue(PART).isHead())
+		if (ModConfigs.cachedServer.JADE_VINE_GROW_CHANCE <= 0.0D)
+		{
+			return false;
+		}
+		else if (state.getValue(PART).isHead())
 		{
 			return this.canGrowInto(levelReader.getBlockState(pos.relative(Direction.DOWN)));
 		}
