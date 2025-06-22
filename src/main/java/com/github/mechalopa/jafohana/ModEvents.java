@@ -68,7 +68,7 @@ public class ModEvents
 
 					if (state != null && state.is(ModTags.BlockTags.AFFECTS_FASCIATIONS))
 					{
-						if (!(baseFlowerState.getBlock() instanceof BonemealableBlock bonemealableBlock && bonemealableBlock.isBonemealSuccess(level, random, blockpos, level.getBlockState(blockpos))))
+						if (!(baseFlowerState.getBlock() instanceof BonemealableBlock))
 						{
 							ParticleUtils.spawnParticleInBlock(level, blockpos, 15, ParticleTypes.HAPPY_VILLAGER);
 						}
