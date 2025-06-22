@@ -6,12 +6,13 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
 
 public class ModUtils
 {
-	public static void shrink(ItemStack stack, ServerLevel serverLevel, @Nullable LivingEntity livingEntity)
+	public static void shrink(ItemStack stack, Level level, @Nullable LivingEntity livingEntity)
 	{
-		if (stack != null && !stack.isEmpty() && stack.getItem() != null)
+		if (stack != null && !stack.isEmpty() && stack.getItem() != null && level instanceof ServerLevel)
 		{
 			if (!stack.isDamageableItem())
 			{
@@ -24,7 +25,7 @@ public class ModUtils
 			}
 			else
 			{
-				stack.hurtAndBreak(1, serverLevel, null, p -> {});
+				stack.hurtAndBreak(1, (ServerLevel)level, null, p -> {});
 			}
 		}
 	}
