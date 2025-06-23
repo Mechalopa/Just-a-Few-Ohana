@@ -9,17 +9,16 @@ import com.github.mechalopa.jafohana.util.ModUtils;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.util.ParticleUtils;
+import net.minecraft.tags.TagKey;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.npc.VillagerTrades.ItemListing;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.BonemealableBlock;
 import net.minecraft.world.level.block.DoublePlantBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
@@ -43,12 +42,12 @@ public class ModEvents
 			BlockPos pos = event.getPos();
 			RandomSource r = level.getRandom();
 
-			if (ModConfigs.cachedServer.DANDELION_FASCIATION_CHANCE > 0.0D && event.getState().is(ModTags.BlockTags.CONVERTABLE_TO_FASCIATED_DANDELION) && fasciate(level, pos, event.getState(), ModBlocks.FASCIATED_DANDELION.get().defaultBlockState(), r, ModConfigs.cachedServer.DANDELION_FASCIATION_CHANCE))
+			if (fasciate(level, pos, event.getState(), ModTags.BlockTags.CONVERTABLE_TO_FASCIATED_DANDELION, ModBlocks.FASCIATED_DANDELION.get().defaultBlockState(), r, ModConfigs.cachedServer.DANDELION_FASCIATION_CHANCE))
 			{
 				event.setSuccessful(true);
 				ModUtils.shrink(event.getStack(), level, event.getPlayer());
 			}
-			else if (ModConfigs.cachedServer.OXEYE_DAISY_FASCIATION_CHANCE > 0.0D && event.getState().is(ModTags.BlockTags.CONVERTABLE_TO_FASCIATED_OXEYE_DAISY) && fasciate(level, pos, event.getState(), ModBlocks.FASCIATED_OXEYE_DAISY.get().defaultBlockState(), r, ModConfigs.cachedServer.OXEYE_DAISY_FASCIATION_CHANCE))
+			else if (fasciate(level, pos, event.getState(), ModTags.BlockTags.CONVERTABLE_TO_FASCIATED_OXEYE_DAISY, ModBlocks.FASCIATED_OXEYE_DAISY.get().defaultBlockState(), r, ModConfigs.cachedServer.OXEYE_DAISY_FASCIATION_CHANCE))
 			{
 				event.setSuccessful(true);
 				ModUtils.shrink(event.getStack(), level, event.getPlayer());
@@ -56,9 +55,9 @@ public class ModEvents
 		}
 	}
 
-	private static boolean fasciate(Level level, BlockPos blockpos, BlockState baseFlowerState, BlockState fasciatedFlowerState, RandomSource random, double chance)
+	private static boolean fasciate(Level level, BlockPos blockpos, BlockState baseFlowerState, TagKey<Block> blockTag, BlockState fasciatedFlowerState, RandomSource random, double chance)
 	{
-		if (fasciatedFlowerState.canSurvive(level, blockpos) && level.isEmptyBlock(blockpos.above()))
+		if (chance > 0.0D && baseFlowerState.is(blockTag) && fasciatedFlowerState.canSurvive(level, blockpos) && level.isEmptyBlock(blockpos.above()))
 		{
 			for (Direction direction : Direction.values())
 			{
@@ -68,11 +67,6 @@ public class ModEvents
 
 					if (state != null && state.is(ModTags.BlockTags.AFFECTS_FASCIATIONS))
 					{
-						if (!(baseFlowerState.getBlock() instanceof BonemealableBlock))
-						{
-							ParticleUtils.spawnParticleInBlock(level, blockpos, 15, ParticleTypes.HAPPY_VILLAGER);
-						}
-
 						if (!level.isClientSide() && level instanceof ServerLevel && random.nextDouble() < chance)
 						{
 							BlockPos blockpos1 = blockpos.above();

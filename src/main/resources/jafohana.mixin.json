@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8.6",
+  "package": "com.github.mechalopa.jafohana.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BoneMealItemMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "refmap": "jafohana.refmap.json"
+}

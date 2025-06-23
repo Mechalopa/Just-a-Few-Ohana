@@ -12,6 +12,8 @@ displayURL="https://www.curseforge.com/minecraft/mc-mods/just-a-few-ohana"
 credits="${mod_authors}"
 authors="${mod_authors}"
 description='''${mod_description}'''
+[[mixins]]
+config="${mod_id}.mixin.json"
 [[dependencies.${mod_id}]]
     modId="neoforge"
     type="required"
