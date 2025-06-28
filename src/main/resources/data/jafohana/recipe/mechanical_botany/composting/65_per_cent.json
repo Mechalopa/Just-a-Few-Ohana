@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mechanical_botany"
+        },
+        {
+          "type": "neoforge:item_exists",
+          "item": "mechanical_botany:compost"
+        }
+      ]
+    }
+  ],
+  "type": "mechanical_botany:composting",
+  "ingredients": [
+    {
+      "tag": "jafohana:flowers"
+    }
+  ],
+  "processing_time": 50,
+  "results": [
+    {
+      "count": 1,
+      "id": "mechanical_botany:compost"
+    },
+    {
+      "chance": 0.65,
+      "count": 1,
+      "id": "mechanical_botany:compost"
+    }
+  ]
+}

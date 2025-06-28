@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mechanical_botany"
+    }
+  ],
+  "type": "mechanical_botany:insolating",
+  "ingredients": [
+    {
+      "type": "fluid_stack",
+      "amount": 200,
+      "fluid": "mechanical_botany:compost"
+    },
+    {
+      "item": "jafohana:fasciated_dandelion"
+    }
+  ],
+  "processing_time": 8000,
+  "results": [
+    {
+      "count": 2,
+      "id": "jafohana:fasciated_dandelion"
+    },
+    {
+      "chance": 0.15,
+      "count": 1,
+      "id": "minecraft:dandelion"
+    }
+  ]
+}
