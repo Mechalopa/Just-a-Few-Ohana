@@ -16,9 +16,11 @@
   ],
   "type": "mechanical_botany:composting",
   "ingredients": [
-    {
-      "tag": "jafohana:flowers"
-    }
+    [
+      {
+        "tag": "jafohana:flowers"
+      }
+    ]
   ],
   "processing_time": 50,
   "results": [
