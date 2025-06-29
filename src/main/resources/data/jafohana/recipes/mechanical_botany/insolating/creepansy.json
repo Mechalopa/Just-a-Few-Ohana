@@ -1,0 +1,31 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mechanical_botany"
+    }
+  ],
+  "type": "mechanical_botany:insolating",
+  "ingredients": [
+    {
+      "amount": 200,
+      "fluid": "mechanical_botany:compost",
+      "nbt": {}
+    },
+    {
+      "item": "jafohana:creepansy"
+    }
+  ],
+  "processingTime": 8000,
+  "results": [
+    {
+      "count": 2,
+      "item": "jafohana:creepansy"
+    },
+    {
+      "chance": 0.075,
+      "count": 1,
+      "item": "minecraft:gunpowder"
+    }
+  ]
+}

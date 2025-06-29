@@ -1,0 +1,35 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mechanical_botany"
+    }
+  ],
+  "type": "mechanical_botany:insolating",
+  "ingredients": [
+    {
+      "amount": 200,
+      "fluid": "mechanical_botany:compost",
+      "nbt": {}
+    },
+    {
+      "item": "jafohana:fasciated_oxeye_daisy"
+    }
+  ],
+  "processingTime": 1600,
+  "results": [
+    {
+      "count": 1,
+      "item": "jafohana:fasciated_oxeye_daisy"
+    },
+    {
+      "count": 1,
+      "id": "minecraft:oxeye_daisy"
+    },
+    {
+      "chance": 0.15,
+      "count": 1,
+      "item": "jafohana:fasciated_oxeye_daisy"
+    }
+  ]
+}
