@@ -16,16 +16,20 @@
       "item": "jafohana:fasciated_dandelion"
     }
   ],
-  "processing_time": 8000,
+  "processing_time": 1600,
   "results": [
     {
-      "count": 2,
+      "count": 1,
       "id": "jafohana:fasciated_dandelion"
+    },
+    {
+      "count": 1,
+      "id": "minecraft:dandelion"
     },
     {
       "chance": 0.15,
       "count": 1,
-      "id": "minecraft:dandelion"
+      "id": "jafohana:fasciated_dandelion"
     }
   ]
 }

@@ -16,16 +16,20 @@
       "item": "jafohana:fasciated_oxeye_daisy"
     }
   ],
-  "processing_time": 8000,
+  "processing_time": 1600,
   "results": [
     {
-      "count": 2,
+      "count": 1,
       "id": "jafohana:fasciated_oxeye_daisy"
+    },
+    {
+      "count": 1,
+      "id": "minecraft:oxeye_daisy"
     },
     {
       "chance": 0.15,
       "count": 1,
-      "id": "minecraft:oxeye_daisy"
+      "id": "jafohana:fasciated_oxeye_daisy"
     }
   ]
 }
