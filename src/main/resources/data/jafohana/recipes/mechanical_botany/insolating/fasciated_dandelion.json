@@ -24,7 +24,7 @@
     },
     {
       "count": 1,
-      "id": "minecraft:dandelion"
+      "item": "minecraft:dandelion"
     },
     {
       "chance": 0.15,

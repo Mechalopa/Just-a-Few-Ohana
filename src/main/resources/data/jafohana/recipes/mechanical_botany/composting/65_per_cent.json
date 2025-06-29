@@ -11,15 +11,17 @@
   ],
   "type": "mechanical_botany:composting",
   "ingredients": [
-    {
-      "tag": "jafohana:small_flowers"
-    },
-    {
-      "tag": "jafohana:tall_flowers"
-    },
-    {
-      "item": "jafohana:jade_vine"
-    }
+    [
+      {
+        "tag": "jafohana:small_flowers"
+      },
+      {
+        "tag": "jafohana:tall_flowers"
+      },
+      {
+        "item": "jafohana:jade_vine"
+      }
+    ]
   ],
   "processingTime": 50,
   "results": [
