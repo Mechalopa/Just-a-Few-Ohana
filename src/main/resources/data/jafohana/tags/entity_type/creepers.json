@@ -249,6 +249,10 @@
     {
       "id": "undergroundworlds:icy_creeper",
       "required": false
+    },
+    {
+      "id": "pumpkinpastures:pumpkin_creeper",
+      "required": false
     }
   ]
 }
