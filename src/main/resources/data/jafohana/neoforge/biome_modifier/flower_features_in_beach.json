@@ -1,0 +1,31 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:or",
+    "values": [
+      "minecraft:ocean",
+      "minecraft:lukewarm_ocean",
+      "minecraft:cold_ocean",
+      {
+        "type": "neoforge:and",
+        "values": [
+          "#jafohana:is_overworld",
+          "#jafohana:is_beach",
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:or",
+              "values": [
+                "#jafohana:is_dry",
+                "#jafohana:is_snowy",
+                "#jafohana:is_dead_or_wasteland"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "features": "jafohana:flower_beach",
+  "step": "vegetal_decoration"
+}

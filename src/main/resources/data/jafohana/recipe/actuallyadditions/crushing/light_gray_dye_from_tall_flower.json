@@ -7,7 +7,15 @@
   ],
   "type": "actuallyadditions:crushing",
   "ingredient": {
-    "item": "jafohana:fasciated_oxeye_daisy"
+    "type": "neoforge:compound",
+    "children": [
+      {
+        "item": "jafohana:asphodel"
+      },
+      {
+        "item": "jafohana:fasciated_oxeye_daisy"
+      }
+    ]
   },
   "result": [
     {

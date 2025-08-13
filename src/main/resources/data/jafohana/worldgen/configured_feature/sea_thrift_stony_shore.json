@@ -1,0 +1,65 @@
+{
+  "type": "minecraft:vegetation_patch",
+  "config": {
+    "depth": 1,
+    "extra_bottom_block_chance": 0.0,
+    "extra_edge_column_chance": 0.3,
+    "ground_state": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "data": {
+            "Name": "minecraft:dirt"
+          },
+          "weight": 19
+        },
+        {
+          "data": {
+            "Name": "minecraft:moss_block"
+          },
+          "weight": 2
+        },
+        {
+          "data": {
+            "Name": "minecraft:stone"
+          },
+          "weight": 3
+        }
+      ]
+    },
+    "replaceable": "#jafohana:sea_thrift_replaceable_world_gen",
+    "surface": "floor",
+    "vegetation_chance": 0.6,
+    "vegetation_feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "data": {
+                  "Name": "jafohana:sea_thrift"
+                },
+                "weight": 7
+              },
+              {
+                "data": {
+                  "Name": "minecraft:short_grass"
+                },
+                "weight": 1
+              }
+            ]
+          }
+        }
+      },
+      "placement": []
+    },
+    "vertical_range": 3,
+    "xz_radius": {
+      "type": "minecraft:uniform",
+      "max_inclusive": 3,
+      "min_inclusive": 2
+    }
+  }
+}

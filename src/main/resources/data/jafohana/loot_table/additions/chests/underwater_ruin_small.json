@@ -17,11 +17,44 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:beach_spider_lily"
+          "name": "jafohana:beach_spider_lily",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 5.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "jafohana:sea_holly",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 5.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "jafohana:sea_thrift",
+          "weight": 3
         },
         {
           "type": "minecraft:empty",
-          "weight": 15
+          "weight": 56
         }
       ],
       "rolls": {

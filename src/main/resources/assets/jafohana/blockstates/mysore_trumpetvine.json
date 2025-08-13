@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "vine_flower=single": {
+      "model": "jafohana:block/mysore_trumpetvine_single"
+    },
+    "vine_flower=short_stem": {
+      "model": "jafohana:block/mysore_trumpetvine_short_stem"
+    },
+    "vine_flower=short_head": {
+      "model": "jafohana:block/mysore_trumpetvine_short_head"
+    },
+    "vine_flower=long_stem": {
+      "model": "jafohana:block/mysore_trumpetvine_long_stem"
+    },
+    "vine_flower=long_body": {
+      "model": "jafohana:block/mysore_trumpetvine_long_body"
+    },
+    "vine_flower=long_head": {
+      "model": "jafohana:block/mysore_trumpetvine_long_head"
+    }
+  }
+}

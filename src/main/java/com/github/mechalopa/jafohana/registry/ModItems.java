@@ -50,6 +50,8 @@ public class ModItems
 	public static final Supplier<Item> BLUESTEM_PENSTEMON = REGISTRY.register("bluestem_penstemon", () -> new BlockItem(ModBlocks.BLUESTEM_PENSTEMON.get(), new Item.Properties()));
 	public static final Supplier<Item> FIRECRACKER_PENSTEMON = REGISTRY.register("firecracker_penstemon", () -> new BlockItem(ModBlocks.FIRECRACKER_PENSTEMON.get(), new Item.Properties()));
 	public static final Supplier<Item> SEGO_LILY = REGISTRY.register("sego_lily", () -> new BlockItem(ModBlocks.SEGO_LILY.get(), new Item.Properties()));
+	public static final Supplier<Item> SEA_HOLLY = REGISTRY.register("sea_holly", () -> new BlockItem(ModBlocks.SEA_HOLLY.get(), new Item.Properties()));
+	public static final Supplier<Item> SEA_THRIFT = REGISTRY.register("sea_thrift", () -> new BlockItem(ModBlocks.SEA_THRIFT.get(), new Item.Properties()));
 	public static final Supplier<Item> HAREBELL = REGISTRY.register("harebell", () -> new BlockItem(ModBlocks.HAREBELL.get(), new Item.Properties()));
 	public static final Supplier<Item> MECONOPSIS = REGISTRY.register("meconopsis", () -> new BlockItem(ModBlocks.MECONOPSIS.get(), new Item.Properties()));
 	public static final Supplier<Item> WHEEL_LILY = REGISTRY.register("wheel_lily", () -> new BlockItem(ModBlocks.WHEEL_LILY.get(), new Item.Properties()));
@@ -67,6 +69,7 @@ public class ModItems
 	public static final Supplier<Item> OAKLEAF_HYDRANGEA = REGISTRY.register("oakleaf_hydrangea", () -> new DoubleHighBlockItem(ModBlocks.OAKLEAF_HYDRANGEA.get(), new Item.Properties()));
 	public static final Supplier<Item> BLUE_CEANOTHUS = REGISTRY.register("blue_ceanothus", () -> new DoubleHighBlockItem(ModBlocks.BLUE_CEANOTHUS.get(), new Item.Properties()));
 	public static final Supplier<Item> PURPLE_CEANOTHUS = REGISTRY.register("purple_ceanothus", () -> new DoubleHighBlockItem(ModBlocks.PURPLE_CEANOTHUS.get(), new Item.Properties()));
+	public static final Supplier<Item> ASPHODEL = REGISTRY.register("asphodel", () -> new DoubleHighBlockItem(ModBlocks.ASPHODEL.get(), new Item.Properties()));
 	public static final Supplier<Item> FIREWEED = REGISTRY.register("fireweed", () -> new DoubleHighBlockItem(ModBlocks.FIREWEED.get(), new Item.Properties()));
 	public static final Supplier<Item> ALPINE_RAGWORT = REGISTRY.register("alpine_ragwort", () -> new DoubleHighBlockItem(ModBlocks.ALPINE_RAGWORT.get(), new Item.Properties()));
 	public static final Supplier<Item> TATARIAN_ASTER = REGISTRY.register("tatarian_aster", () -> new DoubleHighBlockItem(ModBlocks.TATARIAN_ASTER.get(), new Item.Properties()));
@@ -76,6 +79,7 @@ public class ModItems
 	public static final Supplier<Item> FASCIATED_DANDELION = REGISTRY.register("fasciated_dandelion", () -> new DoubleHighBlockItem(ModBlocks.FASCIATED_DANDELION.get(), new Item.Properties()));
 	public static final Supplier<Item> FASCIATED_OXEYE_DAISY = REGISTRY.register("fasciated_oxeye_daisy", () -> new DoubleHighBlockItem(ModBlocks.FASCIATED_OXEYE_DAISY.get(), new Item.Properties()));
 	public static final Supplier<Item> JADE_VINE = REGISTRY.register("jade_vine", () -> new BlockItem(ModBlocks.JADE_VINE.get(), new Item.Properties()));
+	public static final Supplier<Item> MYSORE_TRUMPETVINE = REGISTRY.register("mysore_trumpetvine", () -> new BlockItem(ModBlocks.MYSORE_TRUMPETVINE.get(), new Item.Properties()));
 
 	@SubscribeEvent
 	public static void register(IEventBus eventBus)

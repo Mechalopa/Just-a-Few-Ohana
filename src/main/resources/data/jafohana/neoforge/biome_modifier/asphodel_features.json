@@ -1,0 +1,48 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:and",
+    "values": [
+      "#jafohana:is_overworld",
+      {
+        "type": "neoforge:and",
+        "values": [
+          {
+            "type": "neoforge:or",
+            "values": [
+              "#jafohana:is_forest",
+              "#jafohana:is_coniferous"
+            ]
+          },
+          {
+            "type": "neoforge:or",
+            "values": [
+              "#jafohana:is_sparse_vegetation",
+              "#jafohana:is_floral",
+              "#jafohana:is_lush"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "neoforge:not",
+        "value": {
+          "type": "neoforge:or",
+          "values": [
+            "minecraft:flower_forest",
+            "#jafohana:is_birch_forest",
+            "#jafohana:is_hot",
+            "#jafohana:is_snowy",
+            "#jafohana:is_jungle",
+            "#jafohana:is_hill_or_mountain",
+            "#jafohana:is_spooky",
+            "#jafohana:is_dead_or_wasteland",
+            "#jafohana:biomesoplenty/tundra"
+          ]
+        }
+      }
+    ]
+  },
+  "features": "jafohana:asphodel",
+  "step": "vegetal_decoration"
+}

@@ -4,6 +4,7 @@ import java.util.Optional;
 
 import javax.annotation.Nullable;
 
+import com.github.mechalopa.jafohana.ModConfigs;
 import com.github.mechalopa.jafohana.util.ModTags;
 import com.github.mechalopa.jafohana.world.level.block.state.properties.ModBlockStateProperties;
 import com.github.mechalopa.jafohana.world.level.block.state.properties.VineFlowerPart;
@@ -28,7 +29,7 @@ import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 
-public abstract class VineFlowerBlock extends Block implements BonemealableBlock
+public class VineFlowerBlock extends Block implements BonemealableBlock
 {
 	public static final EnumProperty<VineFlowerPart> PART = ModBlockStateProperties.VINE_FLOWER_PART;
 
@@ -140,7 +141,10 @@ public abstract class VineFlowerBlock extends Block implements BonemealableBlock
 		return (double)level.getRandom().nextFloat() < this.getGrowChance();
 	}
 
-	public abstract double getGrowChance();
+	public double getGrowChance()
+	{
+		return ModConfigs.cachedServer.VINE_FLOWER_GROW_CHANCE;
+	}
 
 	@Override
 	public void performBonemeal(ServerLevel level, RandomSource random, BlockPos pos, BlockState state)

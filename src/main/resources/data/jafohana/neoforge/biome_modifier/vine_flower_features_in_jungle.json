@@ -11,6 +11,9 @@
       }
     ]
   },
-  "features": "jafohana:jade_vines",
+  "features": [
+    "jafohana:jade_vines",
+    "jafohana:mysore_trumpetvines"
+  ],
   "step": "top_layer_modification"
 }

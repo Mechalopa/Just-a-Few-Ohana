@@ -42,42 +42,12 @@
               "count": {
                 "type": "minecraft:uniform",
                 "max": 5.0,
-                "min": 1.0
+                "min": 2.0
               },
               "function": "minecraft:set_count"
             }
           ],
-          "name": "jafohana:jack_in_the_pulpit"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 5.0,
-                "min": 1.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "jafohana:black_tulip"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 5.0,
-                "min": 1.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "jafohana:green_tulip"
+          "name": "jafohana:mysore_trumpetvine"
         },
         {
           "type": "minecraft:item",
@@ -93,6 +63,36 @@
             }
           ],
           "name": "jafohana:beach_spider_lily"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 5.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "jafohana:sea_holly"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 5.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "jafohana:sea_thrift"
         },
         {
           "type": "minecraft:empty",

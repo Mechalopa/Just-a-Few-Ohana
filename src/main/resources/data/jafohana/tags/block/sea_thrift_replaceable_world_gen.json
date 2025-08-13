@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#c:cobblestones/normal",
+    "#c:cobblestones/mossy",
+    "#minecraft:dirt",
+    "#minecraft:stone_ore_replaceables",
+    "minecraft:gravel"
+  ]
+}

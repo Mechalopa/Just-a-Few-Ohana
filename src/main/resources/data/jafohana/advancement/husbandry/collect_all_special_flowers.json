@@ -77,6 +77,7 @@
     "jafohana:oakleaf_hydrangea": { "conditions": { "items": [ { "items": "jafohana:oakleaf_hydrangea" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:blue_ceanothus": { "conditions": { "items": [ { "items": "jafohana:blue_ceanothus" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:purple_ceanothus": { "conditions": { "items": [ { "items": "jafohana:purple_ceanothus" } ] }, "trigger": "minecraft:inventory_changed" },
+    "jafohana:asphodel": { "conditions": { "items": [ { "items": "jafohana:asphodel" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:fireweed": { "conditions": { "items": [ { "items": "jafohana:fireweed" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:alpine_ragwort": { "conditions": { "items": [ { "items": "jafohana:alpine_ragwort" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:tatarian_aster": { "conditions": { "items": [ { "items": "jafohana:tatarian_aster" } ] }, "trigger": "minecraft:inventory_changed" },
@@ -84,6 +85,7 @@
     "jafohana:yellowflag_iris": { "conditions": { "items": [ { "items": "jafohana:yellowflag_iris" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:princes_plume": { "conditions": { "items": [ { "items": "jafohana:princes_plume" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:jade_vine": { "conditions": { "items": [ { "items": "jafohana:jade_vine" } ] }, "trigger": "minecraft:inventory_changed" },
+    "jafohana:mysore_trumpetvine": { "conditions": { "items": [ { "items": "jafohana:mysore_trumpetvine" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:creepansy": { "conditions": { "items": [ { "items": "jafohana:creepansy" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:fasciated_dandelion": { "conditions": { "items": [ { "items": "jafohana:fasciated_dandelion" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:fasciated_oxeye_daisy": { "conditions": { "items": [ { "items": "jafohana:fasciated_oxeye_daisy" } ] }, "trigger": "minecraft:inventory_changed" }
@@ -178,6 +180,7 @@
     [ "jafohana:oakleaf_hydrangea" ],
     [ "jafohana:blue_ceanothus" ],
     [ "jafohana:purple_ceanothus" ],
+    [ "jafohana:asphodel" ],
     [ "jafohana:fireweed" ],
     [ "jafohana:alpine_ragwort" ],
     [ "jafohana:tatarian_aster" ],
@@ -185,6 +188,7 @@
     [ "jafohana:yellowflag_iris" ],
     [ "jafohana:princes_plume" ],
     [ "jafohana:jade_vine" ],
+    [ "jafohana:mysore_trumpetvine" ],
     [ "jafohana:creepansy" ],
     [ "jafohana:fasciated_dandelion" ],
     [ "jafohana:fasciated_oxeye_daisy" ]

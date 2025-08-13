@@ -51,6 +51,8 @@
     "jafohana:bluestem_penstemon": { "conditions": { "items": [ { "items": "jafohana:bluestem_penstemon" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:firecracker_penstemon": { "conditions": { "items": [ { "items": "jafohana:firecracker_penstemon" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:sego_lily": { "conditions": { "items": [ { "items": "jafohana:sego_lily" } ] }, "trigger": "minecraft:inventory_changed" },
+    "jafohana:sea_holly": { "conditions": { "items": [ { "items": "jafohana:sea_holly" } ] }, "trigger": "minecraft:inventory_changed" },
+    "jafohana:sea_thrift": { "conditions": { "items": [ { "items": "jafohana:sea_thrift" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:harebell": { "conditions": { "items": [ { "items": "jafohana:harebell" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:meconopsis": { "conditions": { "items": [ { "items": "jafohana:meconopsis" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:wheel_lily": { "conditions": { "items": [ { "items": "jafohana:wheel_lily" } ] }, "trigger": "minecraft:inventory_changed" },
@@ -68,13 +70,15 @@
     "jafohana:oakleaf_hydrangea": { "conditions": { "items": [ { "items": "jafohana:oakleaf_hydrangea" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:blue_ceanothus": { "conditions": { "items": [ { "items": "jafohana:blue_ceanothus" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:purple_ceanothus": { "conditions": { "items": [ { "items": "jafohana:purple_ceanothus" } ] }, "trigger": "minecraft:inventory_changed" },
+    "jafohana:asphodel": { "conditions": { "items": [ { "items": "jafohana:asphodel" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:fireweed": { "conditions": { "items": [ { "items": "jafohana:fireweed" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:alpine_ragwort": { "conditions": { "items": [ { "items": "jafohana:alpine_ragwort" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:tatarian_aster": { "conditions": { "items": [ { "items": "jafohana:tatarian_aster" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:cardinal_flower": { "conditions": { "items": [ { "items": "jafohana:cardinal_flower" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:yellowflag_iris": { "conditions": { "items": [ { "items": "jafohana:yellowflag_iris" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:princes_plume": { "conditions": { "items": [ { "items": "jafohana:princes_plume" } ] }, "trigger": "minecraft:inventory_changed" },
-    "jafohana:jade_vine": { "conditions": { "items": [ { "items": "jafohana:jade_vine" } ] }, "trigger": "minecraft:inventory_changed" }
+    "jafohana:jade_vine": { "conditions": { "items": [ { "items": "jafohana:jade_vine" } ] }, "trigger": "minecraft:inventory_changed" },
+    "jafohana:mysore_trumpetvine": { "conditions": { "items": [ { "items": "jafohana:mysore_trumpetvine" } ] }, "trigger": "minecraft:inventory_changed" }
   },
   "display": {
     "description": {
@@ -140,6 +144,8 @@
     [ "jafohana:bluestem_penstemon" ],
     [ "jafohana:firecracker_penstemon" ],
     [ "jafohana:sego_lily" ],
+    [ "jafohana:sea_holly" ],
+    [ "jafohana:sea_thrift" ],
     [ "jafohana:harebell" ],
     [ "jafohana:meconopsis" ],
     [ "jafohana:wheel_lily" ],
@@ -157,13 +163,15 @@
     [ "jafohana:oakleaf_hydrangea" ],
     [ "jafohana:blue_ceanothus" ],
     [ "jafohana:purple_ceanothus" ],
+    [ "jafohana:asphodel" ],
     [ "jafohana:fireweed" ],
     [ "jafohana:alpine_ragwort" ],
     [ "jafohana:tatarian_aster" ],
     [ "jafohana:cardinal_flower" ],
     [ "jafohana:yellowflag_iris" ],
     [ "jafohana:princes_plume" ],
-    [ "jafohana:jade_vine" ]
+    [ "jafohana:jade_vine" ],
+    [ "jafohana:mysore_trumpetvine" ]
   ],
   "rewards": {
     "experience": 100

@@ -95,10 +95,6 @@
       "required": false
     },
     {
-      "id": "spawn:ant_gardens",
-      "required": false
-    },
-    {
       "id": "spookybats:christmas_forest",
       "required": false
     },

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_asphodel": {
+      "conditions": {
+        "items": [
+          {
+            "items": "jafohana:asphodel"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "jafohana:light_gray_dye_from_asphodel"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_asphodel"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "jafohana:light_gray_dye_from_asphodel"
+    ]
+  }
+}

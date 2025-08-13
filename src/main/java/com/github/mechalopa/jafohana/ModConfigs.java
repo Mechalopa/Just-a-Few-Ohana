@@ -14,7 +14,7 @@ public class ModConfigs
 	public static ModConfigSpec.DoubleValue DANDELION_FASCIATION_CHANCE;
 	public static ModConfigSpec.DoubleValue OXEYE_DAISY_FASCIATION_CHANCE;
 	public static ModConfigSpec.DoubleValue CREEPANSY_CONVERT_CHANCE;
-	public static ModConfigSpec.DoubleValue JADE_VINE_GROW_CHANCE;
+	public static ModConfigSpec.DoubleValue VINE_FLOWER_GROW_CHANCE;
 	public static ModConfigSpec.BooleanValue ADDITIONAL_WANDERER_TRADES;
 
 	static
@@ -26,7 +26,7 @@ public class ModConfigs
 		DANDELION_FASCIATION_CHANCE = SERVER_BUILDER.defineInRange("dandelionFasciationChance", 0.4D, 0.0D, 1.0D);
 		OXEYE_DAISY_FASCIATION_CHANCE = SERVER_BUILDER.defineInRange("oxeyeDaisyFasciationChance", 0.4D, 0.0D, 1.0D);
 		CREEPANSY_CONVERT_CHANCE = SERVER_BUILDER.defineInRange("creepansyConvertChance", 1.0D, 0.0D, 1.0D);
-		JADE_VINE_GROW_CHANCE = SERVER_BUILDER.defineInRange("jadeVineGrowChance", 0.45D, 0.0D, 1.0D);
+		VINE_FLOWER_GROW_CHANCE = SERVER_BUILDER.defineInRange("vineFlowerGrowChance", 0.45D, 0.0D, 1.0D);
 		ADDITIONAL_WANDERER_TRADES = SERVER_BUILDER.define("additionalWandererTrades", true);
 
 		SERVER_BUILDER.pop();
@@ -41,7 +41,7 @@ public class ModConfigs
 		public static double DANDELION_FASCIATION_CHANCE;
 		public static double OXEYE_DAISY_FASCIATION_CHANCE;
 		public static double CREEPANSY_CONVERT_CHANCE;
-		public static double JADE_VINE_GROW_CHANCE;
+		public static double VINE_FLOWER_GROW_CHANCE;
 		public static boolean ADDITIONAL_WANDERER_TRADES;
 
 		public static void refresh()
@@ -51,7 +51,7 @@ public class ModConfigs
 			DANDELION_FASCIATION_CHANCE = ModConfigs.DANDELION_FASCIATION_CHANCE.get();
 			OXEYE_DAISY_FASCIATION_CHANCE = ModConfigs.OXEYE_DAISY_FASCIATION_CHANCE.get();
 			CREEPANSY_CONVERT_CHANCE = ModConfigs.CREEPANSY_CONVERT_CHANCE.get();
-			JADE_VINE_GROW_CHANCE = ModConfigs.JADE_VINE_GROW_CHANCE.get();
+			VINE_FLOWER_GROW_CHANCE = ModConfigs.VINE_FLOWER_GROW_CHANCE.get();
 			ADDITIONAL_WANDERER_TRADES = ModConfigs.ADDITIONAL_WANDERER_TRADES.get();
 		}
 	}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_mysore_trumpetvine": {
+      "conditions": {
+        "items": [
+          {
+            "items": "jafohana:mysore_trumpetvine"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "jafohana:yellow_dye_from_mysore_trumpetvine"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_mysore_trumpetvine"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "jafohana:yellow_dye_from_mysore_trumpetvine"
+    ]
+  }
+}

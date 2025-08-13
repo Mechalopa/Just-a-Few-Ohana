@@ -6,17 +6,18 @@ import com.github.mechalopa.jafohana.JAFOhana;
 import com.github.mechalopa.jafohana.world.level.block.BadlandsFlowerBlock;
 import com.github.mechalopa.jafohana.world.level.block.BadlandsMediumFlowerBlock;
 import com.github.mechalopa.jafohana.world.level.block.BadlandsTallFlowerBlock;
+import com.github.mechalopa.jafohana.world.level.block.BeachFlowerBlock;
 import com.github.mechalopa.jafohana.world.level.block.BeachSpiderLilyBlock;
 import com.github.mechalopa.jafohana.world.level.block.CreepansyBlock;
 import com.github.mechalopa.jafohana.world.level.block.CrimsonCloverBlock;
 import com.github.mechalopa.jafohana.world.level.block.FasciatedDandelionBlock;
 import com.github.mechalopa.jafohana.world.level.block.FasciatedOxeyeDaisyBlock;
-import com.github.mechalopa.jafohana.world.level.block.JadeVineBlock;
 import com.github.mechalopa.jafohana.world.level.block.MediumFlowerBlock;
 import com.github.mechalopa.jafohana.world.level.block.ModFlowerBlock;
 import com.github.mechalopa.jafohana.world.level.block.ModFlowerPotBlock;
 import com.github.mechalopa.jafohana.world.level.block.ModTallFlowerBlock;
 import com.github.mechalopa.jafohana.world.level.block.RedSpiderLilyBlock;
+import com.github.mechalopa.jafohana.world.level.block.VineFlowerBlock;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.effect.MobEffects;
@@ -63,6 +64,8 @@ public class ModBlocks
 	public static final Supplier<Block> BLUESTEM_PENSTEMON = REGISTRY.register("bluestem_penstemon", () -> new BadlandsFlowerBlock(MobEffects.DIG_SPEED, 5.0F));
 	public static final Supplier<Block> FIRECRACKER_PENSTEMON = REGISTRY.register("firecracker_penstemon", () -> new BadlandsMediumFlowerBlock(MobEffects.DIG_SPEED, 5.0F));
 	public static final Supplier<Block> SEGO_LILY = REGISTRY.register("sego_lily", () -> new BadlandsFlowerBlock(MobEffects.SATURATION, 0.35F));
+	public static final Supplier<Block> SEA_HOLLY = REGISTRY.register("sea_holly", () -> new BeachFlowerBlock(MobEffects.SATURATION, 0.35F));
+	public static final Supplier<Block> SEA_THRIFT = REGISTRY.register("sea_thrift", () -> new BeachFlowerBlock(MobEffects.SATURATION, 0.35F));
 	public static final Supplier<Block> HAREBELL = REGISTRY.register("harebell", () -> new ModFlowerBlock(MobEffects.JUMP, 5.0F));
 	public static final Supplier<Block> MECONOPSIS = REGISTRY.register("meconopsis", () -> new ModFlowerBlock(MobEffects.NIGHT_VISION, 5.0F));
 	public static final Supplier<Block> WHEEL_LILY = REGISTRY.register("wheel_lily", () -> new MediumFlowerBlock(MobEffects.SATURATION, 0.35F));
@@ -80,6 +83,7 @@ public class ModBlocks
 	public static final Supplier<Block> OAKLEAF_HYDRANGEA = REGISTRY.register("oakleaf_hydrangea", () -> new ModTallFlowerBlock());
 	public static final Supplier<Block> BLUE_CEANOTHUS = REGISTRY.register("blue_ceanothus", () -> new ModTallFlowerBlock());
 	public static final Supplier<Block> PURPLE_CEANOTHUS = REGISTRY.register("purple_ceanothus", () -> new ModTallFlowerBlock());
+	public static final Supplier<Block> ASPHODEL = REGISTRY.register("asphodel", () -> new ModTallFlowerBlock());
 	public static final Supplier<Block> FIREWEED = REGISTRY.register("fireweed", () -> new ModTallFlowerBlock());
 	public static final Supplier<Block> ALPINE_RAGWORT = REGISTRY.register("alpine_ragwort", () -> new ModTallFlowerBlock());
 	public static final Supplier<Block> TATARIAN_ASTER = REGISTRY.register("tatarian_aster", () -> new ModTallFlowerBlock());
@@ -88,7 +92,8 @@ public class ModBlocks
 	public static final Supplier<Block> PRINCES_PLUME = REGISTRY.register("princes_plume", () -> new BadlandsTallFlowerBlock());
 	public static final Supplier<Block> FASCIATED_DANDELION = REGISTRY.register("fasciated_dandelion", () -> new FasciatedDandelionBlock());
 	public static final Supplier<Block> FASCIATED_OXEYE_DAISY = REGISTRY.register("fasciated_oxeye_daisy", () -> new FasciatedOxeyeDaisyBlock());
-	public static final Supplier<Block> JADE_VINE = REGISTRY.register("jade_vine", () -> new JadeVineBlock());
+	public static final Supplier<Block> JADE_VINE = REGISTRY.register("jade_vine", () -> new VineFlowerBlock());
+	public static final Supplier<Block> MYSORE_TRUMPETVINE = REGISTRY.register("mysore_trumpetvine", () -> new VineFlowerBlock());
 	public static final Supplier<Block> POTTED_DAYFLOWER = REGISTRY.register("potted_dayflower", () -> new ModFlowerPotBlock(DAYFLOWER.get()));
 	public static final Supplier<Block> POTTED_EVENING_PRIMROSE = REGISTRY.register("potted_evening_primrose", () -> new ModFlowerPotBlock(EVENING_PRIMROSE.get()));
 	public static final Supplier<Block> POTTED_MILK_VETCH = REGISTRY.register("potted_milk_vetch", () -> new ModFlowerPotBlock(MILK_VETCH.get()));
@@ -123,6 +128,8 @@ public class ModBlocks
 	public static final Supplier<Block> POTTED_BLUESTEM_PENSTEMON = REGISTRY.register("potted_bluestem_penstemon", () -> new ModFlowerPotBlock(BLUESTEM_PENSTEMON.get()));
 	public static final Supplier<Block> POTTED_FIRECRACKER_PENSTEMON = REGISTRY.register("potted_firecracker_penstemon", () -> new ModFlowerPotBlock(FIRECRACKER_PENSTEMON.get()));
 	public static final Supplier<Block> POTTED_SEGO_LILY = REGISTRY.register("potted_sego_lily", () -> new ModFlowerPotBlock(SEGO_LILY.get()));
+	public static final Supplier<Block> POTTED_SEA_HOLLY = REGISTRY.register("potted_sea_holly", () -> new ModFlowerPotBlock(SEA_HOLLY.get()));
+	public static final Supplier<Block> POTTED_SEA_THRIFT = REGISTRY.register("potted_sea_thrift", () -> new ModFlowerPotBlock(SEA_THRIFT.get()));
 	public static final Supplier<Block> POTTED_HAREBELL = REGISTRY.register("potted_harebell", () -> new ModFlowerPotBlock(HAREBELL.get()));
 	public static final Supplier<Block> POTTED_MECONOPSIS = REGISTRY.register("potted_meconopsis", () -> new ModFlowerPotBlock(MECONOPSIS.get()));
 	public static final Supplier<Block> POTTED_WHEEL_LILY = REGISTRY.register("potted_wheel_lily", () -> new ModFlowerPotBlock(WHEEL_LILY.get()));
