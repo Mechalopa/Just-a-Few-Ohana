@@ -28,6 +28,10 @@
     {
       "id": "undergroundworlds:underground_tundra",
       "required": false
+    },
+    {
+      "id": "pyromancer:permafrost_caverns",
+      "required": false
     }
   ]
 }

@@ -7,8 +7,16 @@
   ],
   "type": "mekanism:enriching",
   "input": {
-    "count": 1,
-    "item": "jafohana:fasciated_oxeye_daisy"
+    "type": "neoforge:compound",
+    "children": [
+      {
+        "item": "jafohana:asphodel"
+      },
+      {
+        "item": "jafohana:fasciated_oxeye_daisy"
+      }
+    ],
+    "count": 1
   },
   "output": {
     "count": 4,

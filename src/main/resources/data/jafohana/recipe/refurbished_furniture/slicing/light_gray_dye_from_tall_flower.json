@@ -7,7 +7,15 @@
   ],
   "type": "refurbished_furniture:cutting_board_slicing",
   "ingredient": {
-    "item": "jafohana:fasciated_oxeye_daisy"
+    "type": "neoforge:compound",
+    "children": [
+      {
+        "item": "jafohana:asphodel"
+      },
+      {
+        "item": "jafohana:fasciated_oxeye_daisy"
+      }
+    ]
   },
   "result": {
     "count": 3,

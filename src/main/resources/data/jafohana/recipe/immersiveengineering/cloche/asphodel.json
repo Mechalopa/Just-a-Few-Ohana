@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:cloche",
+  "input": {
+    "item": "jafohana:asphodel"
+  },
+  "render": {
+    "type": "immersiveengineering:doubleflower",
+    "block": "jafohana:asphodel"
+  },
+  "results": [
+    {
+      "item": "jafohana:asphodel"
+    }
+  ],
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 480
+}

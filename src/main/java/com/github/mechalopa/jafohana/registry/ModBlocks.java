@@ -64,7 +64,7 @@ public class ModBlocks
 	public static final Supplier<Block> BLUESTEM_PENSTEMON = REGISTRY.register("bluestem_penstemon", () -> new BadlandsFlowerBlock(MobEffects.DIG_SPEED, 5.0F));
 	public static final Supplier<Block> FIRECRACKER_PENSTEMON = REGISTRY.register("firecracker_penstemon", () -> new BadlandsMediumFlowerBlock(MobEffects.DIG_SPEED, 5.0F));
 	public static final Supplier<Block> SEGO_LILY = REGISTRY.register("sego_lily", () -> new BadlandsFlowerBlock(MobEffects.SATURATION, 0.35F));
-	public static final Supplier<Block> SEA_HOLLY = REGISTRY.register("sea_holly", () -> new BeachFlowerBlock(MobEffects.SATURATION, 0.35F));
+	public static final Supplier<Block> SEA_HOLLY = REGISTRY.register("sea_holly", () -> new BeachFlowerBlock(MobEffects.DAMAGE_RESISTANCE, 4.0F));
 	public static final Supplier<Block> SEA_THRIFT = REGISTRY.register("sea_thrift", () -> new BeachFlowerBlock(MobEffects.SATURATION, 0.35F));
 	public static final Supplier<Block> HAREBELL = REGISTRY.register("harebell", () -> new ModFlowerBlock(MobEffects.JUMP, 5.0F));
 	public static final Supplier<Block> MECONOPSIS = REGISTRY.register("meconopsis", () -> new ModFlowerBlock(MobEffects.NIGHT_VISION, 5.0F));

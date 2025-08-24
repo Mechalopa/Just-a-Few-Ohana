@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:cloche",
+  "input": {
+    "item": "jafohana:mysore_trumpetvine"
+  },
+  "render": {
+    "type": "immersiveengineering:stacking",
+    "block": "jafohana:mysore_trumpetvine"
+  },
+  "results": [
+    {
+      "item": "jafohana:mysore_trumpetvine"
+    }
+  ],
+  "soil": {
+    "tag": "minecraft:logs"
+  },
+  "time": 560
+}

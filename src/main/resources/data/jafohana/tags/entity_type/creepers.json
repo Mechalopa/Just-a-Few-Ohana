@@ -253,6 +253,10 @@
     {
       "id": "pumpkinpastures:pumpkin_creeper",
       "required": false
+    },
+    {
+      "id": "aquatic_creepers:aquatic_creeper",
+      "required": false
     }
   ]
 }

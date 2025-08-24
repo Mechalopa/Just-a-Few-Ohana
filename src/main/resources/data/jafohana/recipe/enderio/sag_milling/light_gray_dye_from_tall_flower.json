@@ -17,7 +17,15 @@
   "type": "enderio:sag_milling",
   "energy": 2400,
   "input": {
-    "item": "jafohana:fasciated_oxeye_daisy"
+    "type": "neoforge:compound",
+    "children": [
+      {
+        "item": "jafohana:asphodel"
+      },
+      {
+        "item": "jafohana:fasciated_oxeye_daisy"
+      }
+    ]
   },
   "outputs": [
     {

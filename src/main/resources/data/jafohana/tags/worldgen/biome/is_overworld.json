@@ -3,6 +3,10 @@
   "values": [
     "#minecraft:is_overworld",
     {
+      "id": "#c:is_overworld",
+      "required": false
+    },
+    {
       "id": "nyctophobia:ancient_dead_coral_reef",
       "required": false
     },
@@ -112,6 +116,14 @@
     },
     {
       "id": "blasted_barrens:blasted_barrens",
+      "required": false
+    },
+    {
+      "id": "oceanicrealms:sandstone_ocean",
+      "required": false
+    },
+    {
+      "id": "pyromancer:permafrost_caverns",
       "required": false
     }
   ]

@@ -9,7 +9,15 @@
   "fluidOut": {},
   "grinds": 4,
   "ingredient": {
-    "item": "jafohana:fasciated_oxeye_daisy"
+    "type": "neoforge:compound",
+    "children": [
+      {
+        "item": "jafohana:asphodel"
+      },
+      {
+        "item": "jafohana:fasciated_oxeye_daisy"
+      }
+    ]
   },
   "result": {
     "count": 3,
