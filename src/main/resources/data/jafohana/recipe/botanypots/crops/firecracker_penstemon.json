@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "botanypots"
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "jafohana:firecracker_penstemon",
+  "input": {
+    "item": "jafohana:firecracker_penstemon"
+  },
+  "soil": {
+    "type": "bookshelf:either",
+    "ingredients": [
+      {
+        "tag": "botanypots:soil/sand"
+      },
+      {
+        "type": "bookshelf:block_tag",
+        "tag": "minecraft:dirt"
+      }
+    ]
+  }
+}

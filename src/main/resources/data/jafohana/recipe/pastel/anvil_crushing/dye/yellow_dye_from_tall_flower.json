@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ],
+  "type": "pastel:anvil_crushing",
+  "ingredient": [
+    {
+      "item": "jafohana:yellow_marigold"
+    },
+    {
+      "item": "jafohana:fasciated_dandelion"
+    },
+    {
+      "item": "jafohana:alpine_ragwort"
+    },
+    {
+      "item": "jafohana:yellowflag_iris"
+    },
+    {
+      "item": "jafohana:princes_plume"
+    }
+  ],
+  "crushedItemsPerPointOfDamage": 2,
+  "experience": 0.0,
+  "result": {
+    "id": "minecraft:yellow_dye",
+    "count": 4
+  },
+  "particleEffectIdentifier": "cloud",
+  "soundEventIdentifier": "block.grass.break"
+}

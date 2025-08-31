@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "botanypots"
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "jafohana:sea_holly",
+  "input": {
+    "item": "jafohana:sea_holly"
+  },
+  "soil": {
+    "type": "bookshelf:either",
+    "ingredients": [
+      {
+        "tag": "botanypots:soil/sand"
+      },
+      {
+        "type": "bookshelf:block_tag",
+        "tag": "minecraft:dirt"
+      }
+    ]
+  }
+}

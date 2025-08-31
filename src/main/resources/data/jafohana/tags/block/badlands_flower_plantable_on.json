@@ -5,6 +5,6 @@
     "#minecraft:sand",
     "#minecraft:dirt",
     "#minecraft:terracotta",
-    "minecraft:farmland"
+    "#jafohana:farmlands"
   ]
 }

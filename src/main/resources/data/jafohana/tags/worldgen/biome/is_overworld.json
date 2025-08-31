@@ -27,14 +27,6 @@
       "required": false
     },
     {
-      "id": "windswept:chestnut_forest",
-      "required": false
-    },
-    {
-      "id": "windswept:snowy_chestnut_forest",
-      "required": false
-    },
-    {
       "id": "cave_enhancements:goop_caves",
       "required": false
     },

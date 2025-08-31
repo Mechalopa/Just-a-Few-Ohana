@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "botanypots"
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "jafohana:fasciated_dandelion",
+  "input": {
+    "item": "jafohana:fasciated_dandelion"
+  },
+  "drops": [
+    {
+      "type": "botanypots:loot_table",
+      "table_id": "jafohana:botanypots/jafohana/crop/fasciated_dandelion"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:farmland",
+    {
+      "id": "farmersdelight:rich_soil_farmland",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:lush_farmland",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:sandy_farmland",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:peat_farmland",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:silt_farmland",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:fertilized_farmland",
+      "required": false
+    },
+    {
+      "id": "swampier_swamps:fertile_farmland",
+      "required": false
+    },
+    {
+      "id": "biomemakeover:peat_farmland",
+      "required": false
+    },
+    {
+      "id": "hexalia:infused_farmland",
+      "required": false
+    },
+    {
+      "id": "mynethersdelight:resurgent_soil_farmland",
+      "required": false
+    },
+    {
+      "id": "impillagers:fertile_farmland",
+      "required": false
+    },
+    {
+      "id": "aether:aether_farmland",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:inferium_farmland",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:prudentium_farmland",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:tertium_farmland",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:imperium_farmland",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:supremium_farmland",
+      "required": false
+    },
+    {
+      "id": "farmingforblockheads:fertilized_farmland_healthy",
+      "required": false
+    },
+    {
+      "id": "farmingforblockheads:fertilized_farmland_rich",
+      "required": false
+    },
+    {
+      "id": "farmingforblockheads:fertilized_farmland_stable",
+      "required": false
+    },
+    {
+      "id": "farmingforblockheads:fertilized_farmland_healthy_stable",
+      "required": false
+    },
+    {
+      "id": "farmingforblockheads:fertilized_farmland_rich_stable",
+      "required": false
+    },
+    {
+      "id": "enigmaticdelicacy:infinisoil_farmland",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:magical_farmland",
+      "required": false
+    },
+    {
+      "id": "aquaculture:farmland",
+      "required": false
+    },
+    {
+      "id": "undergarden:deepsoil_farmland",
+      "required": false
+    },
+    {
+      "id": "vampiresdelight:cursed_farmland",
+      "required": false
+    },
+    {
+      "id": "vampiresdelight:bloody_soil_farmland",
+      "required": false
+    },
+    {
+      "id": "aoa3:fertilised_farmland",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:nightfall_farmland",
+      "required": false
+    },
+    {
+      "id": "#c:farmland",
+      "required": false
+    },
+    {
+      "id": "#c:farmlands",
+      "required": false
+    }
+  ]
+}

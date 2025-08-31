@@ -2,7 +2,7 @@
   "replace": false,
   "values": [
     "#minecraft:dirt",
-    "minecraft:farmland",
+    "#jafohana:farmlands",
     "minecraft:crimson_nylium"
   ]
 }

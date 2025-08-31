@@ -2,7 +2,7 @@
   "replace": false,
   "values": [
     "#minecraft:dirt",
-    "minecraft:farmland",
+    "#jafohana:farmlands",
     {
       "id": "#c:storage_blocks/gunpowder",
       "required": false

@@ -1,0 +1,28 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ],
+  "type": "pastel:anvil_crushing",
+  "ingredient": [
+    {
+      "item": "jafohana:blood_red_iris"
+    },
+    {
+      "item": "jafohana:purple_pansy"
+    },
+    {
+      "item": "jafohana:harebell"
+    }
+  ],
+  "crushedItemsPerPointOfDamage": 2,
+  "experience": 0.0,
+  "result": {
+    "id": "minecraft:purple_dye",
+    "count": 2
+  },
+  "particleEffectIdentifier": "cloud",
+  "soundEventIdentifier": "block.grass.break"
+}

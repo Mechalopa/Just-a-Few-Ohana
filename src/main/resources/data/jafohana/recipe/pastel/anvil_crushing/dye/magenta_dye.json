@@ -1,0 +1,28 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ],
+  "type": "pastel:anvil_crushing",
+  "ingredient": [
+    {
+      "item": "jafohana:dancing_ladies_ginger"
+    },
+    {
+      "item": "jafohana:winter_heath"
+    },
+    {
+      "item": "jafohana:ladies_tresses"
+    }
+  ],
+  "crushedItemsPerPointOfDamage": 2,
+  "experience": 0.0,
+  "result": {
+    "id": "minecraft:magenta_dye",
+    "count": 2
+  },
+  "particleEffectIdentifier": "cloud",
+  "soundEventIdentifier": "block.grass.break"
+}

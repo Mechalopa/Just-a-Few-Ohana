@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ],
+  "type": "pastel:anvil_crushing",
+  "ingredient": [
+    {
+      "item": "jafohana:evening_primrose"
+    },
+    {
+      "item": "jafohana:white_african_daisy"
+    },
+    {
+      "item": "jafohana:white_egret_orchid"
+    },
+    {
+      "item": "jafohana:snowdrop"
+    },
+    {
+      "item": "jafohana:beach_spider_lily"
+    }
+  ],
+  "crushedItemsPerPointOfDamage": 2,
+  "experience": 0.0,
+  "result": {
+    "id": "minecraft:white_dye",
+    "count": 2
+  },
+  "particleEffectIdentifier": "cloud",
+  "soundEventIdentifier": "block.grass.break"
+}

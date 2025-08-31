@@ -1,0 +1,28 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "botanypots"
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "jafohana:mysore_trumpetvine",
+  "input": {
+    "item": "jafohana:mysore_trumpetvine"
+  },
+  "display": {
+    "type": "botanypots:simple",
+    "block_state": {
+      "block": "jafohana:mysore_trumpetvine",
+      "properties": {
+        "vine_flower": "single"
+      }
+    },
+    "options": {
+      "rotation": "X_180"
+    }
+  },
+  "soil": {
+    "tag": "minecraft:logs"
+  }
+}

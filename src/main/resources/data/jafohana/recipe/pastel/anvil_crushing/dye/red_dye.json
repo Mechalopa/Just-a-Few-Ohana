@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ],
+  "type": "pastel:anvil_crushing",
+  "ingredient": [
+    {
+      "item": "jafohana:red_snapdragon"
+    },
+    {
+      "item": "jafohana:fireball_lily"
+    },
+    {
+      "item": "jafohana:crimson_clover"
+    },
+    {
+      "item": "jafohana:red_spider_lily"
+    },
+    {
+      "item": "jafohana:firecracker_penstemon"
+    }
+  ],
+  "crushedItemsPerPointOfDamage": 2,
+  "experience": 0.0,
+  "result": {
+    "id": "minecraft:red_dye",
+    "count": 2
+  },
+  "particleEffectIdentifier": "cloud",
+  "soundEventIdentifier": "block.grass.break"
+}
