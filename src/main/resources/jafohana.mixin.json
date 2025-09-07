@@ -4,6 +4,7 @@
   "package": "com.github.mechalopa.jafohana.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "BeePollinateGoalMixin",
     "BoneMealItemMixin"
   ],
   "injectors": {
