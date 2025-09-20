@@ -68,6 +68,8 @@ minecraft {
             // You can set various levels here.
             // Please read: https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels
             property 'forge.logging.console.level', 'debug'
+            property "mixin.env.remapRefMap", "true"
+            arg "-mixin.config=${mod_id}.mixin.json"
 
             mods {
                 "${mod_id}" {
@@ -140,10 +142,13 @@ dependencies {
     compileOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}"))
     runtimeOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}"))
 
-    implementation fg.deobf("curse.maven:neat-238372:4580940")
-    implementation fg.deobf("curse.maven:just-enough-resources-jer-240630:4689044")
+    implementation fg.deobf("curse.maven:just-enough-resources-jer-240630:5057220")
     
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+}
+
+mixin {
+    add sourceSets.main, "${mod_id}.refmap.json"
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
@@ -175,7 +180,8 @@ tasks.named('jar', Jar).configure {
                 'Implementation-Title'    : project.name,
                 'Implementation-Version'  : project.jar.archiveVersion,
                 'Implementation-Vendor'   : mod_authors,
-                'Implementation-Timestamp': new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+                'Implementation-Timestamp': new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
+                'MixinConfigs'            : "${mod_id}.mixin.json"
         ])
     }
 

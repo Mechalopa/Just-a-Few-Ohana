@@ -27,11 +27,13 @@ public class ModTags
 		public static final TagKey<EntityType<?>> CAN_CONVERT_TO_CREEPANSY = createEntityTypeTag("can_convert_to_creepansy");
 	}
 
+	@SuppressWarnings("removal")
 	private static TagKey<Block> createBlockTag(String name)
 	{
 		return TagKey.create(Registries.BLOCK, new ResourceLocation(JAFOhana.MODID, name));
 	}
 
+	@SuppressWarnings("removal")
 	private static TagKey<EntityType<?>> createEntityTypeTag(String name)
 	{
 		return TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation(JAFOhana.MODID, name));

@@ -25,6 +25,7 @@ public class JAFOhana
 
 	public static final Logger LOGGER = LogManager.getLogger();
 
+	@SuppressWarnings("removal")
 	public JAFOhana()
 	{
 		ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ModConfigs.SERVER_CONFIG);
