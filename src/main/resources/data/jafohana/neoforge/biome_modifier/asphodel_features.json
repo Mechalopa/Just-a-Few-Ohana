@@ -17,6 +17,7 @@
           {
             "type": "neoforge:or",
             "values": [
+              "#jafohana:is_plains",
               "#jafohana:is_sparse_vegetation",
               "#jafohana:is_floral",
               "#jafohana:is_lush"

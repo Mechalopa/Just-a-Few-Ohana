@@ -17,19 +17,19 @@
           "data": {
             "Name": "minecraft:moss_block"
           },
-          "weight": 2
+          "weight": 3
         },
         {
           "data": {
             "Name": "minecraft:stone"
           },
-          "weight": 3
+          "weight": 2
         }
       ]
     },
     "replaceable": "#jafohana:sea_thrift_replaceable_world_gen",
     "surface": "floor",
-    "vegetation_chance": 0.6,
+    "vegetation_chance": 0.7,
     "vegetation_feature": {
       "feature": {
         "type": "minecraft:simple_block",
@@ -41,7 +41,7 @@
                 "data": {
                   "Name": "jafohana:sea_thrift"
                 },
-                "weight": 7
+                "weight": 3
               },
               {
                 "data": {
@@ -59,7 +59,7 @@
     "xz_radius": {
       "type": "minecraft:uniform",
       "max_inclusive": 3,
-      "min_inclusive": 2
+      "min_inclusive": 1
     }
   }
 }

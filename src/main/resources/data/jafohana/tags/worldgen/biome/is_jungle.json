@@ -6,6 +6,18 @@
       "required": false
     },
     {
+      "id": "#c:is_rainforest",
+      "required": false
+    },
+    {
+      "id": "#c:rainforest",
+      "required": false
+    },
+    {
+      "id": "#atmospheric:is_rainforest",
+      "required": false
+    },
+    {
       "id": "terralith:skylands_summer",
       "required": false
     },

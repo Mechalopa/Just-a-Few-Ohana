@@ -14,6 +14,7 @@
               {
                 "type": "neoforge:or",
                 "values": [
+                  "#jafohana:is_plains",
                   "#jafohana:is_sparse_vegetation",
                   "#jafohana:is_lush"
                 ]
@@ -46,7 +47,9 @@
             "#jafohana:is_birch_forest",
             "#jafohana:is_hot",
             "#jafohana:is_snowy",
+            "#jafohana:is_jungle",
             "#jafohana:is_hill_or_mountain",
+            "#jafohana:is_spooky",
             "#jafohana:is_dead_or_wasteland"
           ]
         }
