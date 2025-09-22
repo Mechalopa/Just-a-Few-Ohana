@@ -8,7 +8,6 @@ import com.github.mechalopa.jafohana.world.level.block.state.properties.ModBlock
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Holder;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
@@ -32,7 +31,7 @@ public class CrimsonCloverBlock extends ModFlowerBlock
 	@Override
 	public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor level, BlockPos currentPos, BlockPos facingPos)
 	{
-		return !state.canSurvive(level, currentPos) ? Blocks.AIR.defaultBlockState() : super.updateShape(state.setValue(ON_NYLIUM, level.getBlockState(currentPos.below()).is(BlockTags.NYLIUM)), facing, facingState, level, currentPos, facingPos);
+		return !state.canSurvive(level, currentPos) ? Blocks.AIR.defaultBlockState() : super.updateShape(state.setValue(ON_NYLIUM, level.getBlockState(currentPos.below()).is(ModTags.BlockTags.CRIMSON_NYLIUMS)), facing, facingState, level, currentPos, facingPos);
 	}
 
 	@Override
@@ -45,7 +44,7 @@ public class CrimsonCloverBlock extends ModFlowerBlock
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context)
 	{
-		return this.defaultBlockState().setValue(ON_NYLIUM, context.getLevel().getBlockState(context.getClickedPos().below()).is(BlockTags.NYLIUM));
+		return this.defaultBlockState().setValue(ON_NYLIUM, context.getLevel().getBlockState(context.getClickedPos().below()).is(ModTags.BlockTags.CRIMSON_NYLIUMS));
 	}
 
 	@Override
