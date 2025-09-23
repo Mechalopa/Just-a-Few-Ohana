@@ -77,8 +77,7 @@
     "jafohana:cardinal_flower": { "conditions": { "items": [ { "items": "jafohana:cardinal_flower" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:yellowflag_iris": { "conditions": { "items": [ { "items": "jafohana:yellowflag_iris" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:princes_plume": { "conditions": { "items": [ { "items": "jafohana:princes_plume" } ] }, "trigger": "minecraft:inventory_changed" },
-    "jafohana:jade_vine": { "conditions": { "items": [ { "items": "jafohana:jade_vine" } ] }, "trigger": "minecraft:inventory_changed" },
-    "jafohana:mysore_trumpetvine": { "conditions": { "items": [ { "items": "jafohana:mysore_trumpetvine" } ] }, "trigger": "minecraft:inventory_changed" }
+    "jafohana:jade_vine": { "conditions": { "items": [ { "items": "jafohana:jade_vine" } ] }, "trigger": "minecraft:inventory_changed" }
   },
   "display": {
     "description": {
@@ -170,8 +169,7 @@
     [ "jafohana:cardinal_flower" ],
     [ "jafohana:yellowflag_iris" ],
     [ "jafohana:princes_plume" ],
-    [ "jafohana:jade_vine" ],
-    [ "jafohana:mysore_trumpetvine" ]
+    [ "jafohana:jade_vine" ]
   ],
   "rewards": {
     "experience": 100

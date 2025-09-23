@@ -79,7 +79,6 @@ public class ModItems
 	public static final Supplier<Item> FASCIATED_DANDELION = REGISTRY.register("fasciated_dandelion", () -> new DoubleHighBlockItem(ModBlocks.FASCIATED_DANDELION.get(), new Item.Properties()));
 	public static final Supplier<Item> FASCIATED_OXEYE_DAISY = REGISTRY.register("fasciated_oxeye_daisy", () -> new DoubleHighBlockItem(ModBlocks.FASCIATED_OXEYE_DAISY.get(), new Item.Properties()));
 	public static final Supplier<Item> JADE_VINE = REGISTRY.register("jade_vine", () -> new BlockItem(ModBlocks.JADE_VINE.get(), new Item.Properties()));
-	public static final Supplier<Item> MYSORE_TRUMPETVINE = REGISTRY.register("mysore_trumpetvine", () -> new BlockItem(ModBlocks.MYSORE_TRUMPETVINE.get(), new Item.Properties()));
 
 	@SubscribeEvent
 	public static void register(IEventBus eventBus)
