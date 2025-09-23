@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:crimson_nylium",
+    {
+      "id": "netheragriculture:crimson_farmland",
+      "required": false
+    },
+    {
+      "id": "securitycraft:reinforced_crimson_nylium",
+      "required": false
+    }
+  ]
+}
