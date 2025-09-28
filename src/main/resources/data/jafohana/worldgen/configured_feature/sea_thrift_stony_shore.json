@@ -1,65 +1,130 @@
 {
-  "type": "minecraft:vegetation_patch",
+  "type": "jafohana:layering",
   "config": {
-    "depth": 1,
-    "extra_bottom_block_chance": 0.0,
-    "extra_edge_column_chance": 0.3,
-    "ground_state": {
-      "type": "minecraft:weighted_state_provider",
-      "entries": [
-        {
-          "data": {
-            "Name": "minecraft:dirt"
-          },
-          "weight": 19
-        },
-        {
-          "data": {
-            "Name": "minecraft:moss_block"
-          },
-          "weight": 3
-        },
-        {
-          "data": {
-            "Name": "minecraft:stone"
-          },
-          "weight": 2
-        }
-      ]
-    },
-    "replaceable": "#jafohana:sea_thrift_replaceable_world_gen",
-    "surface": "floor",
-    "vegetation_chance": 0.7,
-    "vegetation_feature": {
-      "feature": {
-        "type": "minecraft:simple_block",
-        "config": {
-          "to_place": {
-            "type": "minecraft:weighted_state_provider",
-            "entries": [
-              {
-                "data": {
-                  "Name": "jafohana:sea_thrift"
-                },
-                "weight": 3
+    "features": [
+      {
+        "feature": {
+          "type": "minecraft:random_patch",
+          "config": {
+            "feature": {
+              "feature": {
+                "type": "minecraft:simple_block",
+                "config": {
+                  "to_place": {
+                    "type": "minecraft:weighted_state_provider",
+                    "entries": [
+                      {
+                        "data": {
+                          "Name": "minecraft:dirt"
+                        },
+                        "weight": 20
+                      },
+                      {
+                        "data": {
+                          "Name": "minecraft:moss_block"
+                        },
+                        "weight": 3
+                      }
+                    ]
+                  }
+                }
               },
-              {
-                "data": {
-                  "Name": "minecraft:short_grass"
-                },
-                "weight": 1
-              }
-            ]
+              "placement": [
+                {
+                  "type": "minecraft:block_predicate_filter",
+                  "predicate": {
+                    "type": "minecraft:all_of",
+                    "predicates": [
+                      {
+                        "type": "minecraft:replaceable",
+                        "offset": [
+                          0,
+                          1,
+                          0
+                        ]
+                      },
+                      {
+                        "type": "minecraft:matching_block_tag",
+                        "tag": "jafohana:sea_thrift_replaceable_world_gen"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "tries": 224,
+            "xz_spread": 4,
+            "y_spread": 2
           }
-        }
+        },
+        "placement": []
       },
-      "placement": []
-    },
-    "vertical_range": 3,
-    "xz_radius": {
-      "type": "minecraft:uniform",
-      "max_inclusive": 3,
-      "min_inclusive": 1
-    }
+      {
+        "feature": {
+          "type": "minecraft:random_patch",
+          "config": {
+            "feature": {
+              "feature": {
+                "type": "minecraft:simple_block",
+                "config": {
+                  "to_place": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                      "Name": "jafohana:sea_thrift"
+                    }
+                  }
+                }
+              },
+              "placement": [
+                {
+                  "type": "minecraft:block_predicate_filter",
+                  "predicate": {
+                    "type": "minecraft:matching_blocks",
+                    "blocks": "minecraft:air"
+                  }
+                }
+              ]
+            },
+            "tries": 96,
+            "xz_spread": 4,
+            "y_spread": 2
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "minecraft:random_patch",
+          "config": {
+            "feature": {
+              "feature": {
+                "type": "minecraft:simple_block",
+                "config": {
+                  "to_place": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                      "Name": "minecraft:short_grass"
+                    }
+                  }
+                }
+              },
+              "placement": [
+                {
+                  "type": "minecraft:block_predicate_filter",
+                  "predicate": {
+                    "type": "minecraft:matching_blocks",
+                    "blocks": "minecraft:air"
+                  }
+                }
+              ]
+            },
+            "tries": 64,
+            "xz_spread": 4,
+            "y_spread": 2
+          }
+        },
+        "placement": []
+      }
+    ]
   }
 }
