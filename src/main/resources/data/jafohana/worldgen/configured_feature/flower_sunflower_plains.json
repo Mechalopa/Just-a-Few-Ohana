@@ -13,6 +13,39 @@
                   "to_place": {
                     "type": "minecraft:simple_state_provider",
                     "state": {
+                      "Name": "jafohana:dayflower"
+                    }
+                  }
+                }
+              },
+              "placement": [
+                {
+                  "type": "minecraft:block_predicate_filter",
+                  "predicate": {
+                    "type": "minecraft:matching_blocks",
+                    "blocks": "minecraft:air"
+                  }
+                }
+              ]
+            },
+            "tries": 64,
+            "xz_spread": 6,
+            "y_spread": 2
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "minecraft:random_patch",
+          "config": {
+            "feature": {
+              "feature": {
+                "type": "minecraft:simple_block",
+                "config": {
+                  "to_place": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
                       "Name": "jafohana:evening_primrose"
                     }
                   }
@@ -28,9 +61,42 @@
                 }
               ]
             },
-            "tries": 96,
-            "xz_spread": 7,
-            "y_spread": 3
+            "tries": 64,
+            "xz_spread": 6,
+            "y_spread": 2
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "minecraft:random_patch",
+          "config": {
+            "feature": {
+              "feature": {
+                "type": "minecraft:simple_block",
+                "config": {
+                  "to_place": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                      "Name": "jafohana:blood_red_iris"
+                    }
+                  }
+                }
+              },
+              "placement": [
+                {
+                  "type": "minecraft:block_predicate_filter",
+                  "predicate": {
+                    "type": "minecraft:matching_blocks",
+                    "blocks": "minecraft:air"
+                  }
+                }
+              ]
+            },
+            "tries": 64,
+            "xz_spread": 6,
+            "y_spread": 2
           }
         },
         "placement": []
@@ -61,9 +127,9 @@
                 }
               ]
             },
-            "tries": 96,
-            "xz_spread": 7,
-            "y_spread": 3
+            "tries": 64,
+            "xz_spread": 6,
+            "y_spread": 2
           }
         },
         "placement": []
@@ -77,10 +143,27 @@
                 "type": "minecraft:simple_block",
                 "config": {
                   "to_place": {
-                    "type": "minecraft:simple_state_provider",
-                    "state": {
-                      "Name": "jafohana:yellow_snapdragon"
-                    }
+                    "type": "minecraft:weighted_state_provider",
+                    "entries": [
+                      {
+                        "data": {
+                          "Name": "jafohana:red_snapdragon"
+                        },
+                        "weight": 1
+                      },
+                      {
+                        "data": {
+                          "Name": "jafohana:yellow_snapdragon"
+                        },
+                        "weight": 1
+                      },
+                      {
+                        "data": {
+                          "Name": "jafohana:pink_snapdragon"
+                        },
+                        "weight": 1
+                      }
+                    ]
                   }
                 }
               },
@@ -127,9 +210,9 @@
                 }
               ]
             },
-            "tries": 96,
-            "xz_spread": 7,
-            "y_spread": 3
+            "tries": 64,
+            "xz_spread": 6,
+            "y_spread": 2
           }
         },
         "placement": []
@@ -160,9 +243,9 @@
                 }
               ]
             },
-            "tries": 96,
-            "xz_spread": 7,
-            "y_spread": 3
+            "tries": 64,
+            "xz_spread": 6,
+            "y_spread": 2
           }
         },
         "placement": []
@@ -194,8 +277,8 @@
               ]
             },
             "tries": 64,
-            "xz_spread": 7,
-            "y_spread": 3
+            "xz_spread": 6,
+            "y_spread": 2
           }
         },
         "placement": []
