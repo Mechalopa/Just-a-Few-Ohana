@@ -10,19 +10,42 @@
   "input": {
     "item": "jafohana:jade_vine"
   },
-  "display": {
-    "type": "botanypots:simple",
-    "block_state": {
-      "block": "jafohana:jade_vine",
-      "properties": {
-        "vine_flower": "single"
+  "display": [
+    {
+      "type": "botanypots:simple",
+      "block_state": {
+        "block": "jafohana:jade_vine",
+        "properties": {
+          "vine_flower": "short_stem"
+        }
+      },
+      "options": {
+        "rotation": "X_180"
       }
     },
-    "options": {
-      "rotation": "X_180"
+    {
+      "type": "botanypots:simple",
+      "block_state": {
+        "block": "jafohana:jade_vine",
+        "properties": {
+          "vine_flower": "short_head"
+        }
+      },
+      "options": {
+        "rotation": "X_180"
+      }
     }
-  },
+  ],
   "soil": {
-    "tag": "minecraft:logs"
+    "type": "bookshelf:either",
+    "ingredients": [
+      {
+        "type": "bookshelf:block_tag",
+        "tag": "minecraft:jungle_logs"
+      },
+      {
+        "tag": "botanypots:soil/jungle_log"
+      }
+    ]
   }
 }

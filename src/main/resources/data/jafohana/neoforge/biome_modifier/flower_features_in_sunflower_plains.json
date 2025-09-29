@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "minecraft:sunflower_plains",
+  "features": "jafohana:flower_sunflower_plains",
+  "step": "vegetal_decoration"
+}

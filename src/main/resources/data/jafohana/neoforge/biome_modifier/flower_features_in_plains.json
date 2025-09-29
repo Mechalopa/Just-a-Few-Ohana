@@ -10,6 +10,7 @@
         "value": {
           "type": "neoforge:or",
           "values": [
+            "minecraft:sunflower_plains",
             "#jafohana:is_savanna",
             "#jafohana:is_snowy",
             "#jafohana:is_dead_or_wasteland",
