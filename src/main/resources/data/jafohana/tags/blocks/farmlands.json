@@ -123,6 +123,22 @@
       "required": false
     },
     {
+      "id": "grounded:earthen_clay_farmland",
+      "required": false
+    },
+    {
+      "id": "grounded:silty_farmland",
+      "required": false
+    },
+    {
+      "id": "grounded:loamy_farmland",
+      "required": false
+    },
+    {
+      "id": "grounded:sandy_farmland",
+      "required": false
+    },
+    {
       "id": "#forge:farmland",
       "required": false
     },
