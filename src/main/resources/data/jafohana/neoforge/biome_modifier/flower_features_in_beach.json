@@ -18,6 +18,7 @@
               "values": [
                 "#jafohana:is_dry",
                 "#jafohana:is_snowy",
+                "#jafohana:is_swamp",
                 "#jafohana:is_dead_or_wasteland"
               ]
             }

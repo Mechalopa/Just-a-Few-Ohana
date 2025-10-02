@@ -15,6 +15,7 @@
             "#jafohana:is_hot",
             "#jafohana:is_snowy",
             "#jafohana:is_coniferous",
+            "#jafohana:is_jungle",
             "#jafohana:is_dense_vegetation",
             "#jafohana:is_spooky",
             "#jafohana:is_dead_or_wasteland"
