@@ -3,7 +3,7 @@
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 12
+      "chance": 13
     },
     {
       "type": "minecraft:in_square"
@@ -19,7 +19,11 @@
         "predicates": [
           {
             "type": "minecraft:matching_blocks",
-            "blocks": "minecraft:air"
+            "blocks": [
+              "minecraft:air",
+              "minecraft:snow",
+              "minecraft:vine"
+            ]
           },
           {
             "type": "minecraft:all_of",
@@ -31,8 +35,8 @@
               {
                 "type": "minecraft:not",
                 "predicate": {
-                  "type": "minecraft:matching_blocks",
-                  "blocks": "minecraft:jungle_leaves"
+                  "type": "minecraft:matching_block_tag",
+                  "tag": "jafohana:jungle_vine_flower_placeable_world_gen"
                 }
               }
             ]
@@ -42,8 +46,8 @@
       "direction_of_search": "up",
       "max_steps": 16,
       "target_condition": {
-        "type": "minecraft:matching_blocks",
-        "blocks": "minecraft:jungle_leaves"
+        "type": "minecraft:matching_block_tag",
+        "tag": "jafohana:jungle_vine_flower_placeable_world_gen"
       }
     },
     {

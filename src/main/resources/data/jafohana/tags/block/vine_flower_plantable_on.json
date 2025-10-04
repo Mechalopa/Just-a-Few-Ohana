@@ -2,6 +2,10 @@
   "replace": false,
   "values": [
     "#minecraft:leaves",
-    "#minecraft:logs"
+    "#minecraft:logs",
+    {
+      "id": "#missingwilds:fallen_logs",
+      "required": false
+    }
   ]
 }

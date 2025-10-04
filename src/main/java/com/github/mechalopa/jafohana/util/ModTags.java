@@ -15,6 +15,7 @@ public class ModTags
 		public static final TagKey<Block> AFFECTS_FASCIATIONS = createBlockTag("affects_fasciations");
 		public static final TagKey<Block> BADLANDS_FLOWER_PLANTABLE_ON = createBlockTag("badlands_flower_plantable_on");
 		public static final TagKey<Block> BEACH_FLOWER_PLANTABLE_ON = createBlockTag("beach_flower_plantable_on");
+		public static final TagKey<Block> BEE_ATTRACTIVE_UPPER_ONLY = createBlockTag("bee_attractive_upper_only");
 		public static final TagKey<Block> CONVERTABLE_TO_CREEPANSY = createBlockTag("convertable_to_creepansy");
 		public static final TagKey<Block> CONVERTABLE_TO_FASCIATED_DANDELION = createBlockTag("convertable_to_fasciated_dandelion");
 		public static final TagKey<Block> CONVERTABLE_TO_FASCIATED_OXEYE_DAISY = createBlockTag("convertable_to_fasciated_oxeye_daisy");
