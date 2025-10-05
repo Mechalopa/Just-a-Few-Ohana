@@ -29,7 +29,7 @@ public abstract class BeePollinateGoalMixin
 	private void jafohana_init(Bee bee, CallbackInfo info)
 	{
 		VALID_POLLINATION_BLOCKS = VALID_POLLINATION_BLOCKS.and(state -> {
-			return state.is(ModTags.BlockTags.BEE_ATTRACTIVE_UPPER_ONLY) ? state.getValue(DoublePlantBlock.HALF) == DoubleBlockHalf.UPPER : true;
+			return (state.is(ModTags.BlockTags.BEE_ATTRACTIVE_UPPER_ONLY) && state.hasProperty(DoublePlantBlock.HALF)) ? state.getValue(DoublePlantBlock.HALF) == DoubleBlockHalf.UPPER : true;
 		});
 	}
 }
