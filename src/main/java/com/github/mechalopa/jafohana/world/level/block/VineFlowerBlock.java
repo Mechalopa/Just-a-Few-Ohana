@@ -12,6 +12,7 @@ import com.github.mechalopa.jafohana.world.level.block.state.properties.VineFlow
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
@@ -88,8 +89,9 @@ public class VineFlowerBlock extends Block implements BonemealableBlock
 	@Override
 	public boolean canSurvive(BlockState state, LevelReader level, BlockPos pos)
 	{
-		BlockState state1 = level.getBlockState(pos.above());
-		return state1.is(this) || state1.is(ModTags.BlockTags.VINE_FLOWER_PLANTABLE_ON);
+		BlockPos pos1 = pos.above();
+		BlockState state1 = level.getBlockState(pos1);
+		return state1.is(this) || (state1.is(ModTags.BlockTags.VINE_FLOWER_PLANTABLE_ON) && (state1.is(BlockTags.LEAVES) || state1.isFaceSturdy(level, pos1, Direction.DOWN)));
 	}
 
 	@Nullable
