@@ -16,6 +16,7 @@ import net.minecraft.world.entity.animal.Bee;
 import net.minecraft.world.level.block.DoublePlantBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
+import net.neoforged.fml.ModList;
 
 @Mixin(targets = "net.minecraft.world.entity.animal.Bee$BeePollinateGoal")
 public abstract class BeePollinateGoalMixin
@@ -28,8 +29,11 @@ public abstract class BeePollinateGoalMixin
 	@Inject(method = "<init>", at = @At("TAIL"))
 	private void jafohana_init(Bee bee, CallbackInfo info)
 	{
-		VALID_POLLINATION_BLOCKS = VALID_POLLINATION_BLOCKS.and(state -> {
-			return (state.is(ModTags.BlockTags.BEE_ATTRACTIVE_UPPER_ONLY) && state.hasProperty(DoublePlantBlock.HALF)) ? state.getValue(DoublePlantBlock.HALF) == DoubleBlockHalf.UPPER : true;
-		});
+		if (!ModList.get().isLoaded("productivebees")) //very ugly
+		{
+			VALID_POLLINATION_BLOCKS = VALID_POLLINATION_BLOCKS.and(state -> {
+				return (state.is(ModTags.BlockTags.BEE_ATTRACTIVE_UPPER_ONLY) && state.hasProperty(DoublePlantBlock.HALF)) ? state.getValue(DoublePlantBlock.HALF) == DoubleBlockHalf.UPPER : true;
+			});
+		}
 	}
 }
