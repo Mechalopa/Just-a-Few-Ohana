@@ -18,6 +18,14 @@
       "required": false
     },
     {
+      "id": "#c:mountain_peak",
+      "required": false
+    },
+    {
+      "id": "#c:mountain_slope",
+      "required": false
+    },
+    {
       "id": "#c:extreme_hills",
       "required": false
     },

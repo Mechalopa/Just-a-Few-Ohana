@@ -105,6 +105,10 @@
     {
       "id": "pyromancer:permafrost_caverns",
       "required": false
+    },
+    {
+      "id": "clifftree:coniferous_badlands",
+      "required": false
     }
   ]
 }

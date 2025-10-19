@@ -18,6 +18,10 @@
     {
       "id": "wythers:highland_plains",
       "required": false
+    },
+    {
+      "id": "clifftree:granite_shore",
+      "required": false
     }
   ]
 }

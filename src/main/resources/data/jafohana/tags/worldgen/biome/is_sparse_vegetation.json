@@ -40,6 +40,18 @@
     {
       "id": "bleak_and_barren:droughted_tropics",
       "required": false
+    },
+    {
+      "id": "clifftree:oasis",
+      "required": false
+    },
+    {
+      "id": "clifftree:shrubland",
+      "required": false
+    },
+    {
+      "id": "clifftree:sparse_forest",
+      "required": false
     }
   ]
 }

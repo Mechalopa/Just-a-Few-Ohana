@@ -28,6 +28,10 @@
     {
       "id": "vanillabackport:pale_garden",
       "required": false
+    },
+    {
+      "id": "clifftree:snowy_old_growth_taiga",
+      "required": false
     }
   ]
 }
