@@ -8,6 +8,7 @@ import com.github.mechalopa.jafohana.registry.ModCreativeModeTabs;
 import com.github.mechalopa.jafohana.registry.ModItems;
 import com.mojang.logging.LogUtils;
 
+import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
@@ -22,11 +23,15 @@ public class JAFOhana
 
 	public static final Logger LOGGER = LogUtils.getLogger();
 
-	public JAFOhana(IEventBus modEventBus, ModContainer modContainer)
+	public JAFOhana(IEventBus modEventBus, ModContainer modContainer, Dist dist)
 	{
 		modEventBus.addListener(ModConfigs::loadConfig);
 		modContainer.registerConfig(ModConfig.Type.COMMON, ModConfigs.SERVER_CONFIG);
-		modContainer.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
+
+		if (dist == Dist.CLIENT)
+		{
+			modContainer.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
+		}
 
 		ModBlocks.register(modEventBus);
 		ModBiomeFeatures.register(modEventBus);
