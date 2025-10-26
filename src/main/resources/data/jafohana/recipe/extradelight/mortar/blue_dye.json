@@ -9,16 +9,13 @@
   "fluidOut": {},
   "grinds": 4,
   "ingredient": {
-    "type": "neoforge:compound",
+    "type": "neoforge:intersection",
     "children": [
       {
-        "item": "jafohana:dayflower"
+        "tag": "jafohana:dye_ingredients/blue"
       },
       {
-        "item": "jafohana:bluestem_penstemon"
-      },
-      {
-        "item": "jafohana:sea_holly"
+        "tag": "jafohana:small_flowers"
       }
     ]
   },

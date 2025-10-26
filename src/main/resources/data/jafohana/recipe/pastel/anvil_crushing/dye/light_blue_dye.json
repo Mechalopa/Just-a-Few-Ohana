@@ -8,10 +8,15 @@
   "type": "pastel:anvil_crushing",
   "ingredient": [
     {
-      "item": "jafohana:forget_me_not"
-    },
-    {
-      "item": "jafohana:blue_daisy"
+      "type": "neoforge:intersection",
+      "children": [
+        {
+          "tag": "jafohana:dye_ingredients/light_blue"
+        },
+        {
+          "tag": "jafohana:small_flowers"
+        }
+      ]
     }
   ],
   "crushedItemsPerPointOfDamage": 2,

@@ -1,11 +1,6 @@
 {
   "replace": false,
   "values": [
-    "jafohana:cardinal_flower",
-    "jafohana:crimson_clover",
-    "jafohana:fireball_lily",
-    "jafohana:firecracker_penstemon",
-    "jafohana:red_snapdragon",
-    "jafohana:red_spider_lily"
+    "#jafohana:dye_ingredients/red"
   ]
 }

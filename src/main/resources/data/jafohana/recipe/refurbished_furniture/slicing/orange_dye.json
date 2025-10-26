@@ -7,19 +7,13 @@
   ],
   "type": "refurbished_furniture:cutting_board_slicing",
   "ingredient": {
-    "type": "neoforge:compound",
+    "type": "neoforge:intersection",
     "children": [
       {
-        "item": "jafohana:orange_spider_lily"
+        "tag": "jafohana:dye_ingredients/orange"
       },
       {
-        "item": "jafohana:wheel_lily"
-      },
-      {
-        "item": "jafohana:fox_and_cubs"
-      },
-      {
-        "item": "jafohana:apricot_mallow"
+        "tag": "jafohana:small_flowers"
       }
     ]
   },

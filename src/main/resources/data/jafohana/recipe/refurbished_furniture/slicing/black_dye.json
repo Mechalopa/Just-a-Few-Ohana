@@ -7,7 +7,15 @@
   ],
   "type": "refurbished_furniture:cutting_board_slicing",
   "ingredient": {
-    "item": "jafohana:black_tulip"
+    "type": "neoforge:intersection",
+    "children": [
+      {
+        "tag": "jafohana:dye_ingredients/black"
+      },
+      {
+        "tag": "jafohana:small_flowers"
+      }
+    ]
   },
   "result": {
     "count": 2,

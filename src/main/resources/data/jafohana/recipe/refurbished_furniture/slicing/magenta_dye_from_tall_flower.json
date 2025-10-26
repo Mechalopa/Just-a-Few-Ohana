@@ -7,7 +7,15 @@
   ],
   "type": "refurbished_furniture:cutting_board_slicing",
   "ingredient": {
-    "item": "jafohana:fireweed"
+    "type": "neoforge:intersection",
+    "children": [
+      {
+        "tag": "jafohana:dye_ingredients/magenta"
+      },
+      {
+        "tag": "jafohana:tall_flowers"
+      }
+    ]
   },
   "result": {
     "count": 3,

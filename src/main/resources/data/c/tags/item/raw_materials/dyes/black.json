@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "jafohana:black_bat_flower",
-    "jafohana:black_tulip"
+    "#jafohana:dye_ingredients/black"
   ]
 }

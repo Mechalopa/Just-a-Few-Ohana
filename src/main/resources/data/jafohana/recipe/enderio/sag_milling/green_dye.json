@@ -17,7 +17,21 @@
   "type": "enderio:sag_milling",
   "energy": 2400,
   "input": {
-    "item": "jafohana:jack_in_the_pulpit"
+    "type": "neoforge:difference",
+    "base": {
+      "type": "neoforge:intersection",
+      "children": [
+        {
+          "tag": "jafohana:dye_ingredients/green"
+        },
+        {
+          "tag": "jafohana:small_flowers"
+        }
+      ]
+    },
+    "subtracted": {
+      "item": "jafohana:creepansy"
+    }
   },
   "outputs": [
     {

@@ -7,7 +7,15 @@
   ],
   "type": "actuallyadditions:crushing",
   "ingredient": {
-    "item": "jafohana:blue_ceanothus"
+    "type": "neoforge:intersection",
+    "children": [
+      {
+        "tag": "jafohana:dye_ingredients/blue"
+      },
+      {
+        "tag": "jafohana:tall_flowers"
+      }
+    ]
   },
   "result": [
     {

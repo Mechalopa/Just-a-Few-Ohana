@@ -7,13 +7,13 @@
   ],
   "type": "ars_nouveau:crush",
   "input": {
-    "type": "neoforge:compound",
+    "type": "neoforge:intersection",
     "children": [
       {
-        "item": "jafohana:asphodel"
+        "tag": "jafohana:dye_ingredients/light_gray"
       },
       {
-        "item": "jafohana:fasciated_oxeye_daisy"
+        "tag": "jafohana:tall_flowers"
       }
     ]
   },

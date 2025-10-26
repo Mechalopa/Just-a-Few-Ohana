@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "jafohana:blue_daisy",
-    "jafohana:forget_me_not"
+    "#jafohana:dye_ingredients/light_blue"
   ]
 }

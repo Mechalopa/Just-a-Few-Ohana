@@ -8,7 +8,15 @@
   "type": "pastel:anvil_crushing",
   "ingredient": [
     {
-      "item": "jafohana:black_bat_flower"
+      "type": "neoforge:intersection",
+      "children": [
+        {
+          "tag": "jafohana:dye_ingredients/black"
+        },
+        {
+          "tag": "jafohana:tall_flowers"
+        }
+      ]
     }
   ],
   "crushedItemsPerPointOfDamage": 2,

@@ -17,7 +17,15 @@
   "type": "enderio:sag_milling",
   "energy": 2400,
   "input": {
-    "item": "jafohana:cardinal_flower"
+    "type": "neoforge:intersection",
+    "children": [
+      {
+        "tag": "jafohana:dye_ingredients/red"
+      },
+      {
+        "tag": "jafohana:tall_flowers"
+      }
+    ]
   },
   "outputs": [
     {

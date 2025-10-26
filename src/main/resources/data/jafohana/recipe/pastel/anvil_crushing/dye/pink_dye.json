@@ -8,22 +8,15 @@
   "type": "pastel:anvil_crushing",
   "ingredient": [
     {
-     "item": "jafohana:milk_vetch"
-    },
-    {
-      "item": "jafohana:pink_african_daisy"
-    },
-    {
-      "item": "jafohana:pink_snapdragon"
-    },
-    {
-      "item": "jafohana:peppermint_spider_lily"
-    },
-    {
-      "item": "jafohana:pink_hawks_beard"
-    },
-    {
-      "item": "jafohana:sea_thrift"
+      "type": "neoforge:intersection",
+      "children": [
+        {
+          "tag": "jafohana:dye_ingredients/pink"
+        },
+        {
+          "tag": "jafohana:small_flowers"
+        }
+      ]
     }
   ],
   "crushedItemsPerPointOfDamage": 2,

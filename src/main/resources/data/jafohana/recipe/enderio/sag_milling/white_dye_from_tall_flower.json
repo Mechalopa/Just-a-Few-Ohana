@@ -17,7 +17,15 @@
   "type": "enderio:sag_milling",
   "energy": 2400,
   "input": {
-    "item": "jafohana:oakleaf_hydrangea"
+    "type": "neoforge:intersection",
+    "children": [
+      {
+        "tag": "jafohana:dye_ingredients/white"
+      },
+      {
+        "tag": "jafohana:tall_flowers"
+      }
+    ]
   },
   "outputs": [
     {

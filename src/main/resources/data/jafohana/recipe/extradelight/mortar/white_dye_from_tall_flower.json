@@ -9,7 +9,15 @@
   "fluidOut": {},
   "grinds": 4,
   "ingredient": {
-    "item": "jafohana:oakleaf_hydrangea"
+    "type": "neoforge:intersection",
+    "children": [
+      {
+        "tag": "jafohana:dye_ingredients/white"
+      },
+      {
+        "tag": "jafohana:tall_flowers"
+      }
+    ]
   },
   "result": {
     "count": 3,

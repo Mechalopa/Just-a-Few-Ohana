@@ -7,7 +7,15 @@
   ],
   "type": "refurbished_furniture:cutting_board_slicing",
   "ingredient": {
-    "item": "jafohana:black_bat_flower"
+    "type": "neoforge:intersection",
+    "children": [
+      {
+        "tag": "jafohana:dye_ingredients/black"
+      },
+      {
+        "tag": "jafohana:tall_flowers"
+      }
+    ]
   },
   "result": {
     "count": 3,

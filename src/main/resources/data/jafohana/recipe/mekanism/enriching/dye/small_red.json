@@ -7,22 +7,13 @@
   ],
   "type": "mekanism:enriching",
   "input": {
-    "type": "neoforge:compound",
+    "type": "neoforge:intersection",
     "children": [
       {
-        "item": "jafohana:red_snapdragon"
+        "tag": "jafohana:dye_ingredients/red"
       },
       {
-        "item": "jafohana:fireball_lily"
-      },
-      {
-        "item": "jafohana:crimson_clover"
-      },
-      {
-        "item": "jafohana:red_spider_lily"
-      },
-      {
-        "item": "jafohana:firecracker_penstemon"
+        "tag": "jafohana:small_flowers"
       }
     ],
     "count": 1

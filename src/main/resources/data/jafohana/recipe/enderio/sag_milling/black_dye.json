@@ -17,7 +17,15 @@
   "type": "enderio:sag_milling",
   "energy": 2400,
   "input": {
-    "item": "jafohana:black_tulip"
+    "type": "neoforge:intersection",
+    "children": [
+      {
+        "tag": "jafohana:dye_ingredients/black"
+      },
+      {
+        "tag": "jafohana:small_flowers"
+      }
+    ]
   },
   "outputs": [
     {

@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "integrateddynamics"
+    }
+  ],
+  "type": "integrateddynamics:mechanical_squeezer",
+  "duration": 5,
+  "input_item": {
+    "type": "neoforge:intersection",
+    "children": [
+      {
+        "tag": "jafohana:dye_ingredients/light_gray"
+      },
+      {
+        "tag": "jafohana:small_flowers"
+      }
+    ]
+  },
+  "output_items": [
+    {
+      "item": {
+        "count": 4,
+        "id": "minecraft:light_gray_dye"
+      }
+    },
+    {
+      "chance": 0.5,
+      "item": {
+        "count": 2,
+        "id": "minecraft:light_gray_dye"
+      }
+    }
+  ]
+}

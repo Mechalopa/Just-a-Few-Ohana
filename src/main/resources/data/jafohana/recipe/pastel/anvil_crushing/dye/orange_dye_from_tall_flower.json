@@ -8,13 +8,15 @@
   "type": "pastel:anvil_crushing",
   "ingredient": [
     {
-      "item": "jafohana:orange_marigold"
-    },
-    {
-      "item": "jafohana:gloriosa"
-    },
-    {
-      "item": "jafohana:bird_of_paradise"
+      "type": "neoforge:intersection",
+      "children": [
+        {
+          "tag": "jafohana:dye_ingredients/orange"
+        },
+        {
+          "tag": "jafohana:tall_flowers"
+        }
+      ]
     }
   ],
   "crushedItemsPerPointOfDamage": 2,

@@ -7,8 +7,16 @@
   ],
   "type": "mekanism:pigment_extracting",
   "input": {
-    "count": 1,
-    "item": "jafohana:brazilian_plume"
+    "type": "neoforge:intersection",
+    "children": [
+      {
+        "tag": "jafohana:dye_ingredients/pink"
+      },
+      {
+        "tag": "jafohana:tall_flowers"
+      }
+    ],
+    "count": 1
   },
   "output": {
     "amount": 1536,

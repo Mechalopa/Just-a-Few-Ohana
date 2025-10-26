@@ -9,7 +9,15 @@
   "fluidOut": {},
   "grinds": 4,
   "ingredient": {
-    "item": "jafohana:blue_ceanothus"
+    "type": "neoforge:intersection",
+    "children": [
+      {
+        "tag": "jafohana:dye_ingredients/blue"
+      },
+      {
+        "tag": "jafohana:tall_flowers"
+      }
+    ]
   },
   "result": {
     "count": 3,

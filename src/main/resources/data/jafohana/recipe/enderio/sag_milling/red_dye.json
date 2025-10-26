@@ -17,22 +17,13 @@
   "type": "enderio:sag_milling",
   "energy": 2400,
   "input": {
-    "type": "neoforge:compound",
+    "type": "neoforge:intersection",
     "children": [
       {
-        "item": "jafohana:red_snapdragon"
+        "tag": "jafohana:dye_ingredients/red"
       },
       {
-        "item": "jafohana:fireball_lily"
-      },
-      {
-        "item": "jafohana:crimson_clover"
-      },
-      {
-        "item": "jafohana:red_spider_lily"
-      },
-      {
-        "item": "jafohana:firecracker_penstemon"
+        "tag": "jafohana:small_flowers"
       }
     ]
   },

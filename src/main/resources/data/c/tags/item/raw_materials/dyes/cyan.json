@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "jafohana:meconopsis",
-    "jafohana:jade_vine"
+    "#jafohana:dye_ingredients/cyan"
   ]
 }

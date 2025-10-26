@@ -8,10 +8,15 @@
   "type": "pastel:anvil_crushing",
   "ingredient": [
     {
-      "item": "jafohana:green_tulip"
-    },
-    {
-      "item": "jafohana:bells_of_ireland"
+      "type": "neoforge:intersection",
+      "children": [
+        {
+          "tag": "jafohana:dye_ingredients/lime"
+        },
+        {
+          "tag": "jafohana:small_flowers"
+        }
+      ]
     }
   ],
   "crushedItemsPerPointOfDamage": 2,

@@ -17,13 +17,13 @@
   "type": "enderio:sag_milling",
   "energy": 2400,
   "input": {
-    "type": "neoforge:compound",
+    "type": "neoforge:intersection",
     "children": [
       {
-        "item": "jafohana:green_tulip"
+        "tag": "jafohana:dye_ingredients/lime"
       },
       {
-        "item": "jafohana:bells_of_ireland"
+        "tag": "jafohana:small_flowers"
       }
     ]
   },

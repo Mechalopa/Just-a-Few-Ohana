@@ -7,16 +7,13 @@
   ],
   "type": "mekanism:pigment_extracting",
   "input": {
-    "type": "neoforge:compound",
+    "type": "neoforge:intersection",
     "children": [
       {
-        "item": "jafohana:yellow_african_daisy"
+        "tag": "jafohana:dye_ingredients/yellow"
       },
       {
-        "item": "jafohana:yellow_snapdragon"
-      },
-      {
-        "item": "jafohana:yellow_pansy"
+        "tag": "jafohana:small_flowers"
       }
     ],
     "count": 1

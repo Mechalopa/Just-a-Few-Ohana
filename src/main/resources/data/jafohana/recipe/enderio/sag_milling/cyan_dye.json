@@ -17,13 +17,21 @@
   "type": "enderio:sag_milling",
   "energy": 2400,
   "input": {
-    "type": "neoforge:compound",
+    "type": "neoforge:intersection",
     "children": [
       {
-        "item": "jafohana:jade_vine"
+        "tag": "jafohana:dye_ingredients/cyan"
       },
       {
-        "item": "jafohana:meconopsis"
+        "type": "neoforge:compound",
+        "children": [
+          {
+            "tag": "jafohana:small_flowers"
+          },
+          {
+            "tag": "jafohana:vine_flowers"
+          }
+        ]
       }
     ]
   },

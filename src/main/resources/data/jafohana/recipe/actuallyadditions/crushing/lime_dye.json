@@ -7,13 +7,13 @@
   ],
   "type": "actuallyadditions:crushing",
   "ingredient": {
-    "type": "neoforge:compound",
+    "type": "neoforge:intersection",
     "children": [
       {
-        "item": "jafohana:green_tulip"
+        "tag": "jafohana:dye_ingredients/lime"
       },
       {
-        "item": "jafohana:bells_of_ireland"
+        "tag": "jafohana:small_flowers"
       }
     ]
   },

@@ -7,16 +7,13 @@
   ],
   "type": "ars_nouveau:crush",
   "input": {
-    "type": "neoforge:compound",
+    "type": "neoforge:intersection",
     "children": [
       {
-        "item": "jafohana:dancing_ladies_ginger"
+        "tag": "jafohana:dye_ingredients/magenta"
       },
       {
-        "item": "jafohana:winter_heath"
-      },
-      {
-        "item": "jafohana:ladies_tresses"
+        "tag": "jafohana:small_flowers"
       }
     ]
   },

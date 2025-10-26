@@ -7,7 +7,15 @@
   ],
   "type": "ars_nouveau:crush",
   "input": {
-    "item": "jafohana:fireweed"
+    "type": "neoforge:intersection",
+    "children": [
+      {
+        "tag": "jafohana:dye_ingredients/magenta"
+      },
+      {
+        "tag": "jafohana:tall_flowers"
+      }
+    ]
   },
   "output": [
     {

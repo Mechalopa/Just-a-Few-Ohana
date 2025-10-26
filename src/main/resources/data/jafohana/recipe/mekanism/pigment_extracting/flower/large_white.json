@@ -7,8 +7,16 @@
   ],
   "type": "mekanism:pigment_extracting",
   "input": {
-    "count": 1,
-    "item": "jafohana:oakleaf_hydrangea"
+    "type": "neoforge:intersection",
+    "children": [
+      {
+        "tag": "jafohana:dye_ingredients/white"
+      },
+      {
+        "tag": "jafohana:tall_flowers"
+      }
+    ],
+    "count": 1
   },
   "output": {
     "amount": 1536,

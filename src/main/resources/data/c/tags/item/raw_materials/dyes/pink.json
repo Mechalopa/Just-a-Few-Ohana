@@ -1,12 +1,6 @@
 {
   "replace": false,
   "values": [
-    "jafohana:brazilian_plume",
-    "jafohana:milk_vetch",
-    "jafohana:peppermint_spider_lily",
-    "jafohana:pink_african_daisy",
-    "jafohana:pink_hawks_beard",
-    "jafohana:pink_snapdragon",
-    "jafohana:sea_thrift"
+    "#jafohana:dye_ingredients/pink"
   ]
 }

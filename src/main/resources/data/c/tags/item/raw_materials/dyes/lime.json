@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "jafohana:bells_of_ireland",
-    "jafohana:green_tulip"
+    "#jafohana:dye_ingredients/lime"
   ]
 }

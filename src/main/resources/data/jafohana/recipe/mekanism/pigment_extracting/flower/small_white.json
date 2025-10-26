@@ -7,22 +7,13 @@
   ],
   "type": "mekanism:pigment_extracting",
   "input": {
-    "type": "neoforge:compound",
+    "type": "neoforge:intersection",
     "children": [
       {
-        "item": "jafohana:evening_primrose"
+        "tag": "jafohana:dye_ingredients/white"
       },
       {
-        "item": "jafohana:white_african_daisy"
-      },
-      {
-        "item": "jafohana:white_egret_orchid"
-      },
-      {
-        "item": "jafohana:snowdrop"
-      },
-      {
-        "item": "jafohana:beach_spider_lily"
+        "tag": "jafohana:small_flowers"
       }
     ],
     "count": 1

@@ -8,10 +8,23 @@
   "type": "pastel:anvil_crushing",
   "ingredient": [
     {
-      "item": "jafohana:jade_vine"
-    },
-    {
-      "item": "jafohana:meconopsis"
+      "type": "neoforge:intersection",
+      "children": [
+        {
+          "tag": "jafohana:dye_ingredients/cyan"
+        },
+        {
+          "type": "neoforge:compound",
+          "children": [
+            {
+              "tag": "jafohana:small_flowers"
+            },
+            {
+              "tag": "jafohana:vine_flowers"
+            }
+          ]
+        }
+      ]
     }
   ],
   "crushedItemsPerPointOfDamage": 2,

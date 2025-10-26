@@ -8,19 +8,15 @@
   "type": "pastel:anvil_crushing",
   "ingredient": [
     {
-      "item": "jafohana:yellow_marigold"
-    },
-    {
-      "item": "jafohana:fasciated_dandelion"
-    },
-    {
-      "item": "jafohana:alpine_ragwort"
-    },
-    {
-      "item": "jafohana:yellowflag_iris"
-    },
-    {
-      "item": "jafohana:princes_plume"
+      "type": "neoforge:intersection",
+      "children": [
+        {
+          "tag": "jafohana:dye_ingredients/yellow"
+        },
+        {
+          "tag": "jafohana:tall_flowers"
+        }
+      ]
     }
   ],
   "crushedItemsPerPointOfDamage": 2,

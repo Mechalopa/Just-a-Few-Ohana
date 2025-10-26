@@ -8,13 +8,15 @@
   "type": "pastel:anvil_crushing",
   "ingredient": [
     {
-      "item": "jafohana:spathiphyllum"
-    },
-    {
-      "item": "jafohana:white_pansy"
-    },
-    {
-      "item": "jafohana:sego_lily"
+      "type": "neoforge:intersection",
+      "children": [
+        {
+          "tag": "jafohana:dye_ingredients/light_gray"
+        },
+        {
+          "tag": "jafohana:small_flowers"
+        }
+      ]
     }
   ],
   "crushedItemsPerPointOfDamage": 2,

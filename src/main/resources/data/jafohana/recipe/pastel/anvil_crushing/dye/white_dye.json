@@ -8,19 +8,15 @@
   "type": "pastel:anvil_crushing",
   "ingredient": [
     {
-      "item": "jafohana:evening_primrose"
-    },
-    {
-      "item": "jafohana:white_african_daisy"
-    },
-    {
-      "item": "jafohana:white_egret_orchid"
-    },
-    {
-      "item": "jafohana:snowdrop"
-    },
-    {
-      "item": "jafohana:beach_spider_lily"
+      "type": "neoforge:intersection",
+      "children": [
+        {
+          "tag": "jafohana:dye_ingredients/white"
+        },
+        {
+          "tag": "jafohana:small_flowers"
+        }
+      ]
     }
   ],
   "crushedItemsPerPointOfDamage": 2,

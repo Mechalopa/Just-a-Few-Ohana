@@ -7,16 +7,13 @@
   ],
   "type": "actuallyadditions:crushing",
   "ingredient": {
-    "type": "neoforge:compound",
+    "type": "neoforge:intersection",
     "children": [
       {
-        "item": "jafohana:blood_red_iris"
+        "tag": "jafohana:dye_ingredients/purple"
       },
       {
-        "item": "jafohana:purple_pansy"
-      },
-      {
-        "item": "jafohana:harebell"
+        "tag": "jafohana:small_flowers"
       }
     ]
   },

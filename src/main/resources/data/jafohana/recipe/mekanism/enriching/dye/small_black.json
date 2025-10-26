@@ -7,8 +7,16 @@
   ],
   "type": "mekanism:enriching",
   "input": {
-    "count": 1,
-    "item": "jafohana:black_tulip"
+    "type": "neoforge:intersection",
+    "children": [
+      {
+        "tag": "jafohana:dye_ingredients/black"
+      },
+      {
+        "tag": "jafohana:small_flowers"
+      }
+    ],
+    "count": 1
   },
   "output": {
     "count": 2,

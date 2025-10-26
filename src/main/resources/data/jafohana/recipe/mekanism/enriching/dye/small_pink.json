@@ -7,25 +7,13 @@
   ],
   "type": "mekanism:enriching",
   "input": {
-    "type": "neoforge:compound",
+    "type": "neoforge:intersection",
     "children": [
       {
-        "item": "jafohana:milk_vetch"
+        "tag": "jafohana:dye_ingredients/pink"
       },
       {
-        "item": "jafohana:pink_african_daisy"
-      },
-      {
-        "item": "jafohana:pink_snapdragon"
-      },
-      {
-        "item": "jafohana:peppermint_spider_lily"
-      },
-      {
-        "item": "jafohana:pink_hawks_beard"
-      },
-      {
-        "item": "jafohana:sea_thrift"
+        "tag": "jafohana:small_flowers"
       }
     ],
     "count": 1

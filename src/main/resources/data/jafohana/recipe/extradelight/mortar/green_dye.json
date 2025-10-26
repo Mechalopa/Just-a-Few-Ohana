@@ -9,13 +9,13 @@
   "fluidOut": {},
   "grinds": 4,
   "ingredient": {
-    "type": "neoforge:compound",
+    "type": "neoforge:intersection",
     "children": [
       {
-        "item": "jafohana:creepansy"
+        "tag": "jafohana:dye_ingredients/green"
       },
       {
-        "item": "jafohana:jack_in_the_pulpit"
+        "tag": "jafohana:small_flowers"
       }
     ]
   },

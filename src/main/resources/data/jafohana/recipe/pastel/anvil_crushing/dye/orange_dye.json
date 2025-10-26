@@ -8,16 +8,15 @@
   "type": "pastel:anvil_crushing",
   "ingredient": [
     {
-      "item": "jafohana:orange_spider_lily"
-    },
-    {
-      "item": "jafohana:wheel_lily"
-    },
-    {
-      "item": "jafohana:fox_and_cubs"
-    },
-    {
-      "item": "jafohana:apricot_mallow"
+      "type": "neoforge:intersection",
+      "children": [
+        {
+          "tag": "jafohana:dye_ingredients/orange"
+        },
+        {
+          "tag": "jafohana:small_flowers"
+        }
+      ]
     }
   ],
   "crushedItemsPerPointOfDamage": 2,

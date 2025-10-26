@@ -7,16 +7,13 @@
   ],
   "type": "refurbished_furniture:cutting_board_slicing",
   "ingredient": {
-    "type": "neoforge:compound",
+    "type": "neoforge:intersection",
     "children": [
       {
-        "item": "jafohana:dayflower"
+        "tag": "jafohana:dye_ingredients/blue"
       },
       {
-        "item": "jafohana:bluestem_penstemon"
-      },
-      {
-        "item": "jafohana:sea_holly"
+        "tag": "jafohana:small_flowers"
       }
     ]
   },

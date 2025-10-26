@@ -17,13 +17,13 @@
   "type": "enderio:sag_milling",
   "energy": 2400,
   "input": {
-    "type": "neoforge:compound",
+    "type": "neoforge:intersection",
     "children": [
       {
-        "item": "jafohana:forget_me_not"
+        "tag": "jafohana:dye_ingredients/light_blue"
       },
       {
-        "item": "jafohana:blue_daisy"
+        "tag": "jafohana:small_flowers"
       }
     ]
   },

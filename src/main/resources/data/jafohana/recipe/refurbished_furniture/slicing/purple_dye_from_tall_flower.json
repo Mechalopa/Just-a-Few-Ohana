@@ -7,16 +7,13 @@
   ],
   "type": "refurbished_furniture:cutting_board_slicing",
   "ingredient": {
-    "type": "neoforge:compound",
+    "type": "neoforge:intersection",
     "children": [
       {
-        "item": "jafohana:worsleya"
+        "tag": "jafohana:dye_ingredients/purple"
       },
       {
-        "item": "jafohana:purple_ceanothus"
-      },
-      {
-        "item": "jafohana:tatarian_aster"
+        "tag": "jafohana:tall_flowers"
       }
     ]
   },

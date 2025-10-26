@@ -9,7 +9,15 @@
   "fluidOut": {},
   "grinds": 4,
   "ingredient": {
-    "item": "jafohana:cardinal_flower"
+    "type": "neoforge:intersection",
+    "children": [
+      {
+        "tag": "jafohana:dye_ingredients/red"
+      },
+      {
+        "tag": "jafohana:tall_flowers"
+      }
+    ]
   },
   "result": {
     "count": 3,

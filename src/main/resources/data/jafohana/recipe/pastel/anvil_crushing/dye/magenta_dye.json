@@ -8,13 +8,15 @@
   "type": "pastel:anvil_crushing",
   "ingredient": [
     {
-      "item": "jafohana:dancing_ladies_ginger"
-    },
-    {
-      "item": "jafohana:winter_heath"
-    },
-    {
-      "item": "jafohana:ladies_tresses"
+      "type": "neoforge:intersection",
+      "children": [
+        {
+          "tag": "jafohana:dye_ingredients/magenta"
+        },
+        {
+          "tag": "jafohana:small_flowers"
+        }
+      ]
     }
   ],
   "crushedItemsPerPointOfDamage": 2,

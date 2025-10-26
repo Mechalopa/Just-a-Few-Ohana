@@ -9,16 +9,13 @@
   "fluidOut": {},
   "grinds": 4,
   "ingredient": {
-    "type": "neoforge:compound",
+    "type": "neoforge:intersection",
     "children": [
       {
-        "item": "jafohana:spathiphyllum"
+        "tag": "jafohana:dye_ingredients/light_gray"
       },
       {
-        "item": "jafohana:white_pansy"
-      },
-      {
-        "item": "jafohana:sego_lily"
+        "tag": "jafohana:small_flowers"
       }
     ]
   },

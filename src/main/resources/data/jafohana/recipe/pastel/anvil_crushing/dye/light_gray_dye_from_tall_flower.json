@@ -8,10 +8,15 @@
   "type": "pastel:anvil_crushing",
   "ingredient": [
     {
-      "item": "jafohana:asphodel"
-    },
-    {
-      "item": "jafohana:fasciated_oxeye_daisy"
+      "type": "neoforge:intersection",
+      "children": [
+        {
+          "tag": "jafohana:dye_ingredients/light_gray"
+        },
+        {
+          "tag": "jafohana:tall_flowers"
+        }
+      ]
     }
   ],
   "crushedItemsPerPointOfDamage": 2,

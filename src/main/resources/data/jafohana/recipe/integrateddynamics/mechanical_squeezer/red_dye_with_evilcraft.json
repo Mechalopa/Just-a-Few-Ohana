@@ -1,0 +1,51 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "integrateddynamics"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "evilcraft"
+        }
+      ]
+    }
+  ],
+  "type": "integrateddynamics:mechanical_squeezer",
+  "duration": 5,
+  "input_item": {
+    "type": "neoforge:difference",
+    "base": {
+      "type": "neoforge:intersection",
+      "children": [
+        {
+          "tag": "jafohana:dye_ingredients/red"
+        },
+        {
+          "tag": "jafohana:small_flowers"
+        }
+      ]
+    },
+    "subtracted": {
+      "tag": "evilcraft:poisonous"
+    }
+  },
+  "output_items": [
+    {
+      "item": {
+        "count": 4,
+        "id": "minecraft:red_dye"
+      }
+    },
+    {
+      "chance": 0.5,
+      "item": {
+        "count": 2,
+        "id": "minecraft:red_dye"
+      }
+    }
+  ]
+}

@@ -1,9 +1,6 @@
 {
   "replace": false,
   "values": [
-    "jafohana:blue_ceanothus",
-    "jafohana:bluestem_penstemon",
-    "jafohana:dayflower",
-    "jafohana:sea_holly"
+    "#jafohana:dye_ingredients/blue"
   ]
 }

@@ -7,7 +7,15 @@
   ],
   "type": "ars_nouveau:crush",
   "input": {
-    "item": "jafohana:cardinal_flower"
+    "type": "neoforge:intersection",
+    "children": [
+      {
+        "tag": "jafohana:dye_ingredients/red"
+      },
+      {
+        "tag": "jafohana:tall_flowers"
+      }
+    ]
   },
   "output": [
     {

@@ -7,16 +7,13 @@
   ],
   "type": "refurbished_furniture:cutting_board_slicing",
   "ingredient": {
-    "type": "neoforge:compound",
+    "type": "neoforge:intersection",
     "children": [
       {
-        "item": "jafohana:orange_marigold"
+        "tag": "jafohana:dye_ingredients/orange"
       },
       {
-        "item": "jafohana:gloriosa"
-      },
-      {
-        "item": "jafohana:bird_of_paradise"
+        "tag": "jafohana:tall_flowers"
       }
     ]
   },

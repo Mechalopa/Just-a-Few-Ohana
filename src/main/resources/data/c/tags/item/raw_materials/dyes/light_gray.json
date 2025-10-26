@@ -1,10 +1,6 @@
 {
   "replace": false,
   "values": [
-    "jafohana:asphodel",
-    "jafohana:fasciated_oxeye_daisy",
-    "jafohana:sego_lily",
-    "jafohana:spathiphyllum",
-    "jafohana:white_pansy"
+    "#jafohana:dye_ingredients/light_gray"
   ]
 }

@@ -9,22 +9,13 @@
   "fluidOut": {},
   "grinds": 4,
   "ingredient": {
-    "type": "neoforge:compound",
+    "type": "neoforge:intersection",
     "children": [
       {
-        "item": "jafohana:yellow_marigold"
+        "tag": "jafohana:dye_ingredients/yellow"
       },
       {
-        "item": "jafohana:fasciated_dandelion"
-      },
-      {
-        "item": "jafohana:alpine_ragwort"
-      },
-      {
-        "item": "jafohana:yellowflag_iris"
-      },
-      {
-        "item": "jafohana:princes_plume"
+        "tag": "jafohana:tall_flowers"
       }
     ]
   },

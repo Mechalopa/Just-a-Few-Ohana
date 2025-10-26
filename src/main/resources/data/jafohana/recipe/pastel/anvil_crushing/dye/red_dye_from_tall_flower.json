@@ -8,7 +8,15 @@
   "type": "pastel:anvil_crushing",
   "ingredient": [
     {
-      "item": "jafohana:cardinal_flower"
+      "type": "neoforge:intersection",
+      "children": [
+        {
+          "tag": "jafohana:dye_ingredients/red"
+        },
+        {
+          "tag": "jafohana:tall_flowers"
+        }
+      ]
     }
   ],
   "crushedItemsPerPointOfDamage": 2,

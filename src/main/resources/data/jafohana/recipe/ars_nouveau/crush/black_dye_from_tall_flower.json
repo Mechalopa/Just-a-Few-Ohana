@@ -7,7 +7,15 @@
   ],
   "type": "ars_nouveau:crush",
   "input": {
-    "item": "jafohana:black_bat_flower"
+    "type": "neoforge:intersection",
+    "children": [
+      {
+        "tag": "jafohana:dye_ingredients/black"
+      },
+      {
+        "tag": "jafohana:tall_flowers"
+      }
+    ]
   },
   "output": [
     {

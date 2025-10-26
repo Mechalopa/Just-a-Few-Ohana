@@ -8,13 +8,15 @@
   "type": "pastel:anvil_crushing",
   "ingredient": [
     {
-      "item": "jafohana:yellow_african_daisy"
-    },
-    {
-      "item": "jafohana:yellow_snapdragon"
-    },
-    {
-      "item": "jafohana:yellow_pansy"
+      "type": "neoforge:intersection",
+      "children": [
+        {
+          "tag": "jafohana:dye_ingredients/yellow"
+        },
+        {
+          "tag": "jafohana:small_flowers"
+        }
+      ]
     }
   ],
   "crushedItemsPerPointOfDamage": 2,

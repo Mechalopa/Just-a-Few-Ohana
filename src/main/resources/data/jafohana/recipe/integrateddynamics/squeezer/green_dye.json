@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "integrateddynamics"
+    }
+  ],
+  "type": "integrateddynamics:squeezer",
+  "input_item": {
+    "type": "neoforge:difference",
+    "base": {
+      "type": "neoforge:intersection",
+      "children": [
+        {
+          "tag": "jafohana:dye_ingredients/green"
+        },
+        {
+          "tag": "jafohana:small_flowers"
+        }
+      ]
+    },
+    "subtracted": {
+      "item": "jafohana:creepansy"
+    }
+  },
+  "output_items": [
+    {
+      "item": {
+        "count": 4,
+        "id": "minecraft:green_dye"
+      }
+    }
+  ]
+}

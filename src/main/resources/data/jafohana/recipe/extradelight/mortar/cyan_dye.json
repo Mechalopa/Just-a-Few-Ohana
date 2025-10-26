@@ -9,13 +9,21 @@
   "fluidOut": {},
   "grinds": 4,
   "ingredient": {
-    "type": "neoforge:compound",
+    "type": "neoforge:intersection",
     "children": [
       {
-        "item": "jafohana:jade_vine"
+        "tag": "jafohana:dye_ingredients/cyan"
       },
       {
-        "item": "jafohana:meconopsis"
+        "type": "neoforge:compound",
+        "children": [
+          {
+            "tag": "jafohana:small_flowers"
+          },
+          {
+            "tag": "jafohana:vine_flowers"
+          }
+        ]
       }
     ]
   },
