@@ -1,0 +1,33 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "modern_industrialization"
+    }
+  ],
+  "type": "modern_industrialization:macerator",
+  "duration": 100,
+  "eu": 2,
+  "item_inputs": {
+    "amount": 1,
+    "type": "neoforge:difference",
+    "base": {
+      "type": "neoforge:intersection",
+      "children": [
+        {
+          "tag": "jafohana:dye_ingredients/green"
+        },
+        {
+          "tag": "jafohana:small_flowers"
+        }
+      ]
+    },
+    "subtracted": {
+      "item": "jafohana:creepansy"
+    }
+  },
+  "item_outputs": {
+    "amount": 1,
+    "item": "minecraft:green_dye"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "modern_industrialization"
+    }
+  ],
+  "type": "modern_industrialization:macerator",
+  "duration": 100,
+  "eu": 2,
+  "item_inputs": {
+    "amount": 1,
+    "type": "neoforge:intersection",
+    "children": [
+      {
+        "tag": "jafohana:dye_ingredients/magenta"
+      },
+      {
+        "tag": "jafohana:small_flowers"
+      }
+    ]
+  },
+  "item_outputs": {
+    "amount": 1,
+    "item": "minecraft:magenta_dye"
+  }
+}
