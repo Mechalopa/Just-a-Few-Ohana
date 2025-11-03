@@ -12,6 +12,22 @@
     {
       "id": "bleak_and_barren:bushland",
       "required": false
+    },
+    {
+      "id": "clifftree:inferno",
+      "required": false
+    },
+    {
+      "id": "clifftree:shrubland",
+      "required": false
+    },
+    {
+      "id": "clifftree:oasis",
+      "required": false
+    },
+    {
+      "id": "clifftree:desert_cliff",
+      "required": false
     }
   ]
 }

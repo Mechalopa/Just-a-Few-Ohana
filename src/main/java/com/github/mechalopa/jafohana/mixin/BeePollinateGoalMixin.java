@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import com.github.mechalopa.jafohana.registry.ModBlocks;
+import com.github.mechalopa.jafohana.util.ModTags;
 
 import net.minecraft.world.entity.animal.Bee;
 import net.minecraft.world.level.block.DoublePlantBlock;
@@ -29,7 +29,7 @@ public class BeePollinateGoalMixin
 	private void jafohana_init(Bee bee, CallbackInfo info)
 	{
 		VALID_POLLINATION_BLOCKS = VALID_POLLINATION_BLOCKS.and(state -> {
-			return (state.is(ModBlocks.BLACK_BAT_FLOWER.get()) || state.is(ModBlocks.BIRD_OF_PARADISE.get()) || state.is(ModBlocks.WORSLEYA.get()) || state.is(ModBlocks.FIREWEED.get()) || state.is(ModBlocks.ALPINE_RAGWORT.get()) || state.is(ModBlocks.TATARIAN_ASTER.get()) || state.is(ModBlocks.FASCIATED_DANDELION.get())) ? state.getValue(DoublePlantBlock.HALF) == DoubleBlockHalf.UPPER : true;
+			return (state.is(ModTags.BlockTags.BEE_ATTRACTIVE_UPPER_ONLY) && state.hasProperty(DoublePlantBlock.HALF)) ? state.getValue(DoublePlantBlock.HALF) == DoubleBlockHalf.UPPER : true;
 		});
 	}
 }

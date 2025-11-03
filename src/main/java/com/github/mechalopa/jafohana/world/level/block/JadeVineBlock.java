@@ -12,6 +12,7 @@ import com.github.mechalopa.jafohana.world.level.block.state.properties.ModBlock
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
@@ -87,10 +88,11 @@ public class JadeVineBlock extends Block implements BonemealableBlock
 	}
 
 	@Override
-	public boolean canSurvive(BlockState state, LevelReader levelReader, BlockPos pos)
+	public boolean canSurvive(BlockState state, LevelReader level, BlockPos pos)
 	{
-		BlockState state1 = levelReader.getBlockState(pos.above());
-		return state1.is(this) || state1.is(ModTags.BlockTags.JADE_VINE_PLANTABLE_ON);
+		BlockPos pos1 = pos.above();
+		BlockState state1 = level.getBlockState(pos1);
+		return state1.is(this) || (state1.is(ModTags.BlockTags.JADE_VINE_PLANTABLE_ON) && (state1.is(BlockTags.LEAVES) || state1.isFaceSturdy(level, pos1, Direction.DOWN)));
 	}
 
 	@Nullable
