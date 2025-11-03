@@ -44,6 +44,10 @@
     {
       "id": "bleak_and_barren:frozen_wasteland",
       "required": false
+    },
+    {
+      "id": "clifftree:inferno",
+      "required": false
     }
   ]
 }
