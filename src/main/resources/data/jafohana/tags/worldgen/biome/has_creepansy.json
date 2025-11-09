@@ -4,6 +4,10 @@
     {
       "id": "blasted_barrens:blasted_barrens",
       "required": false
+    },
+    {
+      "id": "aoa3:creepoid_forest",
+      "required": false
     }
   ]
 }
