@@ -10,6 +10,30 @@
     {
       "id": "blasted_barrens:ashen_sand",
       "required": false
+    },
+    {
+      "id": "aoa3:creep_stone",
+      "required": false
+    },
+    {
+      "id": "aoa3:pressed_creep_stone",
+      "required": false
+    },
+    {
+      "id": "aoa3:primed_stone",
+      "required": false
+    },
+    {
+      "id": "aoa3:gemenyte_ore",
+      "required": false
+    },
+    {
+      "id": "aoa3:jewelyte_ore",
+      "required": false
+    },
+    {
+      "id": "aoa3:ornamyte_ore",
+      "required": false
     }
   ]
 }
