@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "kaleidoscope_cookery"
+    }
+  ],
+  "type": "kaleidoscope_cookery:millstone",
+  "ingredient": {
+    "type": "neoforge:intersection",
+    "children": [
+      {
+        "tag": "jafohana:dye_ingredients/blue"
+      },
+      {
+        "tag": "jafohana:tall_flowers"
+      }
+    ]
+  },
+  "result": {
+    "count": 3,
+    "id": "minecraft:blue_dye"
+  }
+}
