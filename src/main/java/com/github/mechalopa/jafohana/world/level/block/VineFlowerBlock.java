@@ -34,9 +34,9 @@ public class VineFlowerBlock extends Block implements BonemealableBlock
 {
 	public static final EnumProperty<VineFlowerPart> PART = ModBlockStateProperties.VINE_FLOWER_PART;
 
-	public VineFlowerBlock()
+	public VineFlowerBlock(BlockBehaviour.Properties properties)
 	{
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.CAVE_VINES).offsetType(BlockBehaviour.OffsetType.XZ).ignitedByLava().pushReaction(PushReaction.DESTROY));
+		super(properties);
 		this.registerDefaultState(this.stateDefinition.any().setValue(PART, VineFlowerPart.SINGLE));
 	}
 
@@ -211,5 +211,10 @@ public class VineFlowerBlock extends Block implements BonemealableBlock
 	public int getFireSpreadSpeed(BlockState state, BlockGetter getter, BlockPos pos, Direction direction)
 	{
 		return 15;
+	}
+
+	public static Block create()
+	{
+		return new VineFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.CAVE_VINES).offsetType(BlockBehaviour.OffsetType.XZ).ignitedByLava().pushReaction(PushReaction.DESTROY));
 	}
 }

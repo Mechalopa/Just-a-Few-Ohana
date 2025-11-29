@@ -8,6 +8,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -16,74 +17,84 @@ public class ModItems
 {
 	private static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(Registries.ITEM, JAFOhana.MODID);
 
-	public static final Supplier<Item> DAYFLOWER = REGISTRY.register("dayflower", () -> new BlockItem(ModBlocks.DAYFLOWER.get(), new Item.Properties()));
-	public static final Supplier<Item> EVENING_PRIMROSE = REGISTRY.register("evening_primrose", () -> new BlockItem(ModBlocks.EVENING_PRIMROSE.get(), new Item.Properties()));
-	public static final Supplier<Item> MILK_VETCH = REGISTRY.register("milk_vetch", () -> new BlockItem(ModBlocks.MILK_VETCH.get(), new Item.Properties()));
-	public static final Supplier<Item> FORGET_ME_NOT = REGISTRY.register("forget_me_not", () -> new BlockItem(ModBlocks.FORGET_ME_NOT.get(), new Item.Properties()));
-	public static final Supplier<Item> YELLOW_AFRICAN_DAISY = REGISTRY.register("yellow_african_daisy", () -> new BlockItem(ModBlocks.YELLOW_AFRICAN_DAISY.get(), new Item.Properties()));
-	public static final Supplier<Item> PINK_AFRICAN_DAISY = REGISTRY.register("pink_african_daisy", () -> new BlockItem(ModBlocks.PINK_AFRICAN_DAISY.get(), new Item.Properties()));
-	public static final Supplier<Item> WHITE_AFRICAN_DAISY = REGISTRY.register("white_african_daisy", () -> new BlockItem(ModBlocks.WHITE_AFRICAN_DAISY.get(), new Item.Properties()));
-	public static final Supplier<Item> BLACK_TULIP = REGISTRY.register("black_tulip", () -> new BlockItem(ModBlocks.BLACK_TULIP.get(), new Item.Properties()));
-	public static final Supplier<Item> GREEN_TULIP = REGISTRY.register("green_tulip", () -> new BlockItem(ModBlocks.GREEN_TULIP.get(), new Item.Properties()));
-	public static final Supplier<Item> BLOOD_RED_IRIS = REGISTRY.register("blood_red_iris", () -> new BlockItem(ModBlocks.BLOOD_RED_IRIS.get(), new Item.Properties()));
-	public static final Supplier<Item> RED_SNAPDRAGON = REGISTRY.register("red_snapdragon", () -> new BlockItem(ModBlocks.RED_SNAPDRAGON.get(), new Item.Properties()));
-	public static final Supplier<Item> YELLOW_SNAPDRAGON = REGISTRY.register("yellow_snapdragon", () -> new BlockItem(ModBlocks.YELLOW_SNAPDRAGON.get(), new Item.Properties()));
-	public static final Supplier<Item> PINK_SNAPDRAGON = REGISTRY.register("pink_snapdragon", () -> new BlockItem(ModBlocks.PINK_SNAPDRAGON.get(), new Item.Properties()));
-	public static final Supplier<Item> WHITE_EGRET_ORCHID = REGISTRY.register("white_egret_orchid", () -> new BlockItem(ModBlocks.WHITE_EGRET_ORCHID.get(), new Item.Properties()));
-	public static final Supplier<Item> ORANGE_SPIDER_LILY = REGISTRY.register("orange_spider_lily", () -> new BlockItem(ModBlocks.ORANGE_SPIDER_LILY.get(), new Item.Properties()));
-	public static final Supplier<Item> PEPPERMINT_SPIDER_LILY = REGISTRY.register("peppermint_spider_lily", () -> new BlockItem(ModBlocks.PEPPERMINT_SPIDER_LILY.get(), new Item.Properties()));
-	public static final Supplier<Item> DANCING_LADIES_GINGER = REGISTRY.register("dancing_ladies_ginger", () -> new BlockItem(ModBlocks.DANCING_LADIES_GINGER.get(), new Item.Properties()));
-	public static final Supplier<Item> FIREBALL_LILY = REGISTRY.register("fireball_lily", () -> new BlockItem(ModBlocks.FIREBALL_LILY.get(), new Item.Properties()));
-	public static final Supplier<Item> SPATHIPHYLLUM = REGISTRY.register("spathiphyllum", () -> new BlockItem(ModBlocks.SPATHIPHYLLUM.get(), new Item.Properties()));
-	public static final Supplier<Item> PURPLE_PANSY = REGISTRY.register("purple_pansy", () -> new BlockItem(ModBlocks.PURPLE_PANSY.get(), new Item.Properties()));
-	public static final Supplier<Item> WHITE_PANSY = REGISTRY.register("white_pansy", () -> new BlockItem(ModBlocks.WHITE_PANSY.get(), new Item.Properties()));
-	public static final Supplier<Item> YELLOW_PANSY = REGISTRY.register("yellow_pansy", () -> new BlockItem(ModBlocks.YELLOW_PANSY.get(), new Item.Properties()));
-	public static final Supplier<Item> CREEPANSY = REGISTRY.register("creepansy", () -> new BlockItem(ModBlocks.CREEPANSY.get(), new Item.Properties()));
-	public static final Supplier<Item> SNOWDROP = REGISTRY.register("snowdrop", () -> new BlockItem(ModBlocks.SNOWDROP.get(), new Item.Properties()));
-	public static final Supplier<Item> WINTER_HEATH = REGISTRY.register("winter_heath", () -> new BlockItem(ModBlocks.WINTER_HEATH.get(), new Item.Properties()));
-	public static final Supplier<Item> BLUE_DAISY = REGISTRY.register("blue_daisy", () -> new BlockItem(ModBlocks.BLUE_DAISY.get(), new Item.Properties()));
-	public static final Supplier<Item> CRIMSON_CLOVER = REGISTRY.register("crimson_clover", () -> new BlockItem(ModBlocks.CRIMSON_CLOVER.get(), new Item.Properties()));
-	public static final Supplier<Item> FOX_AND_CUBS = REGISTRY.register("fox_and_cubs", () -> new BlockItem(ModBlocks.FOX_AND_CUBS.get(), new Item.Properties()));
-	public static final Supplier<Item> PINK_HAWKS_BEARD = REGISTRY.register("pink_hawks_beard", () -> new BlockItem(ModBlocks.PINK_HAWKS_BEARD.get(), new Item.Properties()));
-	public static final Supplier<Item> LADIES_TRESSES = REGISTRY.register("ladies_tresses", () -> new BlockItem(ModBlocks.LADIES_TRESSES.get(), new Item.Properties()));
-	public static final Supplier<Item> APRICOT_MALLOW = REGISTRY.register("apricot_mallow", () -> new BlockItem(ModBlocks.APRICOT_MALLOW.get(), new Item.Properties()));
-	public static final Supplier<Item> BLUESTEM_PENSTEMON = REGISTRY.register("bluestem_penstemon", () -> new BlockItem(ModBlocks.BLUESTEM_PENSTEMON.get(), new Item.Properties()));
-	public static final Supplier<Item> FIRECRACKER_PENSTEMON = REGISTRY.register("firecracker_penstemon", () -> new BlockItem(ModBlocks.FIRECRACKER_PENSTEMON.get(), new Item.Properties()));
-	public static final Supplier<Item> SEGO_LILY = REGISTRY.register("sego_lily", () -> new BlockItem(ModBlocks.SEGO_LILY.get(), new Item.Properties()));
-	public static final Supplier<Item> SEA_HOLLY = REGISTRY.register("sea_holly", () -> new BlockItem(ModBlocks.SEA_HOLLY.get(), new Item.Properties()));
-	public static final Supplier<Item> SEA_THRIFT = REGISTRY.register("sea_thrift", () -> new BlockItem(ModBlocks.SEA_THRIFT.get(), new Item.Properties()));
-	public static final Supplier<Item> HAREBELL = REGISTRY.register("harebell", () -> new BlockItem(ModBlocks.HAREBELL.get(), new Item.Properties()));
-	public static final Supplier<Item> MECONOPSIS = REGISTRY.register("meconopsis", () -> new BlockItem(ModBlocks.MECONOPSIS.get(), new Item.Properties()));
-	public static final Supplier<Item> WHEEL_LILY = REGISTRY.register("wheel_lily", () -> new BlockItem(ModBlocks.WHEEL_LILY.get(), new Item.Properties()));
-	public static final Supplier<Item> JACK_IN_THE_PULPIT = REGISTRY.register("jack_in_the_pulpit", () -> new BlockItem(ModBlocks.JACK_IN_THE_PULPIT.get(), new Item.Properties()));
-	public static final Supplier<Item> RED_SPIDER_LILY = REGISTRY.register("red_spider_lily", () -> new BlockItem(ModBlocks.RED_SPIDER_LILY.get(), new Item.Properties()));
-	public static final Supplier<Item> BELLS_OF_IRELAND = REGISTRY.register("bells_of_ireland", () -> new BlockItem(ModBlocks.BELLS_OF_IRELAND.get(), new Item.Properties()));
-	public static final Supplier<Item> BEACH_SPIDER_LILY = REGISTRY.register("beach_spider_lily", () -> new BlockItem(ModBlocks.BEACH_SPIDER_LILY.get(), new Item.Properties()));
-	public static final Supplier<Item> ORANGE_MARIGOLD = REGISTRY.register("orange_marigold", () -> new DoubleHighBlockItem(ModBlocks.ORANGE_MARIGOLD.get(), new Item.Properties()));
-	public static final Supplier<Item> YELLOW_MARIGOLD = REGISTRY.register("yellow_marigold", () -> new DoubleHighBlockItem(ModBlocks.YELLOW_MARIGOLD.get(), new Item.Properties()));
-	public static final Supplier<Item> GLORIOSA = REGISTRY.register("gloriosa", () -> new DoubleHighBlockItem(ModBlocks.GLORIOSA.get(), new Item.Properties()));
-	public static final Supplier<Item> BLACK_BAT_FLOWER = REGISTRY.register("black_bat_flower", () -> new DoubleHighBlockItem(ModBlocks.BLACK_BAT_FLOWER.get(), new Item.Properties()));
-	public static final Supplier<Item> BIRD_OF_PARADISE = REGISTRY.register("bird_of_paradise", () -> new DoubleHighBlockItem(ModBlocks.BIRD_OF_PARADISE.get(), new Item.Properties()));
-	public static final Supplier<Item> BRAZILIAN_PLUME = REGISTRY.register("brazilian_plume", () -> new DoubleHighBlockItem(ModBlocks.BRAZILIAN_PLUME.get(), new Item.Properties()));
-	public static final Supplier<Item> WORSLEYA = REGISTRY.register("worsleya", () -> new DoubleHighBlockItem(ModBlocks.WORSLEYA.get(), new Item.Properties()));
-	public static final Supplier<Item> OAKLEAF_HYDRANGEA = REGISTRY.register("oakleaf_hydrangea", () -> new DoubleHighBlockItem(ModBlocks.OAKLEAF_HYDRANGEA.get(), new Item.Properties()));
-	public static final Supplier<Item> BLUE_CEANOTHUS = REGISTRY.register("blue_ceanothus", () -> new DoubleHighBlockItem(ModBlocks.BLUE_CEANOTHUS.get(), new Item.Properties()));
-	public static final Supplier<Item> PURPLE_CEANOTHUS = REGISTRY.register("purple_ceanothus", () -> new DoubleHighBlockItem(ModBlocks.PURPLE_CEANOTHUS.get(), new Item.Properties()));
-	public static final Supplier<Item> ASPHODEL = REGISTRY.register("asphodel", () -> new DoubleHighBlockItem(ModBlocks.ASPHODEL.get(), new Item.Properties()));
-	public static final Supplier<Item> FIREWEED = REGISTRY.register("fireweed", () -> new DoubleHighBlockItem(ModBlocks.FIREWEED.get(), new Item.Properties()));
-	public static final Supplier<Item> ALPINE_RAGWORT = REGISTRY.register("alpine_ragwort", () -> new DoubleHighBlockItem(ModBlocks.ALPINE_RAGWORT.get(), new Item.Properties()));
-	public static final Supplier<Item> TATARIAN_ASTER = REGISTRY.register("tatarian_aster", () -> new DoubleHighBlockItem(ModBlocks.TATARIAN_ASTER.get(), new Item.Properties()));
-	public static final Supplier<Item> CARDINAL_FLOWER = REGISTRY.register("cardinal_flower", () -> new DoubleHighBlockItem(ModBlocks.CARDINAL_FLOWER.get(), new Item.Properties()));
-	public static final Supplier<Item> YELLOWFLAG_IRIS = REGISTRY.register("yellowflag_iris", () -> new DoubleHighBlockItem(ModBlocks.YELLOWFLAG_IRIS.get(), new Item.Properties()));
-	public static final Supplier<Item> PRINCES_PLUME = REGISTRY.register("princes_plume", () -> new DoubleHighBlockItem(ModBlocks.PRINCES_PLUME.get(), new Item.Properties()));
-	public static final Supplier<Item> FASCIATED_DANDELION = REGISTRY.register("fasciated_dandelion", () -> new DoubleHighBlockItem(ModBlocks.FASCIATED_DANDELION.get(), new Item.Properties()));
-	public static final Supplier<Item> FASCIATED_OXEYE_DAISY = REGISTRY.register("fasciated_oxeye_daisy", () -> new DoubleHighBlockItem(ModBlocks.FASCIATED_OXEYE_DAISY.get(), new Item.Properties()));
-	public static final Supplier<Item> JADE_VINE = REGISTRY.register("jade_vine", () -> new BlockItem(ModBlocks.JADE_VINE.get(), new Item.Properties()));
+	public static final Supplier<Item> DAYFLOWER = REGISTRY.register("dayflower", () -> createBlockItem(ModBlocks.DAYFLOWER.get()));
+	public static final Supplier<Item> EVENING_PRIMROSE = REGISTRY.register("evening_primrose", () -> createBlockItem(ModBlocks.EVENING_PRIMROSE.get()));
+	public static final Supplier<Item> MILK_VETCH = REGISTRY.register("milk_vetch", () -> createBlockItem(ModBlocks.MILK_VETCH.get()));
+	public static final Supplier<Item> FORGET_ME_NOT = REGISTRY.register("forget_me_not", () -> createBlockItem(ModBlocks.FORGET_ME_NOT.get()));
+	public static final Supplier<Item> YELLOW_AFRICAN_DAISY = REGISTRY.register("yellow_african_daisy", () -> createBlockItem(ModBlocks.YELLOW_AFRICAN_DAISY.get()));
+	public static final Supplier<Item> PINK_AFRICAN_DAISY = REGISTRY.register("pink_african_daisy", () -> createBlockItem(ModBlocks.PINK_AFRICAN_DAISY.get()));
+	public static final Supplier<Item> WHITE_AFRICAN_DAISY = REGISTRY.register("white_african_daisy", () -> createBlockItem(ModBlocks.WHITE_AFRICAN_DAISY.get()));
+	public static final Supplier<Item> BLACK_TULIP = REGISTRY.register("black_tulip", () -> createBlockItem(ModBlocks.BLACK_TULIP.get()));
+	public static final Supplier<Item> GREEN_TULIP = REGISTRY.register("green_tulip", () -> createBlockItem(ModBlocks.GREEN_TULIP.get()));
+	public static final Supplier<Item> BLOOD_RED_IRIS = REGISTRY.register("blood_red_iris", () -> createBlockItem(ModBlocks.BLOOD_RED_IRIS.get()));
+	public static final Supplier<Item> RED_SNAPDRAGON = REGISTRY.register("red_snapdragon", () -> createBlockItem(ModBlocks.RED_SNAPDRAGON.get()));
+	public static final Supplier<Item> YELLOW_SNAPDRAGON = REGISTRY.register("yellow_snapdragon", () -> createBlockItem(ModBlocks.YELLOW_SNAPDRAGON.get()));
+	public static final Supplier<Item> PINK_SNAPDRAGON = REGISTRY.register("pink_snapdragon", () -> createBlockItem(ModBlocks.PINK_SNAPDRAGON.get()));
+	public static final Supplier<Item> WHITE_EGRET_ORCHID = REGISTRY.register("white_egret_orchid", () -> createBlockItem(ModBlocks.WHITE_EGRET_ORCHID.get()));
+	public static final Supplier<Item> ORANGE_SPIDER_LILY = REGISTRY.register("orange_spider_lily", () -> createBlockItem(ModBlocks.ORANGE_SPIDER_LILY.get()));
+	public static final Supplier<Item> PEPPERMINT_SPIDER_LILY = REGISTRY.register("peppermint_spider_lily", () -> createBlockItem(ModBlocks.PEPPERMINT_SPIDER_LILY.get()));
+	public static final Supplier<Item> DANCING_LADIES_GINGER = REGISTRY.register("dancing_ladies_ginger", () -> createBlockItem(ModBlocks.DANCING_LADIES_GINGER.get()));
+	public static final Supplier<Item> FIREBALL_LILY = REGISTRY.register("fireball_lily", () -> createBlockItem(ModBlocks.FIREBALL_LILY.get()));
+	public static final Supplier<Item> SPATHIPHYLLUM = REGISTRY.register("spathiphyllum", () -> createBlockItem(ModBlocks.SPATHIPHYLLUM.get()));
+	public static final Supplier<Item> PURPLE_PANSY = REGISTRY.register("purple_pansy", () -> createBlockItem(ModBlocks.PURPLE_PANSY.get()));
+	public static final Supplier<Item> WHITE_PANSY = REGISTRY.register("white_pansy", () -> createBlockItem(ModBlocks.WHITE_PANSY.get()));
+	public static final Supplier<Item> YELLOW_PANSY = REGISTRY.register("yellow_pansy", () -> createBlockItem(ModBlocks.YELLOW_PANSY.get()));
+	public static final Supplier<Item> CREEPANSY = REGISTRY.register("creepansy", () -> createBlockItem(ModBlocks.CREEPANSY.get()));
+	public static final Supplier<Item> SNOWDROP = REGISTRY.register("snowdrop", () -> createBlockItem(ModBlocks.SNOWDROP.get()));
+	public static final Supplier<Item> WINTER_HEATH = REGISTRY.register("winter_heath", () -> createBlockItem(ModBlocks.WINTER_HEATH.get()));
+	public static final Supplier<Item> BLUE_DAISY = REGISTRY.register("blue_daisy", () -> createBlockItem(ModBlocks.BLUE_DAISY.get()));
+	public static final Supplier<Item> CRIMSON_CLOVER = REGISTRY.register("crimson_clover", () -> createBlockItem(ModBlocks.CRIMSON_CLOVER.get()));
+	public static final Supplier<Item> FOX_AND_CUBS = REGISTRY.register("fox_and_cubs", () -> createBlockItem(ModBlocks.FOX_AND_CUBS.get()));
+	public static final Supplier<Item> PINK_HAWKS_BEARD = REGISTRY.register("pink_hawks_beard", () -> createBlockItem(ModBlocks.PINK_HAWKS_BEARD.get()));
+	public static final Supplier<Item> LADIES_TRESSES = REGISTRY.register("ladies_tresses", () -> createBlockItem(ModBlocks.LADIES_TRESSES.get()));
+	public static final Supplier<Item> APRICOT_MALLOW = REGISTRY.register("apricot_mallow", () -> createBlockItem(ModBlocks.APRICOT_MALLOW.get()));
+	public static final Supplier<Item> BLUESTEM_PENSTEMON = REGISTRY.register("bluestem_penstemon", () -> createBlockItem(ModBlocks.BLUESTEM_PENSTEMON.get()));
+	public static final Supplier<Item> FIRECRACKER_PENSTEMON = REGISTRY.register("firecracker_penstemon", () -> createBlockItem(ModBlocks.FIRECRACKER_PENSTEMON.get()));
+	public static final Supplier<Item> SEGO_LILY = REGISTRY.register("sego_lily", () -> createBlockItem(ModBlocks.SEGO_LILY.get()));
+	public static final Supplier<Item> SEA_HOLLY = REGISTRY.register("sea_holly", () -> createBlockItem(ModBlocks.SEA_HOLLY.get()));
+	public static final Supplier<Item> SEA_THRIFT = REGISTRY.register("sea_thrift", () -> createBlockItem(ModBlocks.SEA_THRIFT.get()));
+	public static final Supplier<Item> HAREBELL = REGISTRY.register("harebell", () -> createBlockItem(ModBlocks.HAREBELL.get()));
+	public static final Supplier<Item> MECONOPSIS = REGISTRY.register("meconopsis", () -> createBlockItem(ModBlocks.MECONOPSIS.get()));
+	public static final Supplier<Item> WHEEL_LILY = REGISTRY.register("wheel_lily", () -> createBlockItem(ModBlocks.WHEEL_LILY.get()));
+	public static final Supplier<Item> JACK_IN_THE_PULPIT = REGISTRY.register("jack_in_the_pulpit", () -> createBlockItem(ModBlocks.JACK_IN_THE_PULPIT.get()));
+	public static final Supplier<Item> RED_SPIDER_LILY = REGISTRY.register("red_spider_lily", () -> createBlockItem(ModBlocks.RED_SPIDER_LILY.get()));
+	public static final Supplier<Item> BELLS_OF_IRELAND = REGISTRY.register("bells_of_ireland", () -> createBlockItem(ModBlocks.BELLS_OF_IRELAND.get()));
+	public static final Supplier<Item> BEACH_SPIDER_LILY = REGISTRY.register("beach_spider_lily", () -> createBlockItem(ModBlocks.BEACH_SPIDER_LILY.get()));
+	public static final Supplier<Item> ORANGE_MARIGOLD = REGISTRY.register("orange_marigold", () -> createDoubleHighBlockItem(ModBlocks.ORANGE_MARIGOLD.get()));
+	public static final Supplier<Item> YELLOW_MARIGOLD = REGISTRY.register("yellow_marigold", () -> createDoubleHighBlockItem(ModBlocks.YELLOW_MARIGOLD.get()));
+	public static final Supplier<Item> GLORIOSA = REGISTRY.register("gloriosa", () -> createDoubleHighBlockItem(ModBlocks.GLORIOSA.get()));
+	public static final Supplier<Item> BLACK_BAT_FLOWER = REGISTRY.register("black_bat_flower", () -> createDoubleHighBlockItem(ModBlocks.BLACK_BAT_FLOWER.get()));
+	public static final Supplier<Item> BIRD_OF_PARADISE = REGISTRY.register("bird_of_paradise", () -> createDoubleHighBlockItem(ModBlocks.BIRD_OF_PARADISE.get()));
+	public static final Supplier<Item> BRAZILIAN_PLUME = REGISTRY.register("brazilian_plume", () -> createDoubleHighBlockItem(ModBlocks.BRAZILIAN_PLUME.get()));
+	public static final Supplier<Item> WORSLEYA = REGISTRY.register("worsleya", () -> createDoubleHighBlockItem(ModBlocks.WORSLEYA.get()));
+	public static final Supplier<Item> OAKLEAF_HYDRANGEA = REGISTRY.register("oakleaf_hydrangea", () -> createDoubleHighBlockItem(ModBlocks.OAKLEAF_HYDRANGEA.get()));
+	public static final Supplier<Item> BLUE_CEANOTHUS = REGISTRY.register("blue_ceanothus", () -> createDoubleHighBlockItem(ModBlocks.BLUE_CEANOTHUS.get()));
+	public static final Supplier<Item> PURPLE_CEANOTHUS = REGISTRY.register("purple_ceanothus", () -> createDoubleHighBlockItem(ModBlocks.PURPLE_CEANOTHUS.get()));
+	public static final Supplier<Item> ASPHODEL = REGISTRY.register("asphodel", () -> createDoubleHighBlockItem(ModBlocks.ASPHODEL.get()));
+	public static final Supplier<Item> FIREWEED = REGISTRY.register("fireweed", () -> createDoubleHighBlockItem(ModBlocks.FIREWEED.get()));
+	public static final Supplier<Item> ALPINE_RAGWORT = REGISTRY.register("alpine_ragwort", () -> createDoubleHighBlockItem(ModBlocks.ALPINE_RAGWORT.get()));
+	public static final Supplier<Item> TATARIAN_ASTER = REGISTRY.register("tatarian_aster", () -> createDoubleHighBlockItem(ModBlocks.TATARIAN_ASTER.get()));
+	public static final Supplier<Item> CARDINAL_FLOWER = REGISTRY.register("cardinal_flower", () -> createDoubleHighBlockItem(ModBlocks.CARDINAL_FLOWER.get()));
+	public static final Supplier<Item> YELLOWFLAG_IRIS = REGISTRY.register("yellowflag_iris", () -> createDoubleHighBlockItem(ModBlocks.YELLOWFLAG_IRIS.get()));
+	public static final Supplier<Item> PRINCES_PLUME = REGISTRY.register("princes_plume", () -> createDoubleHighBlockItem(ModBlocks.PRINCES_PLUME.get()));
+	public static final Supplier<Item> FASCIATED_DANDELION = REGISTRY.register("fasciated_dandelion", () -> createDoubleHighBlockItem(ModBlocks.FASCIATED_DANDELION.get()));
+	public static final Supplier<Item> FASCIATED_OXEYE_DAISY = REGISTRY.register("fasciated_oxeye_daisy", () -> createDoubleHighBlockItem(ModBlocks.FASCIATED_OXEYE_DAISY.get()));
+	public static final Supplier<Item> JADE_VINE = REGISTRY.register("jade_vine", () -> createBlockItem(ModBlocks.JADE_VINE.get()));
 
 	@SubscribeEvent
 	public static void register(IEventBus eventBus)
 	{
 		REGISTRY.register(eventBus);
+	}
+
+	private static BlockItem createBlockItem(Block block)
+	{
+		return new BlockItem(block, new Item.Properties());
+	}
+
+	private static DoubleHighBlockItem createDoubleHighBlockItem(Block block)
+	{
+		return new DoubleHighBlockItem(block, new Item.Properties());
 	}
 
 	public static DeferredRegister<Item> getItemRegistry()
