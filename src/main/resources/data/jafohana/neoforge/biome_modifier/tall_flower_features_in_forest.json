@@ -13,9 +13,9 @@
             "minecraft:flower_forest",
             "#jafohana:is_cold",
             "#jafohana:is_birch_forest",
+            "#jafohana:is_pale_garden",
             "#jafohana:is_jungle",
-            "#jafohana:is_dead_or_wasteland",
-            "#jafohana:vanillabackport/pale_garden"
+            "#jafohana:is_dead_or_wasteland"
           ]
         }
       }

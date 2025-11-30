@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "minecraft:pale_garden",
+      "required": false
+    },
+    {
+      "id": "#c:is_pale_garden",
+      "required": false
+    },
+    {
+      "id": "#c:pale_garden",
+      "required": false
+    }
+  ]
+}

@@ -8,6 +8,14 @@
     {
       "id": "#c:old_growth",
       "required": false
+    },
+    {
+      "id": "wilderness:old_growth_forest",
+      "required": false
+    },
+    {
+      "id": "clifftree:snowy_old_growth_taiga",
+      "required": false
     }
   ]
 }
