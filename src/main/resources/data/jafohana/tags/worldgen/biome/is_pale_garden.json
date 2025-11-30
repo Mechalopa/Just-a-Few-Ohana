@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "minecraft:pale_garden",
+      "required": false
+    },
+    {
+      "id": "#forge:is_pale_garden",
+      "required": false
+    }
+  ]
+}

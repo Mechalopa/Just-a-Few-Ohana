@@ -16,6 +16,10 @@
         "name": "#jafohana:is_spooky"
       },
       {
+        "name": "#jafohana:is_pale_garden",
+        "negate": true
+      },
+      {
         "name": "#jafohana:biomesoplenty/ominous_woods",
         "negate": true
       }
@@ -33,6 +37,10 @@
       },
       {
         "name": "#jafohana:is_spooky"
+      },
+      {
+        "name": "#jafohana:is_pale_garden",
+        "negate": true
       },
       {
         "name": "#jafohana:biomesoplenty/ominous_woods",
