@@ -6,6 +6,7 @@
     }
   ],
   "type": "mechanical_botany:insolating",
+  "consume_input": false,
   "ingredients": [
     {
       "type": "fluid_stack",
@@ -18,10 +19,6 @@
   ],
   "processing_time": 3200,
   "results": [
-    {
-      "count": 1,
-      "id": "jafohana:fasciated_dandelion"
-    },
     {
       "count": 1,
       "id": "minecraft:dandelion"
