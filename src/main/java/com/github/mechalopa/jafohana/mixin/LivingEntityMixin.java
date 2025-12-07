@@ -5,6 +5,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
+import com.github.mechalopa.jafohana.ModConfigs;
 import com.github.mechalopa.jafohana.registry.ModBlocks;
 import com.github.mechalopa.jafohana.util.ModTags;
 
@@ -32,20 +33,20 @@ public abstract class LivingEntityMixin extends Entity
 	@Inject(method = "Lnet/minecraft/world/entity/LivingEntity;createWitherRose(Lnet/minecraft/world/entity/LivingEntity;)V", at = @At(value = "INVOKE", target="Lnet/minecraft/world/level/block/Block;defaultBlockState()Lnet/minecraft/world/level/block/state/BlockState;", shift = At.Shift.BEFORE), cancellable = true)
 	public void jafohana_createWitherRose(LivingEntity entitySource, CallbackInfo info)
 	{
-		if (convertNearestFlower(this.level(), this.blockPosition(), this.getRandom(), 5.0D))
+		if (convertNearestFlower(this.level(), this.blockPosition(), this.getRandom(), ModConfigs.cachedServer.ROSE_BUSH_WITHERING_DISTANCE))
 		{
 			info.cancel();
 		}
 	}
 
-	private static boolean convertNearestFlower(Level level, BlockPos blockpos, RandomSource random, double distance)
+	private static boolean convertNearestFlower(Level level, BlockPos blockpos, RandomSource random, int distance)
 	{
 		BlockState witherRoseBushState = ModBlocks.WITHER_ROSE_BUSH.get().defaultBlockState();
 		BlockPos.MutableBlockPos mutableblockpos = new BlockPos.MutableBlockPos();
 
-		for (int i = 0; (double)i <= distance; i = i > 0 ? -i : 1 - i)
+		for (int i = 0; i <= distance; i = i > 0 ? -i : 1 - i)
 		{
-			for (int j = 0; (double)j < distance; j++)
+			for (int j = 0; j < distance; j++)
 			{
 				for (int k = 0; k <= j; k = k > 0 ? -k : 1 - k)
 				{
@@ -53,7 +54,7 @@ public abstract class LivingEntityMixin extends Entity
 					{
 						mutableblockpos.setWithOffset(blockpos, k, i - 1, l);
 
-						if (blockpos.closerThan(mutableblockpos, distance))
+						if (blockpos.closerThan(mutableblockpos, (double)distance))
 						{
 							BlockPos blockpos1 = mutableblockpos.immutable();
 							BlockState state = level.getBlockState(blockpos1);

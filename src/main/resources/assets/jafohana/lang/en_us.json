@@ -119,8 +119,9 @@
   "jafohana.configuration.dandelionFasciationChance": "Dandelion fasciation chance",
   "jafohana.configuration.oxeyeDaisyFasciationChance": "Oxeye daisy fasciation chance",
   "jafohana.configuration.creepansyConvertChance": "Creepansy convert chance",
-  "jafohana.configuration.vineFlowerGrowChance": "Vine flower grow chance",
+  "jafohana.configuration.roseBushWitheringDistance": "Rose bush withering distance",
   "jafohana.configuration.witherRoseBushDuplicateChanceWhenUsingBoneMeal": "Wither rose bush duplicate chance when using bone meal",
   "jafohana.configuration.witherRoseBushDropsNormalWitherRoseWhenUsingBoneMeal": "Wither rose bush drops normal wither rose when using bone meal",
+  "jafohana.configuration.vineFlowerGrowChance": "Vine flower grow chance",
   "jafohana.configuration.additionalWandererTrades": "Additional wanderer trades"
 }
