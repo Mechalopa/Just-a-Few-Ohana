@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "botanypots"
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "jafohana:wither_rose_bush",
+  "input": {
+    "item": "jafohana:wither_rose_bush"
+  },
+  "soil": {
+    "type": "bookshelf:either",
+    "fabric:type": "bookshelf:either",
+    "ingredients": [
+      {
+        "tag": "botanypots:soil/dirt"
+      },
+      {
+        "tag": "botanypots:soil/soul_sand"
+      }
+    ]
+  }
+}

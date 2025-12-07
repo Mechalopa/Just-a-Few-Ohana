@@ -18,6 +18,7 @@ import com.github.mechalopa.jafohana.world.level.block.ModFlowerPotBlock;
 import com.github.mechalopa.jafohana.world.level.block.ModTallFlowerBlock;
 import com.github.mechalopa.jafohana.world.level.block.RedSpiderLilyBlock;
 import com.github.mechalopa.jafohana.world.level.block.VineFlowerBlock;
+import com.github.mechalopa.jafohana.world.level.block.WitherRoseBushBlock;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.effect.MobEffects;
@@ -92,6 +93,7 @@ public class ModBlocks
 	public static final Supplier<Block> PRINCES_PLUME = REGISTRY.register("princes_plume", () -> new BadlandsTallFlowerBlock());
 	public static final Supplier<Block> FASCIATED_DANDELION = REGISTRY.register("fasciated_dandelion", () -> new FasciatedDandelionBlock());
 	public static final Supplier<Block> FASCIATED_OXEYE_DAISY = REGISTRY.register("fasciated_oxeye_daisy", () -> new FasciatedOxeyeDaisyBlock());
+	public static final Supplier<Block> WITHER_ROSE_BUSH = REGISTRY.register("wither_rose_bush", () -> new WitherRoseBushBlock());
 	public static final Supplier<Block> JADE_VINE = REGISTRY.register("jade_vine", () -> VineFlowerBlock.create());
 	public static final Supplier<Block> POTTED_DAYFLOWER = REGISTRY.register("potted_dayflower", () -> ModFlowerPotBlock.create(DAYFLOWER.get()));
 	public static final Supplier<Block> POTTED_EVENING_PRIMROSE = REGISTRY.register("potted_evening_primrose", () -> ModFlowerPotBlock.create(EVENING_PRIMROSE.get()));

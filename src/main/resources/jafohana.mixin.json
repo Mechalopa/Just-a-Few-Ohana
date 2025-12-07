@@ -5,7 +5,9 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "BeePollinateGoalMixin",
-    "BoneMealItemMixin"
+    "BoneMealItemMixin",
+    "EntityTypeMixin",
+    "LivingEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -67,6 +67,7 @@
   "block.jafohana.princes_plume": "Prince's Plume",
   "block.jafohana.fasciated_dandelion": "Fasciated Dandelion",
   "block.jafohana.fasciated_oxeye_daisy": "Fasciated Oxeye Daisy",
+  "block.jafohana.wither_rose_bush": "Wither Rose Bush",
   "block.jafohana.jade_vine": "Jade Vine",
   "block.jafohana.potted_dayflower": "Potted Dayflower",
   "block.jafohana.potted_evening_primrose": "Potted Evening Primrose",
@@ -119,5 +120,7 @@
   "jafohana.configuration.oxeyeDaisyFasciationChance": "Oxeye daisy fasciation chance",
   "jafohana.configuration.creepansyConvertChance": "Creepansy convert chance",
   "jafohana.configuration.vineFlowerGrowChance": "Vine flower grow chance",
+  "jafohana.configuration.witherRoseBushDuplicateChanceWhenUsingBoneMeal": "Wither rose bush duplicate chance when using bone meal",
+  "jafohana.configuration.witherRoseBushDropsNormalWitherRoseWhenUsingBoneMeal": "Wither rose bush drops normal wither rose when using bone meal",
   "jafohana.configuration.additionalWandererTrades": "Additional wanderer trades"
 }

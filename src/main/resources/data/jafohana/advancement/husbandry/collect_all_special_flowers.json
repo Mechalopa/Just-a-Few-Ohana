@@ -87,7 +87,8 @@
     "jafohana:jade_vine": { "conditions": { "items": [ { "items": "jafohana:jade_vine" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:creepansy": { "conditions": { "items": [ { "items": "jafohana:creepansy" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:fasciated_dandelion": { "conditions": { "items": [ { "items": "jafohana:fasciated_dandelion" } ] }, "trigger": "minecraft:inventory_changed" },
-    "jafohana:fasciated_oxeye_daisy": { "conditions": { "items": [ { "items": "jafohana:fasciated_oxeye_daisy" } ] }, "trigger": "minecraft:inventory_changed" }
+    "jafohana:fasciated_oxeye_daisy": { "conditions": { "items": [ { "items": "jafohana:fasciated_oxeye_daisy" } ] }, "trigger": "minecraft:inventory_changed" },
+    "jafohana:wither_rose_bush": { "conditions": { "items": [ { "items": "jafohana:wither_rose_bush" } ] }, "trigger": "minecraft:inventory_changed" }
   },
   "display": {
     "description": {
@@ -189,7 +190,8 @@
     [ "jafohana:jade_vine" ],
     [ "jafohana:creepansy" ],
     [ "jafohana:fasciated_dandelion" ],
-    [ "jafohana:fasciated_oxeye_daisy" ]
+    [ "jafohana:fasciated_oxeye_daisy" ],
+    [ "jafohana:wither_rose_bush" ]
   ],
   "rewards": {
     "experience": 150

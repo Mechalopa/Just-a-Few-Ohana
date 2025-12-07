@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mechanical_botany"
+    }
+  ],
+  "type": "mechanical_botany:insolating",
+  "consume_input": true,
+  "ingredients": [
+    {
+      "type": "fluid_stack",
+      "amount": 100,
+      "fluid": "mechanical_botany:molten_compost"
+    },
+    {
+      "item": "jafohana:wither_rose_bush"
+    }
+  ],
+  "processing_time": 8000,
+  "results": [
+    {
+      "count": 2,
+      "id": "jafohana:wither_rose_bush"
+    }
+  ]
+}

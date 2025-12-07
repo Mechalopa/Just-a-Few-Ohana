@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "jafohana:block/wither_rose_bush_bottom"
+    },
+    "half=upper": {
+      "model": "jafohana:block/wither_rose_bush_top"
+    }
+  }
+}

@@ -8,6 +8,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -77,8 +78,9 @@ public class ModItems
 	public static final Supplier<Item> CARDINAL_FLOWER = REGISTRY.register("cardinal_flower", () -> createDoubleHighBlockItem(ModBlocks.CARDINAL_FLOWER.get()));
 	public static final Supplier<Item> YELLOWFLAG_IRIS = REGISTRY.register("yellowflag_iris", () -> createDoubleHighBlockItem(ModBlocks.YELLOWFLAG_IRIS.get()));
 	public static final Supplier<Item> PRINCES_PLUME = REGISTRY.register("princes_plume", () -> createDoubleHighBlockItem(ModBlocks.PRINCES_PLUME.get()));
-	public static final Supplier<Item> FASCIATED_DANDELION = REGISTRY.register("fasciated_dandelion", () -> createDoubleHighBlockItem(ModBlocks.FASCIATED_DANDELION.get()));
-	public static final Supplier<Item> FASCIATED_OXEYE_DAISY = REGISTRY.register("fasciated_oxeye_daisy", () -> createDoubleHighBlockItem(ModBlocks.FASCIATED_OXEYE_DAISY.get()));
+	public static final Supplier<Item> FASCIATED_DANDELION = REGISTRY.register("fasciated_dandelion", () -> createDoubleHighBlockItem(ModBlocks.FASCIATED_DANDELION.get(), Rarity.UNCOMMON));
+	public static final Supplier<Item> FASCIATED_OXEYE_DAISY = REGISTRY.register("fasciated_oxeye_daisy", () -> createDoubleHighBlockItem(ModBlocks.FASCIATED_OXEYE_DAISY.get(), Rarity.UNCOMMON));
+	public static final Supplier<Item> WITHER_ROSE_BUSH = REGISTRY.register("wither_rose_bush", () -> createDoubleHighBlockItem(ModBlocks.WITHER_ROSE_BUSH.get(), Rarity.UNCOMMON));
 	public static final Supplier<Item> JADE_VINE = REGISTRY.register("jade_vine", () -> createBlockItem(ModBlocks.JADE_VINE.get()));
 
 	@SubscribeEvent
@@ -95,6 +97,11 @@ public class ModItems
 	private static DoubleHighBlockItem createDoubleHighBlockItem(Block block)
 	{
 		return new DoubleHighBlockItem(block, new Item.Properties());
+	}
+
+	private static DoubleHighBlockItem createDoubleHighBlockItem(Block block, Rarity rarity)
+	{
+		return new DoubleHighBlockItem(block, new Item.Properties().rarity(rarity));
 	}
 
 	public static DeferredRegister<Item> getItemRegistry()
