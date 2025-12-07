@@ -15,15 +15,15 @@
   },
   "results": [
     {
-      "item": "jafohana:red_spider_lily"
+      "id": "jafohana:red_spider_lily"
     }
   ],
   "soil": [
     {
-      "item": "minecraft:dirt"
+      "id": "minecraft:dirt"
     },
     {
-      "item": "minecraft:soul_soil"
+      "id": "minecraft:soul_soil"
     }
   ],
   "time": 480
