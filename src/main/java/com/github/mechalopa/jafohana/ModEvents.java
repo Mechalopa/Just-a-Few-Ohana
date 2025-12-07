@@ -65,7 +65,7 @@ public class ModEvents
 				{
 					BlockState state = level.getBlockState(blockpos.relative(direction));
 
-					if (state != null && state.is(ModTags.BlockTags.AFFECTS_FASCIATIONS))
+					if (state != null && state.is(ModTags.BlockTags.AFFECTS_FASCIATIONS) && (!state.hasProperty(DoublePlantBlock.HALF) || state.getValue(DoublePlantBlock.HALF) != DoubleBlockHalf.UPPER))
 					{
 						if (!level.isClientSide() && level instanceof ServerLevel && random.nextDouble() < chance)
 						{

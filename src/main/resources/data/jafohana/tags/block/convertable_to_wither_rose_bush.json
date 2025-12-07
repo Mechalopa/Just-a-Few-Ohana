@@ -1,6 +1,26 @@
 {
   "replace": false,
   "values": [
-    "minecraft:rose_bush"
+    "minecraft:rose_bush",
+    {
+      "id": "biomeswevegone:blue_rose_bush",
+      "required": false
+    },
+    {
+      "id": "windswept:red_rose_bush",
+      "required": false
+    },
+    {
+      "id": "windswept:blue_rose_bush",
+      "required": false
+    },
+    {
+      "id": "windswept:white_rose_bush",
+      "required": false
+    },
+    {
+      "id": "windswept:yellow_rose_bush",
+      "required": false
+    }
   ]
 }

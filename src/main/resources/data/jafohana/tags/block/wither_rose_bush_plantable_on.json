@@ -5,6 +5,18 @@
     "#jafohana:farmlands",
     "minecraft:netherrack",
     "minecraft:soul_sand",
-    "minecraft:soul_soil"
+    "minecraft:soul_soil",
+    {
+      "id": "securitycraft:reinforced_netherrack",
+      "required": false
+    },
+    {
+      "id": "securitycraft:reinforced_soul_sand",
+      "required": false
+    },
+    {
+      "id": "securitycraft:reinforced_soul_soil",
+      "required": false
+    }
   ]
 }
