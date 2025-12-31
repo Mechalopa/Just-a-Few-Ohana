@@ -8,6 +8,10 @@
     {
       "id": "windswept:wither_rose_bush",
       "required": false
+    },
+    {
+      "id": "goodending:wither_rose_bush",
+      "required": false
     }
   ]
 }
