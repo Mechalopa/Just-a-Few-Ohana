@@ -29,7 +29,7 @@ public class ModConfigs
 		DANDELION_FASCIATION_CHANCE = SERVER_BUILDER.defineInRange("dandelionFasciationChance", 0.4D, 0.0D, 1.0D);
 		OXEYE_DAISY_FASCIATION_CHANCE = SERVER_BUILDER.defineInRange("oxeyeDaisyFasciationChance", 0.4D, 0.0D, 1.0D);
 		CREEPANSY_CONVERT_CHANCE = SERVER_BUILDER.defineInRange("creepansyConvertChance", 1.0D, 0.0D, 1.0D);
-		ROSE_BUSH_WITHERING_DISTANCE = SERVER_BUILDER.defineInRange("roseBushWitheringDistance", 5, 0, 8);
+		ROSE_BUSH_WITHERING_DISTANCE = SERVER_BUILDER.defineInRange("roseBushWitheringDistance", 5, -1, 16);
 		WITHER_ROSE_BUSH_DUPLICATE_CHANCE_WHEN_USING_BONE_MEAL = SERVER_BUILDER.defineInRange("witherRoseBushDuplicateChanceWhenUsingBoneMeal", 0.0D, 0.0D, 1.0D);
 		WITHER_ROSE_BUSH_DROPS_NORMAL_WITHER_ROSE_WHEN_USING_BONE_MEAL = SERVER_BUILDER.define("witherRoseBushDropsNormalWitherRoseWhenUsingBoneMeal", true);
 		VINE_FLOWER_GROW_CHANCE = SERVER_BUILDER.defineInRange("vineFlowerGrowChance", 0.45D, 0.0D, 1.0D);

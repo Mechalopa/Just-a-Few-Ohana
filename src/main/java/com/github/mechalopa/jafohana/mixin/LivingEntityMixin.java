@@ -41,6 +41,11 @@ public abstract class LivingEntityMixin extends Entity
 
 	private static boolean convertNearestFlower(Level level, BlockPos blockpos, RandomSource random, int distance)
 	{
+		if (distance < 0)
+		{
+			return false;
+		}
+
 		BlockState witherRoseBushState = ModBlocks.WITHER_ROSE_BUSH.get().defaultBlockState();
 		BlockPos.MutableBlockPos mutableblockpos = new BlockPos.MutableBlockPos();
 
