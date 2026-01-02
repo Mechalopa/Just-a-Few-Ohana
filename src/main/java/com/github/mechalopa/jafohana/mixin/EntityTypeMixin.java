@@ -25,9 +25,9 @@ public abstract class EntityTypeMixin
 	@Inject(method = "Lnet/minecraft/world/entity/EntityType;isBlockDangerous(Lnet/minecraft/world/level/block/state/BlockState;)Z", at = @At("HEAD"), cancellable = true)
 	public void jafohana_isBlockDangerous(BlockState state, CallbackInfoReturnable<Boolean> cir)
 	{
-		if (state.is(ModBlocks.WITHER_ROSE_BUSH.get()) && this.immuneTo.contains(Blocks.WITHER_ROSE))
+		if (state.is(ModBlocks.WITHER_ROSE_BUSH.get()))
 		{
-			cir.setReturnValue(false);
+			cir.setReturnValue(!this.immuneTo.contains(Blocks.WITHER_ROSE));
 		}
 	}
 }
