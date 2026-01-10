@@ -12,6 +12,14 @@
     {
       "id": "goodending:wither_rose_bush",
       "required": false
+    },
+    {
+      "id": "cyber_ware_port:cyber_wither_skeleton_skull",
+      "required": false
+    },
+    {
+      "id": "cyber_ware_port:cyber_wither_skeleton_wall_skull",
+      "required": false
     }
   ]
 }
