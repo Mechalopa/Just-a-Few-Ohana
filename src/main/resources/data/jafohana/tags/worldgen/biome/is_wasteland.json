@@ -6,6 +6,14 @@
       "required": false
     },
     {
+      "id": "#c:is_wasteland",
+      "required": false
+    },
+    {
+      "id": "#c:wasteland",
+      "required": false
+    },
+    {
       "id": "bleak_and_barren:barren_drylands",
       "required": false
     },
