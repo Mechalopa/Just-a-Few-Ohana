@@ -17,6 +17,14 @@
     {
       "id": "securitycraft:reinforced_soul_soil",
       "required": false
+    },
+    {
+      "id": "#minecraft:supports_vegetation",
+      "required": false
+    },
+    {
+      "id": "#minecraft:supports_wither_rose",
+      "required": false
     }
   ]
 }

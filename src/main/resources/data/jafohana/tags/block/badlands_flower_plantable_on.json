@@ -5,6 +5,18 @@
     "#minecraft:sand",
     "#minecraft:dirt",
     "#minecraft:terracotta",
-    "#jafohana:farmlands"
+    "#jafohana:farmlands",
+    {
+      "id": "#minecraft:supports_vegetation",
+      "required": false
+    },
+    {
+      "id": "#minecraft:supports_dry_vegetation",
+      "required": false
+    },
+    {
+      "id": "#minecraft:dry_vegetation_may_place_on",
+      "required": false
+    }
   ]
 }
