@@ -3,6 +3,10 @@
   "values": [
     "#minecraft:dirt",
     "#minecraft:soul_speed_blocks",
-    "#jafohana:farmlands"
+    "#jafohana:farmlands",
+    {
+      "id": "#minecraft:supports_vegetation",
+      "required": false
+    }
   ]
 }

@@ -20,6 +20,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DoublePlantBlock;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraftforge.common.BasicItemListing;
 import net.minecraftforge.event.ForgeEventFactory;
@@ -40,13 +41,13 @@ public class ModEvents
 		{
 			Level level = event.getLevel();
 			BlockPos pos = event.getPos();
-			RandomSource r = level.getRandom();
+			RandomSource random = level.getRandom();
 
-			if (fasciate(level, pos, event.getBlock(), ModTags.BlockTags.CONVERTABLE_TO_FASCIATED_DANDELION, ModBlocks.FASCIATED_DANDELION.get().defaultBlockState(), r, ModConfigs.cachedServer.DANDELION_FASCIATION_CHANCE))
+			if (fasciate(level, pos, event.getBlock(), ModTags.BlockTags.CONVERTIBLE_TO_FASCIATED_DANDELION, ModBlocks.FASCIATED_DANDELION.get().defaultBlockState(), random, ModConfigs.cachedServer.DANDELION_FASCIATION_CHANCE))
 			{
 				event.setResult(Result.ALLOW);
 			}
-			else if (fasciate(level, pos, event.getBlock(), ModTags.BlockTags.CONVERTABLE_TO_FASCIATED_OXEYE_DAISY, ModBlocks.FASCIATED_OXEYE_DAISY.get().defaultBlockState(), r, ModConfigs.cachedServer.OXEYE_DAISY_FASCIATION_CHANCE))
+			else if (fasciate(level, pos, event.getBlock(), ModTags.BlockTags.CONVERTIBLE_TO_FASCIATED_OXEYE_DAISY, ModBlocks.FASCIATED_OXEYE_DAISY.get().defaultBlockState(), random, ModConfigs.cachedServer.OXEYE_DAISY_FASCIATION_CHANCE))
 			{
 				event.setResult(Result.ALLOW);
 			}
@@ -63,13 +64,13 @@ public class ModEvents
 				{
 					BlockState state = level.getBlockState(blockpos.relative(direction));
 
-					if (state != null && state.is(ModTags.BlockTags.AFFECTS_FASCIATIONS) && (!state.hasProperty(DoublePlantBlock.HALF) || state.getValue(DoublePlantBlock.HALF) != DoubleBlockHalf.UPPER))
+					if (state != null && state.is(ModTags.BlockTags.WITHERED_BLOCKS) && (!state.hasProperty(BlockStateProperties.DOUBLE_BLOCK_HALF) || state.getValue(BlockStateProperties.DOUBLE_BLOCK_HALF) != DoubleBlockHalf.UPPER))
 					{
 						if (!level.isClientSide() && level instanceof ServerLevel && random.nextDouble() < chance)
 						{
 							BlockPos blockpos1 = blockpos.above();
-							level.setBlockAndUpdate(blockpos, DoublePlantBlock.copyWaterloggedFrom(level, blockpos, fasciatedFlowerState.setValue(DoublePlantBlock.HALF, DoubleBlockHalf.LOWER)));
-							level.setBlockAndUpdate(blockpos1, DoublePlantBlock.copyWaterloggedFrom(level, blockpos1, fasciatedFlowerState.setValue(DoublePlantBlock.HALF, DoubleBlockHalf.UPPER)));
+							level.setBlockAndUpdate(blockpos, DoublePlantBlock.copyWaterloggedFrom(level, blockpos, fasciatedFlowerState.setValue(BlockStateProperties.DOUBLE_BLOCK_HALF, DoubleBlockHalf.LOWER)));
+							level.setBlockAndUpdate(blockpos1, DoublePlantBlock.copyWaterloggedFrom(level, blockpos1, fasciatedFlowerState.setValue(BlockStateProperties.DOUBLE_BLOCK_HALF, DoubleBlockHalf.UPPER)));
 						}
 
 						return true;
@@ -84,7 +85,7 @@ public class ModEvents
 	@SubscribeEvent
 	public static void onBlockExplode(ExplosionEvent.Detonate event)
 	{
-		if (!event.getLevel().isClientSide() && event.getExplosion().getExploder() != null && event.getExplosion().getExploder().getType().is(ModTags.EntityTypeTags.CAN_CONVERT_TO_CREEPANSY) && !event.getAffectedBlocks().isEmpty() && ForgeEventFactory.getMobGriefingEvent(event.getLevel(), event.getExplosion().getExploder()))
+		if (!event.getLevel().isClientSide() && event.getExplosion().getExploder() != null && event.getExplosion().getExploder().getType().is(ModTags.EntityTypeTags.PRODUCES_CREEPANSY) && !event.getAffectedBlocks().isEmpty() && ForgeEventFactory.getMobGriefingEvent(event.getLevel(), event.getExplosion().getExploder()))
 		{
 			Level level = event.getLevel();
 
@@ -92,7 +93,7 @@ public class ModEvents
 			{
 				BlockState state = level.getBlockState(pos);
 
-				if (state.is(ModTags.BlockTags.CONVERTABLE_TO_CREEPANSY) && (double)level.getRandom().nextFloat() < ModConfigs.cachedServer.CREEPANSY_CONVERT_CHANCE)
+				if (state.is(ModTags.BlockTags.CONVERTIBLE_TO_CREEPANSY) && (double)level.getRandom().nextFloat() < ModConfigs.cachedServer.CREEPANSY_CONVERT_CHANCE)
 				{
 					ItemEntity itementity = new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), ModItems.CREEPANSY.get().getDefaultInstance());
 

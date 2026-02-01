@@ -12,21 +12,21 @@ public class ModTags
 {
 	public static final class BlockTags
 	{
-		public static final TagKey<Block> AFFECTS_FASCIATIONS = createBlockTag("affects_fasciations");
 		public static final TagKey<Block> BEE_ATTRACTIVE_UPPER_ONLY = createBlockTag("bee_attractive_upper_only");
-		public static final TagKey<Block> CONVERTABLE_TO_CREEPANSY = createBlockTag("convertable_to_creepansy");
-		public static final TagKey<Block> CONVERTABLE_TO_FASCIATED_DANDELION = createBlockTag("convertable_to_fasciated_dandelion");
-		public static final TagKey<Block> CONVERTABLE_TO_FASCIATED_OXEYE_DAISY = createBlockTag("convertable_to_fasciated_oxeye_daisy");
+		public static final TagKey<Block> CONVERTIBLE_TO_CREEPANSY = createBlockTag("convertible_to_creepansy");
+		public static final TagKey<Block> CONVERTIBLE_TO_FASCIATED_DANDELION = createBlockTag("convertible_to_fasciated_dandelion");
+		public static final TagKey<Block> CONVERTIBLE_TO_FASCIATED_OXEYE_DAISY = createBlockTag("convertible_to_fasciated_oxeye_daisy");
 		public static final TagKey<Block> CREEPANSY_PLANTABLE_ON = createBlockTag("creepansy_plantable_on");
 		public static final TagKey<Block> CRIMSON_CLOVER_PLANTABLE_ON = createBlockTag("crimson_clover_plantable_on");
 		public static final TagKey<Block> CRIMSON_NYLIUMS = createBlockTag("crimson_nyliums");
 		public static final TagKey<Block> JADE_VINE_PLANTABLE_ON = createBlockTag("jade_vine_plantable_on");
 		public static final TagKey<Block> RED_SPIDER_LILY_PLANTABLE_ON = createBlockTag("red_spider_lily_plantable_on");
+		public static final TagKey<Block> WITHERED_BLOCKS = createBlockTag("withered_blocks");
 	}
 
 	public static final class EntityTypeTags
 	{
-		public static final TagKey<EntityType<?>> CAN_CONVERT_TO_CREEPANSY = createEntityTypeTag("can_convert_to_creepansy");
+		public static final TagKey<EntityType<?>> PRODUCES_CREEPANSY = createEntityTypeTag("produces_creepansy");
 	}
 
 	@SuppressWarnings("removal")

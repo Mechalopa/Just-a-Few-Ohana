@@ -34,6 +34,10 @@
     {
       "id": "aoa3:ornamyte_ore",
       "required": false
+    },
+    {
+      "id": "#minecraft:supports_vegetation",
+      "required": false
     }
   ]
 }

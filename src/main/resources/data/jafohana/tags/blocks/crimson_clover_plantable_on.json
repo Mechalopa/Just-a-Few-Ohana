@@ -3,6 +3,10 @@
   "values": [
     "#minecraft:dirt",
     "#jafohana:farmlands",
-    "#jafohana:crimson_nyliums"
+    "#jafohana:crimson_nyliums",
+    {
+      "id": "#minecraft:supports_vegetation",
+      "required": false
+    }
   ]
 }
