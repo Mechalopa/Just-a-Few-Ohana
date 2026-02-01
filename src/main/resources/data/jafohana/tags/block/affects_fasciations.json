@@ -2,7 +2,6 @@
   "replace": false,
   "values": [
     "minecraft:wither_rose",
-    "jafohana:wither_rose_bush",
     "minecraft:wither_skeleton_skull",
     "minecraft:wither_skeleton_wall_skull",
     {
