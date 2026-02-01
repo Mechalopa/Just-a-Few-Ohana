@@ -1,0 +1,51 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "botanypots"
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "jafohana:mysore_trumpetvine",
+  "input": {
+    "item": "jafohana:mysore_trumpetvine"
+  },
+  "display": [
+    {
+      "type": "botanypots:simple",
+      "block_state": {
+        "block": "jafohana:mysore_trumpetvine",
+        "properties": {
+          "vine_flower": "short_stem"
+        }
+      },
+      "options": {
+        "rotation": "X_180"
+      }
+    },
+    {
+      "type": "botanypots:simple",
+      "block_state": {
+        "block": "jafohana:mysore_trumpetvine",
+        "properties": {
+          "vine_flower": "short_head"
+        }
+      },
+      "options": {
+        "rotation": "X_180"
+      }
+    }
+  ],
+  "soil": {
+    "type": "bookshelf:either",
+    "ingredients": [
+      {
+        "type": "bookshelf:block_tag",
+        "tag": "minecraft:jungle_logs"
+      },
+      {
+        "tag": "botanypots:soil/jungle_log"
+      }
+    ]
+  }
+}

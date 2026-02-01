@@ -48,6 +48,7 @@ public class ModItems
 	public static final Supplier<Item> FOX_AND_CUBS = REGISTRY.register("fox_and_cubs", () -> createBlockItem(ModBlocks.FOX_AND_CUBS.get()));
 	public static final Supplier<Item> PINK_HAWKS_BEARD = REGISTRY.register("pink_hawks_beard", () -> createBlockItem(ModBlocks.PINK_HAWKS_BEARD.get()));
 	public static final Supplier<Item> LADIES_TRESSES = REGISTRY.register("ladies_tresses", () -> createBlockItem(ModBlocks.LADIES_TRESSES.get()));
+	public static final Supplier<Item> DESERT_PEA = REGISTRY.register("desert_pea", () -> createBlockItem(ModBlocks.DESERT_PEA.get()));
 	public static final Supplier<Item> APRICOT_MALLOW = REGISTRY.register("apricot_mallow", () -> createBlockItem(ModBlocks.APRICOT_MALLOW.get()));
 	public static final Supplier<Item> BLUESTEM_PENSTEMON = REGISTRY.register("bluestem_penstemon", () -> createBlockItem(ModBlocks.BLUESTEM_PENSTEMON.get()));
 	public static final Supplier<Item> FIRECRACKER_PENSTEMON = REGISTRY.register("firecracker_penstemon", () -> createBlockItem(ModBlocks.FIRECRACKER_PENSTEMON.get()));
@@ -78,10 +79,11 @@ public class ModItems
 	public static final Supplier<Item> CARDINAL_FLOWER = REGISTRY.register("cardinal_flower", () -> createDoubleHighBlockItem(ModBlocks.CARDINAL_FLOWER.get()));
 	public static final Supplier<Item> YELLOWFLAG_IRIS = REGISTRY.register("yellowflag_iris", () -> createDoubleHighBlockItem(ModBlocks.YELLOWFLAG_IRIS.get()));
 	public static final Supplier<Item> PRINCES_PLUME = REGISTRY.register("princes_plume", () -> createDoubleHighBlockItem(ModBlocks.PRINCES_PLUME.get()));
-	public static final Supplier<Item> FASCIATED_DANDELION = REGISTRY.register("fasciated_dandelion", () -> createDoubleHighBlockItem(ModBlocks.FASCIATED_DANDELION.get(), Rarity.UNCOMMON));
-	public static final Supplier<Item> FASCIATED_OXEYE_DAISY = REGISTRY.register("fasciated_oxeye_daisy", () -> createDoubleHighBlockItem(ModBlocks.FASCIATED_OXEYE_DAISY.get(), Rarity.UNCOMMON));
+	public static final Supplier<Item> FASCIATED_DANDELION = REGISTRY.register("fasciated_dandelion", () -> createDoubleHighBlockItem(ModBlocks.FASCIATED_DANDELION.get()));
+	public static final Supplier<Item> FASCIATED_OXEYE_DAISY = REGISTRY.register("fasciated_oxeye_daisy", () -> createDoubleHighBlockItem(ModBlocks.FASCIATED_OXEYE_DAISY.get()));
 	public static final Supplier<Item> WITHER_ROSE_BUSH = REGISTRY.register("wither_rose_bush", () -> createDoubleHighBlockItem(ModBlocks.WITHER_ROSE_BUSH.get(), Rarity.UNCOMMON));
 	public static final Supplier<Item> JADE_VINE = REGISTRY.register("jade_vine", () -> createBlockItem(ModBlocks.JADE_VINE.get()));
+	public static final Supplier<Item> MYSORE_TRUMPETVINE = REGISTRY.register("mysore_trumpetvine", () -> createBlockItem(ModBlocks.MYSORE_TRUMPETVINE.get()));
 
 	@SubscribeEvent
 	public static void register(IEventBus eventBus)

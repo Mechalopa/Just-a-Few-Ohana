@@ -1,9 +1,9 @@
 {
-  "feature": "jafohana:jade_vines",
+  "feature": "jafohana:vine_flower_jungle",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 14
+      "chance": 8
     },
     {
       "type": "minecraft:in_square"

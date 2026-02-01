@@ -47,6 +47,7 @@
     "jafohana:fox_and_cubs": { "conditions": { "items": [ { "items": "jafohana:fox_and_cubs" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:pink_hawks_beard": { "conditions": { "items": [ { "items": "jafohana:pink_hawks_beard" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:ladies_tresses": { "conditions": { "items": [ { "items": "jafohana:ladies_tresses" } ] }, "trigger": "minecraft:inventory_changed" },
+    "jafohana:desert_pea": { "conditions": { "items": [ { "items": "jafohana:desert_pea" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:apricot_mallow": { "conditions": { "items": [ { "items": "jafohana:apricot_mallow" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:bluestem_penstemon": { "conditions": { "items": [ { "items": "jafohana:bluestem_penstemon" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:firecracker_penstemon": { "conditions": { "items": [ { "items": "jafohana:firecracker_penstemon" } ] }, "trigger": "minecraft:inventory_changed" },
@@ -77,7 +78,8 @@
     "jafohana:cardinal_flower": { "conditions": { "items": [ { "items": "jafohana:cardinal_flower" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:yellowflag_iris": { "conditions": { "items": [ { "items": "jafohana:yellowflag_iris" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:princes_plume": { "conditions": { "items": [ { "items": "jafohana:princes_plume" } ] }, "trigger": "minecraft:inventory_changed" },
-    "jafohana:jade_vine": { "conditions": { "items": [ { "items": "jafohana:jade_vine" } ] }, "trigger": "minecraft:inventory_changed" }
+    "jafohana:jade_vine": { "conditions": { "items": [ { "items": "jafohana:jade_vine" } ] }, "trigger": "minecraft:inventory_changed" },
+    "jafohana:mysore_trumpetvine": { "conditions": { "items": [ { "items": "jafohana:mysore_trumpetvine" } ] }, "trigger": "minecraft:inventory_changed" }
   },
   "display": {
     "description": {
@@ -139,6 +141,7 @@
     [ "jafohana:fox_and_cubs" ],
     [ "jafohana:pink_hawks_beard" ],
     [ "jafohana:ladies_tresses" ],
+    [ "jafohana:desert_pea" ],
     [ "jafohana:apricot_mallow" ],
     [ "jafohana:bluestem_penstemon" ],
     [ "jafohana:firecracker_penstemon" ],
@@ -169,7 +172,8 @@
     [ "jafohana:cardinal_flower" ],
     [ "jafohana:yellowflag_iris" ],
     [ "jafohana:princes_plume" ],
-    [ "jafohana:jade_vine" ]
+    [ "jafohana:jade_vine" ],
+    [ "jafohana:mysore_trumpetvine" ]
   ],
   "rewards": {
     "experience": 100

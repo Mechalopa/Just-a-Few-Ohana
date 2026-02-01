@@ -17,6 +17,22 @@
               "function": "minecraft:set_count"
             }
           ],
+          "name": "jafohana:desert_pea",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 5.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
           "name": "jafohana:apricot_mallow",
           "weight": 2
         },
@@ -37,7 +53,7 @@
         },
         {
           "type": "minecraft:empty",
-          "weight": 21
+          "weight": 19
         }
       ],
       "rolls": {

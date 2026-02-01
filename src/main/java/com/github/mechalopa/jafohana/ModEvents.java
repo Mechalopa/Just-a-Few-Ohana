@@ -149,6 +149,7 @@ public class ModEvents
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.FOX_AND_CUBS.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.PINK_HAWKS_BEARD.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.LADIES_TRESSES.get()), 12, 1, 0.05F));
+			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.DESERT_PEA.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.APRICOT_MALLOW.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.BLUESTEM_PENSTEMON.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.FIRECRACKER_PENSTEMON.get()), 12, 1, 0.05F));
@@ -163,6 +164,7 @@ public class ModEvents
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.BELLS_OF_IRELAND.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(1, new ItemStack(ModItems.BEACH_SPIDER_LILY.get()), 12, 1, 0.05F));
 			genericTrades.add(new BasicItemListing(3, new ItemStack(ModItems.JADE_VINE.get(), 2), 5, 1, 0.05F));
+			genericTrades.add(new BasicItemListing(3, new ItemStack(ModItems.MYSORE_TRUMPETVINE.get(), 2), 5, 1, 0.05F));
 		}
 	}
 }

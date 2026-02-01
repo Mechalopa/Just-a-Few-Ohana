@@ -61,6 +61,7 @@ public class ModBlocks
 	public static final Supplier<Block> FOX_AND_CUBS = REGISTRY.register("fox_and_cubs", () -> new ModFlowerBlock(MobEffects.REGENERATION, 8.0F));
 	public static final Supplier<Block> PINK_HAWKS_BEARD = REGISTRY.register("pink_hawks_beard", () -> new ModFlowerBlock(MobEffects.SATURATION, 0.35F));
 	public static final Supplier<Block> LADIES_TRESSES = REGISTRY.register("ladies_tresses", () -> new ModFlowerBlock(MobEffects.DIG_SPEED, 5.0F));
+	public static final Supplier<Block> DESERT_PEA = REGISTRY.register("desert_pea", () -> new BadlandsFlowerBlock(MobEffects.SATURATION, 0.35F));
 	public static final Supplier<Block> APRICOT_MALLOW = REGISTRY.register("apricot_mallow", () -> new BadlandsFlowerBlock(MobEffects.DAMAGE_RESISTANCE, 4.0F));
 	public static final Supplier<Block> BLUESTEM_PENSTEMON = REGISTRY.register("bluestem_penstemon", () -> new BadlandsFlowerBlock(MobEffects.DIG_SPEED, 5.0F));
 	public static final Supplier<Block> FIRECRACKER_PENSTEMON = REGISTRY.register("firecracker_penstemon", () -> new BadlandsMediumFlowerBlock(MobEffects.DIG_SPEED, 5.0F));
@@ -95,6 +96,7 @@ public class ModBlocks
 	public static final Supplier<Block> FASCIATED_OXEYE_DAISY = REGISTRY.register("fasciated_oxeye_daisy", () -> new FasciatedOxeyeDaisyBlock());
 	public static final Supplier<Block> WITHER_ROSE_BUSH = REGISTRY.register("wither_rose_bush", () -> new WitherRoseBushBlock());
 	public static final Supplier<Block> JADE_VINE = REGISTRY.register("jade_vine", () -> VineFlowerBlock.create());
+	public static final Supplier<Block> MYSORE_TRUMPETVINE = REGISTRY.register("mysore_trumpetvine", () -> VineFlowerBlock.create());
 	public static final Supplier<Block> POTTED_DAYFLOWER = REGISTRY.register("potted_dayflower", () -> ModFlowerPotBlock.create(DAYFLOWER.get()));
 	public static final Supplier<Block> POTTED_EVENING_PRIMROSE = REGISTRY.register("potted_evening_primrose", () -> ModFlowerPotBlock.create(EVENING_PRIMROSE.get()));
 	public static final Supplier<Block> POTTED_MILK_VETCH = REGISTRY.register("potted_milk_vetch", () -> ModFlowerPotBlock.create(MILK_VETCH.get()));
@@ -125,6 +127,7 @@ public class ModBlocks
 	public static final Supplier<Block> POTTED_FOX_AND_CUBS = REGISTRY.register("potted_fox_and_cubs", () -> ModFlowerPotBlock.create(FOX_AND_CUBS.get()));
 	public static final Supplier<Block> POTTED_PINK_HAWKS_BEARD = REGISTRY.register("potted_pink_hawks_beard", () -> ModFlowerPotBlock.create(PINK_HAWKS_BEARD.get()));
 	public static final Supplier<Block> POTTED_LADIES_TRESSES = REGISTRY.register("potted_ladies_tresses", () -> ModFlowerPotBlock.create(LADIES_TRESSES.get()));
+	public static final Supplier<Block> POTTED_DESERT_PEA = REGISTRY.register("potted_desert_pea", () -> ModFlowerPotBlock.create(DESERT_PEA.get()));
 	public static final Supplier<Block> POTTED_APRICOT_MALLOW = REGISTRY.register("potted_apricot_mallow", () -> ModFlowerPotBlock.create(APRICOT_MALLOW.get()));
 	public static final Supplier<Block> POTTED_BLUESTEM_PENSTEMON = REGISTRY.register("potted_bluestem_penstemon", () -> ModFlowerPotBlock.create(BLUESTEM_PENSTEMON.get()));
 	public static final Supplier<Block> POTTED_FIRECRACKER_PENSTEMON = REGISTRY.register("potted_firecracker_penstemon", () -> ModFlowerPotBlock.create(FIRECRACKER_PENSTEMON.get()));

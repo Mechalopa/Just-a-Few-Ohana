@@ -14,7 +14,15 @@
           "tag": "jafohana:dye_ingredients/yellow"
         },
         {
-          "tag": "jafohana:small_flowers"
+          "type": "neoforge:compound",
+          "children": [
+            {
+              "tag": "jafohana:small_flowers"
+            },
+            {
+              "tag": "jafohana:vine_flowers"
+            }
+          ]
         }
       ]
     }

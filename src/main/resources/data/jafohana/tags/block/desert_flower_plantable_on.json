@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "#c:sands",
+    "#minecraft:sand",
+    "#minecraft:dirt",
+    "#jafohana:farmlands",
+    {
+      "id": "#minecraft:supports_vegetation",
+      "required": false
+    }
+  ]
+}

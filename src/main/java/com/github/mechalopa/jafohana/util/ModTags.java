@@ -23,6 +23,7 @@ public class ModTags
 		public static final TagKey<Block> CREEPANSY_PLANTABLE_ON = createBlockTag("creepansy_plantable_on");
 		public static final TagKey<Block> CRIMSON_CLOVER_PLANTABLE_ON = createBlockTag("crimson_clover_plantable_on");
 		public static final TagKey<Block> CRIMSON_NYLIUMS = createBlockTag("crimson_nyliums");
+		public static final TagKey<Block> DESERT_FLOWER_PLANTABLE_ON = createBlockTag("desert_flower_plantable_on");
 		public static final TagKey<Block> RED_SPIDER_LILY_PLANTABLE_ON = createBlockTag("red_spider_lily_plantable_on");
 		public static final TagKey<Block> VINE_FLOWER_PLANTABLE_ON = createBlockTag("vine_flower_plantable_on");
 		public static final TagKey<Block> WITHER_ROSE_BUSH_PLANTABLE_ON = createBlockTag("wither_rose_bush_plantable_on");
