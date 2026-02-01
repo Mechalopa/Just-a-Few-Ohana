@@ -5,8 +5,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import com.github.mechalopa.jafohana.ModConfigs;
-import com.github.mechalopa.jafohana.util.ModTags;
+import com.github.mechalopa.jafohana.util.ModUtils;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
@@ -24,7 +23,7 @@ public abstract class BoneMealItemMixin
 	{
 		BlockState blockstate = level.getBlockState(pos);
 
-		if (!(blockstate.getBlock() instanceof BonemealableBlock) && ((ModConfigs.cachedServer.DANDELION_FASCIATION_CHANCE > 0.0D && blockstate.is(ModTags.BlockTags.CONVERTABLE_TO_FASCIATED_DANDELION)) || (ModConfigs.cachedServer.OXEYE_DAISY_FASCIATION_CHANCE > 0.0D && blockstate.is(ModTags.BlockTags.CONVERTABLE_TO_FASCIATED_OXEYE_DAISY))))
+		if (!(blockstate.getBlock() instanceof BonemealableBlock) && ModUtils.mutable(blockstate))
 		{
 			ParticleUtils.spawnParticleInBlock(level, pos, count, ParticleTypes.HAPPY_VILLAGER);
 			info.cancel();

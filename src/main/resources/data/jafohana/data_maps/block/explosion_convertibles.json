@@ -1,0 +1,31 @@
+{
+  "values": {
+    "jafohana:purple_pansy": {
+      "source_entity_type_tag": "#jafohana:produces_creepansy",
+      "loot_table": "jafohana:gameplay/explosion_conversion/creepansy"
+    },
+    "jafohana:white_pansy": {
+      "source_entity_type_tag": "#jafohana:produces_creepansy",
+      "loot_table": "jafohana:gameplay/explosion_conversion/creepansy"
+    },
+    "jafohana:yellow_pansy": {
+      "source_entity_type_tag": "#jafohana:produces_creepansy",
+      "loot_table": "jafohana:gameplay/explosion_conversion/creepansy"
+    },
+    "jafohana:potted_purple_pansy": {
+      "source_entity_type_tag": "#jafohana:produces_creepansy",
+      "loot_table": "jafohana:gameplay/explosion_conversion/creepansy",
+      "remaining_block": "minecraft:flower_pot"
+    },
+    "jafohana:potted_white_pansy": {
+      "source_entity_type_tag": "#jafohana:produces_creepansy",
+      "loot_table": "jafohana:gameplay/explosion_conversion/creepansy",
+      "remaining_block": "minecraft:flower_pot"
+    },
+    "jafohana:potted_yellow_pansy": {
+      "source_entity_type_tag": "#jafohana:produces_creepansy",
+      "loot_table": "jafohana:gameplay/explosion_conversion/creepansy",
+      "remaining_block": "minecraft:flower_pot"
+    }
+  }
+}

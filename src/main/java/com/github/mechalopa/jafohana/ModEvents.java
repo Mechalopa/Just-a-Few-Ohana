@@ -2,26 +2,31 @@ package com.github.mechalopa.jafohana;
 
 import java.util.List;
 
-import com.github.mechalopa.jafohana.registry.ModBlocks;
+import com.github.mechalopa.jafohana.registry.ModDataMaps;
 import com.github.mechalopa.jafohana.registry.ModItems;
-import com.github.mechalopa.jafohana.util.ModTags;
 import com.github.mechalopa.jafohana.util.ModUtils;
+import com.github.mechalopa.jafohana.util.datamaps.ExplosionConvertible;
+import com.github.mechalopa.jafohana.util.datamaps.MutableFlower;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.Holder;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.tags.BlockTags;
-import net.minecraft.tags.TagKey;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.npc.VillagerTrades.ItemListing;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DoublePlantBlock;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
+import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
+import net.minecraft.world.phys.Vec3;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.common.BasicItemListing;
@@ -40,14 +45,9 @@ public class ModEvents
 		{
 			Level level = event.getLevel();
 			BlockPos pos = event.getPos();
-			RandomSource r = level.getRandom();
+			RandomSource random = level.getRandom();
 
-			if (fasciate(level, pos, event.getState(), ModTags.BlockTags.CONVERTABLE_TO_FASCIATED_DANDELION, ModBlocks.FASCIATED_DANDELION.get().defaultBlockState(), r, ModConfigs.cachedServer.DANDELION_FASCIATION_CHANCE))
-			{
-				event.setSuccessful(true);
-				ModUtils.shrink(event.getStack(), level, event.getPlayer());
-			}
-			else if (fasciate(level, pos, event.getState(), ModTags.BlockTags.CONVERTABLE_TO_FASCIATED_OXEYE_DAISY, ModBlocks.FASCIATED_OXEYE_DAISY.get().defaultBlockState(), r, ModConfigs.cachedServer.OXEYE_DAISY_FASCIATION_CHANCE))
+			if (mutate(level, pos, event.getState(), random))
 			{
 				event.setSuccessful(true);
 				ModUtils.shrink(event.getStack(), level, event.getPlayer());
@@ -55,26 +55,74 @@ public class ModEvents
 		}
 	}
 
-	private static boolean fasciate(Level level, BlockPos blockpos, BlockState baseFlowerState, TagKey<Block> blockTag, BlockState fasciatedFlowerState, RandomSource random, double chance)
+	private static boolean mutate(Level level, BlockPos blockpos, BlockState baseFlowerState, RandomSource random)
 	{
-		if (chance > 0.0D && baseFlowerState.is(blockTag) && fasciatedFlowerState.canSurvive(level, blockpos) && level.isEmptyBlock(blockpos.above()))
+		if (baseFlowerState.hasProperty(BlockStateProperties.DOUBLE_BLOCK_HALF))
 		{
-			for (Direction direction : Direction.values())
+			if (baseFlowerState.getValue(BlockStateProperties.DOUBLE_BLOCK_HALF) != DoubleBlockHalf.LOWER)
 			{
-				if (direction.getAxis().isHorizontal())
+				BlockPos blockpos1 = blockpos.below();
+				BlockState state = level.getBlockState(blockpos1);
+				return mutate(level, blockpos1, state, random, state.hasProperty(BlockStateProperties.DOUBLE_BLOCK_HALF));
+			}
+			else
+			{
+				return mutate(level, blockpos, baseFlowerState, random, true);
+			}
+		}
+		else
+		{
+			return mutate(level, blockpos, baseFlowerState, random, false);
+		}
+	}
+
+	private static boolean mutate(Level level, BlockPos blockpos, BlockState baseFlowerState, RandomSource random, boolean flag)
+	{
+		Holder<Block> holder = baseFlowerState.getBlockHolder();
+		MutableFlower data = holder.getData(ModDataMaps.MUTABLE_FLOWERS);
+
+		if (data != null && data.catalystTag() != null && data.chance() > 0.0F)
+		{
+			BlockState mutatedFlowerState = data.mutatedFlower().defaultBlockState();
+			boolean flag1 = mutatedFlowerState.hasProperty(BlockStateProperties.DOUBLE_BLOCK_HALF);
+
+			if (flag1)
+			{
+				mutatedFlowerState = mutatedFlowerState.setValue(BlockStateProperties.DOUBLE_BLOCK_HALF, DoubleBlockHalf.LOWER);
+			}
+
+			if (mutatedFlowerState.canSurvive(level, blockpos) && (flag || !flag1 || level.isEmptyBlock(blockpos.above())))
+			{
+				for (Direction direction : Direction.values())
 				{
-					BlockState state = level.getBlockState(blockpos.relative(direction));
-
-					if (state != null && state.is(ModTags.BlockTags.AFFECTS_FASCIATIONS) && (!state.hasProperty(DoublePlantBlock.HALF) || state.getValue(DoublePlantBlock.HALF) != DoubleBlockHalf.UPPER))
+					if (direction.getAxis().isHorizontal())
 					{
-						if (!level.isClientSide() && level instanceof ServerLevel && random.nextDouble() < chance)
-						{
-							BlockPos blockpos1 = blockpos.above();
-							level.setBlockAndUpdate(blockpos, DoublePlantBlock.copyWaterloggedFrom(level, blockpos, fasciatedFlowerState.setValue(DoublePlantBlock.HALF, DoubleBlockHalf.LOWER)));
-							level.setBlockAndUpdate(blockpos1, DoublePlantBlock.copyWaterloggedFrom(level, blockpos1, fasciatedFlowerState.setValue(DoublePlantBlock.HALF, DoubleBlockHalf.UPPER)));
-						}
+						BlockState state = level.getBlockState(blockpos.relative(direction));
 
-						return true;
+						if (state != null && state.is(data.catalystTag()) && (!state.hasProperty(BlockStateProperties.DOUBLE_BLOCK_HALF) || state.getValue(BlockStateProperties.DOUBLE_BLOCK_HALF) != DoubleBlockHalf.UPPER))
+						{
+							if (!level.isClientSide() && level instanceof ServerLevel && random.nextFloat() < data.chance())
+							{
+								BlockPos blockpos1 = blockpos.above();
+
+								if (flag1)
+								{
+									level.setBlockAndUpdate(blockpos, DoublePlantBlock.copyWaterloggedFrom(level, blockpos, mutatedFlowerState.setValue(BlockStateProperties.DOUBLE_BLOCK_HALF, DoubleBlockHalf.LOWER)));
+									level.setBlockAndUpdate(blockpos1, DoublePlantBlock.copyWaterloggedFrom(level, blockpos1, mutatedFlowerState.setValue(BlockStateProperties.DOUBLE_BLOCK_HALF, DoubleBlockHalf.UPPER)));
+								}
+								else
+								{
+									level.setBlockAndUpdate(blockpos, ModUtils.tryWaterlogged(level, blockpos, mutatedFlowerState));
+
+									if (flag)
+									{
+										level.removeBlock(blockpos1, false);
+									}
+								}
+							}
+
+							return true;
+						}
 					}
 				}
 			}
@@ -86,28 +134,35 @@ public class ModEvents
 	@SubscribeEvent
 	public static void onBlockExplode(ExplosionEvent.Detonate event)
 	{
-		if (!event.getLevel().isClientSide() && event.getExplosion().getDirectSourceEntity() != null && event.getExplosion().getDirectSourceEntity().getType().is(ModTags.EntityTypeTags.CAN_CONVERT_TO_CREEPANSY) && !event.getAffectedBlocks().isEmpty() && EventHooks.canEntityGrief(event.getLevel(), event.getExplosion().getDirectSourceEntity()))
+		if (!event.getLevel().isClientSide() && event.getLevel() instanceof ServerLevel level && event.getExplosion().getDirectSourceEntity() != null && !event.getAffectedBlocks().isEmpty() && EventHooks.canEntityGrief(event.getLevel(), event.getExplosion().getDirectSourceEntity()))
 		{
-			Level level = event.getLevel();
-
 			for (BlockPos pos : event.getAffectedBlocks())
 			{
-				BlockState state = level.getBlockState(pos);
+				Holder<Block> holder = level.getBlockState(pos).getBlockHolder();
+				ExplosionConvertible data = holder.getData(ModDataMaps.EXPLOSION_CONVERTIBLES);
 
-				if (state.is(ModTags.BlockTags.CONVERTABLE_TO_CREEPANSY) && (double)level.getRandom().nextFloat() < ModConfigs.cachedServer.CREEPANSY_CONVERT_CHANCE)
+				if (data != null && data.chance() > 0.0F && data.sourceEntityTypeTag() != null && event.getExplosion().getDirectSourceEntity().getType().is(data.sourceEntityTypeTag()) && level.getRandom().nextFloat() < data.chance())
 				{
-					ItemEntity itementity = new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), ModItems.CREEPANSY.get().getDefaultInstance());
+					LootTable loottable  = level.getServer().reloadableRegistries().getLootTable(data.lootTable());
 
-					if (level.addFreshEntity(itementity))
+					if (loottable != null)
 					{
-						if (state.is(BlockTags.FLOWER_POTS))
+						LootParams lootparams = new LootParams.Builder(level).withParameter(LootContextParams.ORIGIN, Vec3.atCenterOf(pos)).withParameter(LootContextParams.THIS_ENTITY, event.getExplosion().getDirectSourceEntity()).create(LootContextParamSets.GIFT);
+
+						for (ItemStack stack : loottable.getRandomItems(lootparams))
 						{
-							level.setBlockAndUpdate(pos, Blocks.FLOWER_POT.defaultBlockState());
+							ItemEntity itementity = new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), stack);
+							level.addFreshEntity(itementity);
 						}
-						else
-						{
-							level.removeBlock(pos, false);
-						}
+					}
+
+					if (!data.remainingBlock().defaultBlockState().isAir())
+					{
+						level.setBlockAndUpdate(pos, ModUtils.tryWaterlogged(level, pos, data.remainingBlock().defaultBlockState()));
+					}
+					else
+					{
+						level.removeBlock(pos, false);
 					}
 				}
 			}
