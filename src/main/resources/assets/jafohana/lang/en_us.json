@@ -118,9 +118,6 @@
   "jafohana.configuration.general": "General",
   "jafohana.configuration.fasciatedDandelionDropsNormalDandelionWhenUsingBoneMeal": "Fasciated dandelion drops normal dandelion when using bone meal",
   "jafohana.configuration.fasciatedOxeyeDaisyDropsNormalOxeyeDaisyWhenUsingBoneMeal": "Fasciated oxeye daisy drops normal oxeye daisy when using bone meal",
-  "jafohana.configuration.dandelionFasciationChance": "Dandelion fasciation chance",
-  "jafohana.configuration.oxeyeDaisyFasciationChance": "Oxeye daisy fasciation chance",
-  "jafohana.configuration.creepansyConvertChance": "Creepansy convert chance",
   "jafohana.configuration.vineFlowerGrowChance": "Vine flower grow chance",
   "jafohana.configuration.additionalWandererTrades": "Additional wanderer trades"
 }

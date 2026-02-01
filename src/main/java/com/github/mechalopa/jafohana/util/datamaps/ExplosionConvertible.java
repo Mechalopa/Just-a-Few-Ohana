@@ -12,12 +12,12 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.storage.loot.LootTable;
 
-public record ExplosionConvertible(TagKey<EntityType<?>> sourceEntityTypeTag, float chance, ResourceKey<LootTable> lootTable, Block remainingBlock)
+public record ExplosionConvertible(float chance, ResourceKey<LootTable> lootTable, Block remainingBlock, TagKey<EntityType<?>> sourceEntityTypeTag)
 {
 	public static final Codec<ExplosionConvertible> CODEC = RecordCodecBuilder.create(p -> p.group(
-			TagKey.hashedCodec(Registries.ENTITY_TYPE).fieldOf("source_entity_type_tag").forGetter(ExplosionConvertible::sourceEntityTypeTag),
 			Codec.floatRange(0.0F, 1.0F).fieldOf("chance").orElse(1.0F).forGetter(ExplosionConvertible::chance),
 			ResourceKey.codec(Registries.LOOT_TABLE).fieldOf("loot_table").forGetter(ExplosionConvertible::lootTable),
-			BuiltInRegistries.BLOCK.byNameCodec().fieldOf("remaining_block").orElse(Blocks.AIR).forGetter(ExplosionConvertible::remainingBlock)
+			BuiltInRegistries.BLOCK.byNameCodec().fieldOf("remaining_block").orElse(Blocks.AIR).forGetter(ExplosionConvertible::remainingBlock),
+			TagKey.hashedCodec(Registries.ENTITY_TYPE).fieldOf("source_entity_type_tag").forGetter(ExplosionConvertible::sourceEntityTypeTag)
 			).apply(p, ExplosionConvertible::new));
 }
