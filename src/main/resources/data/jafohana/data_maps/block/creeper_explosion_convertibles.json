@@ -1,0 +1,25 @@
+{
+  "values": {
+    "jafohana:purple_pansy": {
+      "converted_item": "jafohana:creepansy"
+    },
+    "jafohana:white_pansy": {
+      "converted_item": "jafohana:creepansy"
+    },
+    "jafohana:yellow_pansy": {
+      "converted_item": "jafohana:creepansy"
+    },
+    "jafohana:potted_purple_pansy": {
+      "converted_item": "jafohana:creepansy",
+      "remaining_block": "minecraft:flower_pot"
+    },
+    "jafohana:potted_white_pansy": {
+      "converted_item": "jafohana:creepansy",
+      "remaining_block": "minecraft:flower_pot"
+    },
+    "jafohana:potted_yellow_pansy": {
+      "converted_item": "jafohana:creepansy",
+      "remaining_block": "minecraft:flower_pot"
+    }
+  }
+}

@@ -4,8 +4,9 @@ import java.util.List;
 
 import com.github.mechalopa.jafohana.registry.ModDataMaps;
 import com.github.mechalopa.jafohana.registry.ModItems;
+import com.github.mechalopa.jafohana.util.ModTags;
 import com.github.mechalopa.jafohana.util.ModUtils;
-import com.github.mechalopa.jafohana.util.datamaps.ExplosionConvertible;
+import com.github.mechalopa.jafohana.util.datamaps.CreeperExplosionConvertible;
 import com.github.mechalopa.jafohana.util.datamaps.MutableFlower;
 
 import net.minecraft.core.BlockPos;
@@ -22,11 +23,6 @@ import net.minecraft.world.level.block.DoublePlantBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
-import net.minecraft.world.level.storage.loot.LootParams;
-import net.minecraft.world.level.storage.loot.LootTable;
-import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
-import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
-import net.minecraft.world.phys.Vec3;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.common.BasicItemListing;
@@ -134,35 +130,27 @@ public class ModEvents
 	@SubscribeEvent
 	public static void onBlockExplode(ExplosionEvent.Detonate event)
 	{
-		if (!event.getLevel().isClientSide() && event.getLevel() instanceof ServerLevel level && event.getExplosion().getDirectSourceEntity() != null && !event.getAffectedBlocks().isEmpty() && EventHooks.canEntityGrief(event.getLevel(), event.getExplosion().getDirectSourceEntity()))
+		if (!event.getLevel().isClientSide() && event.getLevel() instanceof ServerLevel level && event.getExplosion().getDirectSourceEntity() != null && event.getExplosion().getDirectSourceEntity().getType().is(ModTags.EntityTypeTags.CREEPERS) && !event.getAffectedBlocks().isEmpty() && EventHooks.canEntityGrief(event.getLevel(), event.getExplosion().getDirectSourceEntity()))
 		{
 			for (BlockPos pos : event.getAffectedBlocks())
 			{
 				Holder<Block> holder = level.getBlockState(pos).getBlockHolder();
-				ExplosionConvertible data = holder.getData(ModDataMaps.EXPLOSION_CONVERTIBLES);
+				CreeperExplosionConvertible data = holder.getData(ModDataMaps.CREEPER_EXPLOSION_CONVERTIBLES);
 
-				if (data != null && data.chance() > 0.0F && data.sourceEntityTypeTag() != null && event.getExplosion().getDirectSourceEntity().getType().is(data.sourceEntityTypeTag()) && level.getRandom().nextFloat() < data.chance())
+				if (data != null && data.convertedItem() != null && data.chance() > 0.0F && level.getRandom().nextFloat() < data.chance())
 				{
-					LootTable loottable  = level.getServer().reloadableRegistries().getLootTable(data.lootTable());
+					ItemEntity itementity = new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), data.convertedItem().getDefaultInstance());
 
-					if (loottable != null)
+					if (level.addFreshEntity(itementity))
 					{
-						LootParams lootparams = new LootParams.Builder(level).withParameter(LootContextParams.ORIGIN, Vec3.atCenterOf(pos)).withParameter(LootContextParams.THIS_ENTITY, event.getExplosion().getDirectSourceEntity()).create(LootContextParamSets.GIFT);
-
-						for (ItemStack stack : loottable.getRandomItems(lootparams))
+						if (!data.remainingBlock().defaultBlockState().isAir())
 						{
-							ItemEntity itementity = new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), stack);
-							level.addFreshEntity(itementity);
+							level.setBlockAndUpdate(pos, ModUtils.tryWaterlogged(level, pos, data.remainingBlock().defaultBlockState()));
 						}
-					}
-
-					if (!data.remainingBlock().defaultBlockState().isAir())
-					{
-						level.setBlockAndUpdate(pos, ModUtils.tryWaterlogged(level, pos, data.remainingBlock().defaultBlockState()));
-					}
-					else
-					{
-						level.removeBlock(pos, false);
+						else
+						{
+							level.removeBlock(pos, false);
+						}
 					}
 				}
 			}

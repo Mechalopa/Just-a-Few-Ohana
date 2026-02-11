@@ -16,7 +16,7 @@ public class ModEventBusSubscriber
 	@SubscribeEvent
 	public static void registerDataMaps(final RegisterDataMapTypesEvent event)
 	{
-		event.register(ModDataMaps.EXPLOSION_CONVERTIBLES);
+		event.register(ModDataMaps.CREEPER_EXPLOSION_CONVERTIBLES);
 		event.register(ModDataMaps.MUTABLE_FLOWERS);
 	}
 }
