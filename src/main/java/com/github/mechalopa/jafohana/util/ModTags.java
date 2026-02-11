@@ -26,7 +26,7 @@ public class ModTags
 
 	public static final class EntityTypeTags
 	{
-		public static final TagKey<EntityType<?>> PRODUCES_CREEPANSY = createEntityTypeTag("produces_creepansy");
+		public static final TagKey<EntityType<?>> CREEPERS = createEntityTypeTag("creepers");
 	}
 
 	@SuppressWarnings("removal")

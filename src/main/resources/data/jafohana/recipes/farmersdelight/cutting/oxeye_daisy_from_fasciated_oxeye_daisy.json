@@ -8,21 +8,16 @@
   "type": "farmersdelight:cutting",
   "ingredients": [
     {
-      "item": "jafohana:creepansy"
+      "item": "jafohana:fasciated_oxeye_daisy"
     }
   ],
   "result": [
     {
-      "item": "minecraft:green_dye",
-      "count": 2
-    },
-    {
-      "chance": 0.075,
-      "count": 1,
-      "item": "minecraft:gunpowder"
+      "item": "minecraft:oxeye_daisy",
+      "count": 3
     }
   ],
   "tool": {
-    "tag": "forge:tools/knives"
+    "tag": "forge:shears"
   }
 }

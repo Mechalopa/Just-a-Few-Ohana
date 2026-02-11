@@ -85,10 +85,8 @@ public class ModEvents
 	@SubscribeEvent
 	public static void onBlockExplode(ExplosionEvent.Detonate event)
 	{
-		if (!event.getLevel().isClientSide() && event.getExplosion().getExploder() != null && event.getExplosion().getExploder().getType().is(ModTags.EntityTypeTags.PRODUCES_CREEPANSY) && !event.getAffectedBlocks().isEmpty() && ForgeEventFactory.getMobGriefingEvent(event.getLevel(), event.getExplosion().getExploder()))
+		if (!event.getLevel().isClientSide() && event.getLevel() instanceof ServerLevel level && event.getExplosion().getExploder() != null && event.getExplosion().getExploder().getType().is(ModTags.EntityTypeTags.CREEPERS) && !event.getAffectedBlocks().isEmpty() && ForgeEventFactory.getMobGriefingEvent(event.getLevel(), event.getExplosion().getExploder()))
 		{
-			Level level = event.getLevel();
-
 			for (BlockPos pos : event.getAffectedBlocks())
 			{
 				BlockState state = level.getBlockState(pos);
