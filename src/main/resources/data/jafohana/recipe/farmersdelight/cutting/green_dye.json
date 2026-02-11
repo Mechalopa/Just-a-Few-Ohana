@@ -8,15 +8,21 @@
   "type": "farmersdelight:cutting",
   "ingredients": [
     {
-      "type": "neoforge:intersection",
-      "children": [
-        {
-          "tag": "jafohana:dye_ingredients/green"
-        },
-        {
-          "tag": "jafohana:small_flowers"
-        }
-      ]
+      "type": "neoforge:difference",
+      "base": {
+        "type": "neoforge:intersection",
+        "children": [
+          {
+            "tag": "jafohana:dye_ingredients/green"
+          },
+          {
+            "tag": "jafohana:small_flowers"
+          }
+        ]
+      },
+      "subtracted": {
+        "item": "jafohana:creepansy"
+      }
     }
   ],
   "result": [
