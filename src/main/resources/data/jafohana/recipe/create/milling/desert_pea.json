@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions":[{"type":"neoforge:false"}],
+  "_neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "jafohana:desert_pea"
+    }
+  ],
+  "processingTime": 50,
+  "results": [
+    {
+      "count": 2,
+      "id": "minecraft:red_dye"
+    },
+    {
+      "chance": 0.05,
+      "id": "minecraft:red_dye"
+    }
+  ]
+}
