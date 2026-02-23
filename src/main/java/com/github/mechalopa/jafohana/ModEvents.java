@@ -43,11 +43,11 @@ public class ModEvents
 			BlockPos pos = event.getPos();
 			RandomSource random = level.getRandom();
 
-			if (fasciate(level, pos, event.getBlock(), ModTags.BlockTags.CONVERTIBLE_TO_FASCIATED_DANDELION, ModBlocks.FASCIATED_DANDELION.get().defaultBlockState(), random, ModConfigs.cachedServer.DANDELION_FASCIATION_CHANCE))
+			if (fasciate(level, pos, event.getBlock(), ModTags.BlockTags.CAN_CONVERT_TO_FASCIATED_DANDELION, ModBlocks.FASCIATED_DANDELION.get().defaultBlockState(), random, ModConfigs.cachedServer.DANDELION_FASCIATION_CHANCE))
 			{
 				event.setResult(Result.ALLOW);
 			}
-			else if (fasciate(level, pos, event.getBlock(), ModTags.BlockTags.CONVERTIBLE_TO_FASCIATED_OXEYE_DAISY, ModBlocks.FASCIATED_OXEYE_DAISY.get().defaultBlockState(), random, ModConfigs.cachedServer.OXEYE_DAISY_FASCIATION_CHANCE))
+			else if (fasciate(level, pos, event.getBlock(), ModTags.BlockTags.CAN_CONVERT_TO_FASCIATED_OXEYE_DAISY, ModBlocks.FASCIATED_OXEYE_DAISY.get().defaultBlockState(), random, ModConfigs.cachedServer.OXEYE_DAISY_FASCIATION_CHANCE))
 			{
 				event.setResult(Result.ALLOW);
 			}
@@ -91,7 +91,7 @@ public class ModEvents
 			{
 				BlockState state = level.getBlockState(pos);
 
-				if (state.is(ModTags.BlockTags.CONVERTIBLE_TO_CREEPANSY) && (double)level.getRandom().nextFloat() < ModConfigs.cachedServer.CREEPANSY_CONVERT_CHANCE)
+				if (state.is(ModTags.BlockTags.CAN_CONVERT_TO_CREEPANSY) && (double)level.getRandom().nextFloat() < ModConfigs.cachedServer.CREEPANSY_CONVERT_CHANCE)
 				{
 					ItemEntity itementity = new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), ModItems.CREEPANSY.get().getDefaultInstance());
 

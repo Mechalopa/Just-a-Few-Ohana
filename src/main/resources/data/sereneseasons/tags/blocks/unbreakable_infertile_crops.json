@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "#jafohana:convertible_to_fasciated_dandelion",
-    "#jafohana:convertible_to_fasciated_oxeye_daisy",
+    "#jafohana:can_convert_to_fasciated_dandelion",
+    "#jafohana:can_convert_to_fasciated_oxeye_daisy",
     "#jafohana:tall_flowers",
     "jafohana:jade_vine"
   ]

@@ -13,9 +13,9 @@ public class ModTags
 	public static final class BlockTags
 	{
 		public static final TagKey<Block> BEE_ATTRACTIVE_UPPER_ONLY = createBlockTag("bee_attractive_upper_only");
-		public static final TagKey<Block> CONVERTIBLE_TO_CREEPANSY = createBlockTag("convertible_to_creepansy");
-		public static final TagKey<Block> CONVERTIBLE_TO_FASCIATED_DANDELION = createBlockTag("convertible_to_fasciated_dandelion");
-		public static final TagKey<Block> CONVERTIBLE_TO_FASCIATED_OXEYE_DAISY = createBlockTag("convertible_to_fasciated_oxeye_daisy");
+		public static final TagKey<Block> CAN_CONVERT_TO_CREEPANSY = createBlockTag("can_convert_to_creepansy");
+		public static final TagKey<Block> CAN_CONVERT_TO_FASCIATED_DANDELION = createBlockTag("can_convert_to_fasciated_dandelion");
+		public static final TagKey<Block> CAN_CONVERT_TO_FASCIATED_OXEYE_DAISY = createBlockTag("can_convert_to_fasciated_oxeye_daisy");
 		public static final TagKey<Block> CREEPANSY_PLANTABLE_ON = createBlockTag("creepansy_plantable_on");
 		public static final TagKey<Block> CRIMSON_CLOVER_PLANTABLE_ON = createBlockTag("crimson_clover_plantable_on");
 		public static final TagKey<Block> CRIMSON_NYLIUMS = createBlockTag("crimson_nyliums");
