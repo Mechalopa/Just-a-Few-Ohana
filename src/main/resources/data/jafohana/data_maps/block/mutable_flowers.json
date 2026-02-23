@@ -1,11 +1,11 @@
 {
   "values": {
-    "minecraft:dandelion": {
+    "#jafohana:can_convert_to_fasciated_dandelion": {
       "catalyst_tag": "#jafohana:withered_blocks",
       "chance": 0.4,
       "mutated_flower": "jafohana:fasciated_dandelion"
     },
-    "minecraft:oxeye_daisy": {
+    "#jafohana:can_convert_to_fasciated_oxeye_daisy": {
       "catalyst_tag": "#jafohana:withered_blocks",
       "chance": 0.4,
       "mutated_flower": "jafohana:fasciated_oxeye_daisy"

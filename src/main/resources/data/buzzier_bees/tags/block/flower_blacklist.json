@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "minecraft:dandelion",
-    "minecraft:oxeye_daisy",
+    "#jafohana:can_convert_to_fasciated_dandelion",
+    "#jafohana:can_convert_to_fasciated_oxeye_daisy",
     "jafohana:creepansy"
   ]
 }
