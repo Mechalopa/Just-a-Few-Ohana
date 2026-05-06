@@ -19,7 +19,13 @@
       }
     }
   ],
-  "tool": {
-    "tag": "c:tools/shear"
-  }
+  "tool": [
+    {
+      "type": "farmersdelight:item_ability",
+      "action": "shears_dig"
+    },
+    {
+      "tag": "c:tools/shear"
+    }
+  ]
 }

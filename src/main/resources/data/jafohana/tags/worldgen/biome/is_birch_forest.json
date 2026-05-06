@@ -28,6 +28,14 @@
     {
       "id": "bleak_and_barren:desolate_birch_forest",
       "required": false
+    },
+    {
+      "id": "youkaisfeasts:sakura_birch_forest",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:sakura_birch_forest",
+      "required": false
     }
   ]
 }

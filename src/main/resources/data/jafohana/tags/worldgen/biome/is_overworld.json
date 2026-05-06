@@ -111,6 +111,10 @@
       "required": false
     },
     {
+      "id": "cliffbranch:coniferous_badlands",
+      "required": false
+    },
+    {
       "id": "riverredux:gravelly_river",
       "required": false
     },
@@ -120,6 +124,38 @@
     },
     {
       "id": "riverredux:tropical_river",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:sakura_forest",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:sakura_taiga",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:sakura_birch_forest",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:animal_path",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:sakura_forest",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:sakura_taiga",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:sakura_birch_forest",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:animal_path",
       "required": false
     }
   ]

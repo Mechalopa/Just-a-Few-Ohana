@@ -48,6 +48,10 @@
     {
       "id": "clifftree:inferno",
       "required": false
+    },
+    {
+      "id": "cliffbranch:inferno",
+      "required": false
     }
   ]
 }

@@ -16,6 +16,14 @@
     {
       "id": "clifftree:snowy_old_growth_taiga",
       "required": false
+    },
+    {
+      "id": "nature_horizons:old_growth_aspen_forest",
+      "required": false
+    },
+    {
+      "id": "nature_horizons:old_growth_redwood_taiga",
+      "required": false
     }
   ]
 }

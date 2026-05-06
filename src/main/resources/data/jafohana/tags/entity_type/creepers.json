@@ -321,6 +321,10 @@
     {
       "id": "mutantmonsters:mutant_creeper",
       "required": false
+    },
+    {
+      "id": "caverns_and_chasms:evendeeper",
+      "required": false
     }
   ]
 }
