@@ -2,6 +2,22 @@
   "feature": "jafohana:red_spider_lily",
   "placement": [
     {
+      "type": "minecraft:count",
+      "count": {
+        "type": "minecraft:weighted_list",
+        "distribution": [
+          {
+            "data": 2,
+            "weight": 3
+          },
+          {
+            "data": 1,
+            "weight": 2
+          }
+        ]
+      }
+    },
+    {
       "type": "minecraft:rarity_filter",
       "chance": 32
     },

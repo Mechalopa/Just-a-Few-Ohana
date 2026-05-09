@@ -10,6 +10,10 @@
               "feature": {
                 "type": "jafohana:vine_flowers",
                 "config": {
+                  "allowed_placement": {
+                    "type": "minecraft:matching_block_tag",
+                    "tag": "jafohana:vine_flower_replaceable_world_gen"
+                  },
                   "height": {
                     "type": "minecraft:weighted_list",
                     "distribution": [
@@ -60,20 +64,20 @@
               "feature": {
                 "type": "jafohana:vine_flowers",
                 "config": {
+                  "allowed_placement": {
+                    "type": "minecraft:matching_block_tag",
+                    "tag": "jafohana:vine_flower_replaceable_world_gen"
+                  },
                   "height": {
                     "type": "minecraft:weighted_list",
                     "distribution": [
                       {
-                        "data": 4,
-                        "weight": 1
-                      },
-                      {
-                        "data": 3,
-                        "weight": 11
-                      },
-                      {
                         "data": 2,
-                        "weight": 4
+                        "weight": 7
+                      },
+                      {
+                        "data": 1,
+                        "weight": 9
                       }
                     ]
                   },
@@ -85,7 +89,7 @@
                   "type": "minecraft:block_predicate_filter",
                   "predicate": {
                     "type": "minecraft:matching_block_tag",
-                    "tag": "jafohana:jungle_vine_flower_placeable_world_gen",
+                    "tag": "jafohana:long_fruited_mucuna_placeable_world_gen",
                     "offset": [
                       0,
                       1,
@@ -95,9 +99,9 @@
                 }
               ]
             },
-            "tries": 56,
+            "tries": 128,
             "xz_spread": 6,
-            "y_spread": 2
+            "y_spread": 3
           }
         },
         "placement": []

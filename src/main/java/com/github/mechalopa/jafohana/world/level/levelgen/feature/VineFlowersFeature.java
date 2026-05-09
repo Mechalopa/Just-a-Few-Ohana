@@ -25,7 +25,7 @@ public class VineFlowersFeature extends Feature<VineFlowersConfiguration>
 		VineFlowersConfiguration config = context.config();
 		int i = config.height().sample(context.random());
 
-		if (i == 0)
+		if (i <= 0)
 		{
 			return false;
 		}
@@ -38,7 +38,7 @@ public class VineFlowersFeature extends Feature<VineFlowersConfiguration>
 
 			for (int j = 0; j < i; ++j)
 			{
-				if (!level.isEmptyBlock(mutableblockpos))
+				if (!config.allowedPlacement().test(level, mutableblockpos))
 				{
 					if (j > 1)
 					{

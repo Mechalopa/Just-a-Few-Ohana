@@ -2,8 +2,21 @@
   "feature": "jafohana:vine_flower_jungle",
   "placement": [
     {
+      "type": "minecraft:count",
+      "count": {
+        "type": "minecraft:clamped",
+        "max_inclusive": 2,
+        "min_inclusive": 1,
+        "source": {
+          "type": "minecraft:uniform",
+          "max_inclusive": 2,
+          "min_inclusive": -1
+        }
+      }
+    },
+    {
       "type": "minecraft:rarity_filter",
-      "chance": 8
+      "chance": 16
     },
     {
       "type": "minecraft:in_square"
@@ -15,31 +28,34 @@
     {
       "type": "minecraft:environment_scan",
       "allowed_search_condition": {
-        "type": "minecraft:any_of",
+        "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:air",
-              "minecraft:snow",
-              "minecraft:vine"
-            ]
-          },
-          {
-            "type": "minecraft:all_of",
+            "type": "minecraft:any_of",
             "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "minecraft:cobweb",
+                  "minecraft:cocoa"
+                ]
+              },
+              {
+                "type": "minecraft:matching_block_tag",
+                "tag": "minecraft:replaceable"
+              },
               {
                 "type": "minecraft:matching_block_tag",
                 "tag": "minecraft:leaves"
-              },
-              {
-                "type": "minecraft:not",
-                "predicate": {
-                  "type": "minecraft:matching_block_tag",
-                  "tag": "jafohana:jungle_vine_flower_placeable_world_gen"
-                }
               }
             ]
+          },
+          {
+            "type": "minecraft:not",
+            "predicate": {
+              "type": "minecraft:matching_block_tag",
+              "tag": "jafohana:jungle_vine_flower_placeable_world_gen"
+            }
           }
         ]
       },
