@@ -94,7 +94,7 @@ public class ModBlocks
 	public static final Supplier<Block> FASCIATED_DANDELION = REGISTRY.register("fasciated_dandelion", () -> new FasciatedDandelionBlock());
 	public static final Supplier<Block> FASCIATED_OXEYE_DAISY = REGISTRY.register("fasciated_oxeye_daisy", () -> new FasciatedOxeyeDaisyBlock());
 	public static final Supplier<Block> JADE_VINE = REGISTRY.register("jade_vine", () -> VineFlowerBlock.create());
-	public static final Supplier<Block> MYSORE_TRUMPETVINE = REGISTRY.register("mysore_trumpetvine", () -> VineFlowerBlock.create());
+	public static final Supplier<Block> LONG_FRUITED_MUCUNA = REGISTRY.register("long_fruited_mucuna", () -> VineFlowerBlock.create());
 	public static final Supplier<Block> POTTED_DAYFLOWER = REGISTRY.register("potted_dayflower", () -> ModFlowerPotBlock.create(DAYFLOWER.get()));
 	public static final Supplier<Block> POTTED_EVENING_PRIMROSE = REGISTRY.register("potted_evening_primrose", () -> ModFlowerPotBlock.create(EVENING_PRIMROSE.get()));
 	public static final Supplier<Block> POTTED_MILK_VETCH = REGISTRY.register("potted_milk_vetch", () -> ModFlowerPotBlock.create(MILK_VETCH.get()));

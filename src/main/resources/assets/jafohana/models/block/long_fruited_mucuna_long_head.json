@@ -2,6 +2,6 @@
   "parent": "minecraft:block/cross",
   "render_type": "minecraft:cutout",
   "textures": {
-    "cross": "jafohana:block/mysore_trumpetvine_short_stem"
+    "cross": "jafohana:block/long_fruited_mucuna_long_head"
   }
 }

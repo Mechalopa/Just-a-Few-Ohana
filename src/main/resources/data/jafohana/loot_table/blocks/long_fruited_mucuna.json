@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "jafohana:mysore_trumpetvine"
+          "name": "jafohana:long_fruited_mucuna"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "jafohana:blocks/mysore_trumpetvine"
+  "random_sequence": "jafohana:blocks/long_fruited_mucuna"
 }

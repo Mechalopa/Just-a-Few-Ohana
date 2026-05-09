@@ -7,15 +7,15 @@
   ],
   "type": "immersiveengineering:cloche",
   "input": {
-    "item": "jafohana:mysore_trumpetvine"
+    "item": "jafohana:long_fruited_mucuna"
   },
   "render": {
     "type": "immersiveengineering:stacking",
-    "block": "jafohana:mysore_trumpetvine"
+    "block": "jafohana:long_fruited_mucuna"
   },
   "results": [
     {
-      "id": "jafohana:mysore_trumpetvine"
+      "id": "jafohana:long_fruited_mucuna"
     }
   ],
   "soil": {

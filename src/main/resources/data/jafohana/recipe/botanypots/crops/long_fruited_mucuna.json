@@ -6,15 +6,15 @@
     }
   ],
   "type": "botanypots:block_derived_crop",
-  "block": "jafohana:mysore_trumpetvine",
+  "block": "jafohana:long_fruited_mucuna",
   "input": {
-    "item": "jafohana:mysore_trumpetvine"
+    "item": "jafohana:long_fruited_mucuna"
   },
   "display": [
     {
       "type": "botanypots:simple",
       "block_state": {
-        "block": "jafohana:mysore_trumpetvine",
+        "block": "jafohana:long_fruited_mucuna",
         "properties": {
           "vine_flower": "short_stem"
         }
@@ -26,7 +26,7 @@
     {
       "type": "botanypots:simple",
       "block_state": {
-        "block": "jafohana:mysore_trumpetvine",
+        "block": "jafohana:long_fruited_mucuna",
         "properties": {
           "vine_flower": "short_head"
         }

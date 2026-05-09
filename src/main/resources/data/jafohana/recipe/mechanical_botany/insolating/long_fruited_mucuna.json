@@ -14,13 +14,13 @@
       "fluid": "minecraft:water"
     },
     {
-      "item": "jafohana:mysore_trumpetvine"
+      "item": "jafohana:long_fruited_mucuna"
     }
   ],
   "processing_time": 800,
   "results": [
     {
-      "id": "jafohana:mysore_trumpetvine"
+      "id": "jafohana:long_fruited_mucuna"
     }
   ]
 }

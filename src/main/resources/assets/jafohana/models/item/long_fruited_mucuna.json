@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "jafohana:block/mysore_trumpetvine_long_body"
+    "layer0": "jafohana:block/long_fruited_mucuna_long_body"
   }
 }

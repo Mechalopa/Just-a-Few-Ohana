@@ -81,7 +81,7 @@
                       }
                     ]
                   },
-                  "place_block": "jafohana:mysore_trumpetvine"
+                  "place_block": "jafohana:long_fruited_mucuna"
                 }
               },
               "placement": [
@@ -89,7 +89,7 @@
                   "type": "minecraft:block_predicate_filter",
                   "predicate": {
                     "type": "minecraft:matching_block_tag",
-                    "tag": "jafohana:long_fruited_mucuna_placeable_world_gen",
+                    "tag": "jafohana:jungle_vine_flower_placeable_world_gen",
                     "offset": [
                       0,
                       1,

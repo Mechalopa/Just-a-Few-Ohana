@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "vine_flower=single": {
+      "model": "jafohana:block/long_fruited_mucuna_single"
+    },
+    "vine_flower=short_stem": {
+      "model": "jafohana:block/long_fruited_mucuna_short_stem"
+    },
+    "vine_flower=short_head": {
+      "model": "jafohana:block/long_fruited_mucuna_short_head"
+    },
+    "vine_flower=long_stem": {
+      "model": "jafohana:block/long_fruited_mucuna_long_stem"
+    },
+    "vine_flower=long_body": {
+      "model": "jafohana:block/long_fruited_mucuna_long_body"
+    },
+    "vine_flower=long_head": {
+      "model": "jafohana:block/long_fruited_mucuna_long_head"
+    }
+  }
+}

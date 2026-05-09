@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_mysore_trumpetvine": {
+    "has_long_fruited_mucuna": {
       "conditions": {
         "items": [
           {
-            "items": "jafohana:mysore_trumpetvine"
+            "items": "jafohana:long_fruited_mucuna"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "jafohana:yellow_dye_from_mysore_trumpetvine"
+        "recipe": "jafohana:yellow_dye_from_long_fruited_mucuna"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_mysore_trumpetvine"
+      "has_long_fruited_mucuna"
     ]
   ],
   "rewards": {
     "recipes": [
-      "jafohana:yellow_dye_from_mysore_trumpetvine"
+      "jafohana:yellow_dye_from_long_fruited_mucuna"
     ]
   }
 }

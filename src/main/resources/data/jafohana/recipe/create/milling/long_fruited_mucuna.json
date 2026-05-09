@@ -9,14 +9,14 @@
   "type": "create:milling",
   "ingredients": [
     {
-      "item": "jafohana:mysore_trumpetvine"
+      "item": "jafohana:long_fruited_mucuna"
     }
   ],
   "processingTime": 50,
   "results": [
     {
       "count": 2,
-      "id": "minecraft:yellow_dye"
+      "id": "minecraft:purple_dye"
     },
     {
       "chance": 0.05,
