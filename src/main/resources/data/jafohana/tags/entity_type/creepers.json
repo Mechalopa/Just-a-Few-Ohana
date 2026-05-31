@@ -325,6 +325,22 @@
     {
       "id": "caverns_and_chasms:evendeeper",
       "required": false
+    },
+    {
+      "id": "primitivemobs:rocket_creeper",
+      "required": false
+    },
+    {
+      "id": "primitivemobs:festive_creeper",
+      "required": false
+    },
+    {
+      "id": "primitivemobs:support_creeper",
+      "required": false
+    },
+    {
+      "id": "meteors:alien_creeper",
+      "required": false
     }
   ]
 }
