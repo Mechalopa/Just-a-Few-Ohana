@@ -1,0 +1,39 @@
+{
+  "neoforge:conditions": [
+    {
+      "modid": "cyclic",
+      "type": "neoforge:mod_loaded"
+    },
+    {
+      "item": "cyclic:crusher",
+      "type": "neoforge:item_exists"
+    }
+  ],
+  "type": "cyclic:crusher",
+  "bonus": {
+    "bonus": {
+      "count": 1,
+      "id": "minecraft:white_dye"
+    },
+    "percent": 50
+  },
+  "energy": {
+    "rfpertick": 10,
+    "ticks": 100
+  },
+  "ingredient": {
+    "type": "neoforge:intersection",
+    "children": [
+      {
+        "tag": "jafohana:dye_ingredients/white"
+      },
+      {
+        "tag": "jafohana:small_flowers"
+      }
+    ]
+  },
+  "result": {
+    "count": 2,
+    "id": "minecraft:white_dye"
+  }
+}

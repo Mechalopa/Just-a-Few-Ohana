@@ -1,0 +1,39 @@
+{
+  "neoforge:conditions": [
+    {
+      "modid": "cyclic",
+      "type": "neoforge:mod_loaded"
+    },
+    {
+      "item": "cyclic:crusher",
+      "type": "neoforge:item_exists"
+    }
+  ],
+  "type": "cyclic:crusher",
+  "bonus": {
+    "bonus": {
+      "count": 1,
+      "id": "minecraft:magenta_dye"
+    },
+    "percent": 50
+  },
+  "energy": {
+    "rfpertick": 10,
+    "ticks": 100
+  },
+  "ingredient": {
+    "type": "neoforge:intersection",
+    "children": [
+      {
+        "tag": "jafohana:dye_ingredients/magenta"
+      },
+      {
+        "tag": "jafohana:tall_flowers"
+      }
+    ]
+  },
+  "result": {
+    "count": 3,
+    "id": "minecraft:magenta_dye"
+  }
+}

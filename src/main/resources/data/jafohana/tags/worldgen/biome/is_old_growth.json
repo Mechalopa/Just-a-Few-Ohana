@@ -24,6 +24,14 @@
     {
       "id": "nature_horizons:old_growth_redwood_taiga",
       "required": false
+    },
+    {
+      "id": "environmental:old_growth_pine_barrens",
+      "required": false
+    },
+    {
+      "id": "environmental:snowy_old_growth_pine_barrens",
+      "required": false
     }
   ]
 }
