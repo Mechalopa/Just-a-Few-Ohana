@@ -86,7 +86,6 @@
     "jafohana:yellowflag_iris": { "conditions": { "items": [ { "items": "jafohana:yellowflag_iris" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:princes_plume": { "conditions": { "items": [ { "items": "jafohana:princes_plume" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:jade_vine": { "conditions": { "items": [ { "items": "jafohana:jade_vine" } ] }, "trigger": "minecraft:inventory_changed" },
-    "jafohana:long_fruited_mucuna": { "conditions": { "items": [ { "items": "jafohana:long_fruited_mucuna" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:creepansy": { "conditions": { "items": [ { "items": "jafohana:creepansy" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:fasciated_dandelion": { "conditions": { "items": [ { "items": "jafohana:fasciated_dandelion" } ] }, "trigger": "minecraft:inventory_changed" },
     "jafohana:fasciated_oxeye_daisy": { "conditions": { "items": [ { "items": "jafohana:fasciated_oxeye_daisy" } ] }, "trigger": "minecraft:inventory_changed" }
@@ -190,7 +189,6 @@
     [ "jafohana:yellowflag_iris" ],
     [ "jafohana:princes_plume" ],
     [ "jafohana:jade_vine" ],
-    [ "jafohana:long_fruited_mucuna" ],
     [ "jafohana:creepansy" ],
     [ "jafohana:fasciated_dandelion" ],
     [ "jafohana:fasciated_oxeye_daisy" ]

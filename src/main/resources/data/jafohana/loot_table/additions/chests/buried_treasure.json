@@ -42,21 +42,6 @@
               "count": {
                 "type": "minecraft:uniform",
                 "max": 5.0,
-                "min": 2.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "jafohana:long_fruited_mucuna"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 5.0,
                 "min": 1.0
               },
               "function": "minecraft:set_count"
@@ -111,7 +96,7 @@
         },
         {
           "type": "minecraft:empty",
-          "weight": 9
+          "weight": 10
         }
       ],
       "rolls": {
