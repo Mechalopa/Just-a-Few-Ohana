@@ -1,0 +1,41 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "manual_labour"
+        },
+        {
+          "type": "neoforge:not",
+          "value": {
+            "type": "neoforge:mod_loaded",
+            "modid": "create"
+          }
+        }
+      ]
+    }
+  ],
+  "type": "manual_labour:mortar_grinding",
+  "ingredient": {
+    "type": "neoforge:intersection",
+    "children": [
+      {
+        "tag": "jafohana:dye_ingredients/pink"
+      },
+      {
+        "tag": "jafohana:small_flowers"
+      }
+    ]
+  },
+  "processing_time": 60,
+  "results": [
+    {
+      "result": {
+        "count": 2,
+        "id": "minecraft:pink_dye"
+      }
+    }
+  ]
+}
