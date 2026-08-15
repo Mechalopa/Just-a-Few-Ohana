@@ -1,0 +1,8 @@
+{
+  "parent": "jafohana:block/cross_width_18",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "cross": "jafohana:block/desert_pea_1",
+    "side": "jafohana:block/desert_pea_side_1"
+  }
+}

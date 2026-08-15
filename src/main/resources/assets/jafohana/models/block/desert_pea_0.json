@@ -2,7 +2,7 @@
   "parent": "jafohana:block/cross_width_18",
   "render_type": "minecraft:cutout",
   "textures": {
-    "cross": "jafohana:block/desert_pea",
-    "side": "jafohana:block/desert_pea_side"
+    "cross": "jafohana:block/desert_pea_0",
+    "side": "jafohana:block/desert_pea_side_0"
   }
 }

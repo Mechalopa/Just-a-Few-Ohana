@@ -1,7 +1,12 @@
 {
   "variants": {
-    "": {
-      "model": "jafohana:block/desert_pea"
-    }
+    "": [
+      {
+        "model": "jafohana:block/desert_pea_0"
+      },
+      {
+        "model": "jafohana:block/desert_pea_1"
+      }
+    ]
   }
 }
