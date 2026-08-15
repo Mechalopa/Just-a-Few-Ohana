@@ -4,17 +4,18 @@
     "type": "neoforge:and",
     "values": [
       "#jafohana:is_overworld",
+      "#jafohana:is_hot",
+      "#jafohana:is_dry",
       {
         "type": "neoforge:or",
         "values": [
           "#jafohana:is_forest",
-          "#jafohana:is_coniferous"
+          "#jafohana:is_plains"
         ]
       },
       {
         "type": "neoforge:or",
         "values": [
-          "#jafohana:is_plains",
           "#jafohana:is_sparse_vegetation",
           "#jafohana:is_floral",
           "#jafohana:is_lush"
@@ -25,21 +26,20 @@
         "value": {
           "type": "neoforge:or",
           "values": [
-            "minecraft:flower_forest",
-            "#jafohana:is_birch_forest",
-            "#jafohana:is_hot",
-            "#jafohana:is_snowy",
+            "#jafohana:is_desert",
+            "#jafohana:is_badlands",
+            "#jafohana:is_savanna",
             "#jafohana:is_jungle",
+            "#jafohana:is_swamp",
+            "#jafohana:is_snowy",
             "#jafohana:is_hill_or_mountain",
             "#jafohana:is_spooky",
-            "#jafohana:is_dead_or_wasteland",
-            "#jafohana:biomesoplenty/tundra",
-            "#jafohana:integrateddynamics/meneglin"
+            "#jafohana:is_dead_or_wasteland"
           ]
         }
       }
     ]
   },
-  "features": "jafohana:asphodel",
+  "features": "jafohana:desert_pea",
   "step": "vegetal_decoration"
 }

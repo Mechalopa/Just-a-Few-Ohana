@@ -5,7 +5,26 @@
     "values": [
       "#jafohana:is_overworld",
       "#jafohana:is_bamboo_jungle",
-      "#jafohana:is_jungle",
+      {
+        "type": "neoforge:or",
+        "values": [
+          "#jafohana:is_jungle",
+          {
+            "type": "neoforge:and",
+            "values": [
+              {
+                "type": "neoforge:or",
+                "values": [
+                  "#jafohana:is_forest",
+                  "#jafohana:is_floral",
+                  "#jafohana:is_lush"
+                ]
+              },
+              "#jafohana:is_hot"
+            ]
+          }
+        ]
+      },
       {
         "type": "neoforge:not",
         "value": "#jafohana:is_dead_or_wasteland"
