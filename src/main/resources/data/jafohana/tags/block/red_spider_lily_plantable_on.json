@@ -7,6 +7,10 @@
     {
       "id": "#minecraft:supports_vegetation",
       "required": false
+    },
+    {
+      "id": "#minecraft:substrate_overworld",
+      "required": false
     }
   ]
 }
