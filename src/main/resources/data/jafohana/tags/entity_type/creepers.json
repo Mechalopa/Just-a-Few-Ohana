@@ -369,6 +369,42 @@
     {
       "id": "adaptedmobs:support_creepie",
       "required": false
+    },
+    {
+      "id": "goetyawaken:creeper_servant",
+      "required": false
+    },
+    {
+      "id": "goetyawaken:poisonous_potato_creeper_servant",
+      "required": false
+    },
+    {
+      "id": "goetyawaken:statue_creeper",
+      "required": false
+    },
+    {
+      "id": "goetyawaken:hostile_statue_creeper",
+      "required": false
+    },
+    {
+      "id": "goetyawaken:creeper_servant",
+      "required": false
+    },
+    {
+      "id": "goetyawaken:ice_creeper_servant",
+      "required": false
+    },
+    {
+      "id": "goetyawaken:ice_creeper",
+      "required": false
+    },
+    {
+      "id": "goetyawaken:spider_creeder_servant",
+      "required": false
+    },
+    {
+      "id": "goetyawaken:hostile_spider_creeder",
+      "required": false
     }
   ]
 }
