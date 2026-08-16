@@ -8,7 +8,7 @@
   "type": "create:milling",
   "ingredients": [
     {
-      "item": "jafohana:purple_pansy"
+      "item": "jafohana:yellow_pansy"
     }
   ],
   "processingTime": 50,

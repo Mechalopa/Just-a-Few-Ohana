@@ -19,6 +19,10 @@
     {
       "id": "cyber_ware_port:cyber_wither_skeleton_wall_skull",
       "required": false
+    },
+    {
+      "id": "cropcritters:withering_spiteweed",
+      "required": false
     }
   ]
 }

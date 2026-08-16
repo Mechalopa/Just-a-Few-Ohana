@@ -6,6 +6,18 @@
     {
       "id": "#missingwilds:fallen_logs",
       "required": false
+    },
+    {
+      "id": "#gwoodworks:carved_log",
+      "required": false
+    },
+    {
+      "id": "#gwoodworks:hollow_log",
+      "required": false
+    },
+    {
+      "id": "#quark:hollow_logs",
+      "required": false
     }
   ]
 }

@@ -45,6 +45,26 @@
     {
       "id": "clifftree:sparse_forest",
       "required": false
+    },
+    {
+      "id": "cliffbranch:oasis",
+      "required": false
+    },
+    {
+      "id": "cliffbranch:shrubland",
+      "required": false
+    },
+    {
+      "id": "cliffbranch:sparse_forest",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:animal_path",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:animal_path",
+      "required": false
     }
   ]
 }
