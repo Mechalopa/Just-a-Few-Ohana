@@ -136,6 +136,10 @@
     {
       "id": "cliffbranch:basalt_shore",
       "required": false
+    },
+    {
+      "id": "undergroundworlds:underground_tundra",
+      "required": false
     }
   ]
 }
