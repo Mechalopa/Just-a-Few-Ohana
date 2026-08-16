@@ -20,10 +20,10 @@
   ],
   "soil": [
     {
-      "id": "minecraft:dirt"
+      "item": "minecraft:dirt"
     },
     {
-      "id": "minecraft:soul_soil"
+      "item": "minecraft:soul_soil"
     }
   ],
   "time": 480
