@@ -11,13 +11,19 @@
       "item": "jafohana:blue_daisy"
     }
   ],
-  "tool": {
-    "tag": "forge:tools/knives"
-  },
   "result": [
     {
-      "item": "minecraft:light_blue_dye",
-      "count": 2
+      "count": 2,
+      "item": "minecraft:light_blue_dye"
+    }
+  ],
+  "tool": [
+    {
+      "type": "farmersdelight:tool_action",
+      "action": "knife_dig"
+    },
+    {
+      "tag": "forge:tools/knives"
     }
   ]
 }

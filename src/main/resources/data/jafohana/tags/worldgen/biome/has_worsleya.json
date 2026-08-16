@@ -22,6 +22,14 @@
     {
       "id": "clifftree:granite_shore",
       "required": false
+    },
+    {
+      "id": "cliffbranch:granite_shore",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:towering_cliffs",
+      "required": false
     }
   ]
 }

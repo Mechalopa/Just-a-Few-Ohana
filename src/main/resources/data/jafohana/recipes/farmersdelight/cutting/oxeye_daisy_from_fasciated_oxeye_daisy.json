@@ -13,11 +13,17 @@
   ],
   "result": [
     {
-      "item": "minecraft:oxeye_daisy",
-      "count": 3
+      "count": 3,
+      "item": "minecraft:oxeye_daisy"
     }
   ],
-  "tool": {
-    "tag": "forge:shears"
-  }
+  "tool": [
+    {
+      "type": "farmersdelight:tool_action",
+      "action": "shears_dig"
+    },
+    {
+      "tag": "forge:shears"
+    }
+  ]
 }

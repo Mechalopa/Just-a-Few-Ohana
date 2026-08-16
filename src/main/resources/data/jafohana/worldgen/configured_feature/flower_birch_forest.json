@@ -13,39 +13,6 @@
                   "to_place": {
                     "type": "minecraft:simple_state_provider",
                     "state": {
-                      "Name": "jafohana:dayflower"
-                    }
-                  }
-                }
-              },
-              "placement": [
-                {
-                  "type": "minecraft:block_predicate_filter",
-                  "predicate": {
-                    "type": "minecraft:matching_blocks",
-                    "blocks": "minecraft:air"
-                  }
-                }
-              ]
-            },
-            "tries": 96,
-            "xz_spread": 7,
-            "y_spread": 3
-          }
-        },
-        "placement": []
-      },
-      {
-        "feature": {
-          "type": "minecraft:random_patch",
-          "config": {
-            "feature": {
-              "feature": {
-                "type": "minecraft:simple_block",
-                "config": {
-                  "to_place": {
-                    "type": "minecraft:simple_state_provider",
-                    "state": {
                       "Name": "jafohana:evening_primrose"
                     }
                   }
@@ -180,6 +147,56 @@
                     "state": {
                       "Name": "jafohana:orange_spider_lily"
                     }
+                  }
+                }
+              },
+              "placement": [
+                {
+                  "type": "minecraft:block_predicate_filter",
+                  "predicate": {
+                    "type": "minecraft:matching_blocks",
+                    "blocks": "minecraft:air"
+                  }
+                }
+              ]
+            },
+            "tries": 96,
+            "xz_spread": 7,
+            "y_spread": 3
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "minecraft:random_patch",
+          "config": {
+            "feature": {
+              "feature": {
+                "type": "minecraft:simple_block",
+                "config": {
+                  "to_place": {
+                    "type": "minecraft:weighted_state_provider",
+                    "entries": [
+                      {
+                        "data": {
+                          "Name": "jafohana:red_snapdragon"
+                        },
+                        "weight": 1
+                      },
+                      {
+                        "data": {
+                          "Name": "jafohana:yellow_snapdragon"
+                        },
+                        "weight": 1
+                      },
+                      {
+                        "data": {
+                          "Name": "jafohana:pink_snapdragon"
+                        },
+                        "weight": 1
+                      }
+                    ]
                   }
                 }
               },

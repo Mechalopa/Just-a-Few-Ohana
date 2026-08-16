@@ -11,13 +11,19 @@
       "item": "jafohana:jade_vine"
     }
   ],
-  "tool": {
-    "tag": "forge:tools/knives"
-  },
   "result": [
     {
-      "item": "minecraft:cyan_dye",
-      "count": 2
+      "count": 2,
+      "item": "minecraft:cyan_dye"
+    }
+  ],
+  "tool": [
+    {
+      "type": "farmersdelight:tool_action",
+      "action": "knife_dig"
+    },
+    {
+      "tag": "forge:tools/knives"
     }
   ]
 }

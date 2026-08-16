@@ -11,13 +11,19 @@
       "item": "jafohana:white_spotted_bellflower"
     }
   ],
-  "tool": {
-    "tag": "forge:tools/knives"
-  },
   "result": [
     {
-      "item": "minecraft:white_dye",
-      "count": 2
+      "count": 2,
+      "item": "minecraft:white_dye"
+    }
+  ],
+  "tool": [
+    {
+      "type": "farmersdelight:tool_action",
+      "action": "knife_dig"
+    },
+    {
+      "tag": "forge:tools/knives"
     }
   ]
 }
