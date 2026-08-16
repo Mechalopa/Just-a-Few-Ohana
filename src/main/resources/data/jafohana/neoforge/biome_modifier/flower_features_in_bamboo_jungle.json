@@ -20,7 +20,13 @@
                   "#jafohana:is_lush"
                 ]
               },
-              "#jafohana:is_hot"
+              {
+                "type": "neoforge:or",
+                "values": [
+                  "#jafohana:is_hot",
+                  "#jafohana:is_dense_vegetation"
+                ]
+              }
             ]
           }
         ]

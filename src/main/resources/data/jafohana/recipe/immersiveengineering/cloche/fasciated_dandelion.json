@@ -19,8 +19,10 @@
       "id": "minecraft:dandelion"
     },
     {
-      "count": 1,
-      "id": "jafohana:fasciated_dandelion"
+      "chance": 0.15,
+      "output": {
+        "id": "jafohana:fasciated_dandelion"
+      }
     }
   ],
   "soil": {

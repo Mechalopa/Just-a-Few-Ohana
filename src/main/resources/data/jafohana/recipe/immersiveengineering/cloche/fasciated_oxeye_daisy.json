@@ -19,8 +19,10 @@
       "id": "minecraft:oxeye_daisy"
     },
     {
-      "count": 1,
-      "id": "jafohana:fasciated_oxeye_daisy"
+      "chance": 0.15,
+      "output": {
+        "id": "jafohana:fasciated_oxeye_daisy"
+      }
     }
   ],
   "soil": {

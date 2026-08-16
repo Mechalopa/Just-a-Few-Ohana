@@ -15,7 +15,14 @@
   },
   "results": [
     {
+      "count": 1,
       "id": "jafohana:creepansy"
+    },
+    {
+      "chance": 0.075,
+      "output": {
+        "id": "minecraft:gunpowder"
+      }
     }
   ],
   "soil": {

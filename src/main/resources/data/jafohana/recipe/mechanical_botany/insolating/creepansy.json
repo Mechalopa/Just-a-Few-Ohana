@@ -6,7 +6,7 @@
     }
   ],
   "type": "mechanical_botany:insolating",
-  "consume_input": true,
+  "consume_input": false,
   "ingredients": [
     {
       "type": "fluid_stack",
@@ -20,7 +20,7 @@
   "processing_time": 8000,
   "results": [
     {
-      "count": 2,
+      "count": 1,
       "id": "jafohana:creepansy"
     },
     {

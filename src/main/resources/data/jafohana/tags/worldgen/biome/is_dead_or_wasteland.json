@@ -52,6 +52,14 @@
     {
       "id": "cliffbranch:inferno",
       "required": false
+    },
+    {
+      "id": "regions_unexplored:inferno",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:scorching_caves",
+      "required": false
     }
   ]
 }

@@ -45,6 +45,10 @@
     {
       "id": "abundant_atmosphere:eroded_bamboo_jungle",
       "required": false
+    },
+    {
+      "id": "regions_unexplored:bamboo_forest",
+      "required": false
     }
   ]
 }
