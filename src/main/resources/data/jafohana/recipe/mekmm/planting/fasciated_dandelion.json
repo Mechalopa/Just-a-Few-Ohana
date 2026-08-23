@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekmm"
+    }
+  ],
+  "type": "mekmm:planting",
+  "chemical_input": {
+    "amount": 1,
+    "chemical": "mekmm:nutrient_solution"
+  },
+  "item_input": {
+    "count": 1,
+    "item": "jafohana:fasciated_dandelion"
+  },
+  "main_output": {
+    "count": 3,
+    "id": "minecraft:dandelion"
+  },
+  "per_tick_usage": true,
+  "secondary_chance": 0.15,
+  "secondary_output": {
+    "count": 1,
+    "id": "jafohana:fasciated_dandelion"
+  }
+}
