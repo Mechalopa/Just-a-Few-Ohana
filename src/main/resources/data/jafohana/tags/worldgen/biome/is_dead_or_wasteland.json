@@ -60,6 +60,10 @@
     {
       "id": "regions_unexplored:scorching_caves",
       "required": false
+    },
+    {
+      "id": "nyctophobia:burnt_forest",
+      "required": false
     }
   ]
 }

@@ -12,6 +12,10 @@
     {
       "id": "biox:cherry_swamp",
       "required": false
+    },
+    {
+      "id": "nyctophobia:marshlands",
+      "required": false
     }
   ]
 }
