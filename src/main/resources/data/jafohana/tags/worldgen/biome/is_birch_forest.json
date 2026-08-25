@@ -8,6 +8,14 @@
       "required": false
     },
     {
+      "id": "#c:is_birch_forest",
+      "required": false
+    },
+    {
+      "id": "#c:birch_forest",
+      "required": false
+    },
+    {
       "id": "byg:borealis_grove",
       "required": false
     },

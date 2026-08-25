@@ -7,6 +7,14 @@
       "required": false
     },
     {
+      "id": "#c:is_river",
+      "required": false
+    },
+    {
+      "id": "#c:river",
+      "required": false
+    },
+    {
       "id": "riverredux:gravelly_river",
       "required": false
     },
