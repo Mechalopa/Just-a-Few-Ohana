@@ -1,0 +1,27 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekmm"
+    }
+  ],
+  "type": "mekmm:planting",
+  "gasInput": {
+    "amount": 1,
+    "gas": "mekmm:nutrient_solution"
+  },
+  "itemInput": {
+    "ingredient": {
+      "item": "jafohana:fasciated_oxeye_daisy"
+    }
+  },
+  "mainOutput": {
+    "count": 3,
+    "item": "minecraft:oxeye_daisy"
+  },
+  "secondaryChance": 0.15,
+  "secondaryOutput": {
+    "count": 1,
+    "item": "jafohana:fasciated_oxeye_daisy"
+  }
+}
