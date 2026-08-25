@@ -6,11 +6,11 @@
     {
       "id": "#forge:is_hot",
       "required": false
-    }
+    },
     {
       "id": "#c:is_hot",
       "required": false
-    },,
+    },
     {
       "id": "#c:hot",
       "required": false
