@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "horsepowered"
+    }
+  ],
+  "type": "horsepowered:pressing",
+  "ingredient": {
+    "type": "neoforge:intersection",
+    "children": [
+      {
+        "tag": "jafohana:dye_ingredients/light_gray"
+      },
+      {
+        "tag": "jafohana:small_flowers"
+      }
+    ]
+  },
+  "result": {
+    "count": 4,
+    "id": "minecraft:light_gray_dye"
+  }
+}
