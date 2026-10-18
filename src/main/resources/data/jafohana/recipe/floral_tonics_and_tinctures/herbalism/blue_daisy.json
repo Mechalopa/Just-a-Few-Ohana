@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "floral_tonics_and_tinctures"
+        },
+        {
+          "type": "neoforge:item_exists",
+          "item": "floral_tonics_and_tinctures:tonic"
+        }
+      ]
+    }
+  ],
+  "type": "floral_tonics_and_tinctures:herbalism",
+  "additive": {
+    "item": "minecraft:sugar"
+  },
+  "bottle": {
+    "item": "minecraft:glass_bottle"
+  },
+  "ingredient": {
+    "item": "jafohana:blue_daisy"
+  },
+  "result": {
+    "components": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:swiftness"
+      }
+    },
+    "count": 1,
+    "id": "floral_tonics_and_tinctures:tonic"
+  }
+}
